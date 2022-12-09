@@ -71,7 +71,7 @@ Qual caminho o browser tomo, caso haja varias regras para o mesmo estilo, o comp
 >O navegador por padrão já aplica alguns estilos padrões, que normalmente são retirados por arquivos CSS conhecidos como Resets CSS
 
 # Shorthand
-Shorthand ou declaração simplificada, basicamente é definir vários valores para uma propriedade, por exemplo em fonte em vem de declarar separadamente:
+Shorthand ou declaração simplificada, basicamente é juntar propriedades de forma resumida, que por consequência traz maior legibilidade e facilidade na manutenção, por exemplo em fonte em vem de declarar separadamente:
 ```css
 h1 {
 	font-style: italic;
@@ -87,3 +87,25 @@ h1 {
 	font: italic bold .8em/1.2 Arial, sans-serif;
 }
 ```
+>[!warning] Cuidado
+>Shorthand zera as declarações anteriores, levando tudo para o padrão e modificando os valores apenas os valores atribuidos, por exemplo:
+>```css
+>p {
+>	font-weight: bold;
+>	font: italic .8em/1.2 Arian, sans-serif;
+>}
+>```
+>A declaração anterior de peso (weight), será totalmente ignorada, pois, o que o shorthand não defini ele altera para valor padrão.
+>
+>Outro ponto que deve se atentar e caso declare valores parecidos no mesmo shorthand, pode ocorrer conflitos, com o CSS identificando de forma incorreta, é raro, mas pode ocorrer.
+
+# Funções
+Funções também existem no CSS e tem um amplo uso desempenhando papeis importantíssimos, alguns exemplos de funções no CSS
+```css
+@import url("http://urlAqui.com/style.css")
+p {
+	color: rgb(255, 0, 100);
+	width: calc(100% - 10px);
+}
+```
+Segue a mesma sintaxe das linguagens de programação, o nome da função e entre parênteses os parâmetros, `calc(100% - 10px)`
