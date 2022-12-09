@@ -28,5 +28,3 @@ FROM #note
 WHERE !completed
 SORT file.name ASC
 ```
-
-# Teste de Pull request

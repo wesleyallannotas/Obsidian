@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3687d0d3d696cc27",
+        "id": "2cbfba40fb309ca0",
         "type": "tabs",
         "children": [
           {
-            "id": "87f48acaca0404ce",
+            "id": "8479336f06580a9d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -85,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316
+    "width": 316,
+    "collapsed": true
   },
   "right": {
     "id": "c853b67629a4ee84",
@@ -196,23 +197,25 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "87f48acaca0404ce",
+  "active": "8479336f06580a9d",
   "lastOpenFiles": [
-    "Excalidraw/Desenho_HTMLCSS_BoxModel.md",
     "01 - Notes/Code/CSS/Box Model.md",
-    "01 - Notes/Code/CSS/At-Rules.md",
     "01 - Notes/Code/CSS/Introdução.md",
+    "01 - Notes/Code/CSS/At-Rules.md",
+    "Home.md",
+    "01 - Notes/Code/Base/Variável.md",
+    "Excalidraw/Drawing 2022-12-09 19.17.30.excalidraw.md",
+    "Excalidraw/Desenho_HTMLCSS_BoxModel.md",
     "03 - Books/Estruturas de Dados e Algoritmos com JavaScript.md",
     "03 - Books/Engenharia de Software Uma Abordagem Profissional 8ª Edição.md",
-    "03 - Books/Sistema de Banco de Dados 7ª Edição.md",
-    "01 - Notes/Code/HTML/Tabelas.md",
-    "01 - Notes/Code/HTML/Cabeçalho.md",
-    "01 - Notes/Code/HTML/HyperLinks.md"
+    "03 - Books/Sistema de Banco de Dados 7ª Edição.md"
   ]
 }
