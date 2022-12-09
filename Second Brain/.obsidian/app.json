@@ -1,0 +1,13 @@
+{
+  "showLineNumber": false,
+  "vimMode": true,
+  "promptDelete": false,
+  "spellcheck": true,
+  "alwaysUpdateLinks": true,
+  "autoConvertHtml": true,
+  "attachmentFolderPath": "",
+  "showFrontmatter": false,
+  "newFileLocation": "root",
+  "showUnsupportedFiles": false,
+  "tabSize": 2
+}

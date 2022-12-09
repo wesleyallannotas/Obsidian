@@ -1,0 +1,12 @@
+{
+  "amazonRegion": "global",
+  "highlightsFolder": "04 - Kindle HighLights",
+  "lastSyncMode": "amazon",
+  "isLoggedIn": true,
+  "syncOnBoot": false,
+  "downloadBookMetadata": true,
+  "lastSyncDate": "2022-09-24T14:06:56.149Z",
+  "fileNameTemplate": "{{title}}",
+  "fileTemplate": "---\ntags: highlights\ntype: kindleHighlights\n---\n# {{title}}\n![Capa|120]({{imageUrl}})\n## Metadata\n{% if authorUrl %}* Author: [{{author}}]({{authorUrl}})\n{% elif author %}* Author: [[{{author}}]]\n{% endif %}\n{% if asin %}* ASIN: {{asin}}{% endif %}\n{% if isbn %}* ISBN: {{isbn}}{% endif %}\n{% if pages %}* Pages: {{pages}}{% endif %}\n{% if publication %}* Publication: {{publication}}{% endif %}\n{% if publisher %}* Publisher: {{publisher}}{% endif %}\n{% if url %}* Reference: {{url}}{% endif %}\n{% if appLink %}* [Kindle link]({{appLink}}){% endif %}\n\n## Highlights {{highlightsCount}}\n{{highlights}}",
+  "highlightTemplate": "```ad-note\ntitle: Location [{{ location }}]({{appLink}})\nicon: location\ncolor: 251 201 87\n\n{{text}}\n{% if note %}\n```ad-note\n{{note}}\n{% endif %}\n```\n"
+}

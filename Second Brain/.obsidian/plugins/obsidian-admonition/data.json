@@ -1,0 +1,52 @@
+{
+  "userAdmonitions": {
+    "highlight": {
+      "type": "highlight",
+      "color": "251, 201, 87",
+      "icon": {
+        "type": "octicons",
+        "name": "location"
+      },
+      "command": false,
+      "title": "Highlight",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "revisao": {
+      "type": "revisao",
+      "color": "139, 233, 253",
+      "icon": {
+        "type": "octicons",
+        "name": "book"
+      },
+      "command": false,
+      "title": "Revisão",
+      "injectColor": true,
+      "noTitle": false
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": false,
+  "version": "9.0.5",
+  "autoCollapse": false,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": false
+  },
+  "icons": [
+    "octicons",
+    "rpg"
+  ],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": false,
+  "snippetPath": "custom-admonitions.393477"
+}

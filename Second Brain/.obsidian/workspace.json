@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "e5f0b63e3c664a5f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3687d0d3d696cc27",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87f48acaca0404ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/CSS/Introdução.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "312cb27ce6b2b67c",
+    "type": "split",
+    "children": [
+      {
+        "id": "6956553522afc52f",
+        "type": "tabs",
+        "dimension": 29.69121140142518,
+        "children": [
+          {
+            "id": "1ecb3c857759d24f",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "fe5af447add0ff3e",
+        "type": "tabs",
+        "dimension": 70.30878859857482,
+        "children": [
+          {
+            "id": "92582111376fdc52",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse"
+              }
+            }
+          },
+          {
+            "id": "a82b524e4cddf250",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6b15a49784ffab16",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 316
+  },
+  "right": {
+    "id": "c853b67629a4ee84",
+    "type": "split",
+    "children": [
+      {
+        "id": "3febfdbc134be16d",
+        "type": "tabs",
+        "dimension": 34.32304038004751,
+        "children": [
+          {
+            "id": "fae011b784595788",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "01 - Notes/Code/CSS/Introdução.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4084433249421999,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "7b42a77c2bac729b",
+        "type": "tabs",
+        "dimension": 65.6769596199525,
+        "children": [
+          {
+            "id": "169cdbc62ebbe76c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01 - Notes/Code/CSS/Introdução.md"
+              }
+            }
+          },
+          {
+            "id": "a3174be90c4ab27f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01 - Notes/Code/CSS/Introdução.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cae0babb1198aa44",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01 - Notes/Code/CSS/Introdução.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fd322d8c330d36dc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2de4cf05d5caf98f",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "87f48acaca0404ce",
+  "lastOpenFiles": [
+    "Excalidraw/Desenho_HTMLCSS_BoxModel.md",
+    "01 - Notes/Code/CSS/Box Model.md",
+    "01 - Notes/Code/CSS/At-Rules.md",
+    "01 - Notes/Code/CSS/Introdução.md",
+    "03 - Books/Estruturas de Dados e Algoritmos com JavaScript.md",
+    "03 - Books/Engenharia de Software Uma Abordagem Profissional 8ª Edição.md",
+    "03 - Books/Sistema de Banco de Dados 7ª Edição.md",
+    "01 - Notes/Code/HTML/Tabelas.md",
+    "01 - Notes/Code/HTML/Cabeçalho.md",
+    "01 - Notes/Code/HTML/HyperLinks.md"
+  ]
+}
