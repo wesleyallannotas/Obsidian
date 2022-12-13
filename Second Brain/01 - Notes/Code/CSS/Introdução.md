@@ -6,7 +6,7 @@ book:
 type: note
 completed: false
 aliases:
-tags: note
+tags: [css]
 description: Introdução ao CSS para desenvolvimento Web 
 ---
 # CSS
@@ -100,7 +100,7 @@ h1 {
 >Outro ponto que deve se atentar e caso declare valores parecidos no mesmo shorthand, pode ocorrer conflitos, com o CSS identificando de forma incorreta, é raro, mas pode ocorrer.
 
 # Funções
-Funções também existem no CSS e tem um amplo uso desempenhando papeis importantíssimos, alguns exemplos de funções no CSS
+Funções também existem no CSS e tem um amplo uso desempenhando papeis importantíssimos, pois, possibilita o reaproveitamento de código, alguns exemplos de funções no CSS
 ```css
 @import url("http://urlAqui.com/style.css")
 p {

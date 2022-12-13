@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [note, bancoDados]
+tags: [bancoDados]
 description: Primeiros passos para projetar um banco de dados.
 ---
 # Projeto  de um Banco de Dados

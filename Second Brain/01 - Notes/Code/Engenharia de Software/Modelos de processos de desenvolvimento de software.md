@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [note, engSoftware]
+tags: [engSoftware]
 description: Modelos já consolidados no mercado
 ---
 # Introdução

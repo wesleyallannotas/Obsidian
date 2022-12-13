@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [note, data, python]
+tags: [data, python]
 description: Como manipular datas no python. 
 ---
 # Biblioteca

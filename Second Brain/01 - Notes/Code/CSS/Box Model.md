@@ -6,7 +6,7 @@ book:
 type: note
 completed: false
 aliases:
-tags: note
+tags: [css]
 description: Funcionamento do box model utilizando CSS e HTML 
 ---
 # Introdução

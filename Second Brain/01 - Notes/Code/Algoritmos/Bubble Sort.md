@@ -6,7 +6,7 @@ urls:
 book: 
 completed: true
 aliases: bubbleSort
-tags: [note, ordenação, algoritmo]
+tags: [ordenação, algoritmo]
 description: Algoritmo de ordenação simples, que usa da comapração 
 ---
 # Introdução

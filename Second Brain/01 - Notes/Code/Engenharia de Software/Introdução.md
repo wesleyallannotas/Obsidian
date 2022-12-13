@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [note, engSoftware]
+tags: [engSoftware]
 description: Introdução abortando a historia e o que é engenharia de software.
 ---
 # Introdução

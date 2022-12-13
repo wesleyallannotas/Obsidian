@@ -6,7 +6,7 @@ book:
 type: note
 completed: false
 aliases:
-tags: note
+tags: [css]
 description: Funcionamento dos vendor prefixes, para ativação de funcionalidades e compatibilidade
 ---
 # Introdução

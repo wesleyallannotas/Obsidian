@@ -6,7 +6,7 @@ url:
 book: Entendendo Algoritmos
 completed: true
 aliases: qsort
-tags: [note, ordenação, recursão, algoritmo]
+tags: [ordenação, recursão, algoritmo]
 description: Entender o algritmo quick sort que utiliza técnicas de recurão
 ---
 # Introdução

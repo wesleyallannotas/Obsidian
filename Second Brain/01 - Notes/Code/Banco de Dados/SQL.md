@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [note, bancoDado]
+tags: [bancoDado]
 description: Sobre as Linguagens DDL e DML
 ---
 # SQL

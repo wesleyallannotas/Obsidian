@@ -6,7 +6,7 @@ book:
 type: note
 completed: false
 aliases:
-tags: note
+tags: [css]
 description: As at-rules e seus funcionamentos
 ---
 # Introdução

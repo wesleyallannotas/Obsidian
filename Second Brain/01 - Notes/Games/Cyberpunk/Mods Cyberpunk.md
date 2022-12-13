@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: note
+tags: [cyberpunk]
 description: Modes interessantes para usar no cyberpunk 
 ---
 # Lista de Mods

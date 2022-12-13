@@ -5,7 +5,7 @@ bookImageUrl: 'https://m.media-amazon.com/images/P/B08H3GFFJP.01._SCLZZZZZZZ_SX5
 type: book
 completed: false
 aliases:
-tags: [book, bancoDados]
+tags: [bancoDados]
 description: Tudo sobre sistema de banco de dados dos fundamentos aos novos conceitos
 ---
 # Sistema de Banco de Dados 7ª Edição

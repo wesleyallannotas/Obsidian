@@ -5,7 +5,7 @@ bookImageUrl: '[71KGa1y8eaL.jpg (1500×2091) (media-amazon.com)](https://m.media
 type: book
 completed: false
 aliases:
-tags: book
+tags: [estruturaDados, algoritmo]
 description: Livro que aborda estrutura de dados e algoritmos utilizando javascript
 ---
 # Estruturas de Dados e Algoritmos com JavaScript 8ª Edição

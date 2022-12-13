@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: note
+tags: [cyberpunk]
 description: Como configurar a esquiva para um botão de escolhar
 ---
 # Alterando Arquivo

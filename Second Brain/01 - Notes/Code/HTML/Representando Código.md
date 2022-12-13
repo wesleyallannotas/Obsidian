@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: note
+tags: [html] 
 description: Como criar bloco de códigos no HTML
 ---
 # Introdução

@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [note]
+tags: [html]
 description: Introdução a linguagem de marcação HTML.
 ---
 # O que é HTML

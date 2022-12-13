@@ -5,7 +5,7 @@ bookImageUrl: 'https://m.media-amazon.com/images/I/51aSAx1OXML._SX382_BO1,204,20
 type: book
 completed: false
 aliases:
-tags: [book, engSoftware]
+tags: [engSoftware]
 description: Livro completo sobre engenharia de software
 ---
 #  Engenharia de Software Uma Abordagem Profissional 8ª Edição

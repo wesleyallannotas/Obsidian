@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [note, engSoftware]
+tags: [engSoftware]
 description: As etapas e processo para obter um bom desenvolvimento de software 
 ---
 # Processo de Desenvolvimento

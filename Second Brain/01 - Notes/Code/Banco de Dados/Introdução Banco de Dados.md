@@ -6,7 +6,7 @@ book: Sistema de Banco de Dados 7ª Edição
 type: note
 completed: true
 aliases:
-tags: [note, bancoDados]
+tags: [bancoDados]
 description: Ideia de utilidade de banco de dados
 ---
 # Ambientação

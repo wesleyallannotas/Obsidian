@@ -5,7 +5,7 @@ url: 'https://diolinux.com.br/tecnologia/configurar-instalar-distrobox.html'
 type: article
 completed: false
 aliases: Distrobox
-tags:  [article, docker, linux]
+tags:  [docker, linux]
 description: Tutorial basico de utilização do Distrobox
 ---
 # Introdução

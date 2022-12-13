@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [note, engSoftware]
+tags: [engSoftware]
 description: Tipos de requisitos e como ser escritos e detalhados.
 ---
 # Introdução

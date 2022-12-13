@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: note
+tags: [html]
 description: Elementos genéricos
 ---
 # Introdução

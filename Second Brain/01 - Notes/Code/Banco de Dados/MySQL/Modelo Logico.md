@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [note, bancoDados, mysql]
+tags: [bancoDados, mysql]
 description: Criação de modelo lógico dentro do MySQL Workbench
 ---
 # Modelo Logico

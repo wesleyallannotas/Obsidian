@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: note
+tags: [windows, nvidia]
 description: Reativando o serviço do nvidia control panel 
 ---
 # Reativando Serviço
