@@ -37,10 +37,14 @@ Desrespeito a como o tamanho da caixa (box) será calculado, as opções mais co
 - `border-box` - Mantem os tamanhos (`width`, `height`) definidos, ou seja, mesmo adicionando `border` e `padding` o tamanho real que a caixa ocupa não é impactado, pois, é retirado do espaço disponibilizado para o conteúdo
 
 # Display `block` e `inline`
-O display esta relacionado a como as caixas (*box*) se comportam em relação, existem diversos tipos aceitas para a propriedade display, mas como nesse caso estamos focado no `box-model`, vamos comparar os valores `inline` e `block`
+O display esta relacionado a como as caixas (*box*) se comportam em relação as outras, existem diversos tipos de valores aceitas para a propriedade display, mas como nesse caso estamos focado no `box-model`, vamos comparar os valores `inline` e `block`
 
 | Block                                              | Inline                                                        |
 | -------------------------------------------------- | ------------------------------------------------------------- |
 | Ocupa toda linha                                   | Um do lado do outro                                           |
 | `width` e `height` são respeitados                 | `width` e `height` não funciona                               |
 | `padding`, `margin`, `border` funciona normalmente | Somente valores horizontais de `margin`, `padding` e `border` |
+
+## Exemplos
+- `block` - `<p>`, `<div>`, `<section>`, todos os headings `<h1><h2>...`, entre outras...
+- `inline` - `<a>`, `<strong>`, `<span>`, `<em>`, entre outras...
