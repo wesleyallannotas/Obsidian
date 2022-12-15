@@ -48,3 +48,53 @@ O display esta relacionado a como as caixas (*box*) se comportam em relação as
 ## Exemplos
 - `block` - `<p>`, `<div>`, `<section>`, todos os headings `<h1><h2>...`, entre outras...
 - `inline` - `<a>`, `<strong>`, `<span>`, `<em>`, entre outras...
+
+# Margens (`margin`)
+Através da propriedade `margin` podemos atribuir margem as lados, sendo eles `top`, `bottom`, `left` e `right`, podemos atribuir valor aos lados individualmente ou em apenas uma declaração utilizando `shorthand` como explicado acima.
+
+>[!warning] Atenção
+>Cuidado com o *margin colapse*, que nada mais é do que o encontro de margens de objetos diferentes que ao invés de se somarem ==anula uma dando preferenciar a maior==, importante se atentar que *margin colapse* ==só ocorre na vertical, ou seja, quando um `margin-bottom` encontra um `margin-top`==, na horizontal a soma ocorre normalmente `margin-right` e `margin-left`
+
+Deixando como automático centraliza o objeto aplicando margem aos lados, porem não impacta a margem vertical, ou seja
+```css
+div {
+	margin: auto;
+	/* Mesma coisa */
+	margin: 0 auto;
+}
+```
+
+# Espaçamento Interno (`padding`)
+Através da propriedade `padding` podemos adicionar espaçamento interno no objeto, a declaração funciona da mesma forma do `margin`, existindo a possibilidade de atribuição de `padding` em um lado especifico ou utilizar o `shorhand`
+
+>[!warning] Atenção
+>Por padrão o `padding` impacta no tamanho da caixa (*box*), podemos mudar esse comportamento através do [[Box Model#Box-Sizing|Box Sizing]]
+
+# Bordas (`border`)
+Através da propriedade `border` podemos adicionar estilos as bordas do nosso elementos, `border` é o mais complexo em relação as anteiros, possui níveis de `shorhand`, para o pleno funcionamento das bordas, é necessário definir o estilo da borda, cor e tamanho, a seguir segui exemplos de declarações da borda:
+```css
+div {
+	/* Mais simplificado */
+	border: solid 2px black;
+	/* Medio */
+	border-top: solid 2px black;
+	/* Especifico */
+	border-top-width: 2px;
+}
+```
+Possuímos alguns tipos de estilos para as bordas, sendo elas:
+- `solid`
+- `dotted`
+- `dashed`
+- `double`
+- `grove
+- `ridge`
+- `inset`
+- `outset`
+Para melhor entendimento recomendo a [documentação do MDN]([border - CSS: Cascading Style Sheets | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/CSS/border)).
+
+>[!warning] Atenção
+>Por padrão o `border` impacta no tamanho da caixa (*box*), podemos mudar esse comportamento através do [[Box Model#Box-Sizing|Box Sizing]]
+
+# `outline`
+Apesar do `ouline` ser muito semelhante as bordas, diferente das propriedades anteriores, `outline` não interferi no tamanho da caixa (*box*), ele pode ser diferente de retangular, não possui a possiblidade de manipular individualmente as propriedades dos lados da caixa, possui seu uso em larga escala pelo *user agent*, principalmente para adicionar acessibilidade, podemos dizer que é um tipo de borda com comportamento de margem.

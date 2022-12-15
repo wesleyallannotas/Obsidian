@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e825716e4a633042",
+            "id": "2f54991c3604acc8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/Box Model.md",
-                "mode": "source",
+                "file": "01 - Notes/Code/CSS/Cores e Background.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Box Model.md",
+                "file": "01 - Notes/Code/CSS/Cores e Background.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Box Model.md"
+                "file": "01 - Notes/Code/CSS/Cores e Background.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Box Model.md",
+                "file": "01 - Notes/Code/CSS/Cores e Background.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Box Model.md",
+                "file": "01 - Notes/Code/CSS/Cores e Background.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,17 +202,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "e825716e4a633042",
+  "active": "2f54991c3604acc8",
   "lastOpenFiles": [
-    "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md",
-    "EBooks/JavaScript O Guia Definitivo_v2.pdf",
-    "EBooks/Eloquente JavaScript 2.pdf",
-    "EBooks/Arquitetura_Limpa_O_Guia_do_Artesão_para_Estrutura_e_Design_de_Software.pdf",
-    "EBooks/Curso-Intensivo-de-Python.pdf",
-    "EBooks/Introdução-ao-JSON.pdf",
-    "EBooks/Introdução-às-Expressões-Regulares.pdf",
-    "EBooks/JavaScript-de-Alto-Desempenho.pdf",
-    "EBooks/Aprendendo-Python.pdf",
-    "EBooks/Entendendo_Algoritmos_Um_guia_ilustrado_para_programadores_e_outros.pdf"
+    "01 - Notes/Code/CSS/Introdução.md",
+    "01 - Notes/Code/HTML/Abreviações.md",
+    "01 - Notes/Code/HTML/Cabeçalho.md",
+    "01 - Notes/Code/HTML/Citação.md",
+    "01 - Notes/Code/HTML/Lista de Descrição.md",
+    "01 - Notes/Code/HTML/Introdução.md",
+    "01 - Notes/Code/CSS/At-Rules.md",
+    "01 - Notes/Code/CSS/Box Model.md",
+    "01 - Notes/Code/CSS/Cores e Background.md",
+    "01 - Notes/Code/CSS/Vendor Prefixes.md"
   ]
 }
