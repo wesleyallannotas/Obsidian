@@ -10,7 +10,7 @@ tags: [css]
 description: Funcionamento de valores e unidades de medidas sendo elas absolutas e relativas.
 ---
 # Introdução
-Cada propriedade possui valores, seguindo a anatomia `propriedade: valor`, o estudo dos valores aceitos pro cada propriedade é constante, pois, além de estar em constante mudança são muitas, nas documentação em inglês podemos encontrar diferentes nomes, sendo os mais comuns:
+Cada propriedade possui valores, seguindo a anatomia `propriedade: valor`, o estudo dos valores aceitos por cada propriedade é constante, pois, além de estar em constante mudança são muitas, nas documentação em inglês podemos encontrar diferentes nomes, sendo os mais comuns:
 - *Values*
 - *Data-types*
 

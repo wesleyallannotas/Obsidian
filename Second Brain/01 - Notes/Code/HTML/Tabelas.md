@@ -13,15 +13,16 @@ description: Como criar tabelas no HTML
 Tabelas são de extrema importância para organização e exibição de dados, porem por falta de ferramentas por muito tempo teve a utilização para criar layouts de sites, porem hoje é algo ultrapassado e que pode causar problemas, tabelas possuem boa visualização de dados e uma boa acessibilidade, porem como ponto negativo traz pouca flexibilidade e a necessidade de estilização via CSS para melhorar sua visualização.
 
 # Estrutura
-A estrutura da tabela se encontra dentro de uma tag pai chamada de `<table>`, onde dentro é divida entre:
+A estrutura da tabela se encontra dentro de uma tag pai chamada de `<table>`, onde dentro é dividida entre:
 - Cabeçalho `<thead>`
 - Corpo `<tbody>`
 - Rodapé `<tfoot>`
 Normalmente antes do `<thead>` se encontra a tag `<caption>` onde em seu conteúdo, normalmente se encontra o titulo da tabela.
+Abaixo do `<caption>` pode se utilizar o `<colgroup>` que é o responsável por especificar o agrupamento das colunas, utilizando as tags `<col>` como filho para tal
 Sua estrutura se baseia em:
-- Linhas Valores `<tr>`
+- Linhas `<tr>`
 - Colunas de Cabeçalho `<th>`
-- Colunas `<td>`
+- Colunas de Dados `<td>`
 
 # Exemplo Básico
 ```html
