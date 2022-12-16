@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2cbfba40fb309ca0",
+        "id": "dbb1497f40d163e8",
         "type": "tabs",
         "children": [
           {
-            "id": "2f54991c3604acc8",
+            "id": "b00b74c577837b59",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "395a83437ca81b1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/HTML/Medias.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Cores e Background.md",
+                "file": "01 - Notes/Code/HTML/Medias.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -125,7 +138,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.4084433249421999,
+                  "scale": 0.2913326015531961,
                   "close": true
                 }
               }
@@ -144,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Cores e Background.md"
+                "file": "01 - Notes/Code/HTML/Medias.md"
               }
             }
           },
@@ -154,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Cores e Background.md",
+                "file": "01 - Notes/Code/HTML/Medias.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Cores e Background.md",
+                "file": "01 - Notes/Code/HTML/Medias.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,17 +215,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "2f54991c3604acc8",
+  "active": "395a83437ca81b1d",
   "lastOpenFiles": [
-    "Excalidraw/Desenho_HTMLCSS_Cores_Hexadecimal.md",
+    "01 - Notes/Games/Cyberpunk/Mods Cyberpunk.md",
+    "01 - Notes/Games/Cyberpunk/Configurando Esquiva.md",
+    "01 - Notes/Code/HTML/Medias.md",
     "01 - Notes/Code/CSS/Cores e Background.md",
-    "Excalidraw/Desnho_engSoftware_SIBC.md",
-    "Excalidraw/Desenho_SQL_Joins.md",
-    "Excalidraw/MapaMental _QuickSort.md",
-    "Excalidraw/Drawing 2022-12-09 19.17.30.excalidraw.md",
     "01 - Notes/Code/CSS/Introdução.md",
-    "01 - Notes/Code/HTML/Abreviações.md",
-    "01 - Notes/Code/HTML/Cabeçalho.md",
-    "01 - Notes/Code/HTML/Citação.md"
+    "01 - Notes/Code/CSS/Box Model.md",
+    "01 - Notes/Code/CSS/Vendor Prefixes.md",
+    "01 - Notes/Code/Plugins e Dicas.md",
+    "Excalidraw/Desenho_HTMLCSS_Cores_Hexadecimal.md",
+    "Excalidraw/Desnho_engSoftware_SIBC.md"
   ]
 }

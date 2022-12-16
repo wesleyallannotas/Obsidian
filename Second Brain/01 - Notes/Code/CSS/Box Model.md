@@ -18,7 +18,7 @@ O conceito de caixas se baseia na ideia que todo elementos HTML que não é *inl
 - `margin` - Margens
 ![[Desenho_HTMLCSS_BoxModel|center]]
 >[!note] Especifico Dimensões
->Vale lembrar que em `padding`, `margin` e `border`, possuímos a liberdade para escolher o lado que queremos adicionar o estilo, seja em notação especifica, ou simplificada utilizando `shorthand` (No simplificado e atribuído no sentido horário, e caso possua uma omissão ele pega o valor do seu lado contrario), por exemplo
+>Vale lembrar que em `padding`, `margin` e `border`, possuímos a liberdade para escolher o lado que queremos adicionar o estilo, seja em notação especifica, ou simplificada utilizando [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand]] (No simplificado e atribuído no sentido horário, e caso possua uma omissão ele pega o valor do seu lado contrario), por exemplo
 >```css
 >.container {
 >	/*Simplificado*/
@@ -34,7 +34,8 @@ O conceito de caixas se baseia na ideia que todo elementos HTML que não é *inl
 # Box-Sizing
 Desrespeito a como o tamanho da caixa (box) será calculado, as opções mais conhecidas são:
 - `content-box` - Valor padrão, aplica os tamanhos (`width`, `height`) definidos apenas ao conteúdo, ou seja, caso adicione um `padding` ou um `border` o tamanho real que o *box* ocupa aumenta.
-- `border-box` - Mantem os tamanhos (`width`, `height`) definidos, ou seja, mesmo adicionando `border` e `padding` o tamanho real que a caixa ocupa não é impactado, pois, é retirado do espaço disponibilizado para o conteúdo
+- `border-box` - Mantem os tamanhos (`width`, `height`) definidos mesmo adicionando `border` e `padding` o tamanho real que a caixa ocupa não é impactado, pois, é retirado do espaço disponibilizado para o conteúdo
+- `padding-box` - Mantem os tamanhos (`width`, `height`) definidos mesmo adicionando `padding`  porem a borda (`border`) impactado.
 
 # Display `block` e `inline`
 O display esta relacionado a como as caixas (*box*) se comportam em relação as outras, existem diversos tipos de valores aceitas para a propriedade display, mas como nesse caso estamos focado no `box-model`, vamos comparar os valores `inline` e `block`
@@ -50,7 +51,7 @@ O display esta relacionado a como as caixas (*box*) se comportam em relação as
 - `inline` - `<a>`, `<strong>`, `<span>`, `<em>`, entre outras...
 
 # Margens (`margin`)
-Através da propriedade `margin` podemos atribuir margem as lados, sendo eles `top`, `bottom`, `left` e `right`, podemos atribuir valor aos lados individualmente ou em apenas uma declaração utilizando `shorthand` como explicado acima.
+Através da propriedade `margin` podemos atribuir margem as lados, sendo eles `top`, `bottom`, `left` e `right`, podemos atribuir valor aos lados individualmente ou em apenas uma declaração utilizando [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand] como explicado acima.
 
 >[!warning] Atenção
 >Cuidado com o *margin colapse*, que nada mais é do que o encontro de margens de objetos diferentes que ao invés de se somarem ==anula uma dando preferenciar a maior==, importante se atentar que *margin colapse* ==só ocorre na vertical, ou seja, quando um `margin-bottom` encontra um `margin-top`==, na horizontal a soma ocorre normalmente `margin-right` e `margin-left`
