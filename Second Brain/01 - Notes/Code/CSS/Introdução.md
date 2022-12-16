@@ -57,6 +57,7 @@ Qual caminho o browser tomo, caso haja varias regras para o mesmo estilo, o comp
 1. **Origem do Estilo** - A origem do CSS define a força dele, definindo qual ira prevalecer
 	- **Ordem de força** - inline > interno > externo
 2. **Especificidade** - Calculo matemático, onde, cada tipo de seletor e origem de estilo, possuem valores a serem considerados.
+
 | Valor | Seletor                                                               |
 | ----- | --------------------------------------------------------------------- |
 | 0     | Universal selector(`*`), Combinators e Negation Pseudo-class (`:not()`) |
@@ -64,7 +65,8 @@ Qual caminho o browser tomo, caso haja varias regras para o mesmo estilo, o comp
 | 10    | Classes (`.container`) e Attribute Selectors (`[type="radio"]`)                      |
 | 100   | ID Selector (`#container`)                                                           |
 | 1000  | Inline                                                                |
-	Possível somar valores `h1.title#my-title` pega especificamente a tag `<h1>` com a `class` "container" que possui um id "my-title", outro exemplo, `body h1` pega todos as tags `<h1>` dentro da tag `<body>`
+Possível somar valores `h1.title#my-title` pega especificamente a tag `<h1>` com a `class` "container" que possui um id "my-title", outro exemplo, `body h1` pega todos as tags `<h1>` dentro da tag `<body>`
+
 3. **Importância** - Regra `!important` deve ser usado com muita cautela é deve ter seu uso evitado, pois, não é considerado uma boa pratica, pois, quebra o fluxo natural da cascata, ele sobrescreve qualquer estilo aplicado anteriormente, independente de origem ou especificidade
 
 >[!warning] Importante

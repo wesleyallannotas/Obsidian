@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Linux/Chave SSH.md",
+                "file": "01 - Notes/Code/HTML/Cabeçalho.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/Linux/Chave SSH.md",
+                "file": "01 - Notes/Code/HTML/Cabeçalho.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/Linux/Chave SSH.md"
+                "file": "01 - Notes/Code/HTML/Cabeçalho.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/Linux/Chave SSH.md",
+                "file": "01 - Notes/Code/HTML/Cabeçalho.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/Linux/Chave SSH.md",
+                "file": "01 - Notes/Code/HTML/Cabeçalho.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,15 +204,15 @@
   },
   "active": "3b9e0e232eedc236",
   "lastOpenFiles": [
-    "01 - Notes/Code/Sem título.md",
-    "01 - Notes/Code/HTML/Medias.md",
-    "01 - Notes/Games/Cyberpunk/Mods Cyberpunk.md",
-    "01 - Notes/Games/Cyberpunk/Configurando Esquiva.md",
-    "01 - Notes/Code/CSS/Cores e Background.md",
+    "01 - Notes/Code/HTML/Introdução.md",
     "01 - Notes/Code/CSS/Introdução.md",
-    "01 - Notes/Code/CSS/Box Model.md",
-    "01 - Notes/Code/CSS/Vendor Prefixes.md",
-    "01 - Notes/Code/Plugins e Dicas.md",
-    "Excalidraw/Desenho_HTMLCSS_Cores_Hexadecimal.md"
+    "01 - Notes/Code/HTML/Medias.md",
+    "01 - Notes/Code/HTML/HyperLinks.md",
+    "01 - Notes/Code/HTML/Detalhes de Contato.md",
+    "01 - Notes/Code/HTML/Citação.md",
+    "01 - Notes/Code/HTML/Cabeçalho.md",
+    "01 - Notes/Code/HTML/Abreviações.md",
+    "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md",
+    "01 - Notes/Code/CSS/Cores e Background.md"
   ]
 }

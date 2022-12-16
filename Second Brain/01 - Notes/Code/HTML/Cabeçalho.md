@@ -14,7 +14,7 @@ O cabeçalho do documento HTML se encontra dentro da tag `<head>`, responsável 
 - `<meta>` - Meta dados como o charset da página normalmente se usa o UTF-8
 - `<title>` - Titulo da página, normalmente aprece na aba do navegador
 - `<link>` - Normalmente utilizada para importação, por exemplo de estilo CSS, favicon, entre outros
-- `<script>` - Importação de documento JavaScript, quando não é inserido no final no `<body>`, quando utilizado no `<head>` normalmente acompanha o atributo booleano `defer` que obriga o carregamento do HTML antes do Javascript 
+- `<script>` - Funciona como a tag `<style>`, possibilitando adicionar código JavaScript no conteúdo, porem a forma que é mais utilizada é para importação de documento JavaScript através do atributo `src`, como boa pratica é inserido no final no `<body>` assim forçando sua execução após o carregamento da página, quando utilizado no `<head>` normalmente acompanha o atributo booleano `defer` que obriga o carregamento do HTML antes do Javascript 
 
 # Meta
 Largamente utilizada, tem como função determinar meta dados da página, exemplo
