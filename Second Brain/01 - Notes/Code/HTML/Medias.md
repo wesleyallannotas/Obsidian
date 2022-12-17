@@ -34,3 +34,4 @@ Onde seguira a ordem de cima para baixa, parando no que funcionar.
 >Podemos configurar imagem de fundo ate carregar o vídeo, se o vídeo inicia mutado, autoplay e ate mesmo legendas, vale a pena consultar a [documentação no MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/video)
 
 # Áudio
+Tag muito semelhante a tag  [[Medias#Vídeo|vídeo]], com a mesma ideia de ou adicionar o audio diretamente na tag `<audio>` através do atributo `src` ou utilizar tag `<source>` que abre a possibilidade de criar uma lista de prioridade, também possui a possibilidade da utilização de um `fallback content` que será exibido caso os `<source>` não funcionem, possui atributos para a tag `<audio>` semelhante a tag `<video>` como por exemplo o atributo booleano `controls`

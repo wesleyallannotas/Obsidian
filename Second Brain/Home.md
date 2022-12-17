@@ -24,7 +24,6 @@ SORT file.name ASC
 #  Notas
 ```dataview
 TABLE description as Descrição
-FROM #note
-WHERE !completed
+WHERE !completed and type = note
 SORT file.name ASC
 ```
