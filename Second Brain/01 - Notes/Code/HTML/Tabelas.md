@@ -10,7 +10,7 @@ tags: [html]
 description: Como criar tabelas no HTML
 ---
 # Introdução
-Tabelas são de extrema importância para organização e exibição de dados, porem por falta de ferramentas por muito tempo teve a utilização para criar layouts de sites, porem hoje é algo ultrapassado e que pode causar problemas, tabelas possuem boa visualização de dados e uma boa acessibilidade, porem como ponto negativo traz pouca flexibilidade e a necessidade de estilização via CSS para melhorar sua visualização.
+Tabelas são de extrema importância para organização e exibição de dados, porem por falta de ferramentas por muito tempo teve a utilização para criar layouts de sites, porem hoje é algo ultrapassado e que pode causar problemas, tabelas possuem boa visualização de dados e uma boa acessibilidade, porem como ponto negativo traz pouca flexibilidade e a necessidade de estilização via CSS para melhorar sua visualização. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table))
 
 # Estrutura
 A estrutura da tabela se encontra dentro de uma tag pai chamada de `<table>`, onde dentro é dividida entre:

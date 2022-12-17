@@ -11,8 +11,8 @@ description: Elementos genéricos
 ---
 # Introdução
 São elementos sem alguma semântica, normalmente utilizado para aplicação de estilos CSS, possuímos duas tags genéricas sendo uma delas para conteúdo em bloco e outra em linha
-- `div` - Em bloco
-- `span` - Em linha
+- `div` - Em bloco ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/div))
+- `span` - Em linha ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/span))
 
 ```html
 <div>

@@ -11,7 +11,7 @@ description: Funcionamento dos vendor prefixes, para ativação de funcionalidad
 ---
 # Introdução
 
-Vendor Prefixes permite que browsers adicione `features` a fim de colocar em uso alguma novidade do CSS, também permite adicionar compatibilidade, por exemplo:
+Vendor Prefixes permite que browsers adicione `features` a fim de colocar em uso alguma novidade do CSS, também permite adicionar compatibilidade ([Doc](https://developer.mozilla.org/pt-BR/docs/Glossary/Vendor_Prefix)), por exemplo:
 
 ```css
 p {

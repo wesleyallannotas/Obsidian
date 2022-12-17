@@ -10,7 +10,7 @@ tags: [html]
 description: Como construir listas no html
 ---
 # Tipos
-Dentro do HTML podemos construir listas ordenas e não ordenadas, onde quem defini isso é a tag pai que armazenara como conteúdo os itens da listas
+Dentro do HTML podemos construir listas ordenas e não ordenadas, onde quem defini isso é a tag pai que armazenara como conteúdo os itens da listas ([Doc](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Styling_text/Styling_lists))
 
 ## Pai
 A tag pai defini qual lista será, existem dois tipos, ordenadas e não ordenadas.

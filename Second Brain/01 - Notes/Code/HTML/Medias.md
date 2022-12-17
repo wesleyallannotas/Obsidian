@@ -10,7 +10,7 @@ tags: [html]
 description: Como adicionar e manipular medias com HTML
 ---
 # Vídeo
-Podemos adicionar vídeos ao nossa HTML através da tag `<video>` com pelo menos um atributo que é obrigatório, que obviamente é o atributo que guarda o caminho do vídeo que para essa tag é o atributo `src`, outro atributo interessante é o atributo booleano `controls` que ativa os controles do vídeo.
+Podemos adicionar vídeos ao nossa HTML através da tag `<video>` com pelo menos um atributo que é obrigatório, que obviamente é o atributo que guarda o caminho do vídeo que para essa tag é o atributo `src`, outro atributo interessante é o atributo booleano `controls` que ativa os controles do vídeo. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Video))
 ```html
 <video src="exemplo.mp4" controls></video>
 ```
@@ -34,4 +34,4 @@ Onde seguira a ordem de cima para baixa, parando no que funcionar.
 >Podemos configurar imagem de fundo ate carregar o vídeo, se o vídeo inicia mutado, autoplay e ate mesmo legendas, vale a pena consultar a [documentação no MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/video)
 
 # Áudio
-Tag muito semelhante a tag  [[Medias#Vídeo|vídeo]], com a mesma ideia de ou adicionar o audio diretamente na tag `<audio>` através do atributo `src` ou utilizar tag `<source>` que abre a possibilidade de criar uma lista de prioridade, também possui a possibilidade da utilização de um `fallback content` que será exibido caso os `<source>` não funcionem, possui atributos para a tag `<audio>` semelhante a tag `<video>` como por exemplo o atributo booleano `controls`
+Tag muito semelhante a tag  [[Medias#Vídeo|vídeo]], com a mesma ideia de ou adicionar o audio diretamente na tag `<audio>` através do atributo `src` ou utilizar tag `<source>` que abre a possibilidade de criar uma lista de prioridade, também possui a possibilidade da utilização de um `fallback content` que será exibido caso os `<source>` não funcionem, possui atributos para a tag `<audio>` semelhante a tag `<video>` como por exemplo o atributo booleano `controls` ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Audio))

@@ -10,7 +10,7 @@ tags: [html]
 description: Como criar hyperlinks 
 ---
 # Introdução
-Hyperlinks ou de forma abreviada links são o coração da web, tanto é que esta pressente no nome da nossa linguagem de marcação HTML (Hypertext Markup Language), também chamado de ancora tem como objetivo ligar páginas web facilitando a navegação.
+Hyperlinks ou de forma abreviada links são o coração da web, tanto é que esta pressente no nome da nossa linguagem de marcação HTML (Hypertext Markup Language), também chamado de ancora tem como objetivo ligar páginas web facilitando a navegação. ([Doc](https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks))
 
 # Anatomia
 A base da tag ancora é `<a href=""></a>`, onde o conteúdo guarda o texto que se clicado levara ao link, e o atributo `href` guarda o endereço da página referenciada.

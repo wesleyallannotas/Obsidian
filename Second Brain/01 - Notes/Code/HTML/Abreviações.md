@@ -10,7 +10,7 @@ tags: [html]
 description: Como criar abreviações no HTML
 ---
 # Introdução
-Podemos criar abreviações no HTML, onde podemos deixar informado o forma completa que ira aparecer quando o usuário repousar o mouse sobre a abreviação, a tag para criar abreviações é `abbr` que por sua vez é uma tag em linha
+Podemos criar abreviações no HTML, onde podemos deixar informado o forma completa que ira aparecer quando o usuário repousar o mouse sobre a abreviação, a tag para criar abreviações é `abbr` que por sua vez é uma tag em linha ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/abbr))
 
 # Exemplo
 ```html

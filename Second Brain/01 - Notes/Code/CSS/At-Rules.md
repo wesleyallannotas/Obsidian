@@ -10,7 +10,7 @@ tags: [css]
 description: As at-rules e seus funcionamentos
 ---
 # Introdução
-Relacionado a comportamento do CSS iniciando com um símbolo de `@` seguindo do identificar e valor exatamente o nome traduzido At (`@`) Rules (Regras), exemplos comuns de at-rules:
+Relacionado a comportamento do CSS iniciando com um símbolo de `@` seguindo do identificar e valor exatamente o nome traduzido At (`@`) Rules (Regras) ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/At-rule)), exemplos comuns de at-rules:
 - `@import` - Incluir um CSS externo
 - `@media` - Regras condicionais para dispositivos
 - `@font-face` - Fontes Externas

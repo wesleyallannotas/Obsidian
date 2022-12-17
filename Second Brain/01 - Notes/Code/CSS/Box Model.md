@@ -10,7 +10,7 @@ tags: [css]
 description: Funcionamento do box model utilizando CSS e HTML 
 ---
 # Introdução
-O conceito de caixas se baseia na ideia que todo elementos HTML que não é *inline*, ou seja, em linha possui caixas que o envolvem, conceito de extrema importância para montagens layouts utilizando o CSS.
+O conceito de caixas se baseia na ideia que todo elementos HTML que não é *inline*, ou seja, em linha possui caixas que o envolvem, conceito de extrema importância para montagens layouts utilizando o CSS. ([Doc](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks/The_box_model))
 - `width, height` - Largura e Altura do elemento em si, ou seja, tamanho
 - `content` - Conteúdo
 - `padding` - Espaçamento interno
@@ -38,7 +38,7 @@ Desrespeito a como o tamanho da caixa (box) será calculado, as opções mais co
 - `padding-box` - Mantem os tamanhos (`width`, `height`) definidos mesmo adicionando `padding`  porem a borda (`border`) impactado.
 
 # Display `block` e `inline`
-O display esta relacionado a como as caixas (*box*) se comportam em relação as outras, existem diversos tipos de valores aceitas para a propriedade display, mas como nesse caso estamos focado no `box-model`, vamos comparar os valores `inline` e `block`
+Os display `inline` e `block` esta relacionado a como as caixas (*box*) se comportam em relação as outras **(Posicionamento da caixa)**, existem diversos tipos de valores aceitas para a propriedade display, mas como nesse caso estamos focado no `box-model`, vamos comparar os valores `inline` e `block`
 
 | Block                                              | Inline                                                        |
 | -------------------------------------------------- | ------------------------------------------------------------- |

@@ -11,8 +11,8 @@ description: Como criar bloco de códigos no HTML
 ---
 # Introdução
 Como representar código de linguagens de programação de forma nativa no HTML, utilizaremos as seguintes tags:
-- `code` - Para código em linha, pequeno trecho
-- `pre` - Para código em bloco, trechos mais longos
+- `code` - Para código em linha, pequeno trecho ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/code))
+- `pre` - Para código em bloco, trechos mais longos ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/pre))
 
 # Exemplo
 ```html
