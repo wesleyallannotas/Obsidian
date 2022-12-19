@@ -144,5 +144,71 @@ Adicionando o valor `file` ao atributo `type` temos nosso elemento `<input />` s
 Para funcionar o envio de arquivo o nosso elemento `<form>` tem que ser `method="post"` e também `enctype="multipart/form-data"`
 
 ### Checkbox
-Adicionando o valor `file` ao atributo `type` temos nosso elemento `<input />` se transformando em um *checkbox*
+Adicionando o valor `checkboc` ao atributo `type` temos nosso elemento `<input />` se transformando em um *checkbox*.
 - `checked` - Atributo booleano que caso utilizado traz o `<input />` marcado como padrão
+
+>[!attention] Atenção
+>Por padrão quando **não marcado** não há valor enviado para o servidor ele vai vazio, quando **marcado** é enviado o valor `on`, podemos alterar esse valor quando marcado através do atributo `value`
+
+```html
+<label for="noticias">Aceitar receber noticias<label>
+<input id="noticias" type="checkbox" name="noticias" value="notificar" checked />
+```
+
+#### Múltiplos Valores
+Para possibilitar selecionar mais de um valor para a mesma resposta, basta utilizar o mesmo `name`, por exemplo
+```html
+<fieldset>
+	<legend>Escolha os seus interesses</legend>
+	<div>
+		<input type="checkbox" id="coding" name="interesses" value="coding" />
+		<label for="coding">Coding</label>
+	</div>
+	<div>
+		<input type="checkbox" id="music" name="interesses" value="music" />
+		<label for="Music">Music</label>
+	</div>
+</fieldset>
+```
+
+### Hidden
+Em tradução livre significa escondido e assim será para o visual e até para leitores de tela, é interessante, pois, através deles podemos enviar dados junto com o formulário que não precisa da interação com o usuário
+```html
+<input type="hidden" name="date" value="19/12/2022" />
+```
+Normalmente o `value` que é o valor a ser enviado para o identificador encontrado no `name` é alterado pelo `JavaScript`
+
+### Radio
+Adicionando o valor `radio` para o atributo `type` no elemento vazio `<input />`, criamos um input do tipo *radio* que em sua essência a ideia de possuir **apenas um selecionado por formulário** muito útil para selecionar o sexo por exemplo:
+```html
+<fieldset>
+	<legend>Sexo:</legend>
+	<input type="radio" id="masculino" name="sexo" value="masculino" checked/>
+	<label for="masculino">Masculino</label>
+	<br />
+	<input type="radio" id="feminino" name="sexo" value="feminino" />
+	<label for="feminino">Feminino</label>
+	<br />
+</fieldset>
+```
+
+# Entrada de Dados com `<textarea>`
+O elemento `<textarea>` é muito útil para entrada de dados com textos grandes, possuindo muitos **atributos interessantes para o controle** deste elemento, assim como no elemento vazio `<input />` ele aceita o elemento `<label>` ligado pelo atributo `for`
+
+## Atributos Comuns
+-  **Atributo** `name` - Funciona da mesma forma do `<input />` ele vai como identificador do conteúdo do campo
+- **Atributos** `rows` e `cols` - Definem o tamanho deste `<textarea>`
+- **Atributos** `maxlength` e `minlength` - Controla os tamanhos de conteúdo aceito
+- **Atributo** `wrap` - Controla quebra de linha, caso desabilitando passando o valor `off` ele cria um *scroll* horizontal em vez de quebrara a linha
+- Entre outros diversos atributos encontrados para o [[Formulario#Entrada de Dados com `<input />`|input]]
+
+>[!attention] Atenção
+>Caso deixe espaço em branco entre a abertura e fechamento do elemento `<textarea>` o cursos pode mudar o posicionamento de inicio.
+
+```html
+<label for="descricao">Descrição</label> 
+<textarea id="descricao" rows="3" cols="30" maxlength="250"></textarea>
+```
+
+# Entrada de Dados com `<select>`
+O elemento `<select>` criar uma caixa de seleção também conhecida como *combobox* que traz opções para o campo, diferente da lista de sugestões, o `<select>` traz opções onde uma deles tem que ser escolhida, onde informamos as opções através do elemento `<option>`. 1:20
