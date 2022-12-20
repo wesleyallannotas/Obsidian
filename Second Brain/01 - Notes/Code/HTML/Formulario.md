@@ -211,4 +211,31 @@ O elemento `<textarea>` é muito útil para entrada de dados com textos grandes,
 ```
 
 # Entrada de Dados com `<select>`
-O elemento `<select>` criar uma caixa de seleção também conhecida como *combobox* que traz opções para o campo, diferente da lista de sugestões, o `<select>` traz opções onde uma deles tem que ser escolhida, onde informamos as opções através do elemento `<option>`. 1:20
+O elemento `<select>` criar uma caixa de seleção também conhecida como *combobox* que traz opções para o campo, diferente da lista de sugestões, o `<select>` traz opções onde uma deles tem que ser escolhida, onde informamos as opções através do elemento `<option>`.
+Basicamente o que colocamos de conteúdo no `<option>` é uma espécie de visual, o que realmente é mandado para o servidor é o valor que atribuirmos no atributo `value` do elemento `<option>`.
+Assim sendo podemos concluir que o atributo `name` do elemento `<select>` é o identificador, e o atributo `value` do elemento `<option>` é o valor.
+```html
+<label for="fruta">Fruta preferida</label>
+<select name="fruta" id="fruta">
+	<option value="apple">Maça<option>
+	<option value="pineaple">Abacaxi<option>
+</select>
+```
+Adicionando o atributo booleano `multiple` ao elemento `<select>` abre a possibilidade de selecionar mais de um, mudando o formado deixando de ser um *combobox* padrão, utilizando o atributo `size` em conjunto podemos definir quantas opções iram aparecer, caso tenha mais que o valor atribuído criara um *scroll*
+
+## Grupo de Opções
+Através do elemento `<optgroup>` podemos criar grupos de opções, através do atributo `label` podemos deixar uma identificação que será visual
+```html
+<label for="pets">Please choose one or more pets:</label>
+<select name="pets" id="pets" multiple size="8">
+	<optgroup label="mamiferos">
+		<option value="dog">Dog</option>
+		<option value="cat">Cat</option>
+		<option value="monkey" disabled>Monkey</option>
+	</optgroup>
+	<optgroup label="reptil">
+		<option value="snake">Snake</option>
+		<option value="lizard">Lizard</option>
+	</optgroup>
+</select>
+```
