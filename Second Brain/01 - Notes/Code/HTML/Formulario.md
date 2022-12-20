@@ -117,6 +117,7 @@ O elemento vazio `<input />` é complexo e muito poderoso, existem algumas atrib
 - `patter` - *Regex* (Expressões regulares) para validação
 - `muiltiple` - Aceita um ou mais valores separados por virgula
 - `spellcheck` - habilita corretor ortográfico para o `<input />`
+- `arial-label` - Opção quando não temos o elemento `<label>`, não é visível mas traz a semantica 
 
 >[!warning] Atençào
 Nem todo **tipo** de `<input />` aceita todas atributos, vale consultar a documentação
@@ -190,6 +191,35 @@ Adicionando o valor `radio` para o atributo `type` no elemento vazio `<input />`
 	<label for="feminino">Feminino</label>
 	<br />
 </fieldset>
+```
+
+### Pesquisa
+Através do valor `search` para o atributo `type` no elemento vazio `<input />` podemos definir o nosso campo como de pesquisa, podendo alterar sua aparência dependendo do *user agent*.
+Muito utilizado em conjunto o atributo `list` ligando com um elemento `<datalist>` através do *id*
+- `arial-label` - Opção quando não temos o elemento `<label>`, não é visível mas traz a semântica 
+- `pattern` - Muito utilizado quando é um campo de pesquisa especifico e utilizaremos expressão regular
+```html
+<datalist id="sistemas">
+	<option>Windows</option>
+	<option>iOS</option>
+	<option>Linux</option>
+</datalist>
+<form action="" method="get">
+	<input type="search" name="pesquisa" list="sistemas" id="pesquisa"
+	placeholder="Digite o termo de pesquisa"
+	aria-label="Campo de pesquisa"
+	size="28">
+	<button>Pesquisar</button>
+</form>
+```
+
+### Número
+Através do valor `number` para o atributo `type` no elemento vazio `<input />` podemos definir o nosso campo como de entrada de números, onde ==Não será aceito letras, apenas números==, trazendo com sigo alguns atributos interessantes como:
+- `min` e `max` - Definindo o valor mínimo e máximo de entrada que é aceito
+- `step` - Definimos de quanto em quanto ira aumentar o valor
+```html
+<label for="input-weight">Peso (KG)</label>
+<input id="input-weight" type="number" min="1" step="0.1" name="weight" />
 ```
 
 # Entrada de Dados com `<textarea>`
