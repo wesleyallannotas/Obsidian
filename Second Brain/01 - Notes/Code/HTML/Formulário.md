@@ -222,6 +222,14 @@ Através do valor `number` para o atributo `type` no elemento vazio `<input />` 
 <input id="input-weight" type="number" min="1" step="0.1" name="weight" />
 ```
 
+### Data
+Através do valor `date` para o atributo `type` no elemento vazio `<input />` podemos definir o nosso campo como entrada de data, onde o formato do nosso atributo `value` **yyyy-mm-dd**
+```html
+<input type="date" value="2022-12-20" name="date" />
+```
+Utilizando como valor para o atributo `type` o valor `datetime-local` também é possível selecionar o horário
+Com `month` seleciona mês e ano, `week` semana e com `time` apenas o horário.
+
 # Entrada de Dados com `<textarea>`
 O elemento `<textarea>` é muito útil para entrada de dados com textos grandes, possuindo muitos **atributos interessantes para o controle** deste elemento, assim como no elemento vazio `<input />` ele aceita o elemento `<label>` ligado pelo atributo `for`
 
@@ -230,7 +238,7 @@ O elemento `<textarea>` é muito útil para entrada de dados com textos grandes,
 - **Atributos** `rows` e `cols` - Definem o tamanho deste `<textarea>`
 - **Atributos** `maxlength` e `minlength` - Controla os tamanhos de conteúdo aceito
 - **Atributo** `wrap` - Controla quebra de linha, caso desabilitando passando o valor `off` ele cria um *scroll* horizontal em vez de quebrara a linha
-- Entre outros diversos atributos encontrados para o [[Formulario#Entrada de Dados com `<input />`|input]]
+- Entre outros diversos atributos encontrados para o [[Formulário#Entrada de Dados com `<input />`|input]]
 
 >[!attention] Atenção
 >Caso deixe espaço em branco entre a abertura e fechamento do elemento `<textarea>` o cursos pode mudar o posicionamento de inicio.
