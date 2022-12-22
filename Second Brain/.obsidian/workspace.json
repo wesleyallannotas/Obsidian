@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
+                "file": "01 - Notes/Code/JavaScript/Funções.md",
                 "mode": "source",
                 "source": false
               }
@@ -113,7 +113,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
+                "file": "01 - Notes/Code/JavaScript/Funções.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Nomeando Variáveis.md"
+                "file": "01 - Notes/Code/JavaScript/Funções.md"
               }
             }
           },
@@ -165,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
+                "file": "01 - Notes/Code/JavaScript/Funções.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
+                "file": "01 - Notes/Code/JavaScript/Funções.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,15 +228,15 @@
   },
   "active": "7e9349bbed490185",
   "lastOpenFiles": [
+    "01 - Notes/Code/JavaScript/Introdução.md",
+    "01 - Notes/Code/JavaScript/Funções.md",
     "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
     "Sem título 1.md",
-    "01 - Notes/Code/JavaScript/Introdução.md",
     "01 - Notes/Code/HTML/Iframe.md",
     "01 - Notes/Code/HTML/Formulário.md",
     "Sem título.md",
     "01 - Notes/Code/HTML/Formulario.md",
     "01 - Notes/Code/HTML/Cabeçalho.md",
-    "01 - Notes/Code/HTML/Introdução.md",
-    "01 - Notes/Code/CSS/Flexbox.md"
+    "01 - Notes/Code/HTML/Introdução.md"
   ]
 }

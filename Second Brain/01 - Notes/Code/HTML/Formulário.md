@@ -222,6 +222,23 @@ Através do valor `number` para o atributo `type` no elemento vazio `<input />` 
 <input id="input-weight" type="number" min="1" step="0.1" name="weight" />
 ```
 
+>[!tip]- Removendo Click
+>Podemos remover as "Flechas" responsáveis por aumentar e diminuir o valor através do clique, utilizando a seguinte técnica  ([Link](https://stackoverflow.com/questions/26024771/styling-a-input-type-number)), você pode utilizar a propriedade [-moz-appearance](https://developer.mozilla.org/en-US/docs/Web/CSS/appearance), a qual é utilizada para exibir um elemento usando o estilo nativo da plataforma com base no tema do sistema operacional.
+>
+>```css
+>input[type=number]::-webkit-inner-spin-button { 
+>    -webkit-appearance: none;   
+>}
+>nput[type=number] { 
+>   -moz-appearance: textfield;
+>   appearance: textfield;
+}
+>```
+> 
+>```html
+><input type="number" />
+>```
+
 ### Data
 Através do valor `date` para o atributo `type` no elemento vazio `<input />` podemos definir o nosso campo como entrada de data, onde o formato do nosso atributo `value` **yyyy-mm-dd**
 ```html

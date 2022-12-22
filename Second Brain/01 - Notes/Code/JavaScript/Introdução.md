@@ -88,6 +88,14 @@ nome = `Wesley`; /* Template Strings */
 ### Template Strings
 São *strings* mais poderosas que permitem expressões embutidas, Você pode _utilizar string_ multi-linhas e interpolação de _string_ com elas. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals))
 Template Strings são envolvidas pelo sinal de acentos graves
+```js
+let name, age
+
+name = 'Wesley'
+age = 24
+
+console.log(`Ola ${name}, você tem ${age} anos de idade?`)
+```
 
 ## Number
  O tipo de dado `number` nada mais é do que um número, sendo ele com ponto flutuante ou não, em JavaScript não existe a separação
@@ -131,19 +139,25 @@ let pessoa = {
 	}
 };
 ```
+Para chamar um item do nosso objeto, basta especificar o caminho por exemplo `pessoa.nome` trará o valor da propriedade/chave `nome` no objeto (*Object*) `pessoa`
 
 ## Array
 Tipo de dado `array` também chamado de vetores é um ==tipo de dado estrutural==, pois, ele cria uma estrutura que lista valores a partir de um *index* que se inicia em `0`, é uma lista heterogênea que aceita qualquer tipo de dado podem assim mistura-los
 ```js
-let carros = [
+let pessoa = [
 	"Wesley", 
 	"Silva", 
 	24,
 	function() {
 		console.log("andou")
+	},
+	{
+		father: "Antionio",
+		mother: "Cazemira"
 	}
 ]
 ```
+Para chamar um item da nossa *Array* basta especificar qual o nome da *Array* e entre colchetes o *index* do item a ser acessado, por exemplo `pessoa[3]()`, `pessoa[0]`, `pessoa[4].mother`
 
 # Variáveis e Constante
 Variáveis são ==espações alocados na memoria que são nomeados para guardar valor==, no caso de ==variáveis possibilitando a variação== do seu valor durante a execução já ==constantes impossibilitando a alteração== após seu valor ser atribuído, podemos armazenar nas mesmas algum valor, atalhos de código ou identificadores, possuem as seguintes formas de declaração
@@ -175,4 +189,14 @@ O escopo determina a visibilidade da variável, onde ela ira existir possibilita
 // Bloco
 
 } // Fechamento do Bloco
+```
+
+# Declaração Conjunta
+Podemos agrupar declarações das variáveis
+```js
+let name, age, isHuman
+
+name = 'Wesley'
+age = 25
+isHuman = true
 ```
