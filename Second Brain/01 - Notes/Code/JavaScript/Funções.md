@@ -23,7 +23,7 @@ soma();  // Executar função
 
 >[!attention] Atenção
 >Não declarar variável dentro de funções sem utilizar comando `var`, `let` ou `const`, pode ocorrer da variável se tornar global para toda aplicação, podendo causar erros graves.
-> - `var` - Respeita o [[#Escopo da Função (*Function Scope*)|function-scoped]]
+> - `var` - Respeita o [[Funções#Escopo da Função|function-scoped]]
 
 # Parâmetros
 Nossa função pode conter parâmetros que podem ser atribuídos durante a chama da função, onde a função terá acesso a esses valores para utilizar no seu bloco de código.
@@ -57,7 +57,7 @@ console.log(soma(soma(1, 2), 5));
 >Quando usamos o comando `return` é interrompido a execução da função, e executando o retorno, esse comportamento pode ser inteligentemente utilizado para simplificar o código
 
 # Declarando Funções Dentro de Variáveis
-Podemos declarar funções dentro de uma variável técnica que se da o nome de ***function anonymous*** ou ***function expression***
+Podemos declarar funções dentro de uma variável, técnica que se da o nome de ***function anonymous*** ou ***function expression***
 ```js
 const sum = function(x, y) {
 	return x + y
@@ -106,7 +106,7 @@ console.log(name)  // Resultado: 'AndressaWesley'
 Basicamente ele ==prioriza o parâmetro==, se tiver um parâmetro com o mesmo nome de variável interno ele utiliza o parâmetro, ==caso não exista, busca no escopo anterior==, e em ==ultimo caso cria a variável==
 
 # *Function Hoisting*
-Assim como vimos o funcionamento do *hoisting* para a [[01 - Notes/Code/JavaScript/Introdução#Variáveis e Constante|declaração de variável]] utilizando o comando `var`, existem o *function hoisting* para funções onde mesmo chamando a função antes de criara ele funcionara normalmente, pois, ocorre o *function hoisting* que é como se joga-se as declarações de funções para o inicio do código, independente de onde tenha escrito.
+Assim como vimos o funcionamento do *hoisting* para a [[01 - Notes/Code/JavaScript/Introdução#Variáveis e Constante|declaração de variável]] utilizando o comando `var`, existem o *function hoisting* para funções onde mesmo chamando a função antes de cria-la ele funcionara normalmente, pois, ocorre o *function hoisting* que é como se joga-se as declarações de funções para o inicio do código, independente de onde tenha escrito.
 ```js
 sayMyName();  // Resultado: 'Wesley'
 
@@ -140,7 +140,7 @@ const sayMyName = name => {
 ```
 
 # *Callback Function*
-Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[01 - Notes/Code/JavaScript/Introdução#Variáveis e Constante|declaração de variável]], foi estabelecido que funções são um tipo de dado, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, criando a ideia de uma função chamar outra função.
+Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[01 - Notes/Code/JavaScript/Introdução#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, criando a ideia de uma função chamar outra função.
 ```js
 function sayMyName(name) {
 	console.log('Antes de executar a função callback')
@@ -241,7 +241,7 @@ console.log('------------------------------------------');
 >```
 
 # *Function Constructor*
-*Function Constructor* ou do português função construtora, é quando utilizamos do comando `new` e criamos um novo objeto a partir de uma função, utilizando esse método temos acesso ao `this` que esta se referenciando a si mesmo
+*Function Constructor* ou do português função construtora tem como objetivo conter instruções para a instanciação de objetos, é quando utilizamos o **operador `new`** cria uma instancia de um tipo de objeto definido pelo usuário ou de um dos tipos nativos (_built-in_) que possuem uma função construtora, utilizando esse método temos acesso ao `this` que esta se referenciando a si mesmo
 - Funções construtoras por convenção se inicia com um caractere maiúsculo
 - Lembre-se não é um objeto e sim uma função que instancia objetos, por isso o sinal de igual e a não separação por virgula
 ```js

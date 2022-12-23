@@ -8,29 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "04aa0c15dbde76c5",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.8"
-              }
-            }
-          },
-          {
-            "id": "7e9349bbed490185",
+            "id": "2c0da64931614819",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Funções.md",
+                "file": "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Funções.md",
+                "file": "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -155,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Funções.md"
+                "file": "01 - Notes/Code/JavaScript/Expressões e Operadores.md"
               }
             }
           },
@@ -165,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Funções.md",
+                "file": "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Funções.md",
+                "file": "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,17 +215,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "7e9349bbed490185",
+  "active": "2c0da64931614819",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/Introdução.md",
+    "Excalidraw/Desenho_JS_Operador_Ternary.md",
+    "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
+    "Excalidraw/Desenho_JS_Operador_Unary.md",
+    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+    "Excalidraw/Desenho_JS_Operador_Binary.md",
+    "Excalidraw/Desenho_JS_Prototype.md",
+    "Desenho_JS_Prototype.md",
+    "01 - Notes/Code/Python/Manipulando Data.md",
     "01 - Notes/Code/JavaScript/Funções.md",
-    "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
-    "Sem título 1.md",
-    "01 - Notes/Code/HTML/Iframe.md",
-    "01 - Notes/Code/HTML/Formulário.md",
-    "Sem título.md",
-    "01 - Notes/Code/HTML/Formulario.md",
-    "01 - Notes/Code/HTML/Cabeçalho.md",
-    "01 - Notes/Code/HTML/Introdução.md"
+    "01 - Notes/Code/HTML/Formulário.md"
   ]
 }
