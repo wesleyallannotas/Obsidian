@@ -52,7 +52,7 @@ delete person.age;
 >O incremento `++number` e diferente de `number++`, no caso ambos possui o mesmo fim adicionando mais 1 ao valor da variável, porem da primeira forma ele realizada o incremento primeiro depois mostra valor, segundo forma mostra valor e depois realiza o incremento, tomar cuidado, pois, esse comportamento pode causar bugs
 
 ## Ternary
-Operadores ternários ou do inglês *ternary* necessita de uma expressão, e em seguida duas possíveis caminhos sendo um realizado caso seja verdadeiro e outro para o falso
+Operadores ternários ou do inglês *ternary* necessita de 3 valores, sendo eles uma expressão, e em seguida duas possíveis caminhos sendo um realizado caso seja verdadeiro e outro para o falso
 
 ```js
 let age = 18;
@@ -64,7 +64,7 @@ console.log(1 > 0 ? 'Maior' : 'Menor')
 
 ![[Desenho_JS_Operador_Ternary|center]]
 
-# new
+# Operador *new*
 A expressão `new` é classificada como uma *left-hand-side expression*, basicamente é uma expressão que serve para criar/instanciar uma objeto
 
 ```js
@@ -146,5 +146,65 @@ Operadores que permitem a comparação de dois operadores booleanos que retornam
 | !        | Não (not) |
 
 - `&&` - Todas verdadeira para retornar verdadeiro
-- `||` - Uma verdadeira para retornar verdadeiro
+- `||` - Um verdadeira para retornar verdadeiro
 - `!` - Negar (Inverter), verdadeiro vira falso
+
+# Operador Condicional (Ternário)
+Operadores que permitem a partir de uma condição atribuir um valor ou outro.
+
+![[Desenho_JS_Operador_Ternary|center]]
+
+```javascript
+let age = 16;
+console.log(age > 17 ? "Maior de Idade" : "Menor de Idade");
+
+let pao = true;
+let queijo = false;
+let niceBreakfast = pao && queijo ? 'Cafe top' : 'Cafe ruim';
+console.log(niceBreakfast); // Resultado: Cafe ruim
+niceBreakfast = pao || queijo ? 'Cafe top' : 'Cafe ruim';
+console.log(niceBreakfast); // Resultado: Cafe top
+niceBreakfast = !(pao || queijo) ? 'Cafe top' : 'Cafe ruim';
+console.log(niceBreakfast); // Resultado: Cafe ruim
+```
+
+# *Falsy* e *Truthy*
+Tem-se a mesma ideia do [[Manipulando Dados#Type Conversion Coersion|type coersion]] realizado implicitamente pelo JavaScript, onde ==através de um interpretação do dado e a necessidade de um booleano== ele pode assumir verdadeiro (*true*) ou falso (*false*), normalmente acontece em condicionais e repetições (*loops*)
+
+## Falsy
+Considerando o valor como falso (*false*) através do contexto onde um booleano é obrigatório e se encontra um dos seguintes valores
+- `false`
+- `0`
+- `-0`
+- `""`
+- `null`
+- `undefined`
+- `Nan`
+
+## Truthy
+Considerando o valor como verdadeiro (*true*) através do contexto onde um booleano é obrigatório e se encontra um dos seguintes valores
+- `true`
+- `{}`
+- `[]`
+- `1`
+- `3.23`
+- `"0"`
+- `"false"`
+- `-1`
+- `Infinity`
+- `-Infinity`
+
+# Precedência de Operadores
+Precedência de operadores ou no inglês *Operator precedence* é a ordem de execução das operações através do peso do operador, por exemplo na operação `2 + 1 * 3` não é lido e realizado da esquerda para direita, é analisado a precedência onde a multiplicação tem mais peso, assim sendo executado primeiro resultando em `2 + 3` em seguida é realizado a soma resultando em `5`, se fosse lido e executado da esquerda pra direita o resultado seria `9`. Segui a ordem de precedência.
+1. Grouping - `( )`
+2. Negação e incremento - `! ++ --`
+3. Exponencial - `**`
+4. Multiplicação e divisão - `* /`
+5. Adição e subtração - `+ -`
+6. Relacional - `< <= > >=`
+7. Igualdade - ` == != === !==`
+8. E (*and*) - `&&` 
+8. OU (*or*) - `||`
+9. Condicional - `?:`
+10. Atribuição (*Assignment*) - ` = += -= *= /= %= **=`
+
