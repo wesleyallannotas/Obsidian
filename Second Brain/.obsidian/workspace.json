@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2c0da64931614819",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0d0a62d115fc5e0d",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -231,6 +218,7 @@
   "active": "0d0a62d115fc5e0d",
   "lastOpenFiles": [
     "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
+    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
     "01 - Notes/Code/JavaScript/Manipulando Dados.md",
     "01 - Notes/Code/Delphi/Gerar Log de Performance.md",
     "Excalidraw/Desenho_JS_Operador_Ternary.md",
@@ -238,7 +226,6 @@
     "Excalidraw/Desenho_JS_Operador_Binary.md",
     "Excalidraw/Desenho_JS_Prototype.md",
     "Desenho_JS_Prototype.md",
-    "01 - Notes/Code/Python/Manipulando Data.md",
-    "01 - Notes/Code/JavaScript/Funções.md"
+    "01 - Notes/Code/Python/Manipulando Data.md"
   ]
 }
