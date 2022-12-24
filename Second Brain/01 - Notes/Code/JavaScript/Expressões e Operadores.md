@@ -202,9 +202,9 @@ Precedência de operadores ou no inglês *Operator precedence* é a ordem de exe
 4. Multiplicação e divisão - `* /`
 5. Adição e subtração - `+ -`
 6. Relacional - `< <= > >=`
-7. Igualdade - ` == != === !==`
+7. Igualdade - == != === !\=\=
 8. E (*and*) - `&&` 
 8. OU (*or*) - `||`
 9. Condicional - `?:`
-10. Atribuição (*Assignment*) - ` = += -= *= /= %= **=`
+10. Atribuição (*Assignment*) - = += -= *= /= %= **=
 

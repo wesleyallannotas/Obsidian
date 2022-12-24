@@ -139,7 +139,7 @@ let pessoa = {
 	}
 };
 ```
-Para chamar um item do nosso objeto, basta especificar o caminho por exemplo `pessoa.nome` trará o valor da propriedade/chave `nome` no objeto (*Object*) `pessoa`
+Para chamar um item do nosso objeto, basta especificar o caminho por exemplo `pessoa.nome` (`objeto.propriedade`) trará o valor da propriedade/chave `nome` no objeto (*Object*) `pessoa`, também podemos acessar utilizando colchetes e o nome da propriedade em uma *String* `objeto.["propriedade"]`
 
 ## Array
 Tipo de dado `array` também chamado de vetores é um ==tipo de dado estrutural==, pois, ele cria uma estrutura que lista valores a partir de um *index* que se inicia em `0`, é uma lista heterogênea que aceita qualquer tipo de dado podem assim mistura-los
