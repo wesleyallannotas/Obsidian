@@ -16,7 +16,7 @@ O software não desgasta como o hardware que é físico e com o seu tempo de uso
 Baseado em computador, pois, existem sistemas de informações mais simples, por exemplo utilizando papel e caneta, ou ate mesmo guardando na mente.
 >[!cite] Segundo Pressman SIBC
 Conjunto ou disposição de **elementos**, organizado para **executar certo método**, **procedimento ou controle ao processar informações**
-![[Desnho;engSoftware;SIBC]]
+![[Desnho_engSoftware_SIBC]]
 
 Percebemos que esta tudo ligado, a organização possui um **software** que necessita de um **hardware** para rodar, onde, possui seus **procedimentos** que são os processos que a empresa executa utilizando o hardware que vem de **pessoas** que conhecem os **processos** e o **software** para que consiga trabalhar, ou seja, executar os processos, onde o **software** possui o banco de dados para armazenar as informações e dados que terá interação com os **processos** executados pelas **pessoas** através do **software** em seu **hardware**, onde toda esse interação ocorre através da **telecomunicação**, ou seja, as redes que integra tudo, assim recebendo a **entrada** dos dados e gerando a **saída** através de toda essa interação.
 

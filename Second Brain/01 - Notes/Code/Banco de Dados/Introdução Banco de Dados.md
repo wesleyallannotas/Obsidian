@@ -77,18 +77,18 @@ title: Vantagens do uso de SGBDs
 ## Arquitetura Local
 - O banco de dados se encontra no mesmo dispositivo que o usa
 - **Normalmente não é um SGBD**
-![[Desenho;BD;ArquiteturaLocal]]
+![[Desenho_BD_ArquiteturaLocal]]
 ## Arquitetura Cliente Servidor
 - Utilizado pela maioria das instituições
 - O banco de dados se encontra em um servidor
 - Vários dispositivos diferentes o acessam
 - SGBD responsável por processar as operações com os dados 
-![[Desenho;BD;ArquiteturaClienteServidor]]
+![[Desenho_BD_ArquiteturaClienteServidor]]
 ## Arquitetura Cliente Servidor WEB
 - Utilizado pela maioria dos sites
 - Cliente do banco sera o Servidor Web não os dispositivos
 - Usuário faz um **requisição a um Servidor Web**, onde o mesmo realiza as requisições/operações com o banco de dados geralmente via rede local, seja em outro computador ou na mesma maquina, muito difícil ambom estarem totalmente separados
-![[Desenho;BD;ArquiteturaClienteServidorWEB|640]]
+![[Desenho_BD_ArquiteturaClienteServidorWEB|640]]
 # Modelo de Dados
 São conceitos para ==descrever a **estrutura**== de um banco de dados
 - **Estrutura:** Tipos de dados, relacionamentos e restrições
@@ -106,19 +106,19 @@ São conceitos para ==descrever a **estrutura**== de um banco de dados
 ## Modelo Hierárquico
 >[!fail] Desuso
 >Estrutura do tipo de **árvore**
-![[Desenho;BD;ModeloHierárquico|640]]
+![[Desenho_BD_ModeloHierárquico|640]]
 >Cada nível da arvore tem correspondência apenas com um nível superior, um elemento pai
 ## Modelo em rede
 > [!fail] Desuso
 >Dados organizados em um estrutura de **grafos**
-![[Desenho;BD;ModeloEmRede]]
+![[Desenho_BD_ModeloEmRede]]
 >As entidades tem relacionamento com mais de um entidade pai
 ## Modelo de Dados
 >[!attention] Tem seu uso
 Orientado a objeto, baseado na orientação a objetos utilizada na programação
 Entidades do mundo real se transformam em classes, com estas classes possuindo propriedades que são suas características, onde a partir das classes  criamos vários objetos com valores atribuídos a suas propriedades
 **É utilizado porem menos que o relacional**
-![[Desenho;BD;ModeloDeDados|350]]
+![[Desenho_BD_ModeloDeDados|350]]
 ## Modelo NoSQL
 > [!success] Utilizado
 > - **Muito utilizado hoje em dia**
@@ -149,7 +149,7 @@ Criados com a ideia de simplificar a interação do usuário com o sistema, fora
 - **Nível físico:** Descreve como os dados são armazenados
 - **Nível lógico ou conceitual:** Define a estrutura lógica dos dados
 - **Nível da visão:** Descreve como os usuários veem os dados
-![[Desenho;BD;AbstraçãoDeDados|350]]
+![[Desenho_BD_AbstraçãoDeDados|350center]]
 # Gerenciado de armazenamento
 É um componente de um sistema de banco de dados que fornece uma interface entre os dados de baixo nível armazenados no banco de dados e os programas aplicativos e consultas submetidas ao sistema
 ## Componentes

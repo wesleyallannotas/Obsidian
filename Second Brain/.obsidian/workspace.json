@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1076059b030e1f0f",
+            "id": "2c914298f2cff8e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/HTML/Semântica.md",
+                "file": "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "removendo click",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/HTML/Semântica.md",
+                "file": "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/HTML/Semântica.md"
+                "file": "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/HTML/Semântica.md",
+                "file": "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/HTML/Semântica.md",
+                "file": "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,17 +215,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "1076059b030e1f0f",
+  "active": "2c914298f2cff8e4",
   "lastOpenFiles": [
-    "01 - Notes/Code/HTML/Abreviações.md",
-    "01 - Notes/Code/HTML/Cabeçalho.md",
-    "01 - Notes/Code/HTML/Formulário.md",
-    "01 - Notes/Code/HTML/Semântica.md",
-    "01 - Notes/Code/Algoritmos/Quick Sort.md",
-    "01 - Notes/Code/Banco de Dados/Projeto de Banco de Dados.md",
-    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
-    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
     "01 - Notes/Code/JavaScript/Funções.md",
-    "01 - Notes/Code/JavaScript/Introdução.md"
+    "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
+    "01 - Notes/Code/Linux/Chave SSH.md",
+    "01 - Notes/Code/MultiLinguagem/Calculo de IMC.md",
+    "01 - Notes/Code/MultiLinguagem/Conta Corrente Simples.md",
+    "01 - Notes/Code/Node/Diferença entre NPM e NPX.md",
+    "01 - Notes/Code/Python/Manipulando Data.md",
+    "01 - Notes/Code/Windows/Nvidia Control Panel Não Inicia.md",
+    "01 - Notes/Code/Windows/Link Simbolico.md",
+    "01 - Notes/Code/Algoritmos/Bubble Sort.md"
   ]
 }

@@ -229,7 +229,7 @@ Através do valor `number` para o atributo `type` no elemento vazio `<input />` 
 >input[type=number]::-webkit-inner-spin-button { 
 >    -webkit-appearance: none;   
 >}
->nput[type=number] { 
+>input[type=number] { 
 >   -moz-appearance: textfield;
 >   appearance: textfield;
 }

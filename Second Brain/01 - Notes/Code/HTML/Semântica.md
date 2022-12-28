@@ -55,3 +55,9 @@ O elemento `<main>` é utilizado para abrigar o conteúdo principal da página, 
 
 # Aside
 O elemento `<aside>` tem como função descrever o conteúdo principal da página, por exemplo **explicações, glossários, links extras, biografia do autor, informações de perfil**, também não possui atributos específicos, normalmente é posicionado em uma barra lateral, porem não é uma regra.
+
+# Footer
+O elemento `<footer>` traduzido para o português é rodapé, assim trazendo a função de informações do autor, copyright, contrato, sitemap, voltar ao topo, entre outras ideais, também não possui atributos específicos, normalmente se encontra no final da página
+
+# Section
+O elemento `<section>` traduzido para o português é seção, normalmente traz um titulo e um conteúdo, uma ideia seria uma seção dentro dos `<article>` de receitas exemplificado acima mostrando o modo de preparo, não possui atributos específicos.
