@@ -10,13 +10,43 @@ tags: [css]
 description: Como criar layouts usando flexbox 
 ---
 # Introdução
-Quando definimos a propriedade `display` de um elemento como `flex` temos aceso as propriedades `flex` para o controle do comportamento dos elementos internos desse elemento pai **(Posicionamento dentro da caixa)**, facilita a responsividade criando regras para alteração das dimensões dos elementos. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox))
+Quando definimos a propriedade `display` de um elemento como `flex` temos aceso as propriedades `flex` para o controle do comportamento dos elementos internos desse elemento pai **(Posicionamento dentro da caixa)**, facilita o posicionamento, ordenação e a responsividade criando regras para alteração das dimensões dos elementos. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox))
 ```css
 .container {
 	display: flex;
 }
 ```
 
+# Terminologia
+- **Flex container** - Elemento pai, o que possui a propriedade `display` com o valor `flex`
+	- **Flex item** - Elementos filhos
+- **Nesting** - Elemento que contem outros elementos
+- **Axis** - Em português eixo
+	- **Main** - Principal, em coluna seria o Y em linha seria o X
+		- **Start**, **End** - Inicio e final
+	- **Cross** - Cruzado, o eixo que cruza o principal
+		- **Start**, **End** - Inicio e final
+- **Flex sizing** - Flexível, Altera width/height dos itens para preenchimento dos espaços do flex container
+
+# Propriedades do Flex Container
+Ao adicionar o valor `flex` ao `display` de um elemento, o tornamos um *Flex container*, e com isso temos acesso as propriedades do *flex container*, tendo acesso a manipulação da
+- Direção dos itens
+- Multilinhas
+- Alinhamento
+	- Principal
+	- Cruzado
+- Espaço entre os itens
+
+# CONTINUAR DAQUI
+
+
+# `order`
+Através da propriedade `order` podemos alterar a ordem dos elemento filho selecionado.
+```css
+.item:nth-child(2) {
+	order: 1;
+}
+```
   
 # `flex-direction`
 Através da propriedade `flex-direction` podemos alterar a direção dos elementos ([Doc)](https://developer.mozilla.org/pt-BR/docs/Web/CSS/flex-direction)), podemos utilizar os seguintes valores:

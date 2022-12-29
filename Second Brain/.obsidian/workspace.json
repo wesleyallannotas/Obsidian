@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
+                "file": "01 - Notes/Code/CSS/Flexbox.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "removendo click",
+                "query": "inline",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
+                "file": "01 - Notes/Code/CSS/Flexbox.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md"
+                "file": "01 - Notes/Code/CSS/Flexbox.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
+                "file": "01 - Notes/Code/CSS/Flexbox.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
+                "file": "01 - Notes/Code/CSS/Flexbox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,15 +217,15 @@
   },
   "active": "2c914298f2cff8e4",
   "lastOpenFiles": [
+    "01 - Notes/Code/CSS/Page Layouts.md",
+    "01 - Notes/Code/CSS/Box Model.md",
+    "01 - Notes/Code/CSS/Flexbox.md",
+    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
     "01 - Notes/Code/JavaScript/Funções.md",
     "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
     "01 - Notes/Code/Linux/Chave SSH.md",
     "01 - Notes/Code/MultiLinguagem/Calculo de IMC.md",
     "01 - Notes/Code/MultiLinguagem/Conta Corrente Simples.md",
-    "01 - Notes/Code/Node/Diferença entre NPM e NPX.md",
-    "01 - Notes/Code/Python/Manipulando Data.md",
-    "01 - Notes/Code/Windows/Nvidia Control Panel Não Inicia.md",
-    "01 - Notes/Code/Windows/Link Simbolico.md",
-    "01 - Notes/Code/Algoritmos/Bubble Sort.md"
+    "01 - Notes/Code/Node/Diferença entre NPM e NPX.md"
   ]
 }
