@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dbb1497f40d163e8",
+        "id": "ada1315bde3d95a9",
         "type": "tabs",
         "children": [
           {
-            "id": "2c914298f2cff8e4",
+            "id": "966fad9678359902",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -215,11 +215,11 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "2c914298f2cff8e4",
+  "active": "966fad9678359902",
   "lastOpenFiles": [
+    "01 - Notes/Code/CSS/Flexbox.md",
     "01 - Notes/Code/CSS/Page Layouts.md",
     "01 - Notes/Code/CSS/Box Model.md",
-    "01 - Notes/Code/CSS/Flexbox.md",
     "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
     "01 - Notes/Code/JavaScript/Funções.md",
     "01 - Notes/Code/JavaScript/Expressões e Operadores.md",

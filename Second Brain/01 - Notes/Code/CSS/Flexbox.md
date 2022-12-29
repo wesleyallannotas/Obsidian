@@ -37,8 +37,35 @@ Ao adicionar o valor `flex` ao `display` de um elemento, o tornamos um *Flex con
 	- Cruzado
 - Espaço entre os itens
 
-# CONTINUAR DAQUI
+## Direção dos Itens
+O *Flex* possui uma direção sendo ela horizontal ou vertical, que temos a liberdade de trocar a nossa vontade através da propriedade [[#`flex-direction`|flex-direction]].
 
+## `flex-direction`
+Através da propriedade `flex-direction` podemos alterar a direção dos elementos, por padrão é em linha, ou seja, a propriedade tem o valor `row` atribuido ([Doc)](https://developer.mozilla.org/pt-BR/docs/Web/CSS/flex-direction)), podemos utilizar os seguintes valores:
+- `row` - Em linha, se posicionando um ao lado do outro
+- `column` - Em coluna, se posicionando um abaixo do outro
+- `row-reverse` - Em linha e inverte a ordem dos itens e direção do eixo trocando o `start` pelo `end`, ou seja o final da linha se torna  `start`, se posicionando um ao lado do outro
+- `column-reverse` - Em coluna e inverte a ordem dos itens e a direção do eixo trocando o `start` pelo `end`, ou seja o final da coluna se torna , se posicionando um abaixo do outro
+
+## Multilinhas
+O *Flex* possui a possibilidade de usar multilinha criando praticamente outros eixos respeitando a direção do eixo principal, como se fosse um novo *Flex container* através do `flex-wrap`
+
+### `flex-warp`
+Através da propriedade `flex-warp` podemos possibilitar que "Quebre a linha" quando for necessário. Por padrão as dimensões dos *Flex itens* é totalmente flexível não ocorrendo nunca essa "Quebra", quando atribuímos o valor `warp` para a propriedade `flex-warp`, ele ocorrera a "Quebra" quando os itens tiver um tamanho, entre outras possibilidades
+```css
+.box {
+	display: flex;
+	flex-wrap: wrap;
+}
+.box div {
+	width: 80px;
+}
+```
+No exemplo acima os elementos *flex item* desse HTML imaginário são todos `<div>`, com esse estilo, todos possuíram `80px` e quando não couber "Quebra" para linha de baixo. 
+
+>[!tip] Dica mantendo responsivo
+Podemos utilizar uma melhor forma para dimensionar para manter flexível até certo ponto e quando atingir um mínimo quebrar.
+> # CONTINUAR, TESTAR E TRAZER EXEMPLO
 
 # `order`
 Através da propriedade `order` podemos alterar a ordem dos elemento filho selecionado.
@@ -47,13 +74,7 @@ Através da propriedade `order` podemos alterar a ordem dos elemento filho selec
 	order: 1;
 }
 ```
-  
-# `flex-direction`
-Através da propriedade `flex-direction` podemos alterar a direção dos elementos ([Doc)](https://developer.mozilla.org/pt-BR/docs/Web/CSS/flex-direction)), podemos utilizar os seguintes valores:
-- `row` - Em linha, se posicionando um ao lado do outro
-- `column` - Em coluna, se posicionando um abaixo do outro
-- `row-reverse` - Em linha e inverte a ordem, se posicionando um ao lado do outro
-- `column-reverse` - Em coluna e inverte a ordem, se posicionando um abaixo do outro
+
 
 # `justify-content`
 Desrespeito a como ira distribuir os elementos internos ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)), Alguns valores aceitos são:
