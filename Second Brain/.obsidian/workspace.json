@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md",
+                "file": "01 - Notes/Code/JavaScript/DOM.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316
+    "width": 316,
+    "collapsed": true
   },
   "right": {
     "id": "c853b67629a4ee84",
@@ -102,7 +103,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md",
+                "file": "01 - Notes/Code/JavaScript/DOM.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md"
+                "file": "01 - Notes/Code/JavaScript/DOM.md"
               }
             }
           },
@@ -154,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md",
+                "file": "01 - Notes/Code/JavaScript/DOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md",
+                "file": "01 - Notes/Code/JavaScript/DOM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +201,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,15 +219,15 @@
   },
   "active": "966fad9678359902",
   "lastOpenFiles": [
+    "Excalidraw/Desenho_JS_DOM.md",
+    "01 - Notes/Code/JavaScript/DOM.md",
     "01 - Notes/Code/CSS/Flexbox.md",
+    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
+    "01 - Notes/Code/HTML/Formulário.md",
     "01 - Notes/Code/CSS/Page Layouts.md",
     "01 - Notes/Code/CSS/Box Model.md",
-    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
     "01 - Notes/Code/JavaScript/Funções.md",
     "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
-    "01 - Notes/Code/Linux/Chave SSH.md",
-    "01 - Notes/Code/MultiLinguagem/Calculo de IMC.md",
-    "01 - Notes/Code/MultiLinguagem/Conta Corrente Simples.md",
-    "01 - Notes/Code/Node/Diferença entre NPM e NPX.md"
+    "01 - Notes/Code/Linux/Chave SSH.md"
   ]
 }
