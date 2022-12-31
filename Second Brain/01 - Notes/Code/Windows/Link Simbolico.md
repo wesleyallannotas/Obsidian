@@ -9,16 +9,15 @@ aliases:
 tags: [windows, cli]
 description: Como criar link simbolico no windows
 ---
-# Links Simbolicos
+# Links Simbólicos
 
 ```bash
 MKLINK [[/d] | [/h] | [/j]] <Link> <Destino>
 ```
 
 Veja de forma mais detalhada os parâmetros:
-
--   /d – Para um diretório (pasta)
--   /h – Para um arquivo qualquer
--   /j – Para criar uma junção de diretórios
-- \<link\> - Simplesmente o caminho/nome do link simbólico
-- <\Destino\> - A pasta ou arquivo original
+-   `/d` – Para um diretório (pasta)
+-   `/h` – Para um arquivo qualquer
+-   `/j` – Para criar uma junção de diretórios
+- `<link>` - Simplesmente o caminho/nome do link simbólico
+- `<Destino>` - A pasta ou arquivo original

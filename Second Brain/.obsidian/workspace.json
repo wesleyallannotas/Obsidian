@@ -85,8 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316,
-    "collapsed": true
+    "width": 316
   },
   "right": {
     "id": "c853b67629a4ee84",
@@ -201,8 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,15 +217,15 @@
   },
   "active": "966fad9678359902",
   "lastOpenFiles": [
-    "Excalidraw/Desenho_JS_DOM.md",
+    "01 - Notes/Code/Windows/Bug Nvidia Control Panel.md",
+    "01 - Notes/Code/Windows/Atralhos.md",
+    "01 - Notes/Code/Windows/Link Simbolico.md",
     "01 - Notes/Code/JavaScript/DOM.md",
+    "Excalidraw/Desenho_JS_DOM.md",
     "01 - Notes/Code/CSS/Flexbox.md",
     "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
     "01 - Notes/Code/HTML/Formulário.md",
     "01 - Notes/Code/CSS/Page Layouts.md",
-    "01 - Notes/Code/CSS/Box Model.md",
-    "01 - Notes/Code/JavaScript/Funções.md",
-    "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
-    "01 - Notes/Code/Linux/Chave SSH.md"
+    "01 - Notes/Code/CSS/Box Model.md"
   ]
 }
