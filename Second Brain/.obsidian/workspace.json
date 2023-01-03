@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/DOM.md",
-                "mode": "source",
+                "file": "03 - Books/Estruturas de Dados e Algoritmos com JavaScript.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/DOM.md",
+                "file": "03 - Books/Estruturas de Dados e Algoritmos com JavaScript.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/DOM.md"
+                "file": "03 - Books/Estruturas de Dados e Algoritmos com JavaScript.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/DOM.md",
+                "file": "03 - Books/Estruturas de Dados e Algoritmos com JavaScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/DOM.md",
+                "file": "03 - Books/Estruturas de Dados e Algoritmos com JavaScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,15 +217,15 @@
   },
   "active": "966fad9678359902",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
-    "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
-    "01 - Notes/Code/JavaScript/Introdução.md",
-    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
-    "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
-    "01 - Notes/Code/JavaScript/DOM.md",
-    "01 - Notes/Code/Windows/Bug Nvidia Control Panel.md",
-    "01 - Notes/Code/Windows/Atralhos.md",
-    "01 - Notes/Code/Windows/Link Simbolico.md",
-    "Excalidraw/Desenho_JS_DOM.md"
+    "03 - Books/Sistema de Banco de Dados 7ª Edição.md",
+    "03 - Books/Estruturas de Dados e Algoritmos com JavaScript.md",
+    "03 - Books/Engenharia de Software Uma Abordagem Profissional 8ª Edição.md",
+    "02 - Articles/Distrobox como configurar e instalar suas primeiras distros - Diolinux.md",
+    "01 - Notes/Técnicas e Autoconhecimento/Tecnologia Inovação e Empreendedorismo.md",
+    "01 - Notes/Games/Cyberpunk/Mods Cyberpunk.md",
+    "01 - Notes/Games/Cyberpunk/Configurando Esquiva.md",
+    "01 - Notes/Code/Plugins e Dicas.md",
+    "01 - Notes/Code/Planejamento.md",
+    "01 - Notes/Code/NLWCopa.md"
   ]
 }

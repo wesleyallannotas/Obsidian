@@ -282,3 +282,101 @@ const el = document.querySelector('body');
 console.log(el.previousSibling);
 console.log(el.previousElementSibling);
 ```
+
+# Criando e Adicionando Elementos
+Utilizando a API DOM (*Document Object Model*) podemos criar e adicionar elementos ao nosso HTML.
+
+## Criando
+Através do método `createElement()` podemos criar elementos, onde passamos como parâmetro o elemento a ser criado.
+```js
+const div = document.createElement('div');  // Criando Elemento
+div.innerText = "Olá Deve!"  // Adicionando conteúdo
+```
+
+## Adicionando
+Através do método `append()` podemos adicionar um elemento como ultimo filho do elemento selecionado.
+```js
+const body = document.querySelector('body');
+body.append(div); // Adicionando "div" criada anteriormente
+```
+Através do método `prepend()` podemos adicionar um elemento como primeiro filho do elemento selecionado.
+```js
+const body = document.querySelector('body');
+body.prepend(div); // Adicionando "div" criada anteriormente
+```
+Através do método `insertBefore(novo,nóreferencia)` podemos selecionar exatamente onde queremos inserir o nosso elemento entre os elementos filho.
+```js
+const body = document.querySelector('body');
+const footer = document.querySelector('footer');
+body.insertBefore(div, footer);
+```
+>[!note] Simulando `insertAfter()`
+>Não existi um método `insertAfter()` porem podemos alcançar o mesmo efeito utilizando as propriedades para [[#Navegando Pelas Elementos|navegar pelos elementos]]
+>```js
+>const body = document.querySelector('body');
+>const section = document.querySelector('section');
+>body.insertBefore(div, section.nextElementSibling);
+>```
+
+# Manipulando Eventos
+JavaScript dentro do navegador, ou seja, através da DOM (*Document Object Model*) é direcionada a eventos seja ele de clique, pressionar de tecla, foco em elemento, entre outros. Existe diferentes formas de disparar o evento.
+
+## Através do HTML
+Podemos dispara eventos através de atributos em elementos HTML, adicionando `on` e o nome do evento, por exemplo um evento de clique é através do atributo `onclick` e como resultado passamos a execução de uma função JavaScript ficando da seguinte forma.
+```html
+<button onclick="changeText()">Mudar texto</button>
+```
+
+## Evento de Teclado
+Podemos adicionar ao nosso elemento que permite a entrada de texto a execução de uma função no parâmetro `onKeyDown` (Quando pressiona), `onKeyUp` (Quando solta), `onKeyPress` (Quando pressiona)
+```js
+const input = document.qyerySelector('input');
+input.onKeyDown = function() {
+	console.log('rodei');
+}
+```
+
+## Através do JavaScript
+Podemos adicionar uma espécie de "ouvidor de eventos" através do método `addEventListener()`, onde como parâmetros passaremos **qual o tipo do evento** e o**atalho para função**
+```js
+function print() {
+	console.log('Print')
+};
+const h1 = document.querySelector('h1');
+
+// Boa pratica, mais recomendado
+h1.addEventListener('click', print); 
+
+h1.addEventListener('click', function() {
+	console.log('Outro Print')
+})
+
+// Menos recomendado, utilizando atalho de função
+h1.onclick = print;
+
+// Menos recomendado, utilizando função anonima
+h1.onclick = function() {
+	console.log('Outro print');
+};
+```
+>[!attention] Atenção Diferença de `addEventListener()`
+>Quando utilizamos pela propriedade por exemplo `onclick` seja pelo atalho da função ou pela função anônima, será sobrescrito o antigo, ou seja, no exemplo acima executara apenas o `outro print`, pois, sobrescrevera a chamada pelo atalho, já utilizando `addEventListener()` podemos acumular varias execuções para o mesmo evento, ou seja, no exemplo acima executa `print` e `Outro Print`
+
+## Parâmetro `event`
+Todo evento disparada, seja por meio de propriedade (`element.onclick`), seja pelo "ouvidor de eventos" (`addEventListener()`) espera que a função a ser executada possa ou não possuir uma parâmetro para armazenar o evento, onde cada categoria de evento retornara um tipo de dado do evento, por exemplo, evento de clique retorna um `MouseEvent`, evento *KeyDown* retorna um `KeyboardEvent` e assim por diante.
+```js
+const input = document.querySelector('input');
+input.onkeydown = funtion(event) {
+	console.log(event);
+};
+```
+Onde utilizando desde dados podemos executar diversas funções por exemplo
+```js
+const input = document.querySelector('input');
+input.onkeydown = funtion(event) {
+	console.log(event.currentTarget.value);
+};
+```
+Através do `currentTarget` temos o elemento alvo do evento, e com `value` estamos pegando o valor dele, ou seja, a cada pressionar de tecla será impresso no *console* o valor do `<input/>` que neste caso é o nosso elemento alvo do evento.
+>[!tip] Dica Propriedades
+>Uma boa ideia para descobrir as propriedades de cada evento é jogar ele em um `console.log` onde podemos navegar pelo tipo de dado retornado com evento e ver as informações que podemos extrair.
