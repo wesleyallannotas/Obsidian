@@ -22,4 +22,26 @@ Motor *open-source* de JavaScript e WebAssembly de alto desempenho desenvolvido 
 >V8 não possui *console* nem *File System*, porem no ambiente node tem, ou seja, não é ele que proporciona essa interação diretamente.
 
 # Event Loop
-ler <[Event Loop NodeJS: Um Guia Completo Para Iniciante - TipsCode](https://tipscode.com.br/event-loop-em-node-guia-completo#:~:text=O%20event%20loop%20%C3%A9%20um,selecionar%20outras%20tarefas%20na%20fila.)> junto com aula discover para entender e se errado arrumar o destacado acima.
+O [[#Motor V8]] junto com o Node como um todo, se comunica com uma biblioteca chamada libuv, que trabalha de forma assíncrona e conversa direto com o sistema operacional, na libuv temos o *Event Loop*, uma espécie de *loop* infinito que pega os eventos na fila (*Event Queue*) que podem bloquear a execução do código, joga para *Worker Threads*, onde quando finalizado executa o *callback* retornando a resposta da execução.
+
+![[Desenho_JS_Node|600center]]
+
+```js
+function c() {
+	setTimeout(() => {console.log('c')}, 0);
+	return;
+}
+function b() {
+	console.log('b');
+	return c();
+}
+function a() {
+ b();
+ console.log('a');
+ return;
+}
+```
+
+Mesmo o `setTimeout()` possuindo um tempo de espera de 0 segundo, por se tratar de uma operação de bloqueio (*Blocking Operation*), ele joga para o *Worker Threads*, finaliza a execução e volta para o *Event Queue* (*callback*), assim indo para o final da fila, por isso o `c` é o ultimo valor a ser imprimido no *console*.
+
+

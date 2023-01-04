@@ -9,14 +9,14 @@ aliases:
 tags: [note]
 description: Planejamento de Estudo de Stacks
 ---
-# Inpiração
+# Inspiração
 >[!quote]
 O Dinheiro vem até mim de diversas fontes e contínuas bases, em quantidades cada vez maiores e comigo fica para construção da minha riqueza
 
 >[!quote]
 >Eu sempre estive peparado para o pior, continuarei no meu caminho sem desviar, eu não preciso de dom natural para ser o melhor, com esforço um genio eu posso me tornar
 
-# Vou dominar
+# Dominar
 - React
 - Next
 - React Native
@@ -29,6 +29,7 @@ O Dinheiro vem até mim de diversas fontes e contínuas bases, em quantidades ca
 - [x] Livro - Entendendo Algoritmo, Aditya Y. Bhargava
 - [ ] Curso - Discovery, Rocketseat
 - [ ] Livro - Estrutura de Dados e Algorimos com JavaScript, Loiane Groner
+- [ ] Livro - Orientação a Objetos e SOLID para Ninjas: Projetando Classes Flexíveis, Mauricio Aniche
 - [ ] Curso - Ignite, React, Rocketseat
 - [ ] Curso - Ignite, Node, Rcoketseat
 - [ ] Curso - Ignite, React Native, Rocketseat
