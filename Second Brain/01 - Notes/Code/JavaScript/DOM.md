@@ -360,7 +360,7 @@ h1.onclick = function() {
 };
 ```
 >[!attention] Atenção Diferença de `addEventListener()`
->Quando utilizamos pela propriedade por exemplo `onclick` seja pelo atalho da função ou pela função anônima, será sobrescrito o antigo, ou seja, no exemplo acima executara apenas o `outro print`, pois, sobrescrevera a chamada pelo atalho, já utilizando `addEventListener()` podemos acumular varias execuções para o mesmo evento, ou seja, no exemplo acima executa `print` e `Outro Print`
+>Quando utilizamos pela propriedade por exemplo `onclick` seja pelo **atalho da função** ou pela **função anônima**, será sobrescrito o antigo, ou seja, no exemplo acima executara apenas o `outro print`, pois, sobrescrevera a chamada pelo atalho, já utilizando `addEventListener()` podemos acumular varias execuções para o mesmo evento, ou seja, no exemplo acima executa `print` e `Outro Print`
 
 ## Parâmetro `event`
 Todo evento disparada, seja por meio de propriedade (`element.onclick`), seja pelo "ouvidor de eventos" (`addEventListener()`) espera que a função a ser executada possa ou não possuir uma parâmetro para armazenar o evento, onde cada categoria de evento retornara um tipo de dado do evento, por exemplo, evento de clique retorna um `MouseEvent`, evento *KeyDown* retorna um `KeyboardEvent` e assim por diante.
@@ -380,3 +380,4 @@ input.onkeydown = funtion(event) {
 Através do `currentTarget` temos o elemento alvo do evento, e com `value` estamos pegando o valor dele, ou seja, a cada pressionar de tecla será impresso no *console* o valor do `<input/>` que neste caso é o nosso elemento alvo do evento.
 >[!tip] Dica Propriedades
 >Uma boa ideia para descobrir as propriedades de cada evento é jogar ele em um `console.log` onde podemos navegar pelo tipo de dado retornado com evento e ver as informações que podemos extrair.
+[]

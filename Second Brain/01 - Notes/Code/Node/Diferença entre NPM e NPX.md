@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [node]
+tags: [javascript, node]
 description: Entenda a difereça entre NPM e NPX
 ---
 # NPM o  gerenciador de Pacotes
