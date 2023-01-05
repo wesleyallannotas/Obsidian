@@ -44,4 +44,44 @@ function a() {
 
 Mesmo o `setTimeout()` possuindo um tempo de espera de 0 segundo, por se tratar de uma operação de bloqueio (*Blocking Operation*), ele joga para o *Worker Threads*, finaliza a execução e volta para o *Event Queue* (*callback*), assim indo para o final da fila, por isso o `c` é o ultimo valor a ser imprimido no *console*.
 
+# Variáveis Globais
+Assim como no JavaScript para navegador temos acesso ao objeto `window` que é um objeto global que guardo por exemplo nosso `document`, no Node temos o `global`, responsável por guardar o  `console`, `process` por exemplo, ou seja, são objetos globais que guardam informações e métodos importantes, como `__dirname` que guarda o caminho do diretório. ([Doc](https://devdocs.io/node~18_lts-global-objects/))
 
+# Importando Módulos
+Através da função global `require()` podemos importar modelos nativos ou externos do Node, seja criados por nós ou baixados via `npm` (*Node Package Manager*).
+```js
+const path = require('path');
+console.log(path.basename(__filename));
+```
+
+# Criando Módulo
+Através do objeto global  `module` podemos utilizar o método `exports` onde podemos atribuir o que desejarmos Array, Object, String, Number...
+
+```js
+// Arquivo que realizara a exportação
+module.exports = "Testando exportação";
+```
+
+```js
+const myModule = require('./path/arquivo.js');
+const myModule = require('./path/arquivo'); // Pode omitir o ".js"
+```
+
+# Processo
+Através do objeto global `process` obtemos os dados do processo do Node em execução, por exemplo através da *Array* `argv` podemos acessar os argumentos/parâmetros que passamos na execução, ou seja, executando Node da seguinte forma
+
+```sh
+node arquivo Wesley Silva
+```
+
+```js
+console.log(process.argv);
+/*
+Resultado: [
+	caminho-do-node,
+	caminho-do-arquivo,
+	'Wesley',
+	'Silva'
+]
+*/
+```

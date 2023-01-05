@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Planejamento.md",
+                "file": "01 - Notes/Code/Node/Introdução.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "inline",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -115,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/Planejamento.md",
+                "file": "01 - Notes/Code/Node/Introdução.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/Planejamento.md"
+                "file": "01 - Notes/Code/Node/Introdução.md"
               }
             }
           },
@@ -167,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/Planejamento.md",
+                "file": "01 - Notes/Code/Node/Introdução.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/Planejamento.md",
+                "file": "01 - Notes/Code/Node/Introdução.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,15 +230,15 @@
   },
   "active": "66090fd83ef48484",
   "lastOpenFiles": [
-    "01 - Notes/Code/Node/Introdução.md",
-    "01 - Notes/Code/Planejamento.md",
-    "Leituras Pendentes.md",
-    "Especificações TV Samsung 32 Polegadas.md",
-    "Ideias.md",
-    "Excalidraw/Desenho_JS_Node.md",
+    "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
+    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+    "01 - Notes/Code/Python/Manipulando Data.md",
+    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
     "01 - Notes/Code/JavaScript/DOM.md",
-    "01 - Notes/Code/Banco de Dados/Introdução Banco de Dados.md",
-    "01 - Notes/Code/Node/Diferença entre NPM e NPX.md",
-    "01 - Notes/Code/Banco de Dados/SQL.md"
+    "01 - Notes/Code/JavaScript/Funções.md",
+    "01 - Notes/Code/JavaScript/Introdução.md",
+    "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
+    "01 - Notes/Code/Node/Introdução.md",
+    "01 - Notes/Code/Planejamento.md"
   ]
 }
