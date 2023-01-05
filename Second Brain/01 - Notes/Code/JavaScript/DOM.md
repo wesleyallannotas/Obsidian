@@ -380,4 +380,3 @@ input.onkeydown = funtion(event) {
 Através do `currentTarget` temos o elemento alvo do evento, e com `value` estamos pegando o valor dele, ou seja, a cada pressionar de tecla será impresso no *console* o valor do `<input/>` que neste caso é o nosso elemento alvo do evento.
 >[!tip] Dica Propriedades
 >Uma boa ideia para descobrir as propriedades de cada evento é jogar ele em um `console.log` onde podemos navegar pelo tipo de dado retornado com evento e ver as informações que podemos extrair.
-[]
