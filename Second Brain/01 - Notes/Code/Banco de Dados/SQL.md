@@ -312,8 +312,6 @@ SELECT NOME as 'Nome', NUMERO_SEGURO_SOCIAL as 'Seguro Social' FROM EMPREGADO;
 Usamos o clausula (comando) `ORDER BY`
 - Por padrão a ordenação ocorre de forma crescente `ASC`
 - Ordenar de forma decrescente `DESC`
-- `OR` é OU, `AND` é E
-- Operador de diferente do SQL é igual do Delphi `<>`
 ```sql
 -- Ordenando pela coluna nome de forma decrescente
 SELECT *
@@ -335,24 +333,38 @@ SELECT NOME AS 'Nome', NUMERO_SEGURO_SOCIAL AS 'Seguro Social', SEXO AS 'Sexo', 
 FROM EMPREGADO
 WHERE NUMERO_DEPTO = 30 OR NUMERO_DEPTO = 25
 ORDER BY SEXO DESC, NOME ASC;
+```
 
+## Operadores
+SQL disponibiliza diversos operadores para que possamos refinar nossas comandos
+- Agrupamento - Através dos parênteses `( )` podemos agrupar qualquer operadores.
+- Matemáticos - Adição `+`, Subtração `-`, Multiplicação (`*`), Divisão (`/`), Modulo (`%`)
+- Logico - E (`AND`), OU (`OR`), Não (`NOT`)
+- Comparação - Maior (`>`), Menor (`<`), Maior Igual (`>=`), Menor Igual (`<=`), Diferente (`<>`, `!=`), Igual (=)
+- `DISTINCT` - Adicionando esse operador antes do nome da coluna, pegas valores que não se repetem apenas
+- `IS NULL` - É nulo, ou seja, não possui valor.
+	- Vale lembrar que o `NOT` pode ser utilizar para obter os não nulos
+- `IN` - O valor da coluna a ser comparada, precisa se encontrar no  valor dentro dos parênteses, seja `SELECT` ou lista de valores, operador `IN` é amplamente utilizado em Python.
+	- Vale lembrar que o `NOT` também pode ser utilizado para obter valor contrario.
+- `LIKE` - Comparador de texto, utilizamos o `%` para informar que possui texto para aquela direção
+	- `G%` - Começa com G
+	- `A%` - Termina com G
+	- `%T%` -  T no meio do texto
+- `BETWEEN` - Pega dois valores e filtra entre o intervalo entre eles, muito utilizado para datas
+	- `BETWEEN '2000-01-01' AND '2020-12-31'` - Pegara as datas entre as duas, **Cada SGBD utiliza um formato para data**
+ - `EXISTS` - ==Verifica a existência==, Precisa existir, mas não unicamente um atribuo e sim um conjunto de linha (tuplas)
+	- Compara existência de tuplas
+```sql
 SELECT *
 FROM EMPREGADO
 WHERE (SEXO = 'F' AND NUMERO_DEPTO = 30)
-OR (SEXO = 'M' AND NUMERO_DEPTO = 31);
-
-SELECT *
-FROM EMPREGADO
-WHERE NUMERO_DEPTO IN (25,32);
+OR (SEXO = 'M' OR SEXO IS NULL);
 
 -- Operador LIKE
 SELECT * FROM EMPREGADO
 WHERE BAIRRO = 'Centro' AND RUA LIKE 'Rua%'; -- Começa com rua e depois tem qualquer coisa
 
--- Operador BETWEEN (Compara Intervalo)
-SELECT * FROM EMPREGADO
-WHERE DATA_NASCIMENTO >= '2000-01-01' AND DATA_NASCIMENTO <= '2020-12-31';
--- Melhor Forma
+-- Operador BETWEEN intervalo
 SELECT * FROM EMPREGADO
 WHERE DATA_NASCIMENTO BETWEEN '2000-01-01' AND '2020-12-31';
 
@@ -362,6 +374,28 @@ SELECT * FROM EMPREGADO WHERE NUMERO_SEGURO_SOCIAL_SUPERVISOR IS NOT NULL;
 
 -- Elimina os iguais
 SELECT DISTINCT BAIRRO FROM EMPREGADO;
+
+-- Operador `in`
+SELECT NUMERO_SEGURO_SOCIAL, NOME, DATA_NASCIMENTO
+FROM EMPREGADO
+WHERE NUMERO_SEGURO_SOCIAL IN (SELECT NUMERO_SEGURO_SOCIAL FROM ASSALARIADO); 
+-- Ira filtranr a partir se o numero desta tabela se encontra na outra
+
+-- Lista de valores
+SELECT ID_FUNCIONARIO
+  FROM FUNCIONARIOS
+ WHERE ID_FUNCIONARIO IN (2, 5, 25);
+
+-- Comando/Operador `exists`
+SELECT * 
+FROM DEPARTAMENTO DEPTO
+WHERE EXISTS(SELECT  *
+             FROM PROJETO
+             WHERE NUMERO_DEPTO = DEPTO.NUMERO);
+             
+SELECT * FROM EMPREGADO EMP
+WHERE EXISTS(SELECT * FROM PROJETO_EMPREGADO
+             WHERE NUMERO_SEGURO_SOCIAL = EMP.NUMERO_SEGURO_SOCIAL);
 ```
 
 ## Comando `UNION`
@@ -443,36 +477,9 @@ INNER JOIN ASSALARIADO AS A
 ON EMP.COD = A.COD_EMPREGADO;
 ```
 
-## Comandos `IN` e `EXISTS`
-Utilizaremos de `SELECT` aninhado.
-- `IN` - O valor da coluna a ser comparada, precisa se encontrar no outro `SELECT`, precisa retornar uma coluna também, ou seja, comparar os valores de uma com a outra, operador `IN` é amplamente utilizado em Python.
-	- Vale lembrar que o `NOT` também pode ser utilizado para obter valor contrario.
-	- Compara valor
-- `EXISTS` - ==Verifica a existência==, Precisa existir, mas não unicamente um atribuo e sim um conjunto de linha (tuplas)
-	- Usos mais elaborador com `JOIN`
-	- Compara existência de tuplas
-```sql
--- Comado/Operador `in`
-SELECT NUMERO_SEGURO_SOCIAL, NOME, DATA_NASCIMENTO
-FROM EMPREGADO
-WHERE NUMERO_SEGURO_SOCIAL IN (SELECT NUMERO_SEGURO_SOCIAL FROM ASSALARIADO); 
--- Ira filtranr a partir se o numero desta tabela se encontra na outra
-
--- Comando/Operador `exists`
-SELECT * 
-FROM DEPARTAMENTO DEPTO
-WHERE EXISTS(SELECT  *
-             FROM PROJETO
-             WHERE NUMERO_DEPTO = DEPTO.NUMERO);
-             
-SELECT * FROM EMPREGADO EMP
-WHERE EXISTS(SELECT * FROM PROJETO_EMPREGADO
-             WHERE NUMERO_SEGURO_SOCIAL = EMP.NUMERO_SEGURO_SOCIAL);
-```
-
 ## Junção de Tabelas
 Possuímos alguns tipos de junções sendo elas.
-![[Desenho;SQL;Joins|650]]
+![[Desenho_SQL_Joins|650]]
 - `INNER JOIN` - **Mais Utilizado**, junção interna, junta as duas tabelas, ou seja, seus atributos baseado em uma comparação que vai ser especificada apos o `ON`, possível juntar varias tabelas, e também é possível, adicionar mais de uma comparação usando operado `AND`
 >[!example]- Exemplo
 > `AS` é opcional para dar apelido a tabela/relação.
@@ -694,7 +701,7 @@ ACID (Atomicidade, Consistência, Isolamento e Durabilidade), toda transação d
 Estados possíveis ao final de uma transação
 - **Efetivada (commit)** - Transação ocorrida com sucesso
 - **Abortada** - Transação não foi concluída devido a falha, implica em desfazer todas as alterações (rollback)
-![[Desenho;BD;Transação|650]]
+![[Desenho_BD_Transação|650]]
 
 ## Sistema de controle de concorrência
 Transações podem ser executadas:

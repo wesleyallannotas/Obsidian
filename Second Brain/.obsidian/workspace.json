@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Node/Node com EJS.md",
+                "file": "01 - Notes/Code/Banco de Dados/SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/Node/Node com EJS.md",
+                "file": "01 - Notes/Code/Banco de Dados/SQL.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -125,7 +125,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.37031935838194585,
+                  "scale": 0.13438421776453693,
                   "close": true
                 }
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/Node/Node com EJS.md"
+                "file": "01 - Notes/Code/Banco de Dados/SQL.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/Node/Node com EJS.md",
+                "file": "01 - Notes/Code/Banco de Dados/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/Node/Node com EJS.md",
+                "file": "01 - Notes/Code/Banco de Dados/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,15 +217,15 @@
   },
   "active": "b8625483da67931e",
   "lastOpenFiles": [
-    "01 - Notes/Code/Node/Herdando de uma Classe.md",
+    "01 - Notes/Code/Banco de Dados/Projeto de Banco de Dados.md",
+    "01 - Notes/Code/Banco de Dados/Introdução Banco de Dados.md",
+    "01 - Notes/Code/Banco de Dados/SQL.md",
+    "Desenho;SQL;Joins.md",
+    "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
     "01 - Notes/Code/Node/Node com EJS.md",
-    "01 - Notes/Code/Node/Event Module.md",
     "01 - Notes/Code/Node/Introdução.md",
-    "01 - Notes/Code/Node/Timers.md",
-    "01 - Notes/Code/Node/NPM.md",
-    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
-    "Especificações TV Samsung 32 Polegadas.md",
-    "01 - Notes/Code/JavaScript/DOM.md",
-    "01 - Notes/Code/JavaScript/Expressões e Operadores.md"
+    "01 - Notes/Code/Node/Herdando de uma Classe.md",
+    "01 - Notes/Code/Node/Event Module.md",
+    "01 - Notes/Code/Node/Timers.md"
   ]
 }
