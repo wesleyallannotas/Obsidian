@@ -66,12 +66,78 @@ Resultado: [
 */
 ```
 
+### Manipulando Processo em Execução
+Durante a execução do nosso Node temos a variável global `process` contendo os dados do processo, assim podemos realizar algumas manipulações durante a execução pro exemplo
+
+#### `stdout`
+Basicamente trata com a saída de dados do processo, utilizando o método `write()` podemos obter o mesmo resultado de `console.log` que no ambiente node na realidade utiliza esse método do `stdout` por traz porem adicionando uma quebra de linha no fina `/n`
+
+```js
+process.stdout.write('Console.log usa isso por traz no ambiente node \n')
+```
+
+#### `stdin`
+Basicamente trata com a entrada de dados no processo, utilizando o método `on()` podemos adicionar um espécie de "Ouvidor de eventos" semelhante ao `addEventListener()` da API DOM da Web
+
+```js
+process.stdin.on("data", data => {
+	process.stdout.write(data.toString().trim() + '\n') // trim() tira os espaçõs
+	process.exit()
+})
+process.on("exit", () => {
+	process.stdout.write('Tchau')
+})
+```
+
+>[!note]- Exemplo inteligente de uso
+>Se atente como `length` que inicia de contagem `1` ao contrario dos _index_ que começa de `0` em conjunto com um valor padrão para o parâmetro da função que recebe `0`, como todo essa logica evita a necessidade de um loop.
+>```js
+>const questions = [
+>    "O que aprendi hoje?",
+>    "O que me deixou aborreicdo? E o que eu poderia fazer para melhorar?",
+>    "O que me deixou feliz hoje?",
+>    "Quantas pessoas ajudei hoje?"
+>]
+>
+>const answers = [];
+>
+>const ask = (index = 0) => {
+>    process.stdout.write(questions[index] + '\n');
+>}
+>
+>ask()
+>
+>process.stdin.on("data", data => {
+>    answers.push(data.toString().trim());
+>   if (answers.length < questions.length) {
+>        ask(answers.length);
+>    } else {
+>        process.exit();
+>    }
+>})
+>
+>process.on('exit', () => {
+>    for (let i = 1; i <= answers.length; i++) {
+>        process.stdout.write(`${i} - ${questions[i-1]}\n${answers[i-1]}\n`);
+>    }
+>})
+>```
+
 # Importando Módulos
 Através da função global `require()` podemos importar modelos nativos ou externos do Node, seja criados por nós ou baixados via `npm` (*Node Package Manager*).
 ```js
 const path = require('path');
 console.log(path.basename(__filename));
 ```
+
+## Importando item especifico
+Podemos importar um item especifico de um modulo adicionando o nome entre chaves
+
+```js
+const { EventEmitter } = require('events');
+```
+
+Neste caso estamos importando apenas a classe _EventEmitter_ que existe dentro do modulo `events`
 
 # Criando Módulo
 Através do objeto global  `module` podemos utilizar o método `exports` onde podemos atribuir o que desejarmos Array, Object, String, Number...

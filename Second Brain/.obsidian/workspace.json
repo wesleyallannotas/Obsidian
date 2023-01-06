@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "66090fd83ef48484",
+            "id": "b8625483da67931e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Node/NPM.md",
+                "file": "01 - Notes/Code/Node/Node com EJS.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/Node/NPM.md",
+                "file": "01 - Notes/Code/Node/Node com EJS.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/Node/NPM.md"
+                "file": "01 - Notes/Code/Node/Node com EJS.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/Node/NPM.md",
+                "file": "01 - Notes/Code/Node/Node com EJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/Node/NPM.md",
+                "file": "01 - Notes/Code/Node/Node com EJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,17 +215,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "66090fd83ef48484",
+  "active": "b8625483da67931e",
   "lastOpenFiles": [
+    "01 - Notes/Code/Node/Herdando de uma Classe.md",
+    "01 - Notes/Code/Node/Node com EJS.md",
+    "01 - Notes/Code/Node/Event Module.md",
+    "01 - Notes/Code/Node/Introdução.md",
+    "01 - Notes/Code/Node/Timers.md",
+    "01 - Notes/Code/Node/NPM.md",
     "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
     "Especificações TV Samsung 32 Polegadas.md",
     "01 - Notes/Code/JavaScript/DOM.md",
-    "01 - Notes/Code/Node/Introdução.md",
-    "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
-    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
-    "01 - Notes/Code/Python/Manipulando Data.md",
-    "01 - Notes/Code/JavaScript/Funções.md",
-    "01 - Notes/Code/JavaScript/Introdução.md",
-    "01 - Notes/Code/JavaScript/Nomeando Variáveis.md"
+    "01 - Notes/Code/JavaScript/Expressões e Operadores.md"
   ]
 }
