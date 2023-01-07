@@ -73,6 +73,31 @@ let num = new Number(24);
 let date = new Date('2022-12-22');
 ```
 
+# Operador de Encadeamento Opcional
+O operador de encadeamentos opcional (_Optional Chaining_), verifica se existe o encadeamento interno, caso não encontre retorna um `undefined` em vez de causar um erro, também funciona para métodos.
+
+```js
+const wesley = {
+	name: 'Wesley',
+	lastname: 'Silva',
+	age: 24,
+	properties: {
+		cars: {
+			saveiro: {
+				model: 'G4',
+				year: 2007
+			}
+		}
+	},
+	getMoney: () -> {};
+}
+
+console.log(wesley.pets.cat); // Retorna erro de referencia
+console.log(wesley.pets?.cat) // Retorna `undefined`
+console.log(wesley.getSaldo?.()) // Retorna `undefines`
+console.log(wesley.getSaldo()) // retorna erro de referencia
+```
+
 # Operadores Aritméticos
 Os operadores aritméticos tem como função realizar operação para manipulação de valor
 
@@ -144,10 +169,12 @@ Operadores que permitem a comparação de dois operadores booleanos que retornam
 | &&       | E (and)   |
 | \|\|     | OU (or)   |
 | !        | Não (not) |
+| ??       | Coalescência Nula          |
 
 - `&&` - Todas verdadeira para retornar verdadeiro
 - `||` - Um verdadeira para retornar verdadeiro
 - `!` - Negar (Inverter), verdadeiro vira falso
+- `??` - O operador de coalescência nula (_Nullish Coalescing Operator_) é um operador lógico que retorna o seu operando do lado direito quando o seu operador do lado esquerdo é `null` ou `undefined`. Caso contrário, ele retorna o seu operando do lado esquerdo. Foi pensado, pois, quando usado o operador OU (`||`), pode ocorrer o [[Falsy e Truthy|Falsy]] assim mesmo possuindo valor pegando o operando direito.
 
 # Operador Condicional (Ternário)
 Operadores que permitem a partir de uma condição atribuir um valor ou outro.
@@ -167,32 +194,6 @@ console.log(niceBreakfast); // Resultado: Cafe top
 niceBreakfast = !(pao || queijo) ? 'Cafe top' : 'Cafe ruim';
 console.log(niceBreakfast); // Resultado: Cafe ruim
 ```
-
-# *Falsy* e *Truthy*
-Tem-se a mesma ideia do [[Manipulando Dados#Type Conversion Coersion|type coersion]] realizado implicitamente pelo JavaScript, onde ==através de um interpretação do dado e a necessidade de um booleano== ele pode assumir verdadeiro (*true*) ou falso (*false*), normalmente acontece em condicionais e repetições (*loops*)
-
-## Falsy
-Considerando o valor como falso (*false*) através do contexto onde um booleano é obrigatório e se encontra um dos seguintes valores
-- `false`
-- `0`
-- `-0`
-- `""`
-- `null`
-- `undefined`
-- `Nan`
-
-## Truthy
-Considerando o valor como verdadeiro (*true*) através do contexto onde um booleano é obrigatório e se encontra um dos seguintes valores
-- `true`
-- `{}`
-- `[]`
-- `1`
-- `3.23`
-- `"0"`
-- `"false"`
-- `-1`
-- `Infinity`
-- `-Infinity`
 
 # Precedência de Operadores
 Precedência de operadores ou no inglês *Operator precedence* é a ordem de execução das operações através do peso do operador, por exemplo na operação `2 + 1 * 3` não é lido e realizado da esquerda para direita, é analisado a precedência onde a multiplicação tem mais peso, assim sendo executado primeiro resultando em `2 + 3` em seguida é realizado a soma resultando em `5`, se fosse lido e executado da esquerda pra direita o resultado seria `9`. Segui a ordem de precedência.
