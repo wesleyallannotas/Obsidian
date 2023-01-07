@@ -6,7 +6,7 @@ book:
 type: note
 completed: false
 aliases:
-tags:
+tags: [node]
 description: Criando páginas com node e ejs
 ---
 # Introdução

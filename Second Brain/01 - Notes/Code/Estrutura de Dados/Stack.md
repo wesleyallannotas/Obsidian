@@ -17,7 +17,7 @@ _Stack_ ou como é mais conhecido em português por **Pilha**. Podemos a entende
 ![[Desenho_EstruturaDados_Stack|600center]]
 
 # Criando
-Utilizaremos classe no JavaScript para criar a estrutura, vamos seguir os passos vistos na [[01 - Notes/Code/Estrutura de Dados/Introdução|Introdução]]
+Utilizaremos classe no JavaScript para criar a estrutura, vamos seguir os passos vistos na [[Introdução a Estrutura de  Dados|Introdução]]
 
 ```js
 // Passo 1: Modelando

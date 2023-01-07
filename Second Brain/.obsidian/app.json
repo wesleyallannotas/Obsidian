@@ -5,7 +5,7 @@
   "spellcheck": true,
   "alwaysUpdateLinks": true,
   "autoConvertHtml": true,
-  "attachmentFolderPath": "",
+  "attachmentFolderPath": "Images",
   "showFrontmatter": false,
   "newFileLocation": "root",
   "showUnsupportedFiles": false,

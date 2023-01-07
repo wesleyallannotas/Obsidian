@@ -177,7 +177,7 @@ body {
 ```
 
 ## Shorthand
-Background assim como outras muitas propriedades possui seu [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand]] que com sua utilização traz diversos benefícios. 
+Background assim como outras muitas propriedades possui seu [[Introdução ao CSS#Shorthand|shorthand]] que com sua utilização traz diversos benefícios. 
 ```css
 body {
 	background: rgb(55, 100, 50) url("starsolid.gif") no-repeat center top / contain border-box content-box scroll;

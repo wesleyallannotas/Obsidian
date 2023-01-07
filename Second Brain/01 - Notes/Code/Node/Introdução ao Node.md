@@ -6,7 +6,7 @@ book:
 type: note
 completed: false
 aliases:
-tags: [javascript, node]
+tags: [node]
 description: Introdução ao node.js, javascript no back-end
 ---
 # Introdução

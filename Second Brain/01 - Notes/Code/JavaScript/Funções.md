@@ -106,7 +106,7 @@ console.log(name)  // Resultado: 'AndressaWesley'
 Basicamente ele ==prioriza o parâmetro==, se tiver um parâmetro com o mesmo nome de variável interno ele utiliza o parâmetro, ==caso não exista, busca no escopo anterior==, e em ==ultimo caso cria a variável==
 
 # *Function Hoisting*
-Assim como vimos o funcionamento do *hoisting* para a [[01 - Notes/Code/JavaScript/Introdução#Variáveis e Constante|declaração de variável]] utilizando o comando `var`, existem o *function hoisting* para funções onde mesmo chamando a função antes de cria-la ele funcionara normalmente, pois, ocorre o *function hoisting* que é como se joga-se as declarações de funções para o inicio do código, independente de onde tenha escrito.
+Assim como vimos o funcionamento do *hoisting* para a [[Introdução ao JavaScript#Variáveis e Constante|declaração de variável]] utilizando o comando `var`, existem o *function hoisting* para funções onde mesmo chamando a função antes de cria-la ele funcionara normalmente, pois, ocorre o *function hoisting* que é como se joga-se as declarações de funções para o inicio do código, independente de onde tenha escrito.
 ```js
 sayMyName();  // Resultado: 'Wesley'
 
@@ -116,7 +116,7 @@ function sayMyName() {
 ```
 
 >[!attention] Atenção
->*Function Hoisting* só ocorre quando declaramos a função através do comando `function`, caso a declaramos de forma anônima, apresentara erro, mesmo utilizando `var`, pois como visto sobre [[01 - Notes/Code/JavaScript/Introdução#Variáveis e Constante|declaração de variável]] o *hoisting* do `var` eleva somente a declaração e não a atribuição de valor
+>*Function Hoisting* só ocorre quando declaramos a função através do comando `function`, caso a declaramos de forma anônima, apresentara erro, mesmo utilizando `var`, pois como visto sobre [[Introdução ao JavaScript#Variáveis e Constante|declaração de variável]] o *hoisting* do `var` eleva somente a declaração e não a atribuição de valor
 >```js
 >sayMyName() // Resultado: ERRO!
 >
@@ -138,9 +138,13 @@ const sayMyName = name => {
 	console.log(name)
 }
 ```
+Quando possui apenas uma linha retorna automaticamente.
+```js
+const square = n => n * n;
+```
 
 # *Callback Function*
-Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[01 - Notes/Code/JavaScript/Introdução#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, criando a ideia de uma função chamar outra função.
+Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[Introdução ao JavaScript#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, criando a ideia de uma função chamar outra função.
 ```js
 function sayMyName(name) {
 	console.log('Antes de executar a função callback')

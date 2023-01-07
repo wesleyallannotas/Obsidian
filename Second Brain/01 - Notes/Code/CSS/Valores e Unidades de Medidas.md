@@ -114,7 +114,7 @@ body {
 >Não confundir com a propriedade `position`, estamos falando do *data-type* `<position>`, não da propriedade
 
 # Funções
-Podemos utilizar funções como valores para propriedades, pois, [funções no CSS](./Introdução#Funções) recebem parâmetros e retornam o valor processado, assim como foi explicado na introdução
+Podemos utilizar funções como valores para propriedades, pois, [funções no CSS](Introdução%20ao%20CSS.md#Funções) recebem parâmetros e retornam o valor processado, assim como foi explicado na introdução
 
 # Strings e Identificadores
 - Podemos identificar uma **string** como ==texto envolto em aspas==, um lugar onde é muito utilizado é na propriedade `content` de pseudo-elements, por exemplo:

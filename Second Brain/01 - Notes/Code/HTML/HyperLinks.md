@@ -22,7 +22,7 @@ A base da tag ancora é `<a href=""></a>`, onde o conteúdo guarda o texto que s
 A tag ancora tem muitos atributos compatíveis, porem o mais importante e obrigatório é o `href`, de forma mais completa:
 - Aceita atributos globais
 >[!revisao] Recapitulando
-![[01 - Notes/Code/HTML/Introdução#Atributos Globais]]
+![[Introdução ao HTML#Atributos Globais]]
 - href
 	- url completa - `http://google.com`
 	- fragmento - `#sobre` partes da mesma página web que tiverem o **ID** correspondente

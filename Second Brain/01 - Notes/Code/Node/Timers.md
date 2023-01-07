@@ -6,7 +6,7 @@ book:
 type: note
 completed: false
 aliases:
-tags: [javascript, node]
+tags: [node]
 description: Como trabalhar com tempo no node.js
 ---
 # Introdução

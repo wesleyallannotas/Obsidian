@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [bancoDados, mysql]
+tags: [bd]
 description: Usando MySQL via docker
 ---
 # Inicializando Imagem

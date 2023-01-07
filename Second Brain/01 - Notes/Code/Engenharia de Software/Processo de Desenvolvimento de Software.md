@@ -56,7 +56,7 @@ Para que o processo funcione é necessário **procedimentos e métodos** que des
 # Modelos de Processos de Desenvolvimento
 Modelos de processos de desenvolvimento de software que já estão estabelecidos no mercado, onde são divididos entre os modelos **clássicos** e os modelos **ágeis**, onde invés de desenvolver um novo modelo, organizações preferem utilizar os modelos já testados amplamente pelo mercado, assim obtendo uma maior probabilidade de exito no desenvolvimento do software.
 >[!revisao] Recapitulando
-![[01 - Notes/Code/Engenharia de Software/Introdução#Elementos]]
+![[Introdução a Engenharia de Software#Elementos]]
 
 ## Ciclo de Vida do Software
 Assim como o ser humano o software possui um ciclo de vida, que não é ceifado pelo desgastes físico como o hardware, mas sim uma degradação proveniente de consecutivas alterações no seus código, seja para adicionar funções ou corrigir bugs, assim o software permeia pelos ciclos, de inicio com alta demanda de correção e adição de funcionalidades ate chegar a faze que entrega sua função completamente, porem obviamente ainda passando pro correções, ate chegar a fase do fim da sua vida, quando ou suas tecnologias estão muito defasadas, ou ate mesmo com muita dificuldade de correção, assim tomando muito tempo dos desenvolvedores.

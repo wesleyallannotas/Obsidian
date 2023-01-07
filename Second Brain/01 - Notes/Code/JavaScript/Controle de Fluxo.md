@@ -220,7 +220,7 @@ for (let property in person) {
 Utilizamos a estrutura de repetição `for...in` para ==percorrer *Object*==
 
 >[!tip] Dica de como acessar valores de um objeto
->Como vimos sobre [[01 - Notes/Code/JavaScript/Introdução#Object|objetos]] podemos acessar o valor de uma propriedade através da sintaxe `objeto.propriedade` ou também utilizando colchetes `objeto.["propriedade"]`
+>Como vimos sobre [[Introdução ao JavaScript#Object|objetos]] podemos acessar o valor de uma propriedade através da sintaxe `objeto.propriedade` ou também utilizando colchetes `objeto.["propriedade"]`
 
 # Controles de Repetições
 Dentro de um bloco de código de um *loop* podemos utilizar comandos para o controle, sendo eles:

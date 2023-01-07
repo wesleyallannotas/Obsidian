@@ -18,7 +18,7 @@ _Queue_ ou como é mais conhecido em português por **Fila**. Podemos a entender
 
 
 # Criando
-Utilizaremos classe no JavaScript para criar a estrutura, vamos seguir os passos vistos na [[01 - Notes/Code/Estrutura de Dados/Introdução|Introdução]]
+Utilizaremos classe no JavaScript para criar a estrutura, vamos seguir os passos vistos na [[Introdução a Estrutura de  Dados|Introdução]]
 
 ```js
 class Stack {

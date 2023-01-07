@@ -10,7 +10,7 @@ tags: [css]
 description: Como manipular as fontes com diversar propriedades no CSs 
 ---
 # Introdução
-Manipulação de fontes é muito importante para a construção de uma boa página web, existem diversas propriedades que podemos manipular através do CSS, também é possível a utilização de [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand]] na declaração da fonte. ([Doc](https://www.w3.org/TR/css-fonts-3/))
+Manipulação de fontes é muito importante para a construção de uma boa página web, existem diversas propriedades que podemos manipular através do CSS, também é possível a utilização de [[Introdução ao CSS#Shorthand|shorthand]] na declaração da fonte. ([Doc](https://www.w3.org/TR/css-fonts-3/))
 
 >[!warning] Atenção
 >Nem todas as fontes aceitam todas as propriedades
@@ -112,7 +112,7 @@ Ignorando a forma como digitamos e transformando todo o texto para o valor espec
 - `none` - Mantem a forma digitada
 
 # Decoração
-Através da propriedade `text-decoration` podemos atribuir uma aparência decorativa ao nosso texto, lembrando que `text-decoration` é um [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand]] para as seguintes propriedades `text-decoration-line`, `text-decoration-color`, `text-decoration-style` e `text-decoration-thickness` ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration))
+Através da propriedade `text-decoration` podemos atribuir uma aparência decorativa ao nosso texto, lembrando que `text-decoration` é um [[Introdução ao CSS#Shorthand|shorthand]] para as seguintes propriedades `text-decoration-line`, `text-decoration-color`, `text-decoration-style` e `text-decoration-thickness` ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration))
 ```css
 p {
 	text-decoration: underline wave tomato;

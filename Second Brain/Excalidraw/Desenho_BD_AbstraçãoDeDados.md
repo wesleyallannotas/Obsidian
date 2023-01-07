@@ -1,7 +1,7 @@
 ---
 
 excalidraw-plugin: parsed
-tags: [excalidraw]
+tags: [bd]
 
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
@@ -100,8 +100,8 @@ Nível de visão ^pB7CYxjD
 		},
 		{
 			"type": "arrow",
-			"version": 218,
-			"versionNonce": 247866073,
+			"version": 222,
+			"versionNonce": 1686805803,
 			"isDeleted": false,
 			"id": "avMF3n4p8c6lQVZlxh5lz",
 			"fillStyle": "hachure",
@@ -110,17 +110,17 @@ Nível de visão ^pB7CYxjD
 			"roughness": 2,
 			"opacity": 100,
 			"angle": 0,
-			"x": 39.84549142705644,
-			"y": 196,
+			"x": 39.845499284601864,
+			"y": 196.00000000000006,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 2.4410357026836706,
-			"height": 99,
+			"width": 2.441041262814096,
+			"height": 99.00000000000003,
 			"seed": 2139592823,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1664049713382,
+			"updated": 1673125081201,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -142,8 +142,8 @@ Nível de visão ^pB7CYxjD
 					0
 				],
 				[
-					-2.4410357026836706,
-					-99
+					-2.441041262814096,
+					-99.00000000000003
 				]
 			]
 		},
@@ -198,8 +198,8 @@ Nível de visão ^pB7CYxjD
 		},
 		{
 			"type": "text",
-			"version": 25,
-			"versionNonce": 260988857,
+			"version": 27,
+			"versionNonce": 1996897611,
 			"isDeleted": false,
 			"id": "ZeZuQxEq",
 			"fillStyle": "hachure",
@@ -208,17 +208,17 @@ Nível de visão ^pB7CYxjD
 			"roughness": 2,
 			"opacity": 100,
 			"angle": 0,
-			"x": -21,
+			"x": -10.5,
 			"y": 240,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 130,
+			"width": 109,
 			"height": 25,
 			"seed": 754726809,
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1664049713382,
+			"updated": 1673125077807,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -395,8 +395,8 @@ Nível de visão ^pB7CYxjD
 		},
 		{
 			"type": "text",
-			"version": 89,
-			"versionNonce": 1692023801,
+			"version": 91,
+			"versionNonce": 1166433259,
 			"isDeleted": false,
 			"id": "64hZji9L",
 			"fillStyle": "hachure",
@@ -405,11 +405,11 @@ Nível de visão ^pB7CYxjD
 			"roughness": 2,
 			"opacity": 100,
 			"angle": 0,
-			"x": -186.66528133984184,
+			"x": -171.66528133984184,
 			"y": -170.26195423786277,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 96,
+			"width": 66,
 			"height": 25,
 			"seed": 587214295,
 			"groupIds": [
@@ -417,7 +417,7 @@ Nível de visão ^pB7CYxjD
 			],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1664049730693,
+			"updated": 1673125077808,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -432,8 +432,8 @@ Nível de visão ^pB7CYxjD
 		},
 		{
 			"type": "text",
-			"version": 59,
-			"versionNonce": 435313687,
+			"version": 61,
+			"versionNonce": 399091339,
 			"isDeleted": false,
 			"id": "NpM0U1BM",
 			"fillStyle": "hachure",
@@ -442,11 +442,11 @@ Nível de visão ^pB7CYxjD
 			"roughness": 2,
 			"opacity": 100,
 			"angle": 0,
-			"x": -35.66528133984184,
+			"x": -23.16528133984184,
 			"y": -174.76195423786277,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 100,
+			"width": 75,
 			"height": 25,
 			"seed": 1201205145,
 			"groupIds": [
@@ -454,7 +454,7 @@ Nível de visão ^pB7CYxjD
 			],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1664049730693,
+			"updated": 1673125077809,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -555,10 +555,14 @@ Nível de visão ^pB7CYxjD
 		"currentItemFontFamily": 1,
 		"currentItemFontSize": 20,
 		"currentItemTextAlign": "left",
-		"currentItemStrokeSharpness": "sharp",
 		"currentItemStartArrowhead": "arrow",
 		"currentItemEndArrowhead": "arrow",
-		"currentItemLinearStrokeSharpness": "sharp",
+		"scrollX": 341.4531601277206,
+		"scrollY": 247.26564274066592,
+		"zoom": {
+			"value": 1.6500000000000001
+		},
+		"currentItemRoundness": "round",
 		"gridSize": null,
 		"colorPalette": {}
 	},

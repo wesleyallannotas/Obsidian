@@ -18,7 +18,7 @@ O conceito de caixas se baseia na ideia que todo elementos HTML que não é *inl
 - `margin` - Margens
 ![[Desenho_HTMLCSS_BoxModel|center]]
 >[!note] Especifico Dimensões
->Vale lembrar que em `padding`, `margin` e `border`, possuímos a liberdade para escolher o lado que queremos adicionar o estilo, seja em notação especifica, ou simplificada utilizando [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand]] (No simplificado e atribuído no sentido horário, e caso possua uma omissão ele pega o valor do seu lado contrario), por exemplo
+>Vale lembrar que em `padding`, `margin` e `border`, possuímos a liberdade para escolher o lado que queremos adicionar o estilo, seja em notação especifica, ou simplificada utilizando [[Introdução ao CSS#Shorthand|shorthand]] (No simplificado e atribuído no sentido horário, e caso possua uma omissão ele pega o valor do seu lado contrario), por exemplo
 >```css
 >.container {
 >	/*Simplificado*/
@@ -51,7 +51,7 @@ Os display `inline` e `block` esta relacionado a como as caixas (*box*) se compo
 - `inline` - `<a>`, `<strong>`, `<span>`, `<em>`, entre outras...
 
 # Margens (`margin`)
-Através da propriedade `margin` podemos atribuir margem as lados, sendo eles `top`, `bottom`, `left` e `right`, podemos atribuir valor aos lados individualmente ou em apenas uma declaração utilizando [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand]] como explicado acima.
+Através da propriedade `margin` podemos atribuir margem as lados, sendo eles `top`, `bottom`, `left` e `right`, podemos atribuir valor aos lados individualmente ou em apenas uma declaração utilizando [[Introdução ao CSS#Shorthand|shorthand]] como explicado acima.
 
 >[!warning] Atenção
 >Cuidado com o *margin colapse*, que nada mais é do que o encontro de margens de objetos diferentes que ao invés de se somarem ==anula uma dando preferenciar a maior==, importante se atentar que *margin colapse* ==só ocorre na vertical, ou seja, quando um `margin-bottom` encontra um `margin-top`==, na horizontal a soma ocorre normalmente `margin-right` e `margin-left`
@@ -66,13 +66,13 @@ div {
 ```
 
 # Espaçamento Interno (`padding`)
-Através da propriedade `padding` podemos adicionar espaçamento interno no objeto, a declaração funciona da mesma forma do `margin`, existindo a possibilidade de atribuição de `padding` em um lado especifico ou utilizar o [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand]]
+Através da propriedade `padding` podemos adicionar espaçamento interno no objeto, a declaração funciona da mesma forma do `margin`, existindo a possibilidade de atribuição de `padding` em um lado especifico ou utilizar o [[Introdução ao CSS#Shorthand|shorthand]]
 
 >[!warning] Atenção
 >Por padrão o `padding` impacta no tamanho da caixa (*box*), podemos mudar esse comportamento através do [[Box Model#Box-Sizing|Box Sizing]]
 
 # Bordas (`border`)
-Através da propriedade `border` podemos adicionar estilos as bordas do nosso elementos, `border` é o mais complexo em relação as anteiros, possui níveis de [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand]], para o pleno funcionamento das bordas, é necessário definir o estilo da borda, cor e tamanho, a seguir segui exemplos de declarações da borda:
+Através da propriedade `border` podemos adicionar estilos as bordas do nosso elementos, `border` é o mais complexo em relação as anteiros, possui níveis de [[Introdução ao CSS#Shorthand|shorthand]], para o pleno funcionamento das bordas, é necessário definir o estilo da borda, cor e tamanho, a seguir segui exemplos de declarações da borda:
 ```css
 div {
 	/* Mais simplificado */

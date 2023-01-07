@@ -20,7 +20,7 @@ Em sua declaração temos a disposição vários atributos interessantes, sendo 
 - `title` - Titulo para acessibilidade
 - `allowfullscreen` - *Allow* significa permitir, ou seja, estamos permitindo o *fullscreen* no nosso português tela cheia
 - `frameborder` - Definimos a borda do elementos
-- Também aceita [[01 - Notes/Code/HTML/Introdução#Atributos Globais|atributos globais]]
+- Também aceita [[Introdução ao HTML#Atributos Globais|atributos globais]]
 
 # Exemplo
 É utilizada por exemplo pelo Youtube quando escolher a opção de **incorporar**, exemplo de declaração de elemento `<iframe>` tirado do Youtube

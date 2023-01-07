@@ -1,7 +1,7 @@
 ---
 
 excalidraw-plugin: parsed
-tags: [excalidraw]
+tags: [css]
 
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==

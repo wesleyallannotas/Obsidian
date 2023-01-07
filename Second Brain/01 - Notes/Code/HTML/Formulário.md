@@ -99,7 +99,7 @@ Um dos elementos vazios mais utilizados em formulário `<input />`, aceita diver
 O elemento vazio `<input />` é complexo e muito poderoso, existem algumas atributos que são mais utilizados, sendo eles
 - `type` - Definimos o tipo de dados aceito pelo `<input />`
 - `name` - Uma espécie de titulo/identificação do nosso `<input />`
-- `id` - [[01 - Notes/Code/HTML/Introdução#Atributos Globais|atributo global]], que aqui ganha ainda mais força
+- `id` - [[Introdução ao HTML#Atributos Globais|atributo global]], que aqui ganha ainda mais força
 - `autocomplete` - Possuímos diversas possiblidades de valor para esse atributo, em suma podemos definir de onde pegar valores para servirem de *autocomplete*
 - `autofocus` - Será focado após o carregamento da página, atributo booleano que por boa pratica só deve haver um por página
 - `disabled` - Desabilita, atributo booleano

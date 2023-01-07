@@ -6,11 +6,11 @@ url:
 book: Entendendo Algoritmos
 completed: true
 aliases: qsort
-tags: [ordenação, recursão, algoritmo]
+tags: [algoritmo]
 description: Entender o algritmo quick sort que utiliza técnicas de recurão
 ---
 # Introdução
-Algoritmo de Ordenação que usa a técnica DC (Dividir para conquistar), **algoritmos DC são recursivos**, ou seja, devemos encontrar o **caso base** e o **caso recursivo** 
+Algoritmo de Ordenação que usa a técnica DC (Dividir para conquistar), **algoritmos DC são [[Recursão|recursivos]]**, ou seja, devemos encontrar o **caso base** e o **caso recursivo** 
 
 >[!info]
 A linguagem utilizada no exemplo sera **Python**

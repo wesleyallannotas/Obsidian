@@ -69,7 +69,7 @@ No exemplo acima os elementos *flex item* desse HTML imaginário são todos `<di
 Podemos utilizar uma melhor forma para atribuir dimensões para manter flexível até certo ponto e quando atingir um mínimo quebrar.
 
 ## `flex-flow`
-A propriedade `flex-flow` é um [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand]] que possibilita atribuir valor para as propriedades [[#`flex-direction`|flex-direction]] e [[#`flex-warp`|flex-wrap]], podemos utilizar para atribuir apenas em uma ou em ambas, quando enviado apenas um valor ele consegui identificar para qual propriedade é o valor
+A propriedade `flex-flow` é um [[Introdução ao CSS#Shorthand|shorthand]] que possibilita atribuir valor para as propriedades [[#`flex-direction`|flex-direction]] e [[#`flex-warp`|flex-wrap]], podemos utilizar para atribuir apenas em uma ou em ambas, quando enviado apenas um valor ele consegui identificar para qual propriedade é o valor
 ```css
 .container {
 	display: flex;
@@ -117,7 +117,7 @@ Ao adicionar o valor `flex` ao `display` de um elemento, o tornamos um *Flex con
 - [[#`flex-basis`|Flex-basis]] - Mudar o tamanho do item
 - [[#`flex-grow`|Flex-grow]] - Se adapta crescendo automaticamente
 - [[#`flex-shrink`|Flex-shrink]] - Encurtar, comprimir, dependendo do tamanho da caixa
-- [[#`flex`|Flex]] - [[01 - Notes/Code/CSS/Introdução#Shorthand|Shorthand]] para [[#`flex-basis`|flex-basis]], [[#`flex-grow`|flex-grow]] e [[#`flex-shrink`|flex-shrink]] 
+- [[#`flex`|Flex]] - [[Introdução ao CSS#Shorthand|Shorthand]] para [[#`flex-basis`|flex-basis]], [[#`flex-grow`|flex-grow]] e [[#`flex-shrink`|flex-shrink]] 
 - [[#`order`|Order]] - Controla a ordem do *flex item* dentro do *flex container*
 - [[#`align-self`|Align-Self]]
 
@@ -181,8 +181,8 @@ A propriedade `flex-shrink` que esta disponível para os *flex itens*, possibili
 Esse é o mais confuso que necessita de mais testes e leitura da documentação para entender
 
 ## `flex`
-A propriedade `flex` é um [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand]] para as propriedades [[#`flex-grow`|flex-grow]], [[#`flex-shrink`|flex-shrink]] e [[#`flex-basis`|flex-basis]] dos *flex item*, pode possuir 1, 2 ou 3 valores, normalmente seguinte a ordem *grow*, *shrink* e *basis*
-- 1 Valor - Quantos passamos para a propriedade [[01 - Notes/Code/CSS/Introdução#Shorthand|shorthand]] `flex` apenas o valor 1 ele preenche da seguinte forma
+A propriedade `flex` é um [[Introdução ao CSS#Shorthand|shorthand]] para as propriedades [[#`flex-grow`|flex-grow]], [[#`flex-shrink`|flex-shrink]] e [[#`flex-basis`|flex-basis]] dos *flex item*, pode possuir 1, 2 ou 3 valores, normalmente seguinte a ordem *grow*, *shrink* e *basis*
+- 1 Valor - Quantos passamos para a propriedade [[Introdução ao CSS#Shorthand|shorthand]] `flex` apenas o valor 1 ele preenche da seguinte forma
 ```css
 .container .item {
 	flex: 1;

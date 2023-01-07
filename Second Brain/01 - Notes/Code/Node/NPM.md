@@ -6,7 +6,7 @@ book:
 type: note
 completed: false
 aliases:
-tags: [javascript, node]
+tags: [node]
 description: Apredendo a utilizar o npm, gerenciador de pacotes node mais famoso.
 ---
 # Introdução

@@ -6,7 +6,7 @@ book:
 type: note
 completed: false
 aliases:
-tags: [javascript, node]
+tags: [node]
 description: Utilizando função do modulo utils para herdar de uma classe para outra
 ---
 # Introdução

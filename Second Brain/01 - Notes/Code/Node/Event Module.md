@@ -6,7 +6,7 @@ book:
 type: note
 completed: false
 aliases:
-tags: [javascript, node]
+tags: [node]
 description: Disprando eventos com node, base apra muitos modulos importantes
 ---
 # Introdução
@@ -19,7 +19,7 @@ O modulo de eventos já faz parte do _core_ do node, ou seja, já vem junto quan
 const events = requise('events');
 ```
 
-Dessa forma importamos toda o modulo, porem é muito comum importamos uma [[01 - Notes/Code/Node/Introdução#Importando item especifico|item especifico do modulo]], que no caso é `EventEmitter`, então importaremos da seguintes forma.
+Dessa forma importamos toda o modulo, porem é muito comum importamos uma [[Introdução ao Node#Importando item especifico|item especifico do modulo]], que no caso é `EventEmitter`, então importaremos da seguintes forma.
 
 ```js
 cosnt EventEmitter = require('events');
