@@ -19,7 +19,7 @@ git init
 Criando o diretório oculto `.git` que armazena as configurações e o versionamento do projeto.
 
 # Criando Commit
-Para criarmos um _commit_ primeiro é necessário armazenar adicionar os arquivos ao _commit_ através do comando
+Para criarmos um _commit_ primeiro é necessário registrar as mudanças ao _Stage Area_, como visto sobre os [[Introdução ao Git#Fluxo Git|estados]] no repositório git
 
 ```sh
 git add nomearg

@@ -32,3 +32,10 @@ git config --global user.name "Wesley Silva"
 git config --global user.email "wesley.allansilva@gmail.com"
 git config --global core.editor "code -w" # Caso queira utilizar VSCode como padrão
 ```
+
+# Fluxo Git
+Os arquivos do repositório Git podem se encontrar em diferente estados dentro do fluxo do Git, que são controlados através dos comandos, os arquivos se encontram inicialmente no _Working Diretory_. onde após alterar, adicionar ou remover, ou seja, realizar mudanças em relação ao _commit_ anterior, ficaram em estado de _modified_, ou seja, são mudanças que não se encontram na _Stage Area_, assim não sendo registradas quando realizar o _commit_.
+Realizando o comando `git add` com um ou mais arquivos, os mudamos para o estado, _Stage Area_, onde se encontra as alterações que estarão presentes no próximo _commit_
+
+![[Desenho_Git_Estados|600center]]
+

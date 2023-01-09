@@ -28,7 +28,7 @@ O Dinheiro vem até mim de diversas fontes e contínuas bases, em quantidades ca
 # Caminho de estudo
 - [x] Livro - Entendendo Algoritmo, Aditya Y. Bhargava
 - [ ] Curso - Discovery, Rocketseat
-- [ ] Livro - Estrutura de Dados e Algorimos com JavaScript, Loiane Groner
+- [ ] Livro - Estrutura de Dados e Algoritmos com JavaScript, Loiane Groner
 - [ ] Livro - Orientação a Objetos e SOLID para Ninjas: Projetando Classes Flexíveis, Mauricio Aniche
 - [ ] Curso - Ignite, React, Rocketseat
 - [ ] Curso - Ignite, Node, Rcoketseat
