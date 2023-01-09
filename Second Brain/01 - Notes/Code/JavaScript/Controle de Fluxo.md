@@ -108,7 +108,7 @@ Iniciando pela tradução livre, *throw* significa "Lançar", *Catch* significa 
 >	}
 >}
 >```
->Porem é uma boa pratica criar um novo objeto `Error` e passar como parâmetro para o [[Funções#*Function Constructor*|function constructor]]
+>Porem é uma boa pratica criar um novo objeto `Error` e passar como parâmetro para o [[Funções#*Function Constructor*|function constructor]] que esta sendo usado neste exemplo.
 >```js
 >function sayMyName(name = '') {
 >	if (name === "") {
@@ -117,7 +117,7 @@ Iniciando pela tradução livre, *throw* significa "Lançar", *Catch* significa 
 >
 >```
 
-Senso assim o `catch` **através de um parâmetro** pega esse lançamento (*trhow*) onde podemos manipula-lo ou exibi-lo, importante se atentar que o ==`throw` quebra a execução do bloco de código==, podemos usar o `throw` sem um `try...catch` porem ele exibi o erro e também informa que ele não foi pego *Uncaught*
+Sendo assim o `catch` **através de um parâmetro** pega esse lançamento (*trhow*) onde podemos manipula-lo ou exibi-lo, importante se atentar que o ==`throw` quebra a execução do bloco de código==, podemos usar o `throw` sem um `try...catch` porem ele exibi o erro e também informa que ele não foi pego *Uncaught*
 
 ```js
 function sayMyName(name = "") {

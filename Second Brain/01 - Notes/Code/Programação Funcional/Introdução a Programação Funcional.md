@@ -48,7 +48,7 @@ setAmount(2);
 Estamos criando uma constante `amount` e pegando uma função `setAmout`, tudo será retornado por `useState()`.
 
 # Stateless
-Não há memória (estado) que é mantido pelo programa, nenhum registro ou estado de todas as interações anteriores são salvos e cada interação é tratada com base nas informações disponíveis para a interação.
+Não há memória (estado) mantido pelo programa, nenhum registro ou estado de todas as interações anteriores são salvos e cada interação é tratada com base nas informações disponíveis para a interação.
 Como não conhece e nem é influenciado por dados externos que não são os passados como argumento/parâmetro, sua resposta não pode variar, ou seja, se sempre receber apenas o valor 2 como dado, sempre retornara o mesmo resultado, por que não sofre interferência externa.
 Contrario de _Stateless_ é _Stateful_
 - Não guarda estado

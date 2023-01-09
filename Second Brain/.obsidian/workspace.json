@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Planejamento.md",
-                "mode": "preview",
+                "file": "01 - Notes/Code/Git e Github/Introdução ao Git.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/Planejamento.md",
+                "file": "01 - Notes/Code/Git e Github/Introdução ao Git.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/Planejamento.md"
+                "file": "01 - Notes/Code/Git e Github/Introdução ao Git.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/Planejamento.md",
+                "file": "01 - Notes/Code/Git e Github/Introdução ao Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/Planejamento.md",
+                "file": "01 - Notes/Code/Git e Github/Introdução ao Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,15 +217,15 @@
   },
   "active": "9c52fa5acf0240bc",
   "lastOpenFiles": [
-    "01 - Notes/Code/Planejamento.md",
-    "planejha.md",
-    "01 - Notes/Code/Git e Github/Introdução ao Git.md",
-    "01 - Notes/Code/Git e Github/Repositório Git.md",
-    "Images/Desenho_Git_Estados.md",
-    "01 - Notes/Code/Banco de Dados/Introdução Banco de Dados.md",
-    "Excalidraw/MapaMental_POO.md",
-    "Excalidraw/MapaMental _QuickSort.md",
-    "Excalidraw/Desnho_engSoftware_SIBC.md",
-    "Excalidraw/Desenho_SQL_Joins.md"
+    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+    "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
+    "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
+    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
+    "01 - Notes/Code/Node/Introdução ao Node.md",
+    "01 - Notes/Code/Estrutura de Dados/Introdução a Estrutura de  Dados.md",
+    "01 - Notes/Code/Estrutura de Dados/Array.md",
+    "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
+    "Excalidraw/MapaMental_POO.md"
   ]
 }

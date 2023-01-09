@@ -19,7 +19,7 @@ Em JavaScript a ==maioria dos tipos de dados são encapsulados por um objeto==, 
 # Type Conversion Coersion
 *Type Conversion* (*typecasting*) e *Type Coersion* tem como funcionalidade a realização da alteração de um tipo de dado, porem seu funcionamento ocorre de maneira diferente, resumidamente:
 - _Type Conversoin (typecasting)_ - Explicitamente altera um tipo de dado para o outro
-- _Type Coersion_ - O JavaScript implicitamente realiza a troca. Acontece algo parecido com booleano através do [[Expressões e Operadores#*Falsy* e *Truthy*|falsy e truthy]]
+- _Type Coersion_ - O JavaScript implicitamente realiza a troca. Acontece algo parecido com booleano através do [[Falsy e Truthy|falsy e truthy]]
 
 ## Type Coersion
 ```js

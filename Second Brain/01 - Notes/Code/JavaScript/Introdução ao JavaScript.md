@@ -86,7 +86,7 @@ nome = `Wesley`; /* Template Strings */
 ```
 
 ### Template Strings
-São *strings* mais poderosas que permitem expressões embutidas, Você pode _utilizar string_ multi-linhas e interpolação de _string_ com elas. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals))
+É uma forma de declarar *strings* mais poderosas que permitem expressões embutidas, Você pode _utilizar string_ multi-linhas e interpolação de _string_ com elas. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals))
 Template Strings são envolvidas pelo sinal de acentos graves
 ```js
 let name, age
@@ -186,7 +186,8 @@ console.log(x); // Resultado: Undefined
 console.log(x); // Resultado 0
 ```
 - **Constante**
-	- `const` -Local no escopo do bloco atual, diferente de `var` não possui _hoisting_
+	- `const` - Local no escopo do bloco atual, diferente de `var` não possui _hoisting_
+ 
 JavaScript é uma linguagem de ==tipagem fraca e dinâmica==, tipagem fraca pois não existe a necessidade de especificar o tipo da nossa variável, ele é identificada automaticamente, contrario por exemplo do Java `int idade = 30`, e dinâmica, pois, podemos mudar o tipo da nossa variável a qualquer momento, ocorrendo automaticamente ao mudar o valor
 
 # Escopo (*Scope*)

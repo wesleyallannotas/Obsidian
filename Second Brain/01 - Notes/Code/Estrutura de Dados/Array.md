@@ -24,7 +24,7 @@ _arrays_ aceitam dados repetidos.
 
 # Dados Aceitos
 Em **_JavaScript_** _array_ possui uma natureza **heterogenia**, ou seja, aceita valores de diferentes tipos, podendo misturar os tipos de dados livremente.
-Em muitas linguagens, _Arrays_, pelo menos de forma nativa, possui natureza **homogenia**, com seu tipo especificado na criação e só aceitando valores desse tipo pré-definido, porem normalmente possui bibliotecas que permitem a criação de espécies de _Arrays_ homogenias.
+Em muitas linguagens, _Arrays_, pelo menos de forma nativa, possui natureza **homogenia**, com seu tipo especificado na criação e só aceitando valores desse tipo pré-definido, porem normalmente possui bibliotecas que permitem a criação de espécies de _Arrays_ heterogenias.
 
 # Tamanho
 Em **JavaScript** _arrays_ possuem **tamanho dinâmico**, assim não sendo necessário especificar o tamanho na declaração, já em muitas outras linguagens é **necessário especificar o tamanho** antes, pois, será alocado o tamanho na memoria, para alocar os dados um ao lado do outro.

@@ -10,7 +10,7 @@ tags: [estruturaDados]
 description: Entenda o que é estrutura de dados
 ---
 Importante estudar sobre a estrutura de dados para entender o real funcionamento por baixo dos panos de muitas estruturas que usamos diariamente, afim de um melhor uso das estruturas com algoritmos mais performáticos e eficientes, além do ganho de conhecimento mais aprofundado, que desperta uma melhor noção para resolução de problemas complexos.
-Basicamente é estruturas de armazenamento de dados, onde em linguagens de baixo nível é necessário até apontar ao na memoria será armazenado.
+Basicamente é estruturas de armazenamento de dados, onde em linguagens de baixo nível é necessário até apontar aonde na memoria será armazenado.
 As estruturas de dados mais conhecidas são _Array_ e _Object_, exemplo delas no JavaScript
 
 ```js

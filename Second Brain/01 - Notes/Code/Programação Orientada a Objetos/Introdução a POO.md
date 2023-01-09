@@ -10,7 +10,7 @@ tags: [poo]
 description: Entenda de uma vez por todas POO 
 ---
 Também conhecido pela sigla em inglês OOP (_Oriented Object Programming_), ele é um paradigma de desenvolvimento, ou seja, uma maneira de pensar, de resolver um problema.
-**_JavaScript_** pro exemplo é uma linguagem multiparadigmas, ou seja, possui a possibilidade de aplicar a programação orientada a objetos, como suporta outros paradigmas também, nesse caso deve ser analise através de `n` fatores qual utilizar no nosso software, porem existem linguagens que só possui Orientação a objetos, como **_Java_**, assim não temos escolha, POO possui alguns características vantagens interessantes .
+**_JavaScript_** pro exemplo é uma linguagem multiparadigmas, ou seja, possui a possibilidade de aplicar a programação orientada a objetos, como suporta outros paradigmas também, nesse caso deve ser analisado através de `n` fatores qual utilizar no nosso software, porem existem linguagens que só possui Orientação a objetos, como **_Java_**, assim não temos escolha, POO possui alguns características vantagens interessantes .
 - Necessário para a aplicação de padrões de projetos específicos.
 - Mantem o Código mais organizado.
 - Facilita entendimento do código, o imaginando como objeto.

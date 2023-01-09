@@ -39,3 +39,5 @@ Realizando o comando `git add` com um ou mais arquivos, os mudamos para o estado
 
 ![[Desenho_Git_Estados|600center]]
 
+# Nome dos Commits
+O nome dado as _commits_ é uma _hash_ gerada automaticamente utilizando algoritmo `SHA-1`
