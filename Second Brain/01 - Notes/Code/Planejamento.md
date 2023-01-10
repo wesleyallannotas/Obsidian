@@ -31,7 +31,7 @@ O Dinheiro vem até mim de diversas fontes e contínuas bases, em quantidades ca
 - [ ] Curso - Fundamentos JavaScript, Erick Wendel
 - [ ] Livro - Estrutura de Dados e Algoritmos com JavaScript, Loiane Groner
 - [ ] Livro - Orientação a Objetos e SOLID para Ninjas: Projetando Classes Flexíveis, Mauricio Aniche
-- [ ] Curso - Ignite, React, Rocketseat
+- [ ] Curso - React JS, Bibiano Senior
 - [ ] Curso - Ignite, Node, Rcoketseat
 - [ ] Curso - Ignite, React Native, Rocketseat
 - [ ] Livro - Código Limpo, Martin
