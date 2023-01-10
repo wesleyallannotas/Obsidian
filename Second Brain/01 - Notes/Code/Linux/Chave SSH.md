@@ -15,6 +15,7 @@ Chaves SSH são chaves assimétricas onde existe uma chave publica que disponibi
 # Criando
 Para criar uma chave SSH utilizando o Linux o comando usado é
 ```bash
-ssh-keygen -o -a 100 -t ed25519 ~/.ssh/id_nomechave -C "email@email.com"
+ssh-keygen -o -a 100 -t ed25519 ~/.ssh/id_nomechave -C "email@email.com"  # Akita
+ssh-keygen -t rsa -b 4096 -C "email@mail.com" # Dicover
 ```
 Será peido uma frase para ser utilizado como senha, e como foi especificado no comando será armazenado na chave `.ssh`

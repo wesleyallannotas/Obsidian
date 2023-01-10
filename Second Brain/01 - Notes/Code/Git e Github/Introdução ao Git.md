@@ -40,4 +40,7 @@ Realizando o comando `git add` com um ou mais arquivos, os mudamos para o estado
 ![[Desenho_Git_Estados|600center]]
 
 # Nome dos Commits
-O nome dado as _commits_ é uma _hash_ gerada automaticamente utilizando algoritmo `SHA-1`
+O nome dado as _commits_ é uma _hash_ `SHA-1` gerada automaticamente, onde após cada _commit_ é gerado um _checksum_ através dos dados modificados e convertidos para valores `SHA-1`, assim garantindo um integridade de dados, o código é composto por 40 caracteres hexadecimal, onde dentro dessa _hash_ é guardado um espécie de fotografia _Snapshot_ do repositório.
+
+# Ponteiro HEAD
+Head é o ponteiro que nosso repositório esta apontando, normalmente aponta para o ultimo _commit_, porem podemos reposiciona-lo através de comandos no terminal, também é possível alterar a Branch que o ponteiro esta apontando, ou seja, ele aponta para um _commit_ dentro de uma _branch_, onde temos o controle para reposicionar a partir de nossas necessidades.

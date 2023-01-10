@@ -8,18 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9c52fa5acf0240bc",
+            "id": "a4dd8b1b735c11d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Introdução ao Git.md",
+                "file": "01 - Notes/Code/Web/HTTP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "47053da6ce731a05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/Web/Ferramentas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6692723ba63c70dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/Planejamento.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -102,7 +127,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Introdução ao Git.md",
+                "file": "01 - Notes/Code/Planejamento.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Introdução ao Git.md"
+                "file": "01 - Notes/Code/Planejamento.md"
               }
             }
           },
@@ -154,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Introdução ao Git.md",
+                "file": "01 - Notes/Code/Planejamento.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Introdução ao Git.md",
+                "file": "01 - Notes/Code/Planejamento.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,17 +240,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "9c52fa5acf0240bc",
+  "active": "6692723ba63c70dc",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
-    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
-    "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
-    "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
-    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
-    "01 - Notes/Code/Node/Introdução ao Node.md",
-    "01 - Notes/Code/Estrutura de Dados/Introdução a Estrutura de  Dados.md",
-    "01 - Notes/Code/Estrutura de Dados/Array.md",
-    "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
-    "Excalidraw/MapaMental_POO.md"
+    "01 - Notes/Code/Web/Ferramentas.md",
+    "01 - Notes/Code/Web/HTTP.md",
+    "Images/Desenho_Web_HTTP.md",
+    "01 - Notes/Code/CSS/At-Rules.md",
+    "01 - Notes/Code/Delphi/Gerar Log de Performance.md",
+    "01 - Notes/Code/Delphi/Função Anonima.md",
+    "01 - Notes/Code/Git e Github/Repositório Git.md",
+    "01 - Notes/Code/Sem título.md",
+    "02 - Articles/Distrobox como configurar e instalar suas primeiras distros - Diolinux.md",
+    "01 - Notes/Code/Windows/Link Simbolico.md"
   ]
 }

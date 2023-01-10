@@ -28,11 +28,12 @@ O Dinheiro vem até mim de diversas fontes e contínuas bases, em quantidades ca
 # Caminho de estudo
 - [x] Livro - Entendendo Algoritmo, Aditya Y. Bhargava
 - [ ] Curso - Discovery, Rocketseat
+- [ ] Curso - Fundamentos JavaScript, Erick Wendel
 - [ ] Livro - Estrutura de Dados e Algoritmos com JavaScript, Loiane Groner
 - [ ] Livro - Orientação a Objetos e SOLID para Ninjas: Projetando Classes Flexíveis, Mauricio Aniche
 - [ ] Curso - Ignite, React, Rocketseat
 - [ ] Curso - Ignite, Node, Rcoketseat
 - [ ] Curso - Ignite, React Native, Rocketseat
-- [ ] Livro - Codigo Limpo, Martin
+- [ ] Livro - Código Limpo, Martin
 - [ ] Livro - Refatoração, Martin
 - [ ] Livro - Domain Driven Design

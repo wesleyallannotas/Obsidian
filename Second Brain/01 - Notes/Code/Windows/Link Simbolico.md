@@ -6,7 +6,7 @@ book:
 type: note
 completed: true
 aliases:
-tags: [windows, cli]
+tags: [windows]
 description: Como criar link simbolico no windows
 ---
 # Links Simbólicos

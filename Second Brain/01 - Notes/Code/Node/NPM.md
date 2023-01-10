@@ -12,7 +12,7 @@ description: Apredendo a utilizar o npm, gerenciador de pacotes node mais famoso
 # Introdução
 NPM é uma sigla para *Node Package Manage* que nada mais é do que o gerenciador de pacotes de bibliotecas JavaScript, mais precisamente de Node.js, podemos verificar rapidamente se o node esta instalado através do comando que retornaria a versão do nosso node, caso de erro não esta instalado.
 
-```sh
+```bash
 npm -v
 ```
 
@@ -25,7 +25,7 @@ Podemos criar nosso próprio pacote através do comando `npm init`, onde  após 
 # Instalando Pacote
 Podemos instalar um pacote existem no repositório NPM (_Node package Manage_) através do comando `install` (`i`  é  um alias para `install`), onde sem nenhuma _flag_ instalara com dependência do projeto, caso utilize a _flag_  `-D` será instalado como dependência de desenvolvimento, ou seja, o pacote não ira para a versão final do projeto.
 
-```sh
+```bash
 npm install prisma -D  # DevDependecies
 npm install prisma@client  # Dependecies
 ```
@@ -35,27 +35,27 @@ Onde será armazenado as bibliotecas Node dentro do diretório `node_modules` e 
 ## Pacote Global
 Utilizando a _flag_ `-g` podemos instalar um pacote de forma global, ou seja, para toda maquina, podendo utilizar livremente, não ficando preso como dependência de um projeto
 
-```sh
+```bash
 npm install http-server -g
 ```
 
 ### Localização do `node-modules` Global
 Podemos descobrir o diretório denominado para armazenar os pacotes nodes instalados de forma global através do comando
 
-```sh
+```bash
 npm root -g
 ```
 
 ## Instalando Dependências do Projeto
 Podemos instalar todas as dependências de um projeto com Node que utiliza NPM como gerenciador de pacotes, utilizando o comando `npm install`, assim instalando todas as dependências informadas no `package.json` e criando o arquivo `package-look.json` com as configurações corretas.
 
-```sh
+```bash
 npm install
 ```
 
 # Desinstalando Pacotes
 Para desinstalarmos pacotes node basta alterar o nome do comando para `uninstall`
-```sh
+```bash
 npm uninstall http-server -g
 ```
 
@@ -72,14 +72,14 @@ No nosso arquivo `package.json` temos a chave `scripts` que contem um objeto, on
 
 Criamos o "script" chamado "test" podemos executa-lo através do comando.
 
-```sh
+```bash
 npm run test
 ```
 
 ## Nomes especiais
 Possuímos alguns nomes de _script_ especiais que podem encurtar a execução do _script_, o mais conhecido é `start`, onde um `script` com esse nome pode ser executa através do comando simplificado, Ou seja, podemos omitir o comando `run` se desejar.
 
-```sh
+```bash
 npm start
 ```
 
@@ -115,14 +115,14 @@ Analisando o valor que contem a versão do pacote, podemos analisar que existem 
 ## Instalando Versão Especifica
 Podemos instalar uma versão especifica de uma pacote adicionando o sinal de `@` depois a versão desejada, por exemplo
 
-```sh
+```bash
 npm install moment@1.5.1
 ```
 
 ## Informações Sobre Versões
 Através do comando `outdated` ele traz informações da versão atual, a deseja para sair de falhas de seguraça por exemplo, ultima versão lançada, entre outras informações
 
-```sh
+```bash
 npm outdate
 ```
 
