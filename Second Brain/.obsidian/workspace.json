@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Web/HTTP.md",
+                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/Web/HTTP.md",
+                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/Web/HTTP.md"
+                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/Web/HTTP.md",
+                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/Web/HTTP.md",
+                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,15 +217,15 @@
   },
   "active": "a4dd8b1b735c11d0",
   "lastOpenFiles": [
-    "01 - Notes/Code/Web/Ferramentas.md",
-    "01 - Notes/Code/Planejamento.md",
-    "01 - Notes/Code/Plugins e Dicas.md",
     "01 - Notes/Code/Web/HTTP.md",
+    "01 - Notes/Code/JavaScript/Assíncronismo.md",
+    "01 - Notes/Code/JavaScript/Funções.md",
+    "01 - Notes/Code/Planejamento.md",
+    "01 - Notes/Code/NLWCopa.md",
+    "Excalidraw/Desenho_Web_Response.md",
+    "01 - Notes/Code/Web/Ferramentas.md",
+    "01 - Notes/Code/Plugins e Dicas.md",
     "Images/Desenho_Web_HTTP.md",
-    "01 - Notes/Code/CSS/At-Rules.md",
-    "01 - Notes/Code/Delphi/Gerar Log de Performance.md",
-    "01 - Notes/Code/Delphi/Função Anonima.md",
-    "01 - Notes/Code/Git e Github/Repositório Git.md",
-    "01 - Notes/Code/Sem título.md"
+    "01 - Notes/Code/CSS/At-Rules.md"
   ]
 }

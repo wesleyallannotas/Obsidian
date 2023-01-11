@@ -144,16 +144,16 @@ const square = n => n * n;
 ```
 
 # *Callback Function*
-Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[Introdução ao JavaScript#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, criando a ideia de uma função chamar outra função.
+Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[Introdução ao JavaScript#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, criando a ideia de uma função chamar outra função de volta após um certo tempo.
 ```js
 function sayMyName(name) {
 	console.log('Antes de executar a função callback')
-	name()
+	console.log(name())
 	console.log('Depois de executar a função callback')
 }
 
 sayMyName(() => {
-	console.log('Estou em um callback')
+	return 'Estou em um callback'
 })
 ```
 
