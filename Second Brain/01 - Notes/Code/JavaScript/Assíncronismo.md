@@ -10,7 +10,7 @@ tags: [javascript]
 description: Como escrever códigos assincronos.
 ---
 # Introdução
-Códigos simples e que normalmente criamos quando estramos aprendendo a programar são **síncronos (_Synchronous_)**, ou seja, com uma tarefa sendo executada após a conclusão da outra, porem terá aplicações que se faz necessário continuar o fluxo do código, enquanto espera o termino da execução de uma tarefa, neste caso usaremos do **assincronismo (_asynchronous_)**.
+Quando estamos aprender a programar criamos códigos simples e que normalmente são **síncronos (_Synchronous_)**, ou seja, com uma tarefa sendo executada após a conclusão da outra, porem terá aplicações que se faz necessário continuar o fluxo do código, enquanto espera o termino da execução de uma tarefa, neste caso usaremos do **assincronismo (_asynchronous_)**.
 
 ```js
 const https = requite('https');
