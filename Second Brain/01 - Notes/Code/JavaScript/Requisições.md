@@ -10,10 +10,10 @@ tags: [javascript]
 description: Diferentes forma de trabalhar com requisições com Javascript
 ---
 # XMLHttpRequest
-Antes do amplo uso do `JSON` o formato principal de troca de dados era o `XML`, através dessa função `XMLHttpRequest()` nativa do JavaScript foi possível obter os dados das APIs que retornavam `XML`, assim possibilitando buscar dados do Back-End sem recarregar toda a página, hoje em dia da suporte a outros formatos como `JSON` e até mesmo texto simples.
+Antes do amplo uso do `JSON` o formato principal de troca de dados era o `XML`, através dessa função `XMLHttpRequest()` nativa do JavaScript foi possível obter os dados das APIs que retornavam `XML`, assim possibilitando buscar dados do Back-End sem recarregar toda a página, hoje em dia da suporte a outros formatos como `JSON` e até mesmo texto simples, `XMLHttpRequest()` é usado constantemente pelo AJAX
 
 >[!attention] Atenção
->`fetch()` e `XMLHttpRequest` possuem muitas diferenças, uma delas é no objeto de resposta, temos que atentar ao uso para não confundir
+>`fetch()` e `XMLHttpRequest()` possuem muitas diferenças, uma delas é no objeto de resposta, temos que atentar ao uso para não confundir
 
 ```js
 function success() {
@@ -33,11 +33,38 @@ req.open('GET', 'https://ap.github.com/users/wesleyallan');
 req.send();
 ```
 
-[06/10 Fetch - JavaScript Antes do Framework (React ou Vue.js) - YouTube](https://www.youtube.com/watch?v=fhIDgAfuJZ8)
-[Introdução às Web APIs - Aprendendo desenvolvimento web | MDN (mozilla.org)](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)
+# Ajax
+
+
+# Axios
+Biblioteca [[HTTP]] Cliente, baseada em [[Assíncronismo#Promise|promise]], possui a característica **isomórfica**, ou seja, utilizado o mesmo código no _browser_ e no [[Introdução ao Node|NodeJS]], no _browser_ usa `XMLhttpRequest` como base e no [[Introdução ao Node|NodeJS]] utilizar o modulo nativo `http`.
+
+```js
+// Após adicionar a Lib oa projeto
+import axios from 'axios';       // Novo
+const axios = require('axios');  // Antigo
+
+const url = 'https://api.github.com/users/wesleyallan';
+
+// Nojera
+axios.get(url)
+.then( res => {
+	const user = res.data
+	axios.get(user.repos_url)
+	.then( repos => console.log(repos))
+	.catch( err => console.log('Agora fudeo jose!!\n', err))
+})
+.catch( err => console.log('Agora fudeo jose!!\n', err));
+
+// Limpo
+axios.get(url)
+.then( res => axios.get(res.data.repos_url))
+.then( repos => console.log(repos))
+.catch( err => console.log('Agora fudeo jose!!!\n' + err));
+```
 
 # Fetch
-_Fetch_ em português seria buscar, pegar. Dentro das Web API temos acesso a função `fetch()` para realizar [[HTTP#Request|requests HTTP]], onde enviando apenas a [[HTTP#Locator (Localização)|URL]] realizamos o método [[HTTP#Methods|GET]], onde recebe como um primeiro argumento/parâmetro a URL para realizar a ação. Foi criado para consumir [[HTTP#Resource (Recurso)|recursos]] de modo [[Assíncronismo|assíncrona]]. Será retornado uma [[Assíncronismo#Promise|promise]], onde podemos utilizar os métodos comuns de um objeto do tipo _Promise_ para executar [[Funções#*Callback Function*|callback functions]] que possuíram como parâmetro um `JSON` que precisa ser convertido através do método `.json()`, assim gerando outra _Promise_, criando essa sequencia de `fetch()`.
+_Fetch_ em português seria buscar, pegar. Dentro das Web API temos acesso a função `fetch()` para realizar [[HTTP#Request|requests HTTP]], onde enviando apenas a [[HTTP#Locator (Localização)|URL]] realizamos o método [[HTTP#Methods|GET]], onde recebe como um primeiro argumento/parâmetro a URL para realizar a ação. Foi criado para consumir [[HTTP#Resource (Recurso)|recursos]] de modo [[Assíncronismo|assíncrona]]. Será retornado uma [[Assíncronismo#Promise|promise]], onde podemos utilizar os métodos comuns de um objeto do tipo _Promise_ para executar [[Funções#*Callback Function*|callback functions]] que possuíram como parâmetro um objeto `Response` que precisa ser convertido através do método `.json()`.
 `fetch()` não lança um erro quando recebe o [[HTTP#Status Code|status code]] 400 ou 500, ou seja, passara para a função `.then()`, só lança erro se a própria solicitação for interrompida por problemas de conexão, será necessário criar um lógica para tratar os _status code_, que pode ser obtido através de `reponse.status`
 
 >[!tip] Formas de Utilizar

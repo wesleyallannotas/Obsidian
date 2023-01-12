@@ -25,6 +25,7 @@ Por se tratar de uma [[Funções#*Callback Function*|Callback Function]] que ser
 
 # Promise
 Basicamente é uma promessa de que algo irá acontecer no futuro, é um objeto JavaScript usado para operações assíncronas, por exemplo, Carregar um arquivo, leitura de dados de uma API.
+Para criarmos uma _Promise_ é necessário instanciar `const promessa = new Promise()` passando como parêmetro/argumento uma referencia de função.
 
 ```js
 let aceitar = true;
@@ -56,3 +57,5 @@ Uma _promise_ possui estágios durante seu ciclo de vida sendo eles.
 - _Rejected_ - A promessa foi rejeitada, houve um erro
 - _Settled_ - Seja com sucesso ou com erro, ela foi finalmente concluída
 
+## Promise em concorrência (Paralelo) 
+Através do objeto `Promise` podemos executar mais de uma _promise_ ao mesmo tempo utilizando o método `.all()`, ou seja, agrupando as execuções, como parametro passamos

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
+                "file": "01 - Notes/Code/Node/Introdução ao Node.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,7 +114,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Requisições.md",
+                "file": "01 - Notes/Code/Node/Introdução ao Node.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -157,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Requisições.md"
+                "file": "01 - Notes/Code/Node/Introdução ao Node.md"
               }
             }
           },
@@ -167,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Requisições.md",
+                "file": "01 - Notes/Code/Node/Introdução ao Node.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Requisições.md",
+                "file": "01 - Notes/Code/Node/Introdução ao Node.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,17 +227,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "925af1ce75b962ad",
+  "active": "a4dd8b1b735c11d0",
   "lastOpenFiles": [
+    "01 - Notes/Code/Node/Node com EJS.md",
+    "01 - Notes/Code/Node/NPM.md",
+    "01 - Notes/Code/Node/Event Module.md",
     "01 - Notes/Code/JavaScript/Assíncronismo.md",
     "01 - Notes/Code/JavaScript/Requisições.md",
     "01 - Notes/Code/Web/HTTP.md",
     "01 - Notes/Code/Programação Funcional/Funções Programação Funcional.md",
     "01 - Notes/Code/Programação Funcional/Imperativa e Declarativa.md",
     "01 - Notes/Code/Programação Funcional/Introdução a Programação Funcional.md",
-    "01 - Notes/Code/JavaScript/Funções.md",
-    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
-    "01 - Notes/Code/Planejamento.md",
-    "01 - Notes/Code/NLWCopa.md"
+    "01 - Notes/Code/JavaScript/Funções.md"
   ]
 }
