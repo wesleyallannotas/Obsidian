@@ -141,7 +141,7 @@ let pessoa = {
 ```
 Para chamar um item do nosso objeto, basta especificar o caminho por exemplo `pessoa.nome` (`objeto.propriedade`) trará o valor da propriedade/chave `nome` no objeto (*Object*) `pessoa`, também podemos acessar utilizando colchetes e o nome da propriedade em uma *String* `objeto.["propriedade"]`
 
-##  Copiando Elementos
+## Copiando com Spreed
 Podemos "Herdar" ou melhor, iniciar um objeto copiando os dados contidos em outro da seguinte forma
 ```js
 const carro = {

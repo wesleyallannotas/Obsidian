@@ -16,16 +16,39 @@ O Dinheiro vem até mim de diversas fontes e contínuas bases, em quantidades ca
 >[!quote]
 >Eu sempre estive peparado para o pior, continuarei no meu caminho sem desviar, eu não preciso de dom natural para ser o melhor, com esforço um genio eu posso me tornar
 
-# Dominar
+# Tecnologias Interessantes
 - React
-- Next
+	- Next
 - React Native
 - Expo
 - Node
-- Prisma
-- Fastify
+	- Prisma
+	- Fastify
 
-# Caminho de estudo
+# Dominar
+[Guia de estudo JavaScript em 2023! (o que eu focaria) - YouTube](https://www.youtube.com/watch?v=EDotqZwJ4aA)
+[TUDO que você deve estudar de JavaScript antes do React - YouTube](https://www.youtube.com/watch?v=37SwqREHRGI)
+- JavaScript
+- [ ] TypeScript
+- [ ] Gerenciador de Pacotes [pnpm](https://pnpm.io/pt/)
+- CSS
+	- [ ] [Tailwind CSS](https://tailwindcss.com/)
+	- [ ] [Stitches](https://stitches.dev/) ou [Vanilla-Extract](https://vanilla-extract.style/)
+ - [ ] React
+	 - [ ] Next
+	 - [Astro](https://astro.build/)
+	 - [Qwik](https://qwik.builder.io/)
+	 - [ ] React Hook Form
+	 - [ ] Zod
+	 - [ ] TanStack Query
+	- Gerenciamento de Estado
+		- [ ] Redux
+		- [ ] [Jotai](https://jotai.org/)
+		- [ ] [Zustand](https://zustand-demo.pmnd.rs/)
+- Teste
+	- [ ] Playwright
+ 
+# Planejamento de Estudo
 - [x] Livro - Entendendo Algoritmo, Aditya Y. Bhargava
 - [ ] Curso - Discovery, Rocketseat
 - [ ] Curso - Fundamentos JavaScript, Erick Wendel

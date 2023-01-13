@@ -63,6 +63,21 @@ axios.get(url)
 .catch( err => console.log('Agora fudeo jose!!!\n' + err));
 ```
 
+## Enviando Body
+Usarei como exemplo o método `POST` que possui _body_ em sua [[HTTP]] Request, para realizarmos uma requisição do método [[HTTP#Methods|POST]], basta utilizar o método `.post()`, enviar a URL e o JSON.
+
+```js
+// import axios from ('axios');
+const axios = require('axios');
+
+axios.post('/user', {
+  firstNmae: 'Wesley',
+  lastName: 'Silva'
+})
+.then( res => console.log(res))
+.catch( err => console.log('Erro!\n', err));
+```
+
 # Fetch
 _Fetch_ em português seria buscar, pegar. Dentro das Web API temos acesso a função `fetch()` para realizar [[HTTP#Request|requests HTTP]], onde enviando apenas a [[HTTP#Locator (Localização)|URL]] realizamos o método [[HTTP#Methods|GET]], onde recebe como um primeiro argumento/parâmetro a URL para realizar a ação. Foi criado para consumir [[HTTP#Resource (Recurso)|recursos]] de modo [[Assíncronismo|assíncrona]]. Será retornado uma [[Assíncronismo#Promise|promise]], onde podemos utilizar os métodos comuns de um objeto do tipo _Promise_ para executar [[Funções#*Callback Function*|callback functions]] que possuíram como parâmetro um objeto `Response` que precisa ser convertido através do método `.json()`.
 `fetch()` não lança um erro quando recebe o [[HTTP#Status Code|status code]] 400 ou 500, ou seja, passara para a função `.then()`, só lança erro se a própria solicitação for interrompida por problemas de conexão, será necessário criar um lógica para tratar os _status code_, que pode ser obtido através de `reponse.status`

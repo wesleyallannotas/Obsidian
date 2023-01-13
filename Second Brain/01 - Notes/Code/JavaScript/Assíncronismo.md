@@ -58,4 +58,37 @@ Uma _promise_ possui estágios durante seu ciclo de vida sendo eles.
 - _Settled_ - Seja com sucesso ou com erro, ela foi finalmente concluída
 
 ## Promise em concorrência (Paralelo) 
-Através do objeto `Promise` podemos executar mais de uma _promise_ ao mesmo tempo utilizando o método `.all()`, ou seja, agrupando as execuções, como parametro passamos
+Através do objeto `Promise` podemos executar mais de uma _promise_ ao mesmo tempo utilizando o método `.all()`, ou seja, agrupando as execuções, como parâmetros passamos as _promises_ que suas respostas serão retornadas em uma _array_.
+
+>[!tip] Desestruturação
+>Comum utilizar desestruturação quando usado por meio do Async/Awaint
+
+```js
+// import axios from 'axios';
+const axios = require('axios');
+
+// Exemplo 1
+Promise.all([
+  axios.get('https://api.github.com/users/wesleyallan'),
+  axios.get('https://api.github.com/users/wesleyallan/repos')
+])
+.then( responses => {
+  console.log(responses[0].data.login);
+  console.log(responses[1].data.length);
+});
+
+// Exemplo 2
+async function getUserPosts(userName) {
+  const api = `https://api.github.com/users/${userName}`
+
+  const [user, repos] = await Promise.all([
+    axios.get(api),
+    axios.get(api+`/repos`)
+  ])
+
+  console.log(user.data);
+  console.log(repos.data);
+}
+
+getUserPosts('wesleyallan');
+```

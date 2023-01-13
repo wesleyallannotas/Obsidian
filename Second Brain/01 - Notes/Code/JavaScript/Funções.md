@@ -127,8 +127,10 @@ function sayMyName() {
 
 # *Arrow Function*
 Forma mais moderna e compacta de escrever funções, onde omitimos o comando `function` e após a definição dos parâmetros criamos uma espécie de flecha utilizando os caracteres igual e maior, em seguida abrindo para o bloco de código da função
+
 >[!attention] Atenção
 >_Arrow Function_ não tem seu próprio _[this](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/this)_, _[arguments](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/arguments)_, _[super](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/super)_ ou _[new.target](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/new.target)_.
+
 ```js
 const sayMyName = (name) => {
 	console.log(name)
@@ -147,12 +149,19 @@ const square = n => n * n;
 
 # *Callback Function*
 Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[Introdução ao JavaScript#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, criando a ideia de uma função chamar outra função de volta após um certo tempo.
+
 ```js
 function sayMyName(name) {
 	console.log('Antes de executar a função callback')
 	console.log(name())
 	console.log('Depois de executar a função callback')
 }
+
+function fn() {
+	return 'Estou em um callback'
+}
+
+sayMyName(fn)
 
 sayMyName(() => {
 	return 'Estou em um callback'
@@ -250,6 +259,7 @@ console.log('------------------------------------------');
 *Function Constructor* ou do português função construtora tem como objetivo conter instruções para a instanciação de objetos, é quando utilizamos o **operador `new`** cria uma instancia de um tipo de objeto definido pelo usuário ou de um dos tipos nativos (_built-in_) que possuem uma função construtora, utilizando esse método temos acesso ao `this` que esta se referenciando a si mesmo
 - Funções construtoras por convenção se inicia com um caractere maiúsculo
 - Lembre-se não é um objeto e sim uma função que instancia objetos, por isso o sinal de igual e a não separação por virgula
+
 ```js
 function Person(name) {
 	this.name = name
@@ -261,4 +271,33 @@ function Person(name) {
 const wesley = new Person("Wesley"); // Instanciando um objeto wesley do tipo "Person"
 console.log(wesley.name) // Resultado: 'Wesley'
 console.log(wesley.walk()) // Resultado: 'Wesley está andando'
+```
+
+# Parâmetro Rest
+A sintaxe do _rest parameter_ nos permite representar um número indefinido de parâmetros/argumentos como uma _array_, possuímos a liberdade de possuir apenas um parâmetro _rest_, ou outros parâmetros e depois o parâmetro _rest_. De certa forma é usada para desestruturar arrays e objetos, a _sintaxe rest_ é o oposto da _sintaxe de espalhamento_ [[Expressões e Operadores#Operador Spread|Spread]]. A _sintaxe de espalhamento (spread)_ 'expande' um array em vários elementos, enquanto a _sintaxe rest_ coleta múltiplos elementos e 'condensa' eles em um único elemento. 
+
+```js
+function sum(...values) {
+	return values.reduce((total, value) => total + value);
+}
+
+function operacao(op, ...values) {
+	switch (op) {
+		case 'add':
+			return values.reduce((total, value) => total + value);
+		case 'sub':
+			return values.reduce((total, value) => total - value);
+		case 'mult':
+			return values.reduce((total, value) => total * value);
+		case 'div':
+			return values.reduce((total, value) => total / value);
+	}
+
+}
+
+console.log(sum(2, 5, 8, 9, 10, 15, 17));
+console.log(operacao('add', 2, 5, 8, 9, 10, 15, 17));
+console.log(operacao('sub', 2, 5, 8, 9, 10, 15, 17));
+console.log(operacao('mult', 2, 5, 8, 9, 10, 15, 17));
+console.log(operacao('div', 2, 5, 8, 9, 10, 15, 17));
 ```

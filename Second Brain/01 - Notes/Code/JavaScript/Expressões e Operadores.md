@@ -209,3 +209,58 @@ Precedência de operadores ou no inglês *Operator precedence* é a ordem de exe
 9. Condicional - `?:`
 10. Atribuição (*Assignment*) - = += -= *= /= %= **=
 
+# Operador Spread
+_Spread_ ou espalhamento permite que um objeto iterável, como uma [[Array]], [[Introdução ao JavaScript#String|String]], sejam **expandidas** para serem usadas como argumentos de funções, elementos para uma _array_, ou no caso de objetos, para elementos de um novo objeto, até mesmo possibilitando a troca de valores de propriedades. A _sintaxe de espalhamento (spread)_ **expande** um _array_ em vários elementos, enquanto a _sintaxe [[Funções#Parâmetro Rest|Rest]]_ coleta múltiplos elementos e **condensa** eles em um único elemento.
+
+```js
+// Novas Arrays e Parâmetro
+function sum(a, b, c=0, d=0, e=0) {
+  return a + b + c + d + e;
+}
+
+const values = [5, 10, 15];          // 5, 10, 15
+const values2 = [...values, 20];     // 5, 10, 15, 20
+const values3 = [1, ...values, 20];  // 1, 5, 10, 15, 20
+
+console.log(sum(...values));   // 30
+console.log(sum(...values2));  // 50
+console.log(sum(...values3));  // 51
+
+// Junto com New
+var dataField = [1970, 0, 1];
+var d = new Date(...dataField);
+console.log(d);
+
+// Objetos
+let obj1 = { foo: 'bar', x: 42 };
+let obj2 = { foo: 'baz', y: 13 };
+const clonedObj = { ...obj1 };            // { foo: "bar", x: 42 }
+const mergedObj = { ...obj1, ...obj2 };  // { foo: "baz", x: 42, y: 13 }
+console.log(clonedObj, mergedObj);
+```
+
+>[!attention] Atenção com essa característica
+>Quando utilizamos o operador _spread_ para clonar objetos é feito o que é chamado de **_Shallow Cloning_ (Clonagem Rasa)**, onde o que ocorre é que é clonado de fato apenas o objeto raiz, ou seja, caso possua sub-objetos, a _Spread_ não ira clonar, e sim criar uma referencia (Apontamento para o mesmo endereço).
+
+```js
+// Shallow Cloning
+let obj = {
+	foo: 'bar',
+	x: 42,
+	bar: 'foo',
+	// Sub-objeto não será clonado e sim referenciado
+	object: {
+		subFoo: 'bar',
+		subX: 42,
+		subBar: 'foo'
+	}
+}
+
+let obj1 = {...obj}
+obj1.foo = 'Mudei';
+obj1.bar = 'Mudei também';
+obj1.object.foo = 'Mudei';        // Alterando aqui, altera os dois, pois, é uma referencia
+obj1.object.bar = 'Mudei também';
+console.log(obj);
+console.log(obj1);
+```
