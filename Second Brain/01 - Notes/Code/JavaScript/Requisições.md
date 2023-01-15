@@ -34,10 +34,17 @@ req.send();
 ```
 
 # Ajax
+`AJAX` é um acrônimo para **JavaScript Assíncrono + XML (_Asynchronous JavaScript and XM_)**, é como se usar um conjunto de tecnologias, idealizado em 2005 por Jesse James Garret, usa como base para realizações das [[HTTP]] [[HTTP#Request|Request]] com [[#XMLHttpRequest]], com a ideia do `AJAX` as aplicações Web ganharam a capacidade de realizar atualizações incrementais para a interface do usuário sem recarregar a página inteira, havendo uma menor troca de dados que resulta em maior performance.
+Embora em sua concepção inicial foi baseada em `XML`, hoje em dia suporta `JSON`, que hoje é amplamente mais utilizado, ate mesmo por ser parte do JavaScript, possuindo uma manipulação mais fácil.
 
+>[!attention] Atenção
+>`AJAX` é uma espécie metodologia, não uma tecnologia em si.
 
 # Axios
 Biblioteca [[HTTP]] Cliente, baseada em [[Assíncronismo#Promise|promise]], possui a característica **isomórfica**, ou seja, utilizado o mesmo código no _browser_ e no [[Introdução ao Node|NodeJS]], no _browser_ usa `XMLhttpRequest` como base e no [[Introdução ao Node|NodeJS]] utilizar o modulo nativo `http`.
+
+>[!tip] Formas de Utilizar
+>Podemos utilizar o `axios()` através de  [[Assíncronismo#Promise|Promise]] ou [[Assíncronismo#Async/Await|Async/Await]]
 
 ```js
 // Após adicionar a Lib oa projeto
@@ -83,7 +90,7 @@ _Fetch_ em português seria buscar, pegar. Dentro das Web API temos acesso a fun
 `fetch()` não lança um erro quando recebe o [[HTTP#Status Code|status code]] 400 ou 500, ou seja, passara para a função `.then()`, só lança erro se a própria solicitação for interrompida por problemas de conexão, será necessário criar um lógica para tratar os _status code_, que pode ser obtido através de `reponse.status`
 
 >[!tip] Formas de Utilizar
->Podemos utilizar o `fetch()` através de  [[Assíncronismo#Promise|Promise]] ou Async/Await
+>Podemos utilizar o `fetch()` através de  [[Assíncronismo#Promise|Promise]] ou [[Assíncronismo#Async/Await|Async/Await]]
 
 ```js
 fetch('https://api.github.com/users/wesleyallan')
@@ -133,6 +140,7 @@ let _data = {
   userId:1
 }
 
+// Promise
 fetch('https://jsonplaceholder.typicode.com/posts', {
   method: "POST",
   body: JSON.stringify(_data),
@@ -141,4 +149,20 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 .then(response => response.json()) 
 .then(json => console.log(json))
 .catch(err => console.log(err));
+
+// Async/Await
+async function start() {
+	try { 
+		const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+			method: "POST",
+			body: JSON.stringify(_data),
+			headers: {"Content-type": "application/json; charset=UTF-8"}
+		}).then( resp => resp.json());
+		console.log(response);
+	} catch(err) {
+		console.log(err.message);
+	}
+}
+
+start();
 ```

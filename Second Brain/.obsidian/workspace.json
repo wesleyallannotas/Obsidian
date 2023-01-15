@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d370d3f6d38379cc",
+            "id": "aa9ca2a2da875e91",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
+                "file": "01 - Notes/Code/HTML/Introdução ao HTML.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "dessestru",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
+                "file": "01 - Notes/Code/HTML/Introdução ao HTML.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md"
+                "file": "01 - Notes/Code/HTML/Introdução ao HTML.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
+                "file": "01 - Notes/Code/HTML/Introdução ao HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
+                "file": "01 - Notes/Code/HTML/Introdução ao HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,17 +215,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "d370d3f6d38379cc",
+  "active": "aa9ca2a2da875e91",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/Requisições.md",
+    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
+    "01 - Notes/Code/JavaScript/Node/Express/Introdução ao Express.md",
     "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
-    "01 - Notes/Code/JavaScript/Assíncronismo.md",
-    "01 - Notes/Code/Linux/Chave SSH.md",
+    "01 - Notes/Code/JavaScript/Node/Event Module.md",
     "01 - Notes/Code/JavaScript/Funções.md",
-    "01 - Notes/Code/Planejamento.md",
-    "01 - Notes/Code/Node/Introdução ao Node.md",
-    "01 - Notes/Code/Node/Node com EJS.md",
-    "01 - Notes/Code/Node/NPM.md",
-    "01 - Notes/Code/Node/Event Module.md"
+    "Images/Desenho_Express_Exemplo_Middleware.md",
+    "01 - Notes/Code/JavaScript/Requisições.md",
+    "01 - Notes/Code/Web/HTTP.md",
+    "01 - Notes/Code/JavaScript/Assíncronismo.md",
+    "01 - Notes/Code/Dicionario do Programador.md"
   ]
 }

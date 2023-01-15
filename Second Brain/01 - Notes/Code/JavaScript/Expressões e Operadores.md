@@ -64,6 +64,117 @@ console.log(1 > 0 ? 'Maior' : 'Menor')
 
 ![[Desenho_JS_Operador_Ternary|center]]
 
+# Operadores Aritméticos
+Os operadores aritméticos tem como função realizar operação para manipulação de valor
+
+| Operador | Operação               |
+| -------- | ---------------------- |
+| +        | Soma, Concatenação     |
+| -        | Subtração              |
+| *        | Multiplicação          |
+| /        | Divisão                |
+| %        | Modulo (Resto divisão) |
+| **       | Exponencial            |
+| Value++  | Incremento apos        |
+| ++Value  | Incremento antes       |
+| Value--  | Decremento apos        |
+| --Value  | Decremento antes       |
+
+# Operadores de Atribuição (Assignment)
+Operadores de  atribuição ou do inglês *assignment*, responsáveis por atribuir valor
+
+| Operador | Operação                                                |
+| -------- | ------------------------------------------------------- |
+| =        | Atribuição (Assignment)                                 |
+| +=       | Atribuição de soma (addition assignment)                |
+| -=       | Atribuição de subtração (subtraction assignment)        |
+| \*=      | Atribuição de multiplicação (multiplicaiton assignment) |
+| /=       | Atribuição de divisão (division assignment)             |
+| %=       | Atribuição de resto (remainder assignment)              |
+| \*\*=    | Atribuição de Exponenciação (exponettation assignment)  |
+
+# Operadores de Comparação
+Compara valores e retorna um booleano com o resultado obtido.
+
+| Operador | Comparação             |
+| -------- | ---------------------- |
+| !=       | Diferente              |
+| !==      | Estritamente diferente |
+| ==       | Igual                  |
+| ===      | Idêntico               |
+| >        | Maior                  |
+| <        | Menor                  |
+| >=       | Maior igual a           |
+| <=       | Menor igual a           |
+
+```js
+let x, y;
+
+x = 1;
+y = '1';
+
+console.log(x == y)   // Resultado: True
+console.log(x === y)  // Resultado: False
+console.log(x != y)   // Resultado: False
+console.log(x !== y)  // Resultado: True
+```
+
+# Operadores Lógicos (Logical Operators)
+Operadores que permitem a comparação de dois operadores booleanos que retornam um booleano
+
+| Operador | Operação  |
+| -------- | --------- |
+| &&       | E (and)   |
+| \|\|     | OU (or)   |
+| !        | Não (not) |
+| ??       | Coalescência Nula          |
+
+- `&&` - Todas verdadeira para retornar verdadeiro
+- `||` - Um verdadeira para retornar verdadeiro
+- `!` - Negar (Inverter), verdadeiro vira falso
+- `??` - O operador de coalescência nula (_Nullish Coalescing Operator_) é um operador lógico que retorna o seu operando do lado direito quando o seu operador do lado esquerdo é `null` ou `undefined`. Caso contrário, ele retorna o seu operando do lado esquerdo. Foi pensado, pois, quando usado o operador OU (`||`), pode ocorrer o [[Falsy e Truthy|Falsy]] assim mesmo possuindo valor pegando o operando direito.
+
+# Operador de Agrupamento
+Através do operador de *grouping operator* que é o parênteses `( )`, podemos agrupar operadores, podemos modificar a ordem de precedência nas nossas expressões, funciona desde realização de operações aritméticas ate para expressões condicionais.
+
+```js
+console.log(1 + 2 * 5);   // Resultado: 11
+console.log((1 + 2) * 5); // Resultado: 15
+```
+
+# Precedência de Operadores
+Precedência de operadores ou no inglês *Operator precedence* é a ordem de execução das operações através do peso do operador, por exemplo na operação `2 + 1 * 3` não é lido e realizado da esquerda para direita, é analisado a precedência onde a multiplicação tem mais peso, assim sendo executado primeiro resultando em `2 + 3` em seguida é realizado a soma resultando em `5`, se fosse lido e executado da esquerda pra direita o resultado seria `9`. Segui a ordem de precedência.
+1. Grouping - `( )`
+2. Negação e incremento - `! ++ --`
+3. Exponencial - `**`
+4. Multiplicação e divisão - `* /`
+5. Adição e subtração - `+ -`
+6. Relacional - `< <= > >=`
+7. Igualdade - == != === !\=\=
+8. E (*and*) - `&&` 
+8. OU (*or*) - `||`
+9. Condicional - `?:`
+10. Atribuição (*Assignment*) - = += -= *= /= %= **=
+
+# Operador Condicional (Ternário)
+Operadores que permitem a partir de uma condição atribuir um valor ou outro.
+
+![[Desenho_JS_Operador_Ternary|center]]
+
+```javascript
+let age = 16;
+console.log(age > 17 ? "Maior de Idade" : "Menor de Idade");
+
+let pao = true;
+let queijo = false;
+let niceBreakfast = pao && queijo ? 'Cafe top' : 'Cafe ruim';
+console.log(niceBreakfast); // Resultado: Cafe ruim
+niceBreakfast = pao || queijo ? 'Cafe top' : 'Cafe ruim';
+console.log(niceBreakfast); // Resultado: Cafe top
+niceBreakfast = !(pao || queijo) ? 'Cafe top' : 'Cafe ruim';
+console.log(niceBreakfast); // Resultado: Cafe ruim
+```
+
 # Operador *new*
 A expressão `new` é classificada como uma *left-hand-side expression*, basicamente é uma expressão que serve para criar/instanciar uma objeto
 
@@ -98,119 +209,8 @@ console.log(wesley.getSaldo?.()) // Retorna `undefines`
 console.log(wesley.getSaldo()) // retorna erro de referencia
 ```
 
-# Operadores Aritméticos
-Os operadores aritméticos tem como função realizar operação para manipulação de valor
-
-| Operador | Operação               |
-| -------- | ---------------------- |
-| +        | Soma, Concatenação     |
-| -        | Subtração              |
-| *        | Multiplicação          |
-| /        | Divisão                |
-| %        | Modulo (Resto divisão) |
-| **       | Exponencial            |
-| Value++  | Incremento apos        |
-| ++Valur  | Incremento antes       |
-| Value--  | Decremento apos        |
-| --Value  | Decremento antes       |
-
-# Operador de Agrupamento
-Através do operador de *grouping operator* que é o parênteses `( )`, podemos agrupar operadores, podemos modificar a ordem de precedência nas nossas expressões, funciona desde realização de operações aritméticas ate para expressões condicionais.
-
-```js
-console.log(1 + 2 * 5);   // Resultado: 11
-console.log((1 + 2) * 5); // Resultado: 15
-```
-
-# Operadores de Comparação
-Compara valores e retorna um booleano com o resultado obtido.
-
-| Operador | Comparação             |
-| -------- | ---------------------- |
-| !=       | Diferente              |
-| !==      | Estritamente diferente |
-| ==       | Igual                  |
-| ===      | Idêntico               |
-| >        | Maior                  |
-| <        | Menor                  |
-| >=       | Maior igual a           |
-| <=       | Menor igual a           |
-
-```js
-let x, y;
-
-x = 1;
-y = '1';
-
-console.log(x == y)   // Resultado: True
-console.log(x === y)  // Resultado: False
-console.log(x != y)   // Resultado: False
-console.log(x !== y)  // Resultado: True
-```
-
-# Operadores de Atribuição (Assignment)
-Operadores de  atribuição ou do inglês *assignment*, responsáveis por atribuir valor
-
-| Operador | Operação                                                |
-| -------- | ------------------------------------------------------- |
-| =        | Atribuição (Assignment)                                 |
-| +=       | Atribuição de soma (addition assignment)                |
-| -=       | Atribuição de subtração (subtraction assignment)        |
-| \*=      | Atribuição de multiplicação (multiplicaiton assignment) |
-| /=       | Atribuição de divisão (division assignment)             |
-| %=       | Atribuição de resto (remainder assignment)              |
-| \*\*=    | Atribuição de Exponenciação (exponettation assignment)  |
-
-# Operadores Lógicos (Logical Operators)
-Operadores que permitem a comparação de dois operadores booleanos que retornam um booleano
-
-| Operador | Operação  |
-| -------- | --------- |
-| &&       | E (and)   |
-| \|\|     | OU (or)   |
-| !        | Não (not) |
-| ??       | Coalescência Nula          |
-
-- `&&` - Todas verdadeira para retornar verdadeiro
-- `||` - Um verdadeira para retornar verdadeiro
-- `!` - Negar (Inverter), verdadeiro vira falso
-- `??` - O operador de coalescência nula (_Nullish Coalescing Operator_) é um operador lógico que retorna o seu operando do lado direito quando o seu operador do lado esquerdo é `null` ou `undefined`. Caso contrário, ele retorna o seu operando do lado esquerdo. Foi pensado, pois, quando usado o operador OU (`||`), pode ocorrer o [[Falsy e Truthy|Falsy]] assim mesmo possuindo valor pegando o operando direito.
-
-# Operador Condicional (Ternário)
-Operadores que permitem a partir de uma condição atribuir um valor ou outro.
-
-![[Desenho_JS_Operador_Ternary|center]]
-
-```javascript
-let age = 16;
-console.log(age > 17 ? "Maior de Idade" : "Menor de Idade");
-
-let pao = true;
-let queijo = false;
-let niceBreakfast = pao && queijo ? 'Cafe top' : 'Cafe ruim';
-console.log(niceBreakfast); // Resultado: Cafe ruim
-niceBreakfast = pao || queijo ? 'Cafe top' : 'Cafe ruim';
-console.log(niceBreakfast); // Resultado: Cafe top
-niceBreakfast = !(pao || queijo) ? 'Cafe top' : 'Cafe ruim';
-console.log(niceBreakfast); // Resultado: Cafe ruim
-```
-
-# Precedência de Operadores
-Precedência de operadores ou no inglês *Operator precedence* é a ordem de execução das operações através do peso do operador, por exemplo na operação `2 + 1 * 3` não é lido e realizado da esquerda para direita, é analisado a precedência onde a multiplicação tem mais peso, assim sendo executado primeiro resultando em `2 + 3` em seguida é realizado a soma resultando em `5`, se fosse lido e executado da esquerda pra direita o resultado seria `9`. Segui a ordem de precedência.
-1. Grouping - `( )`
-2. Negação e incremento - `! ++ --`
-3. Exponencial - `**`
-4. Multiplicação e divisão - `* /`
-5. Adição e subtração - `+ -`
-6. Relacional - `< <= > >=`
-7. Igualdade - == != === !\=\=
-8. E (*and*) - `&&` 
-8. OU (*or*) - `||`
-9. Condicional - `?:`
-10. Atribuição (*Assignment*) - = += -= *= /= %= **=
-
 # Operador Spread
-_Spread_ ou espalhamento permite que um objeto iterável, como uma [[Array]], [[Introdução ao JavaScript#String|String]], sejam **expandidas** para serem usadas como argumentos de funções, elementos para uma _array_, ou no caso de objetos, para elementos de um novo objeto, até mesmo possibilitando a troca de valores de propriedades. A _sintaxe de espalhamento (spread)_ **expande** um _array_ em vários elementos, enquanto a _sintaxe [[Funções#Parâmetro Rest|Rest]]_ coleta múltiplos elementos e **condensa** eles em um único elemento.
+_Spread_ ou espalhamento permite que um objeto iterável, como uma [[Array]], [[Introdução ao JavaScript#String|String]], sejam **expandidas** para serem usadas como argumentos de funções, elementos para uma _array_, ou no caso de [[Introdução ao JavaScript#Object|Objetos]], para elementos de um novo objeto, até mesmo possibilitando a troca de valores de propriedades. A _sintaxe de espalhamento (spread)_ **expande** um _array_ em vários elementos, enquanto a _sintaxe [[Funções#Parâmetro Rest|Rest]]_ coleta múltiplos elementos e **condensa** eles em um único elemento.
 
 ```js
 // Novas Arrays e Parâmetro
@@ -263,4 +263,55 @@ obj1.object.foo = 'Mudei';        // Alterando aqui, altera os dois, pois, é um
 obj1.object.bar = 'Mudei também';
 console.log(obj);
 console.log(obj1);
+```
+
+# Operadores de Desestruturação
+Operadores de atribuição via desestruturação ou do inglês _destructuring assignment_ São operadores que permitem extrair dados de [[Introdução ao JavaScript#Array|Arrays]] ou [[Introdução ao JavaScript#Object|Objetos]].
+
+## Array
+Para desestrutura uma _array_ basta usarmos o mesmo sinal para criação de uma, porem dessa vez do lada da declaração das variáveis, ficando da seguinte forma.
+Temos liberdade para utilização do [[#Operador Spread]]
+
+```js
+// array
+let array = [1, 2, 3, 4, 5];
+
+// desestruturação
+let [n1, n2, n3, n4, n5] = array;
+
+// com Spread
+let [n1, ...resto] = array;
+
+// Valor padrão
+let [n1=0, n2=0, n3=0, n4=0, n5=0] = array;
+```
+
+A _array_ será desestruturada em outras varias variáveis independentes.
+
+## Object
+A desestruturação de objetos é mais complexa por se tratar de uma estrutura com valores nomeados, ou seja, chaves que contem valores, para realizarmos a desestruturação é necessário utilizar o mesmo sinal para criar objetos porem do lada da atribuição, onde caso queiramos manter o mesmo dome da chave, basta utiliza-la, mas caso desejar renomear, podemos utilizar o nome da propriedade, dois pontos, novo nome.
+Podemos passar valor padrão para caso não exista a propriedade/chave no objeto.
+
+```js
+metadata = {
+    title: "Scratchpad",
+    translations: [
+       {
+        locale: "de",
+        localization_tags: [ ],
+        last_edit: "2014-04-14T08:43:37",
+        url: "/de/docs/Tools/Scratchpad",
+        title: "JavaScript-Umgebung"
+       }
+    ],
+    url: "/pt-BR/docs/Tools/Scratchpad"
+};
+// Mantendo
+let {title, translation, url} = person;
+
+// Alterando
+let {title: tituloIngles, translations: tradução, url: localizacao} = person;
+
+// Aninhando e Ignorando uma propriedade
+let {title: tituloIngles, translations: [{title: titulo}]} = person;
 ```

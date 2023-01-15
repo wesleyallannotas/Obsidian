@@ -141,19 +141,8 @@ let pessoa = {
 ```
 Para chamar um item do nosso objeto, basta especificar o caminho por exemplo `pessoa.nome` (`objeto.propriedade`) trará o valor da propriedade/chave `nome` no objeto (*Object*) `pessoa`, também podemos acessar utilizando colchetes e o nome da propriedade em uma *String* `objeto.["propriedade"]`
 
-## Copiando com Spreed
-Podemos "Herdar" ou melhor, iniciar um objeto copiando os dados contidos em outro da seguinte forma
-```js
-const carro = {
-	ano: 2007,
-	nome: 'Saveito'
-}
-const novoCarro = {...carro, ano: 2015};
-```
-Assim estamos copiando os valores de carro e alterando o ano dele.
-
 ## Array
-Tipo de dado `array` também chamado de vetores é um ==tipo de dado estrutural==, pois, ele cria uma estrutura que lista valores a partir de um *index* que se inicia em `0`, é uma lista heterogênea que aceita qualquer tipo de dado podem assim mistura-los
+Tipo de dado `array` também chamado de [[Array|Vetor]] é um ==tipo de dado estrutural==, pois, ele cria uma estrutura que lista valores a partir de um *index* que se inicia em `0`, é uma lista heterogênea que aceita qualquer tipo de dado podem assim mistura-los
 ```js
 let pessoa = [
 	"Wesley", 
@@ -174,7 +163,7 @@ Para chamar um item da nossa *Array* basta especificar qual o nome da *Array* e 
 Variáveis são ==espações alocados na memoria que são nomeados para guardar valor==, no caso de ==variáveis possibilitando a variação== do seu valor durante a execução já ==constantes impossibilitando a alteração== após seu valor ser atribuído, podemos armazenar nas mesmas algum valor, atalhos de código ou identificadores, possuem as seguintes formas de declaração
 - **Variável**
 	- `let` - Local no escopo do bloco atual, disponível apenas no bloco, diferente do `var` não possui *hoisting*
-	- `var` - Escopo global, possibilitando ser acessado em qualquer lugar mesmo sendo criado dentro de um bloco, quando utilizamos `var` por baixos dos panos é como se o JavaScript coloca todas as declarações de `var` no inicio sem atribuir valor, ou seja, caso tente acessar antes da atribuição de valor retornara `undefined`, esse conceito e chamado de **_hoisting_**
+	- `var` - Escopo global, possibilitando ser acessado em qualquer lugar mesmo sendo criado dentro de um bloco, a menos que seja [[Funções#Escopo da Função|function-scoped]], quando utilizamos `var` por baixos dos panos é como se o JavaScript coloca todas as declarações de `var` no inicio sem atribuir valor, ou seja, caso tente acessar antes da atribuição de valor retornara `undefined`, esse conceito e chamado de **_hoisting_**
 ```js
 console.log(x); // Resultado: Undefined
 

@@ -99,6 +99,9 @@ switch (phrase.lenght) {
 # Throw e try...catch
 Iniciando pela tradução livre, *throw* significa "Lançar", *Catch* significa "Pegar" e *try* significa "Tentar", basicamente temos a ideia que podemos **tentar** um bloco de código onde podemos **lançar** caso ocorra um erro que podemos **pegar**
 
+## Throw
+`Throw` é o responsável por lançar o erro, o utilizamos para que o erro seja capturado corretamente pelo `catch`
+
 >[!tip] Boa Pratica
 >Podemos disparar qualquer coisa com o `throw` como uma mensagem
 >```js
@@ -118,6 +121,10 @@ Iniciando pela tradução livre, *throw* significa "Lançar", *Catch* significa 
 >```
 
 Sendo assim o `catch` **através de um parâmetro** pega esse lançamento (*trhow*) onde podemos manipula-lo ou exibi-lo, importante se atentar que o ==`throw` quebra a execução do bloco de código==, podemos usar o `throw` sem um `try...catch` porem ele exibi o erro e também informa que ele não foi pego *Uncaught*
+
+## Try
+`try` é responsavel por "tentar" executar um bloco de código, onde através dele podemos tratar o erro com o `catch` e até mesmo exibir uma mensagem ao fim do bloco, independente do resultado, com o `finally`.
+Podemos observar que **sem** o `try...catch` é encerrado a aplicação, com o uso do mesmo ela continua.
 
 ```js
 function sayMyName(name = "") {
@@ -148,14 +155,15 @@ try {
 	sayMyName()
 } catch(e) {
 	console.error(e)
+} finally {
+	console.log('Finalizado')
 }
+
 
 console.log("Após a função com erro")
 ```
 
 ![[throw_com_catch.png]]
-
-Podemos observar que sem o `try...catch` é encerrado a aplicação, com o uso do mesmo ela continua.
 
 # For
 **Estrutura de repetição** `for` tem a função de controlar a iteração, normalmente sendo repetida ate um booleano com o valor `false` ser informado, no caso do for, será através da condição de parada, assim quebrando o fluxo de iteração, deve ser usadas com cuidado, pois, pode ocorrer por má programação a criação de *loops* infinitos. a sintaxe do `for` se baseia no comando `for` seguido da criação de uma variável de controle, uma condição de parada e pro ultimo a atualização da variável de controle.

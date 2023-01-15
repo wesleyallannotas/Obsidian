@@ -65,7 +65,7 @@ Através do método `getElementsByTagName()` podemos acessar o nosso(s) elemento
 </body>
 ```
 ```js
-document.getElementsByClassName('div');
+document.getElementsByTagName('div');
 ```
 
 ## Pelo Seletor

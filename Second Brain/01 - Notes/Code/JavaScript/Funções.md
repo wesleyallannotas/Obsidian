@@ -56,16 +56,6 @@ console.log(soma(soma(1, 2), 5));
 >[!attention] Atenção
 >Quando usamos o comando `return` é interrompido a execução da função, e executando o retorno, esse comportamento pode ser inteligentemente utilizado para simplificar o código
 
-# Declarando Funções Dentro de Variáveis
-Podemos declarar funções dentro de uma variável, técnica que se da o nome de ***function anonymous*** ou ***function expression***
-```js
-const sum = function(x, y) {
-	return x + y
-}
-
-console.log(sum(5, 2))
-```
-
 # Escopo da Função
 Escopo da função ou no mais conhecido em inglês **_Function Scope_** esta ligado com o código dentro de uma função e o funcionamento do escope das variáveis que ele interage
 ```js
@@ -142,7 +132,7 @@ const sayMyName = name => {
 	console.log(name)
 }
 ```
-Quando possui apenas uma linha retorna automaticamente.
+Quando possui apenas uma linha retorna automaticamente, sem a necessidade do `return`.
 ```js
 const square = n => n * n;
 ```
@@ -151,7 +141,7 @@ const square = n => n * n;
 Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[Introdução ao JavaScript#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, criando a ideia de uma função chamar outra função de volta após um certo tempo.
 
 ```js
-function sayMyName(name) {
+function say(name) {
 	console.log('Antes de executar a função callback')
 	console.log(name())
 	console.log('Depois de executar a função callback')
@@ -161,9 +151,9 @@ function fn() {
 	return 'Estou em um callback'
 }
 
-sayMyName(fn)
+say(fn)
 
-sayMyName(() => {
+say(() => {
 	return 'Estou em um callback'
 })
 ```
@@ -262,14 +252,14 @@ console.log('------------------------------------------');
 
 ```js
 function Person(name) {
-	this.name = name
+	this.name = name;
 	this.walk = function() {
 		return this.name + " está andando"
-	}
-}
+	};
+};
 
 const wesley = new Person("Wesley"); // Instanciando um objeto wesley do tipo "Person"
-console.log(wesley.name) // Resultado: 'Wesley'
+console.log(wesley.name); // Resultado: 'Wesley'
 console.log(wesley.walk()) // Resultado: 'Wesley está andando'
 ```
 

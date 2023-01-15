@@ -13,7 +13,7 @@ description: Como escrever códigos assincronos.
 Quando estamos aprender a programar criamos códigos simples e que normalmente são **síncronos (_Synchronous_)**, ou seja, com uma tarefa sendo executada após a conclusão da outra, porem terá aplicações que se faz necessário continuar o fluxo do código, enquanto espera o termino da execução de uma tarefa, neste caso usaremos do **assincronismo (_asynchronous_)**.
 
 ```js
-const https = requite('https');
+const https = require('https');
 const API = 'https://jsonplacehold.typicode.com/users?_limit=2';
 https.get(API, res -> {
 	console.log(res.statusCode);
@@ -91,4 +91,83 @@ async function getUserPosts(userName) {
 }
 
 getUserPosts('wesleyallan');
+```
+
+# Async/Await
+Basicamente é uma _Syntatic Sugar_, ou seja, uma maneira mais bonita de escrever _[[#Promise]]_, é necessário criar uma função com o prefixo `async`, onde a partir dessa definição conseguimos utilizar o `await` (espera) dentro dela.
+
+```js
+const promese = new Promise(function(resolve, reject) {
+	return resolve('OK!');
+});
+
+async function start() {
+	const result = await promese;
+	console.log(result);
+};
+
+start();
+```
+
+## Respondendo a Estados
+Através da sintaxe base da [[#Promise]], podemos tratar os [[#Respondendo a Estados|estados da promise]] através dos métodos `.then()`, `.catch()` e `.finally()`, para conseguirmos o mesmo resultado utilizando [[#Async/Await]], devemos recorrer ao controle de fluxo [[Controle de Fluxo#Try|Try]].
+
+```js
+const promese = new Promise(function(resolve, reject) {
+	return resolve('OK!');
+});
+
+async function start() {
+	try {
+		const result = await promese;
+		console.log(result);
+	} catch(err) {
+		console.log(err);
+	} finally {  // Não é obrigatorio
+		console.log('Execução Finalizada!')
+	}
+};
+
+start();
+```
+
+A ==função assíncrona devolve uma [[#Promise]]==, ou seja, temos aceso ao métodos da mesmo forma, podemos se desejar executar coisas como.
+
+```js
+const promese = new Promise(function(resolve, reject) {
+	return resolve('OK!');
+});
+
+async function start() {
+		const result = await promese;
+		console.log(result);
+};
+
+start()
+	.catch( err => console.log(err))
+	.finally( () => console.log('Execução Finalizada!'));
+```
+
+>[!tip] Liberdade
+>Temos a liberdade de capturar e tratar o erro usando a sintaxe padrão das [[#Promise]], após a execução da função assíncrona, ou tratar dentro da função utilizando o [[Controle de Fluxo#Try|Try]], porem o mais utilizado é a sintaxe com o _try_.
+
+Temos a liberdade de misturar a vontade o uso da sintaxe base da [[#Promise]] com a criação de funções assíncronas, ate mesmo dentro da própria função.
+
+```js
+async function showUserAndRepos(userName) {
+	const baseUrl = `https://api.github.com/users/${userName}`;
+	
+	try {
+		const [user, repos] = await Promise.all([
+			fetch(baseUrl).then( resp => resp.json()),
+			fetch(baseUrl+'/repos').then( resp => resp.json())
+		])
+		console.log(user);
+		console.log(repos);
+	} catch(err) {
+		console.log(err.message);
+	}
+}
+
+showUserAndRepos('wesleyallan').finally('Execução encerrada!');
 ```
