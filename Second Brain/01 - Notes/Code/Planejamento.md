@@ -40,7 +40,7 @@ O Dinheiro vem até mim de diversas fontes e contínuas bases, em quantidades ca
 	 - [Qwik](https://qwik.builder.io/)
 	 - [ ] React Hook Form
 	 - [ ] Zod
-	 - [ ] TanStack Query
+	 - [ ] TanStack Query (Antigo React Query)
 	- Gerenciamento de Estado
 		- [ ] Redux
 		- [ ] [Jotai](https://jotai.org/)
@@ -54,9 +54,9 @@ O Dinheiro vem até mim de diversas fontes e contínuas bases, em quantidades ca
 - [ ] Curso - Fundamentos JavaScript, Erick Wendel
 - [ ] Livro - Estrutura de Dados e Algoritmos com JavaScript, Loiane Groner
 - [ ] Livro - Orientação a Objetos e SOLID para Ninjas: Projetando Classes Flexíveis, Mauricio Aniche
-- [ ] Curso - Ignite, Node, Rcoketseat
-- [ ] Curso - JavaScript Expert, Erik Wendel
+- [ ] Curso - Ignite, Node, Rocketseat 
 - [ ] Curso - React JS, Bibiano Senior
+- [ ] Curso - JavaScript Expert, Erik Wendel
 - [ ] Curso - Ignite, React Native, Rocketseat
 - [ ] Livro - Código Limpo, Martin
 - [ ] Livro - Refatoração, Martin

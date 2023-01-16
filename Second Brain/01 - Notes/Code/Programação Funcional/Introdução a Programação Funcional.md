@@ -45,7 +45,7 @@ amount = 2;
 setAmount(2);
 ```
 
-Estamos criando uma constante `amount` e pegando uma função `setAmout`, tudo será retornado por `useState()`.
+Estamos criando uma constante `amount` e pegando uma função `setAmout`, tudo será retornado por `useState()`. Ou seja, o conteúdo não deve ser alterado e sim substituído.
 
 # Stateless
 Não há memória (estado) mantido pelo programa, nenhum registro ou estado de todas as interações anteriores são salvos e cada interação é tratada com base nas informações disponíveis para a interação.

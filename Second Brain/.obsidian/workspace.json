@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "aa9ca2a2da875e91",
+            "id": "1a4255a13d0c2db2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Node/Express/Introdução ao Express.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aaad57ee4ba00d11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/Node/Express/Middleware.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2def4ea82d567193",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3befd35b9a1df5f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/Node/Express/Middleware.md",
+                "file": "01 - Notes/Code/JavaScript/React/Estados.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -139,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+                "file": "01 - Notes/Code/JavaScript/React/Estados.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -181,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Introdução ao React.md"
+                "file": "01 - Notes/Code/JavaScript/React/Estados.md"
               }
             }
           },
@@ -191,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+                "file": "01 - Notes/Code/JavaScript/React/Estados.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+                "file": "01 - Notes/Code/JavaScript/React/Estados.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -252,17 +215,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "2def4ea82d567193",
+  "active": "1a4255a13d0c2db2",
   "lastOpenFiles": [
+    "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
+    "01 - Notes/Code/JavaScript/React/Estados.md",
+    "01 - Notes/Code/JavaScript/React/Componentes.md",
+    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+    "01 - Notes/Code/Programação Funcional/Introdução a Programação Funcional.md",
+    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
     "01 - Notes/Code/JavaScript/Node/Express/Middleware.md",
+    "01 - Notes/Code/Planejamento.md",
     "01 - Notes/Code/JavaScript/Node/Express/Introdução ao Express.md",
-    "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md",
-    "01 - Notes/Code/JavaScript/Requisições.md",
-    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
-    "Ideias.md",
-    "01 - Notes/Code/CSS/Posicionamento.md",
-    "01 - Notes/Code/CSS/Introdução ao CSS.md",
-    "01 - Notes/Code/HTML/Introdução ao HTML.md",
-    "01 - Notes/Code/CSS/Fonte.md"
+    "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md"
   ]
 }
