@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "19f17f7bb4488db5",
+            "id": "2858f441a9b77029",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "33ada3178c960e6d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md",
                 "mode": "source",
                 "source": false
               }
@@ -26,13 +38,24 @@
               "type": "markdown",
               "state": {
                 "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "de34070fbce1c075",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,7 +138,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -157,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md"
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md"
               }
             }
           },
@@ -167,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,7 +236,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,17 +252,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "4f5808c7134d31b8",
+  "active": "2858f441a9b77029",
   "lastOpenFiles": [
+    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
     "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
     "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Introdução ao TypeSript.md",
     "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
-    "EBooks/Eloquente JavaScript 2.pdf",
-    "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf",
-    "EBooks/Aprendendo-Python.pdf",
-    "EBooks/Arquitetura_Limpa_O_Guia_do_Artesão_para_Estrutura_e_Design_de_Software.pdf",
-    "EBooks/Como-ser-um-programador-melhor.pdf",
-    "EBooks/Curso-Intensivo-de-Python.pdf"
+    "01 - Notes/Code/JavaScript/Node/Event Module.md",
+    "01 - Notes/Code/JavaScript/Node/Herdando de uma Classe.md",
+    "01 - Notes/Code/JavaScript/Node/Timers.md",
+    "01 - Notes/Code/JavaScript/Node/NPM.md",
+    "01 - Notes/Code/JavaScript/Node/Node com EJS.md",
+    "01 - Notes/Code/JavaScript/Node/Introdução ao Node.md"
   ]
 }

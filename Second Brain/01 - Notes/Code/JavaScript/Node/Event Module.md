@@ -22,7 +22,7 @@ const events = requise('events');
 Dessa forma importamos toda o modulo, porem é muito comum importamos uma [[Introdução ao Node#Importando item especifico|item especifico do modulo]], que no caso é `EventEmitter`, então importaremos da seguintes forma.
 
 ```js
-cosnt EventEmitter = require('events');
+const EventEmitter = require('events');
 ```
 
 # Instanciando Classe
