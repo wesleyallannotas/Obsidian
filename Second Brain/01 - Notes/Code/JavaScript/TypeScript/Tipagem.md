@@ -10,7 +10,7 @@ tags: [typescript]
 description: Adicionando tipos ao nosso javascript
 ---
 # Tipagem Explicita
-Quando informamos o tipo da variável, possui os mesmo tipos dos JavaScript.
+Quando informamos o tipo da variável, possui disponível os mesmo tipos dos [[Introdução ao JavaScript#Primitivos (*Primitive*)|JavaScript]].
 
 ```typescript
 let info: string = 'Vire a esquerda'
@@ -21,7 +21,7 @@ function sum(a: number, b:number) {}
 De forma explicita informamos que `info` é do tipo [[Introdução ao JavaScript#String|String]], assim não aceitando valores diferentes e trazendo a informação para os desenvolvedores quando bate o olho e para a "IDE" informar o erro caso especificado outro tipo de valor.
 
 # Tipos Primitivos
-São os tipos de dados mais simples e sem uma estrutura, os mesmo do [[Introdução ao JavaScript#Primitivos (*Primitive*)|JavaScript]]
+São os tipos de dados mais simples e sem uma estrutura.
 
 ```typescript
 let text: string;
@@ -30,7 +30,7 @@ let loading: boolean;
 ```
 
 # Tipos Estruturais
-São estrutura de dados que buscam armazenar mais que um dado apenas, os mesmo do [[Introdução ao JavaScript#Estuturais (*Structural*)|JavaScript]]
+São estrutura de dados que buscam armazenar mais que um dado apenas.
 
 ```typescript
 let numeros: number[];       // Array/Vetor de Numbers

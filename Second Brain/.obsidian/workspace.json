@@ -38,7 +38,7 @@
               "type": "markdown",
               "state": {
                 "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -55,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -138,7 +139,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -180,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md"
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md"
               }
             }
           },
@@ -190,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -236,8 +237,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -252,11 +252,11 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "2858f441a9b77029",
+  "active": "4f5808c7134d31b8",
   "lastOpenFiles": [
     "01 - Notes/Code/JavaScript/TypeScript/Type.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
     "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
     "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
     "01 - Notes/Code/JavaScript/Node/Event Module.md",
     "01 - Notes/Code/JavaScript/Node/Herdando de uma Classe.md",

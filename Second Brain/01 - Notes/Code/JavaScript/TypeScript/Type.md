@@ -10,8 +10,9 @@ tags:
 description: 
 ---
 # Criando Tipo
-Podemos criar tipos através do operador `type`, podemos criar tipos primitivos flexíveis utilizando o [[Tipagem#Operador Union|Operador Union]] 
+Podemos criar tipos através do operador `type`, desde tipos primitivos, tipos de [[Introdução ao JavaScript#Array|Arrays]] e tipos de objetos, podemos criar tipos primitivos flexíveis utilizando o [[Tipagem#Operador Union|Operador Union]] 
 ```typescript
+// Alias com operador union
 type IdType = string | number | undefined;
 
 let userId: IdType;
@@ -59,6 +60,20 @@ let darkness: User = {
 	email: 'wesley.allansilva@gmail.com',
 	age: 24
 }
+```
+
+# Criando Tipo para Referencia Função
+Também podemos criar tipos para referencias de função.
+
+```typescript
+// Tipando função
+type setValue = (newValue: IdType) => void;
+
+// Utilziando referencia de função criada
+function returnSet(fn: setValue): string { /* Corpo Função */ }
+
+// Utilizando com Arrow Function
+const setId: setValue = (newValue) => userId = newValue;
 ```
 
 # Type Assertions
