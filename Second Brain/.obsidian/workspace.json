@@ -8,30 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1a4255a13d0c2db2",
+            "id": "19f17f7bb4488db5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Estados.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e52a7c603ede58df",
+            "id": "4f5808c7134d31b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Banco de Dados/Projeto de Banco de Dados.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -76,7 +77,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dessestru",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Estados.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -156,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Estados.md"
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md"
               }
             }
           },
@@ -166,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Estados.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Estados.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -227,17 +228,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "1a4255a13d0c2db2",
+  "active": "4f5808c7134d31b8",
   "lastOpenFiles": [
-    "01 - Notes/Code/Banco de Dados/Projeto de Banco de Dados.md",
-    "01 - Notes/Code/JavaScript/React/Estados.md",
-    "01 - Notes/Code/Banco de Dados/Introdução Banco de Dados.md",
-    "01 - Notes/Code/JavaScript/React/Componentes.md",
-    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
-    "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
-    "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md",
-    "01 - Notes/Code/JavaScript/Node/Express/Middleware.md",
-    "01 - Notes/Code/JavaScript/Node/Express/Introdução ao Express.md",
-    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md"
+    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Introdução ao TypeSript.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
+    "EBooks/Eloquente JavaScript 2.pdf",
+    "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf",
+    "EBooks/Aprendendo-Python.pdf",
+    "EBooks/Arquitetura_Limpa_O_Guia_do_Artesão_para_Estrutura_e_Design_de_Software.pdf",
+    "EBooks/Como-ser-um-programador-melhor.pdf",
+    "EBooks/Curso-Intensivo-de-Python.pdf"
   ]
 }

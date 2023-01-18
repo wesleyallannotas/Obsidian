@@ -1,4 +1,4 @@
----
+r--
 title: Componentes
 author: Wesley Silva
 url:
@@ -92,3 +92,29 @@ export function Cart({name, time}) {
 	)
 }
 ```
+
+# Key Prop
+Quando geramos [[Componentes]] através de estruturas de repetição, ou seja, dinamicamente como nesse exemplo.
+
+```jsx
+{
+	students.map( student => <Card name={student.name} time={student.time}/>)
+}
+```
+
+E exibido uma mensagem no _console_ pedindo para que seja especificado uma `key`, isso é importante para manter nosso React mais performático, com o algoritmo de conseguindo facilmente distinguir os componentes para realizar a atualização de forma mais rápida, a `key` tem sua ideia parecida com uma [[Projeto de Banco de Dados#Tipos Chave|chave primeira]] em um [[Introdução Banco de Dados|banco de dados]], onde seu valor deve ser único (Caso se repita exibira um erro no console).
+Criamos a `key` por meio do atributo `key`, ficando da seguinte forma.
+
+```jsx
+{
+	students.map( student => (
+		<Card 
+			key={student.time}
+			name={student.name} 
+			time={student.time}
+		/>
+	)
+}
+```
+
+Não é obrigatório essa formatação, a utilizei para uma melhor visualização, criei a propriedade `key` e como valor escolhi usar o `time` contido dentro do `student`, ou seja, caso demore pelo menos um segundo entre uma adição e outra não terá problema, pois, esse time for formatado para conter, `HH:MM:SS`.

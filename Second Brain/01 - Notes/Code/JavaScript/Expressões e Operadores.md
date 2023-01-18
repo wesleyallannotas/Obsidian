@@ -134,6 +134,16 @@ Operadores que permitem a comparação de dois operadores booleanos que retornam
 - `!` - Negar (Inverter), verdadeiro vira falso
 - `??` - O operador de coalescência nula (_Nullish Coalescing Operator_) é um operador lógico que retorna o seu operando do lado direito quando o seu operador do lado esquerdo é `null` ou `undefined`. Caso contrário, ele retorna o seu operando do lado esquerdo. Foi pensado, pois, quando usado o operador OU (`||`), pode ocorrer o [[Falsy e Truthy|Falsy]] assim mesmo possuindo valor pegando o operando direito.
 
+## Decidir Valores
+Operador de **OU** (`||`) e **Coalescência Nula** (`??`), são muito utilizados para atribuir valor também, a difernaça base entre elas é que **coalescência nula** não sobre com [[Falsy e Truthy|Falsy]],  assim adicionando o valor a esquerda apenas quando for `Null` ou `Undefined` por exemplo.
+
+```js
+let age = 0;
+
+console.log(`Ele tem ${age || 1} ano de idade`);  // Exibira 1
+console.log(`Ele tem ${age ?? 1} ano de idade`);  // Exibira 0
+```
+
 # Operador de Agrupamento
 Através do operador de *grouping operator* que é o parênteses `( )`, podemos agrupar operadores, podemos modificar a ordem de precedência nas nossas expressões, funciona desde realização de operações aritméticas ate para expressões condicionais.
 
