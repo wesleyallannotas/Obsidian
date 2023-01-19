@@ -33,8 +33,9 @@ let loading: boolean;
 São estrutura de dados que buscam armazenar mais que um dado apenas.
 
 ```typescript
-let numeros: number[];       // Array/Vetor de Numbers
+let numeros: number[];       // Array/Vetor de Number
 let numeros: Array<number>;  // Array/Vetor de Number
+const [students, setStudents] = useState<CardProps[]>([]) // Misturando
 ```
 
 # Tipagem em Funções
@@ -68,6 +69,24 @@ let info;    // Tipo any
 let age any; // Tipo any
 ```
 
+# Inferência de Tipo
+Nada mais é do que o TypeScritp **inferir** o tipo da variável em relação ao seu valor atribuído na declaração, ocorre o mesmo com funções onde a inferência ocorre baseado no retorno.
+
+```typescript
+let info = 'Ola mundo!';
+info = 10; // Informa Erro
+
+function sum(n1: number, n2: number) {  // Infere o tipo baseado no retorno, neses caso number
+  return n1 + n2;
+}
+
+// Exemplo no React
+const [user, setUser] = useState({name: '', avatar_url: ''}); 
+// Inferi user com esssas propriedades do tipo String
+```
+
+Será informado erro, pois, na declaração da variável atribuímos um valor do tipo _[[Introdução ao JavaScript#String|String]]_, assim o TypeScript **inferiu** que nossa variável `info` é do tipo _string_, sendo o mesmo que `let info: string = 'Ola mundo!'`
+
 # Operador Union
 O operador _union_ nada mais é do que `|` na declaração do tipo, o utilizamos quando queremos informar que um variável aceita mais do que um tipo de dado.
 
@@ -85,6 +104,3 @@ function printUserId(id: number | string | boolean): void {
 }
 ```
 
-[TypeScript Playground - Types vs Interfaces (typescriptlang.org)](https://www.typescriptlang.org/pt/play?#code/PTAEFEA8EsGcBcCmBbUATA9nU9oAcNZQ8AnaAOwGN8BDbPGkm9RSgG0cdGYDMMTkzNIlABXZAFgAUCFAYARgCtE8DAC5QFJCR41KiIiNwFYAOmnTZ4NgdCwAxxlDyUxRq2iZDbpt1CDofmghQlBKGlhCSzAeUSpA8hpUNGZkA0FQPgEacylpeABPPBEAFXwMAAUI2EYnAF5QAG9pUG4a2A0AJgBuaQBfXrypLUQdPREASXJtXX0q2BqSJ2apVoiIrsG+iylKDHIENwXagEYNMoJ5xfqmto3QTtAB6T2D+CPrzo0pmfGr2tADUadw6Dyeg2ioAq-AAjqIRE4SkUDJQyHh3gBLsSoWBwJAZYQ4WgAc1cBngJFE8FETDYkKxJlgAFuAG6INj+PE0rhOWCIURiSI4JLyDHIXIvfaHBjHJYAZm+01Gs0Q-yWgI+pwhMjAAEFkPJQrBRAQSPAkn5EJAkAdHCw5FSmEQRmN9N5jIRcrIAPJED1EXQAL1ccCFNApNBZGKIKU0SpIfIA53bCf6ADSQxDkOE0aZOF0qoiM+GocTMBgcFlMAC0lAAFpHEBKpIViqAAML8USKZhA0DkDDUkgDjQU+FPUAAMlAF0q1Vqg1bIgASgoKBrgQOhyPMjQ2HyJ9Ofsq-vOltqC+MoZGaE4rTa0ERZ2rli0whg2EFMKPKYhBq0WQwGgNF0fc-36aRL30UAAHE9woBtQHvLNH1AY9XVVM9X1Wd9PzIb9dzA-9QEA4DCL5LYdhsd49kpHsNE7Oje1udZQU6NN+0HGkdzHERnikajQGJeDyAbDQ4LYBDmOBViug4vY8M8dRyMQDjSJAvcD34yEShQpw0GgVRNAWJxyAAZ6IEhWAwNJyBSZBQkAygACu-FERY41+N1uHzcgoxjIxyjMSFwFgYpqD3WykGIWFxyc1yrP0Fx-HZOt+FsWyalJA57VGJYvTAABlEQZQ8pwHPckRInkKy5CQkgljUjAXJiwk2RIORDAa0I4QRGdkVgVF8HgSEAgDZqaC8HxmCg2w9gcvwJKk5taO7ZjhMk0SaEGDapI1Vae21WQAFUCQifw6HSmNoB4UYs0Tc6swpQKTCQzyT28rFeshWaiAcJwaBcM1HqJV7-syVgGy8Aq0JMuxoGJcgbvCUBepI5rXIIQlkLs0Z3owgL2E4OyMEhMs7EQYk4ljNlA2bWbYPDbDWiWchWbIw0P0QXNKKGBm4KMlZWlojQEDIchiV5yFoQ6jBHScDhMFB0JyDtLHXD5Dq920SbQiyGhIVjUgzNIYIWCJphkwwZsl1AAAxaA2DS6KgTfEW7ApChJf6bVbYdp3BxEV2cJqiheq8DRyHEIGtiOsAABFEGKXGSfQI1+SIBRlFwQDDGOdAbru8gHtaqrRkhExDOgFlmDl-tKfDauclAAA5O9plzTAOIYXwrVNTrlaLUR5Ek8IosQekUoDjqIwOLJkAAQ+rT9DFQX7m1kTsFvENOiDSafbESmlIiLTgSLx1QptCcIT-tdzSZ1e1-RI5140LDjEpslCklCAwahwOsVlJpp1AIVc0lAADWGB2o8E-AAd0hPNJwO9DSoAIHme0PdcApDUDsWQdZ4DwDwB0EACA9BQJgfA0w81gC9QQAkWAwA5QAHZOhyhYXKAArMAJcg00TwGrL9asLJYDVl4cAThnQABsAAOTo8iAAMABiSRsj5GdAUdIIAA)
-[Principais diferenças entre types e interfaces em TypeScript | by Vinícius Estevam | Medium](https://viniciusestevam.medium.com/principais-diferen%C3%A7as-entre-types-e-interfaces-em-typescript-a00c945e5357)
-[Interfaces vs Types in TypeScript - Stack Overflow](https://stackoverflow.com/questions/37233735/interfaces-vs-types-in-typescript/52682220#52682220)

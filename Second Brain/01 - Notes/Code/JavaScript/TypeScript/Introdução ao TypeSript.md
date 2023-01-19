@@ -10,7 +10,7 @@ tags: [typescript]
 description: Entenda os beneficios e por que usar TypeScript
 ---
 # Introdução
-TypeScirpt foi um _superset_ de tipagens criado pela Microsoft para o JavaScript, hoje pode ser chamado de linguagem de programação, pois, existem soluções como o Deno, que roda o código TypeScript nativamente, sem a necessidade de compilar através do `Babel` por exemplo, porem a maioria ainda possui a necessidade de realizar a compilação para um código JavaScript nativo.
+TypeScirpt foi um _superset_ de tipagens criado pela Microsoft para o JavaScript, hoje pode ser chamado de linguagem de programação, pois, existem soluções como o Deno, que roda o código TypeScript nativamente, sem a necessidade de compilar através do `Babel` por exemplo, porem a maioria ainda possui a necessidade de realizar a compilação para um código JavaScript nativo. **(Ou seja, maioria das vezes TypeScript será uma dependência de desenvolvimento apenas)**
 O TypeScript não te obriga adicionar tipagem em tudo, porem quando mais tipagem adicionarmos a nossa aplicação, maiores erros poderão ser evitado através na segurança que as tipagens trazem, além de ajudar muito na produtividade.
 
 >[!tip] Ferramenta Interessante
@@ -36,17 +36,3 @@ function sum(n1: number, n2: number): number {
 console.log(sum('1', 2));  // IDE informa Erro, tipo number do parâmetro.
 console.log(4 / []);       // IDE informa erro na operação.
 ```
-
-# Inferência de Tipo
-Nada mais é do que o TypeScritp **inferir** o tipo da variável em relação ao seu valor atribuído na declaração, ocorre o mesmo com funções onde a inferência ocorre baseado no retorno.
-
-```typescript
-let info = 'Ola mundo!';
-info = 10; // Informa Erro
-
-function sum(n1: number, n2: number) {  // Infere o tipo baseado no retorno, neses caso number
-  return n1 + n2;
-}
-```
-
-Será informado erro, pois, na declaração da variável atribuímos um valor do tipo _[[Introdução ao JavaScript#String|String]]_, assim o TypeScript **inferiu** que nossa variável `info` é do tipo _string_, sendo o mesmo que `let info: string = 'Ola mundo!'`

@@ -14,6 +14,8 @@ Podemos criar tipos através do operador `type`, desde tipos primitivos, tipos d
 ```typescript
 // Alias com operador union
 type IdType = string | number | undefined;
+type Nullish = null | undefined;
+type Fruit = 'apple' | 'pear' | 'orange';
 
 let userId: IdType;
 let adminId: IdType;
@@ -69,10 +71,10 @@ Também podemos criar tipos para referencias de função.
 // Tipando função
 type setValue = (newValue: IdType) => void;
 
-// Utilziando referencia de função criada
+// Tipando com referencia de função criada
 function returnSet(fn: setValue): string { /* Corpo Função */ }
 
-// Utilizando com Arrow Function
+// Criando com Arrow Function
 const setId: setValue = (newValue) => userId = newValue;
 ```
 
@@ -87,6 +89,14 @@ type userResponse = {
 }
 
 let userResponse = {} as UserResponse;
+
+// Exemplo no React
+type User = {
+  name: string;
+  avatar: string;
+}
+
+const [user, setUser] = useState<User>({} as User);
 ```
 
 O objeto `userResponse`, o TypeScript não sabe o que tem dentro, por exemplo em uma API, não sabe o que viria, assim utilizamos o operador `as` para informar que ==ele é conforme== o [[#Criando Tipo|tipo que criamos]], assim forçando a interpretar a nosso objeto como contendo aqueles dados.
@@ -125,3 +135,96 @@ Criamos o _type_ `PlayerInfo` que realiza a intersecção dos tipos `User` e `Ch
 >let player1: PlayerInfo;
 >```
 
+# Implementada por Classes
+Types também podem implementar um classe, basicamente utilizando a ideia de [[Abstração]].
+
+>[!attention] Atenção
+>Não é a melhor opção, é mais recomendado o uso de interface. E por `class` e `interface` serem _static blueprints_ não aceita o uso de [[Tipagem#Operador Union|operador union.]]
+
+```typescript
+type Car = {
+	ano: number;
+	model: string;
+}
+
+class PartialPoint = { x: number; } | { y: number; }
+
+class Sedan implements Car {
+	// Código da Classe
+}
+
+// Erro!
+class SomePartialPoint implements ParialPoint {
+	x = 1;
+	y = 2;
+}
+```
+
+# Mapped Types
+Um uso muito comum é quando uma ou mais propriedades pudessem ser opcionais, temos como criar [[#Propriedades opcionais]] através do operador `?`, porem o mesmo cria uma espécie de furo na nossa tipagem, a deixando de ser _Type safety_, assim sendo recomendado o uso de `Mapped Types`, TypeScript já trans alguns _Mapped Types_ por padrão
+- `Partial<Generics>` -  O tipo informado pelo [[Generics]], pode ter suas propriedades informadas parcialmente.
+- `Readonly<Generics>` -  O tipo informado [[Generics]], após ter seus valores atribuídos não poderá ser alterado.
+
+```typescript
+interface Person {
+	id: number;
+	name: string;
+	age: number;
+	isAdmin: boolean;
+}
+
+const personPartial: Partial<Person> = {
+	id: 15,
+	name: 'Wesley',
+	age: 24,
+}
+
+const personReadonly: Readonly<Person> = {
+	id: 15,
+	name: 'Wesley',
+	age: 24,
+	isAdmin: false
+}
+
+personReadonly.name = ''  // Erro!
+```
+
+
+## Criando Mapped Types
+Além de usar os já disponibilizados pela linguagem também podemos criar os nosso tipos mapeados.
+```typescript
+// Simples Mapped Types
+type Fruit = 'melao' | 'abacaxi' | 'uva';
+
+type FruitCount = {
+  [key in Fruit]: number;
+};
+
+const fruits: FruitCount = {
+  melao: 2,
+  abacaxi: 3,
+  uva: 4,
+};
+```
+
+### Com Generics
+Tipo mapeado com utilização de [[Generics]] que muda a funcionalidade do tipo informado a através da mesma.
+```typescript
+interface Person {
+	id: number;
+	name: string;
+	age: number;
+	isAdmin: boolean;
+}
+
+// Mapped Types com Generics
+type Stringify<T> = {
+	[P in keyof T]: string;	
+}
+
+type Stringify<T> = {
+	readonly [P in keyof T]: string | number;	
+}
+```
+
+Nessa expressão `[P in keyof T]: string;` informamos que para cada propriedade desse meu tipo `<T>`(_Generics_), eu quero que ela se torne _String_.

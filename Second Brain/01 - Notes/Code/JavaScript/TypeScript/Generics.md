@@ -33,6 +33,9 @@ let newState2 = useState<string>();
 newState.set('Ola!');
 console.log(newState.get());
 newState.set(123);  // ERRO!
+
+// Exemplo
+const [students, setStudants] = useState<CardProps[]>([])
 ```
 
 No exemplo acima, como especificamos na declaração com _generics_ que o tipo é _string_, só será aceito _string_

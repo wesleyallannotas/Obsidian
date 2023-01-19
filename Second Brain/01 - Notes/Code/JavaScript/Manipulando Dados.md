@@ -22,12 +22,14 @@ Em JavaScript a ==maioria dos tipos de dados são encapsulados por um objeto==, 
 - _Type Coersion_ - O JavaScript implicitamente realiza a troca. Acontece algo parecido com booleano através do [[Falsy e Truthy|falsy e truthy]]
 
 ## Type Coersion
+Basicamente o quanto o motor do JavaScript, realiza uma conversão de tipo **implicitamente**, baseado em sua interpretação.
 ```js
 console.log('9' + 5)  // Resultado: '95'
 ```
 Realizamos a soma de um `String` com o valor `'9'` e um `Number` com valor `5`, onde **implicitamente** o JavaScript realizou a troca do tipo `Number` para `String` e realizou a concatenação de `Strings` resultando em um `String` com valor `95`
 
 ## Type Conversion (typecasting)
+Basicamente o quanto realizamos uma conversão **explicitamente**, vale lembrar que a conversão vem como retorno, assim quando não reatribuir será mudado apenas naquela estancia.
 ```js
 console.log(Number('9') + 5)  // Resultado: 14
 ```

@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2858f441a9b77029",
+            "id": "28542561aa3d3db3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,43 +20,19 @@
             }
           },
           {
-            "id": "33ada3178c960e6d",
+            "id": "77aebead0c179e1d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4f5808c7134d31b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "de34070fbce1c075",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
+                "file": "01 - Notes/Code/Git e Github/Github.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -139,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
+                "file": "01 - Notes/Code/Git e Github/Github.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -181,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md"
+                "file": "01 - Notes/Code/Git e Github/Github.md"
               }
             }
           },
@@ -191,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
+                "file": "01 - Notes/Code/Git e Github/Github.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
+                "file": "01 - Notes/Code/Git e Github/Github.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -252,17 +228,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "4f5808c7134d31b8",
+  "active": "92582111376fdc52",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
     "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+    "01 - Notes/Code/Git e Github/Github.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
+    "01 - Notes/Code/JavaScript/TypeScript/TSConfig.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Introdução ao TypeSript.md",
     "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
-    "01 - Notes/Code/JavaScript/Node/Event Module.md",
-    "01 - Notes/Code/JavaScript/Node/Herdando de uma Classe.md",
-    "01 - Notes/Code/JavaScript/Node/Timers.md",
-    "01 - Notes/Code/JavaScript/Node/NPM.md",
-    "01 - Notes/Code/JavaScript/Node/Node com EJS.md",
-    "01 - Notes/Code/JavaScript/Node/Introdução ao Node.md"
+    "01 - Notes/Code/JavaScript/Assíncronismo.md",
+    "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
+    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+    "01 - Notes/Code/JavaScript/React/Hooks.md"
   ]
 }
