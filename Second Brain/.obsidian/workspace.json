@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+                "file": "01 - Notes/Code/Planejamento.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bf42508aaf59fd64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/CSS/Transition.md",
                 "mode": "source",
                 "source": false
               }
@@ -115,7 +127,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Github.md",
+                "file": "01 - Notes/Code/CSS/Transition.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -157,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Github.md"
+                "file": "01 - Notes/Code/CSS/Transition.md"
               }
             }
           },
@@ -167,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Github.md",
+                "file": "01 - Notes/Code/CSS/Transition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Github.md",
+                "file": "01 - Notes/Code/CSS/Transition.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,8 +240,9 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "92582111376fdc52",
+  "active": "bf42508aaf59fd64",
   "lastOpenFiles": [
+    "01 - Notes/Code/Planejamento.md",
     "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
     "01 - Notes/Code/Git e Github/Github.md",
     "01 - Notes/Code/JavaScript/TypeScript/Type.md",
@@ -238,7 +251,6 @@
     "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
     "01 - Notes/Code/JavaScript/Assíncronismo.md",
     "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
-    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
-    "01 - Notes/Code/JavaScript/React/Hooks.md"
+    "01 - Notes/Code/JavaScript/React/Introdução ao React.md"
   ]
 }

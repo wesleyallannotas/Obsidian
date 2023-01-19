@@ -61,3 +61,17 @@ O Dinheiro vem até mim de diversas fontes e contínuas bases, em quantidades ca
 - [ ] Livro - Código Limpo, Martin
 - [ ] Livro - Refatoração, Martin
 - [ ] Livro - Domain Driven Design
+
+# Planejamento de Estudo Versão Rushando NewCom
+- [x] Livro - Entendendo Algoritmo, Aditya Y. Bhargava
+- [ ] Curso - Discovery, Rocketseat
+- [ ] Curso - Fundamentos JavaScript, Erick Wendel
+- [ ] Curso - React JS, Bibiano Senior
+- [ ] Curso - Ignite, Node, Rocketseat 
+- [ ] Livro - Estrutura de Dados e Algoritmos com JavaScript, Loiane Groner
+- [ ] Livro - Orientação a Objetos e SOLID para Ninjas: Projetando Classes Flexíveis, Mauricio Aniche
+- [ ] Curso - JavaScript Expert, Erik Wendel
+- [ ] Curso - Ignite, React Native, Rocketseat
+- [ ] Livro - Código Limpo, Martin
+- [ ] Livro - Refatoração, Martin
+- [ ] Livro - Domain Driven Design
