@@ -160,10 +160,22 @@ let pessoa = [
 Para chamar um item da nossa *Array* basta especificar qual o nome da *Array* e entre colchetes o *index* do item a ser acessado, por exemplo `pessoa[3]()`, `pessoa[0]`, `pessoa[4].mother`
 
 # Variáveis e Constante
-Variáveis são ==espações alocados na memoria que são nomeados para guardar valor==, no caso de ==variáveis possibilitando a variação== do seu valor durante a execução já ==constantes impossibilitando a alteração== após seu valor ser atribuído, podemos armazenar nas mesmas algum valor, atalhos de código ou identificadores, possuem as seguintes formas de declaração
+Variáveis são ==espações alocados na memoria que são nomeados para guardar valor==, no caso de ==variáveis possibilitando a variação== do seu valor durante a execução, já ==constantes impossibilitando a alteração== após seu valor ser atribuído, podemos armazenar nas mesmas, algum valor, atalhos de código ou identificadores, possuímos a liberdade de apenas declarar uma variável ou realizar a declaração e atribuição juntos.
+
+```js
+// Declaração
+let x;
+
+// Atribuição
+x = 10;
+
+// Declaração e Atribuição
+let y = 10;
+```
+
 - **Variável**
-	- `let` - Local no escopo do bloco atual, disponível apenas no bloco, diferente do `var` não possui *hoisting*
-	- `var` - Escopo global, possibilitando ser acessado em qualquer lugar mesmo sendo criado dentro de um bloco, a menos que seja [[Funções#Escopo da Função|function-scoped]], quando utilizamos `var` por baixos dos panos é como se o JavaScript coloca todas as declarações de `var` no inicio sem atribuir valor, ou seja, caso tente acessar antes da atribuição de valor retornara `undefined`, esse conceito e chamado de **_hoisting_**
+	- `let` - Local no escopo do bloco atual, disponível apenas no bloco, diferente do `var` não possui *hoisting*, aceita reatribuição (reassinar), **não** aceita re-declaração 
+	- `var` - **Não é mais recomendado o uso**, Escopo global, possibilitando ser acessado em qualquer lugar mesmo sendo criado dentro de um bloco, a menos que seja dentro de um [[Funções#Escopo da Função|function-scoped]], aceita redeclaração e aceita reatribuição (reassinar), quando utilizamos `var` por baixos dos panos é como se o JavaScript coloca todas as declarações de `var` no inicio sem atribuir valor, ou seja, caso tente acessar antes da atribuição de valor retornara `undefined`, esse conceito e chamado de **_hoisting_**
 ```js
 console.log(x); // Resultado: Undefined
 
@@ -175,7 +187,7 @@ console.log(x); // Resultado: Undefined
 console.log(x); // Resultado 0
 ```
 - **Constante**
-	- `const` - Local no escopo do bloco atual, diferente de `var` não possui _hoisting_
+	- `const` - Local no escopo do bloco atual, diferente de `var` não possui _hoisting_, **não** aceita reatribuição (reassinar) e **não** aceita reatribuição.
  
 JavaScript é uma linguagem de ==tipagem fraca e dinâmica==, tipagem fraca pois não existe a necessidade de especificar o tipo da nossa variável, ele é identificada automaticamente, contrario por exemplo do Java `int idade = 30`, e dinâmica, pois, podemos mudar o tipo da nossa variável a qualquer momento, ocorrendo automaticamente ao mudar o valor
 

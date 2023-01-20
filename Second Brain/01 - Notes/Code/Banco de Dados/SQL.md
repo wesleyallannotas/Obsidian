@@ -142,6 +142,10 @@ ALTER TABLE DEPARTAMENTO
 
 -- Alterando coluna para receber valor nulo
 ALTER TABLE DEPARTAMENTO CHANGE COLUMN NUMERO_SEGURO_SOCIAL_SUPERVISOR NUMERO_SEGURO_SOCIAL_SUPERVISOR INT NULL; -- Repete o nome duas vezes pois podemos alterar o nome, mantive o mesmo no caso
+
+-- Renomeando
+ALTER TABLE ALUNO RENAME TO ALUNOS;
+ALTER TABLE ALUNOS RENAME COLUMN id_alunos TO id_aluno;
 ```
 
 ## Apagar

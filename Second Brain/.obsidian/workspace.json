@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "28542561aa3d3db3",
+            "id": "b63fba308ad97576",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Planejamento.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bf42508aaf59fd64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/CSS/Transition.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "77aebead0c179e1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/Git e Github/Github.md",
+                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -127,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Transition.md",
+                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -169,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Transition.md"
+                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md"
               }
             }
           },
@@ -179,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Transition.md",
+                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Transition.md",
+                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -240,17 +215,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "bf42508aaf59fd64",
+  "active": "b63fba308ad97576",
   "lastOpenFiles": [
+    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
     "01 - Notes/Code/Planejamento.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
-    "01 - Notes/Code/Git e Github/Github.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
-    "01 - Notes/Code/JavaScript/TypeScript/TSConfig.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Introdução ao TypeSript.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
-    "01 - Notes/Code/JavaScript/Assíncronismo.md",
-    "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
-    "01 - Notes/Code/JavaScript/React/Introdução ao React.md"
+    "01 - Notes/Code/JavaScript/Funções.md",
+    "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
+    "01 - Notes/Code/JavaScript/Requisições.md",
+    "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
+    "01 - Notes/Code/Banco de Dados/SQL.md",
+    "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md",
+    "01 - Notes/Code/CSS/Animation.md"
   ]
 }

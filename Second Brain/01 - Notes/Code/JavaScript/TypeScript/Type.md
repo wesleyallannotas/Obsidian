@@ -189,9 +189,11 @@ const personReadonly: Readonly<Person> = {
 personReadonly.name = ''  // Erro!
 ```
 
+Tipos mapeados são uma maneira de criar tipos baseados em outros tipos. É praticamente um tipo transformacional.
 
 ## Criando Mapped Types
 Além de usar os já disponibilizados pela linguagem também podemos criar os nosso tipos mapeados.
+
 ```typescript
 // Simples Mapped Types
 type Fruit = 'melao' | 'abacaxi' | 'uva';
@@ -228,3 +230,22 @@ type Stringify<T> = {
 ```
 
 Nessa expressão `[P in keyof T]: string;` informamos que para cada propriedade desse meu tipo `<T>`(_Generics_), eu quero que ela se torne _String_.
+
+```typescript
+interface Person {
+	id: number;
+	name: string;
+	age: number;
+	isAdmin: boolean;
+}
+
+type PersonPartial<Tipo> = {
+	[Propriedade in keyof Tipo]?: Tipo[Propriedade] 
+} & { id: number }  // Forço o ID ser preenchido.
+
+const wesley: PersonPartial<Person> = {
+	id: 25;
+}
+```
+
+Criamos um _mapped type_ que transforma todas propriedades opcionais através do operador `?` mantendo os tipos originais através de `Tipo[Propriedade]`, porem realizamos uma [[#Intersecção de Tipos]] com um tipo que tem `id` como obrigatório, assim trazendo essa única propriedade como obrigatória.
