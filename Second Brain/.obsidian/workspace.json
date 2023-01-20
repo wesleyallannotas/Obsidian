@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+                "file": "01 - Notes/Code/JavaScript/React/Estados e useState.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+                "file": "01 - Notes/Code/JavaScript/React/Estados e useState.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md"
+                "file": "01 - Notes/Code/JavaScript/React/Estados e useState.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+                "file": "01 - Notes/Code/JavaScript/React/Estados e useState.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+                "file": "01 - Notes/Code/JavaScript/React/Estados e useState.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,15 +217,15 @@
   },
   "active": "b63fba308ad97576",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
-    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
-    "01 - Notes/Code/Planejamento.md",
-    "01 - Notes/Code/JavaScript/Funções.md",
-    "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
-    "01 - Notes/Code/JavaScript/Requisições.md",
-    "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
-    "01 - Notes/Code/Banco de Dados/SQL.md",
-    "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md",
-    "01 - Notes/Code/CSS/Animation.md"
+    "01 - Notes/Code/JavaScript/React/Componentes.md",
+    "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
+    "01 - Notes/Code/JavaScript/React/Estados e useState.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
+    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
+    "01 - Notes/Code/JavaScript/TypeScript/TSConfig.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Introdução ao TypeSript.md"
   ]
 }

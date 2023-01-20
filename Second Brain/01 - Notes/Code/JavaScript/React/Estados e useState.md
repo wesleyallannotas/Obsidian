@@ -48,7 +48,7 @@ export function Home() {
 ```
 
 O valor do `<h1>` contendo `title` não será alterado a cada acionar do evento `onChange`,  isso ocorre, pois, o valor da variável esta sim sendo altera, porem não esta acontecendo nenhum nova renderização, simplesmente a variável esta sendo atualizada, mas uma variável comum não impacta na interface, seu valor e jogada na primeira renderização e pronto.
-Para conseguirmos impactar na interface, teremos que utilizar estados.
+Para conseguirmos impactar na interface, teremos que utilizar estados que criaremos através do [[Hooks|Hook]] `useState`.
 
 # Criando Estados
 O estado diferente da variável comum, influencia na renderização da página, quando seu valor é alterado, dispara uma nova renderização utilizando o algoritmo de reconciliação que percebe onde ouve mudança e altera apenas o local de forma performática.
