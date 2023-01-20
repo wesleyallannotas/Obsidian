@@ -53,14 +53,33 @@ console.log(typeof x)  //Resultado: String
 >console.log(String(x).length)
 >```
 
-# Formatando Números
+### Formatando Números
 Utilizamos o método do tipo `Number` para manipular as casas decimais e realizamos o *typecasting* em `String` obtendo o acesso ao método `replace` onde podemos alterar caracteres (*chars*) da `String`
 ```js
 let x = 103.22234234234
 console.log(String(x.toFixed(2)).replace('.', ','))  // Resultado: 103,22
 ```
 
-# Alterando Separador de uma `String`
+# Testando Tipos
+Podemos testar um dado a fim de receber um [[Introdução ao JavaScript#Boolean|boolean]] o identificando, se sé encontra ou não.
+- `isFinite` - Testa se o dado é um valor `infity`
+- `isNan` - Testa se o dado é um valor `NaN` (_Not A Number_)
+
+```js
+let a = '1';
+let b = '1a';
+let c = 4 / []; // Infinity
+  
+console.log(isFinite(a));  // true
+console.log(isFinite(c));  // false
+  
+console.log(isNaN(Number(a)));  // false
+console.log(isNaN(Number(b)));  // true
+```
+
+# String
+
+## Alterando Separador de uma `String`
 Quebramos a `String` utilizando o `split` informando qual o separador utilizado, depois concatenamos as `Strings` informando um separador para utilização
 ```js
 let frase = 'Eu amo programar';
@@ -71,7 +90,7 @@ console.log(separado);
 console.log(fraseUpdate);
 ```
 
-# Pesquisando *String*
+## Pesquisando *String*
 Através do método `includes` podemos verificar se um *sub-string* existe dentro de uma *Stirng*, onde o método retorna um booleano informando se encontrou ou não
 ```js
 let phrase = "Eu aMo programar"
@@ -79,14 +98,16 @@ console.log(phrase.includes("amo"))  // Resultado: False
 console.log(phrase.includes("aMo"))  // Resultado: True
 ```
 
-# String para Array
+# Array
+
+## String para Array
 Podemos quebrar um `String` em uma `array` através do método `from` para o objeto `Array`, separando cada caractere da `string` para um espaço na `array`
 ```js
 let word = 'Corra'
 console.log(Array.from(word))  // Resultad0: ['C', 'o', 'r', 'r', 'a']
 ```
 
-# Manipulando Array
+## Manipulando Array
 Alguns exemplo de manipulação que conseguimos executar com `Arrays`
 ```js
 let techs = ["html", "css", "js"]

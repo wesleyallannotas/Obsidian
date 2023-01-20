@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Estados e useState.md",
+                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Estados e useState.md",
+                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Estados e useState.md"
+                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Estados e useState.md",
+                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Estados e useState.md",
+                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,9 +217,9 @@
   },
   "active": "b63fba308ad97576",
   "lastOpenFiles": [
+    "01 - Notes/Code/JavaScript/React/Estados e useState.md",
     "01 - Notes/Code/JavaScript/React/Componentes.md",
     "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
-    "01 - Notes/Code/JavaScript/React/Estados e useState.md",
     "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
     "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
     "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
