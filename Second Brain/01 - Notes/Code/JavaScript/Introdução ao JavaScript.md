@@ -33,7 +33,7 @@ console.log("Bem vindo ao Starter");
 >Utilizar o ponto e virgula "**;**" no fim de cada comando não é obrigatório no JavaScript, é recomendado seguir um padrão dentro do projeto, se for utilizar sempre uso, se não for nunca uso
 
 # Comentários
-Assim como toda linguagem de programação, JavaScript também tem comentários
+Assim como toda linguagem de programação, JavaScript também tem comentários, que pode ser usada para guardar informações para quem esta lendo o código, ou ate mesmo para desabilitar código antigos.
 ```js
 // Comentario em linha
 
@@ -114,23 +114,27 @@ mulher = false;
 ```
 
 ## Undefined
-Tipo de dado `undefined` em tradução livre indefinido, é encontrado quando declaramos a variável, porem não atribuímos nenhum valor.
+Tipo de dado `undefined` em tradução livre indefinido, é encontrado quando declaramos a variável, porem não atribuímos nenhum valor, podemos "assinar"/atribuir valor a uma variável utilizando `undefined` porem não é uma boa pratica.
 ```js
 let idade;
 console.log(idade); // Resultado: Undefined
 ```
 
 ## Null
-Tipo de dado `null` é considerado no JavaScript um ==objeto que não tem nada dentro==, ou seja, diferente de `undefined`
+Tipo de dado `null` é considerado no JavaScript um ==objeto que não tem nada dentro==, ou seja, diferente de `undefined`, a utilizamos para informar que variável não tem conteúdo, naquela instancia.
 ```js
 let casa = null;
 console.log(null);
 ```
 
 ## Object
-Tipo de dado `object` é um ==tipo de dado estrutural==, pois, ele cria uma estrutura que possui ==propriedades (atributos) e funcionalidades (métodos)==, também chamado de relação chave (*key*) valor (*value*), possui a estrutura `{propriedade: "valor}`
+Tipo de dado `object` é um ==tipo de dado estrutural==, pois, ele cria uma estrutura que possui  pode possuis ==propriedades (atributos) e funcionalidades (métodos)==, sua estrutura é baseada na chamado de relação chave (*key*) valor (*value*), possui a estrutura `{propriedade: "valor}`
 ```js
-let pessoa = {
+const object = new Object();
+const object2 = {};
+
+const pessoa = {
+	_id: 135,
 	nome: "Wesley",
 	sobrenome: "Silva",
 	idade: 24,
@@ -139,11 +143,59 @@ let pessoa = {
 	}
 };
 ```
-Para chamar um item do nosso objeto, basta especificar o caminho por exemplo `pessoa.nome` (`objeto.propriedade`) trará o valor da propriedade/chave `nome` no objeto (*Object*) `pessoa`, também podemos acessar utilizando colchetes e o nome da propriedade em uma *String* `objeto.["propriedade"]`
+Para chamar um item do nosso objeto, basta especificar o caminho por exemplo `pessoa.nome` (`objeto.propriedade`) trará o valor da propriedade/chave `nome` no objeto (*Object*) `pessoa`, também podemos acessar utilizando colchetes e o nome da propriedade em uma *String* `objeto.["propriedade"]`.
+Propriedades com `_` (_underline_) são identificadas como privada, por convenção entre os programadores. 
+
+>[!attention] Atenção
+>Por objetos trabalharem com referencia, quando alteramos sua estrutura seja trocando um valor de uma chave, ou adicionando novas propriedades e métodos, não estamos reassinando/reatribuindo um valor para a variável, pois, a referencia ao objeto na memoria é a mesma, por isso ==conseguimos manipular um objeto declarado com `const`==
+
+### Métodos Assessores
+Através dos métodos assessores podemos interceptar acessos ao nosso objeto através do método `get` e alterações no nosso objeto através do `set`, assim ==criando regras de leitura e escrita== em nossas propriedades.
+```js
+const pessoa = {
+  _name: 'Antonio',
+  get name() {
+    return this._name;
+  },
+  set name(value) {
+    this._name = value.toUpperCase();
+  }
+};
+  
+pessoa.name = 'wesley';
+console.log(pessoa.name)  // Resultado: WESLEY
+```
+Quando utilizamos `pessoa.name` é executado o método assessor `get` que pega o valor de `_name`, quando realizamos uma atribuição através de `pessoa.name = 'Wesley'`, o valor atribuído é passado para o método assessor `set` que captura  o valor e utiliza o método de _string_ `toUpperCase` para deixar em caixa alta e o atribui a propriedade `_name`.
+
+#### Propriedade Calculada
+Propriedade calculada nada mais é do que propriedade que não existe em si em nosso objeto, onde na realidade ela é calculada baseada em outras propriedades, tendo seu dado construído a partir de operações dentro de um `get`
+```js
+const pessoa = {
+  _idade: 17,
+  get idade() {
+    return this._idade;
+  },
+  set idade(value) {
+    return this._idade = Number(value);
+  },
+  get podeDirigir() {
+    return this.idade >= 18;
+  }
+}
+  
+console.log(pessoa.podeDirigir);  // Resultado: false
+pessoa.idade = 24;
+console.log(pessoa.podeDirigir);  // Resultado: true
+```
+>[!attention] Atenção
+>Percebe que no método assessor `get` da propriedade calculada `podeDirigir`, eu estou acessando a idade através do `get` dela, caso a ideia for acessar a propriedade original seria necessário adicionar o _underline_
 
 ## Array
 Tipo de dado `array` também chamado de [[Array|Vetor]] é um ==tipo de dado estrutural==, pois, ele cria uma estrutura que lista valores a partir de um *index* que se inicia em `0`, é uma lista heterogênea que aceita qualquer tipo de dado podem assim mistura-los
 ```js
+const list = new Array();
+const list2 = [];
+
 let pessoa = [
 	"Wesley", 
 	"Silva", 
@@ -155,7 +207,7 @@ let pessoa = [
 		father: "Antionio",
 		mother: "Cazemira"
 	}
-]
+];
 ```
 Para chamar um item da nossa *Array* basta especificar qual o nome da *Array* e entre colchetes o *index* do item a ser acessado, por exemplo `pessoa[3]()`, `pessoa[0]`, `pessoa[4].mother`
 

@@ -62,33 +62,37 @@ console.log(String(x.toFixed(2)).replace('.', ','))  // Resultado: 103,22
 
 # Testando Tipos
 Podemos testar um dado a fim de receber um [[Introdução ao JavaScript#Boolean|boolean]] o identificando, se sé encontra ou não.
-- `isFinite` - Testa se o dado é um valor `infity`
-- `isNan` - Testa se o dado é um valor `NaN` (_Not A Number_)
+- `isFinite()` - Testa se o dado é **não** é um valor `infity`
+- `isNaN()` - Testa se o dado é um valor `NaN` (_Not A Number_)
+- `Array.isArray()` - Testa se o dado é uma _array_
 
 ```js
 let a = '1';
 let b = '1a';
 let c = 4 / []; // Infinity
+let array = [];
   
 console.log(isFinite(a));  // true
 console.log(isFinite(c));  // false
   
 console.log(isNaN(Number(a)));  // false
 console.log(isNaN(Number(b)));  // true
+console.log(Array.isArray(array)); // true
 ```
 
 # String
+Agora que conhecemos o que é uma [[Introdução ao JavaScript#String|Array]], podemos realizar operações com ela afim de extrair e manipular dados, utilizando funcionalidades provinda de [[#Prototype]] é as especificas do tipo de dado _String_.
 
-## Alterando Separador de uma `String`
+>[!tip]- Alterando Separador de uma `String`
 Quebramos a `String` utilizando o `split` informando qual o separador utilizado, depois concatenamos as `Strings` informando um separador para utilização
-```js
-let frase = 'Eu amo programar';
-let separado = frase.split(' ');
-let fraseUpdate = separado.join('_');
-console.log(frase);
-console.log(separado);
-console.log(fraseUpdate);
-```
+>```js
+>let frase = 'Eu amo programar';
+>let separado = frase.split(' ');
+>let fraseUpdate = separado.join('_');
+>console.log(frase);
+>console.log(separado);
+>console.log(fraseUpdate);
+>```
 
 ## Pesquisando *String*
 Através do método `includes` podemos verificar se um *sub-string* existe dentro de uma *Stirng*, onde o método retorna um booleano informando se encontrou ou não
@@ -98,38 +102,169 @@ console.log(phrase.includes("amo"))  // Resultado: False
 console.log(phrase.includes("aMo"))  // Resultado: True
 ```
 
-# Array
-
 ## String para Array
 Podemos quebrar um `String` em uma `array` através do método `from` para o objeto `Array`, separando cada caractere da `string` para um espaço na `array`
 ```js
 let word = 'Corra'
 console.log(Array.from(word))  // Resultad0: ['C', 'o', 'r', 'r', 'a']
 ```
-
-## Manipulando Array
-Alguns exemplo de manipulação que conseguimos executar com `Arrays`
+Também podemos transformar uma _string_ em um _array_ informando um separador especifico.
 ```js
-let techs = ["html", "css", "js"]
+let frase = 'Eu amo programar';
+console.log(frase.split(' '));  // Resultado: ["Eu", "amo", "programar"]
+```
 
-// Adicionar no fim
-techs.push("nodejs")
+# Array
+Agora que conhecemos o que é uma [[Introdução ao JavaScript#Array|Array]], podemos realizar operações com ela afim de extrair e manipular dados, utilizando funcionalidades provinda de [[#Prototype]] é as especificas do tipo de dado _Array_.
 
-// Adicionar no começo
-techs.unshift("sql")
+## Adicionando no Fim
+Podemos adicionar um item ao fim da nossa _array_ através do método `push()`, ou podemos utilizar uma espécie de gambiarra acessando o ultimo item que não existe e adicionar valor, porem não é uma boa pratica.
+```js
+let list = ["html", "css", "js"];
 
-// Remover fo fim
-techs.pop()
+list.push('react');
+list[list.length] = 'nodejs';
+```
+Utilizando o `length` que começa contar nosso _array_ através do 1, conseguimos naturalmente acessar o ultimo item mais um, ou seja, que não existe na nossa _array_, e ai atribuímos valor.
 
-// Remover do começo
-techs.shift()
+## Adicionando no Começo
+Podemos adicionar um item no inicio da nossa _array_ através do método `unshift()`, assim deslocando todos os valores um a frente no _index_ e adicionando o nosso valor no inicio, ou seja, na posição 0.
+```js
+let list = ["html", "css", "js"];
 
-// Pegar somenta alguns elementos do array
-console.log(techs.slice(1, 3))  // Posição inicial, QQuantidade
+list.unshift('logica');
+```
 
-// Remover 1 ou mais items em qualquer posição do array
-techs.splice(1, 1)  // Posição inicial, Quantidade que vai remover
+## Removendo o Ultimo
+Podemos remover o ultimo item da nossa lista utilizando o método `pop()`, algo que pode ser ultimo é que o método devolve como valor o item que eles esta removendo, assim sendo útil para capturar esse valor para o que for necessário.
+```js
+let list = ["html", "css", "js"];
 
-// Encontrar a posição de um elemento do array
-let index = techs.indexOf('js')  // Retorna o index do elento
+console.log(list.pop());
+```
+
+## Removendo o Primeiro
+Podemos remover o primeiro item da nossa lista utilizando o método `shift()`, algo que pode ser ultimo é que o método devolve como valor o item que eles esta removendo, assim sendo útil para capturar esse valor para o que for necessário.
+```js
+let list = ["html", "css", "js"];
+
+console.log(list.shift());
+```
+
+## Capturando Intervalo Valores
+Podemos capturar um intervalo de valores através do método `slice`, onde como parâmetros informamos a posição inicial dentro da _array_ e a posição do item final mais 1.
+```js
+let list = ["logica", "html", "css", "js", "react", 'nodejs'];
+
+console.log(list.slice(1, 4));  // ["html", "css", "js"]
+```
+
+## Removendo Intervalo de Valores
+Podemos remover um intervalo de valores através do método `splice`, onde como parâmetros informamos a posição inicial dentro do _array_ e a quantidade que diferentes da [[#Capturando Intervalo Valores]], informamos a quantidade.
+```js
+let list = ["logica", "html", "css", "js", "react", 'nodejs'];
+
+list.splice(1, 3);
+console.log(list); // ["logica", "react", "nodejs"]
+```
+
+## Pesquisando Posição
+Podemos pesquisar e capturar a posição de determinado valor dentro de uma _array_ através do método `indexOf()`, onde como parâmetros informamos o valora ser pesquisado.
+```js
+let list = ["logica", "html", "css", "js", "react", 'nodejs'];
+
+console.log(list.indexOf('js'));  // 3
+```
+>[!attention] Atenção
+>Caso não for encontrado o valor informado, o método retornará o valor `-1`, onde como vimos, em situações que necessita de _boolean_ ou que realizamos a conversão forçada o `-1` passando pelo [[Falsy e Truthy]] retornara `true`
+
+## Ordenando
+Podemos ordenar a nossa _array_ através do método `sort()`.
+```js
+let list = [3, 5, 7, 8, 1];
+let list2 = ['b', 'z', 'q', 'y', 'a'];
+
+list.sort();
+list2.sort();
+```
+
+## Concatenando Arrays
+Podemos utilizar o método `concat()` para capturar a junção da nossa _array_ com outra.
+```js
+let list = [3, 5, 7, 8, 1];
+let list2 = ['b', 'z', 'q', 'y', 'a'];
+
+let newList = list.concat(list2);
+```
+
+## Array para String
+Podemos capturar uma transformação da nossa _array_ em uma _string_, através do método `join()` onde como parâmetros definimos um separador.
+```js
+let list = ["logica", "html", "css", "js", "react", 'nodejs'];
+
+console.log(list.join(` -> `));
+```
+
+# Object
+Agora que conhecemos o que é uma [[Introdução ao JavaScript#Object|Object]], podemos realizar operações com ela afim de extrair e manipular dados, utilizando funcionalidades provinda de [[#Prototype]] é as especificas do tipo de dado _Object_.
+
+## Adicionando Elementos
+Podemos adicionar um elemento ao nosso objeto, simplesmente passando um nome para chave e atribuindo um valor a ela.
+```js
+const person = {
+	name: 'Wesley'
+}
+
+person["age"] = 24;
+```
+Assim sendo adicionando ao nosso objeto a propriedade `age` com o valor `24`.
+
+## Capturando as Chaves
+Podemos capturar as chaves do nosso objeto dentro de uma _array_ através do objeto global `Object` com seu método `keys`, onde como parâmetro/argumento especificamos qual o objeto.
+```js
+const person = {
+	name: 'Wesley',
+	age: 24
+}
+
+console.log(Object.keys(person));  // ['name', 'age']
+```
+
+## Capturando os Valores
+Podemos capturar os valores do nosso objeto dentro de uma _array_ através do objeto global `Object` com seu método `values`, onde como parâmetro/argumento especificamos qual o objeto.
+```js
+const person = {
+	name: 'Wesley',
+	age: 24
+}
+
+console.log(Object.values(person));  // ['name', 'age']
+```
+
+## Concatenando Object
+Podemos capturar uma concatenação de objetos através do objeto global `Object` com seu método `assign`, onde como parâmetro/argumento especificamos quais os objetos.
+```js
+const person = {
+	name: 'Wesley',
+	age: 24
+}
+
+const car = {
+	model: 'Saveiro',
+	ano: 2007
+}
+
+console.log(Object.assign(person, car));
+```
+
+## Removendo Elemento
+Podemos remover um elemento dentro do nosso objeto através do operador `delete`.
+```js
+const person = {
+	name: 'Wesley',
+	age: 24
+}
+
+delete person.name;
+delete person["name"];
 ```

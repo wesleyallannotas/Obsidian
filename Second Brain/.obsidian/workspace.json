@@ -8,18 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b63fba308ad97576",
+            "id": "26474baf958d85dd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+                "file": "01 - Notes/Code/JavaScript/Requisições.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "27335fa72264c956",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/JavaScript/Classes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+                "file": "01 - Notes/Code/JavaScript/Classes.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md"
+                "file": "01 - Notes/Code/JavaScript/Classes.md"
               }
             }
           },
@@ -154,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+                "file": "01 - Notes/Code/JavaScript/Classes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+                "file": "01 - Notes/Code/JavaScript/Classes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +213,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 244.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,17 +228,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "b63fba308ad97576",
+  "active": "27335fa72264c956",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/React/Estados e useState.md",
-    "01 - Notes/Code/JavaScript/React/Componentes.md",
-    "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
-    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
-    "01 - Notes/Code/JavaScript/TypeScript/TSConfig.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Introdução ao TypeSript.md"
+    "01 - Notes/Code/JavaScript/Requisições.md",
+    "01 - Notes/Code/JavaScript/Classes.md",
+    "01 - Notes/Code/Programação Orientada a Objetos/Herança.md",
+    "01 - Notes/Code/Programação Orientada a Objetos/Polimorfismo.md",
+    "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
+    "01 - Notes/Code/Programação Orientada a Objetos/Abstração.md",
+    "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
+    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+    "01 - Notes/Code/JavaScript/Funções.md"
   ]
 }

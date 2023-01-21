@@ -186,7 +186,7 @@ console.log(niceBreakfast); // Resultado: Cafe ruim
 ```
 
 # Operador *new*
-A expressão `new` é classificada como uma *left-hand-side expression*, basicamente é uma expressão que serve para criar/instanciar uma objeto
+A expressão `new` é classificada como uma *left-hand-side expression*, basicamente é uma expressão que serve para criar/instanciar uma objeto.
 
 ```js
 let name = new String('Wesley');

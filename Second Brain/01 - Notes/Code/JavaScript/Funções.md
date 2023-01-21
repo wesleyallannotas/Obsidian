@@ -10,15 +10,23 @@ tags: [javascript]
 description: Como criar e utilizar funções
 ---
 # Introdução
-Funções são um tipo de dado estrutural que armazena pedaços de código os nomeado, ou seja, possibilita que possamos agrupar e reutilizar código por consequência dando um significa ao pedaço de código através da nomeação
+Funções são um tipo de ==dado estrutural== que armazena pedaços de código os nomeado, ou seja, possibilita que possamos agrupar e reutilizar código por consequência dando um significa ao pedaço de código através da nomeação
 - *Function statement* - Declaração da função
 - *run, call, execute, invoke* - Executar função
 ```js
-function soma() {  // Function statement
-	x = y;  // Bloco de código
+function soma(x, y) {  // Function statement
+	return x + y;  // Bloco de código
 }
 
-soma();  // Executar função
+const somaAnonima = function(x, y) {  // Função anonima
+	return x + y;
+}
+
+const somaArrow = (x, y) => x + y;  // Arrow Function, omitindo return
+
+soma(2, 5);  // Executar função
+somaAnonima(2, 5);
+somaArrow(2, 5)
 ```
 
 >[!attention] Atenção
@@ -119,14 +127,14 @@ function sayMyName() {
 Forma mais moderna e compacta de escrever funções, onde omitimos o comando `function` e após a definição dos parâmetros criamos uma espécie de flecha utilizando os caracteres igual e maior, em seguida abrindo para o bloco de código da função
 
 >[!attention] Atenção
->_Arrow Function_ não tem seu próprio _[this](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/this)_, _[arguments](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/arguments)_, _[super](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/super)_ ou _[new.target](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/new.target)_.
+>_Arrow Function_ não tem seu próprio _[this](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/this)_, _[arguments](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/arguments)_, _[super](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/super)_ ou _[new.target](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/new.target)_, nem mesmo a propriedade [[Manipulando Dados#Prototype|prototype]], sendo assim, não é recomendado essa expressão para construção de métodos e _contructors_
 
 ```js
 const sayMyName = (name) => {
 	console.log(name)
 }
 ```
-Utilizando apenas um parâmetro, podemos omitir os parênteses, ficando da seguinte forma
+Utilizando apenas um parâmetro, podemos omitir os parênteses, ficando da seguinte forma, mas caso não aja nenhum parâmetro é necessário adicionar os parênteses vazios.
 ```js
 const sayMyName = name => {
 	console.log(name)
@@ -138,7 +146,7 @@ const square = n => n * n;
 ```
 
 # *Callback Function*
-Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[Introdução ao JavaScript#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, criando a ideia de uma função chamar outra função de volta após um certo tempo.
+Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[Introdução ao JavaScript#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, assim sendo passado sua referencia na memoria, onde a função pode utiliza-la, criando a ideia de uma função chamar outra função de volta após um certo tempo.
 
 ```js
 function say(name) {
@@ -157,93 +165,6 @@ say(() => {
 	return 'Estou em um callback'
 })
 ```
-
->[!note]- Estudo com Testes
->```js
->function a(arg) {
-  console.log('before')
-  console.log(arg)
->	console.log(arg())
-  arg()
-  console.log('after')
-}
->
-console.log('-------------Primeiro Teste---------------')
-a(() => {
-  console.log('Executando a função')
-  return 'Retorno da arrow function'
-})
->/* [Function (anonymous)]
->Executando a função
->Retorno de arrow function
->Executando a função*/
-console.log('------------------------------------------')
->
-console.log('-------------Segundo Teste---------------')
-a(() => {
-  return 'Retorno da arrow function'
-  console.log('Executando a função')
-})
->/* [Function (anonymous)]
->Retorno da arrow function */
-console.log('------------------------------------------')
->
-console.log('-------------Terceiro Teste---------------')
-function b() {
-  console.log('Executando a função')
-  return 'Retorno da função'
-}
-a(b()) 
-/* Retorno da função
-ERRO! "arg" não é uma função */
-console.log('------------------------------------------')  
->
-console.log('-------------Quarto Teste---------------')
-const c = function() {
-  console.log('Executando a função')
-  return 'Retorno da função'
-}
-a(c)
-a(c())
->/* [Function: c]
->Executando a função
->Retorno da função
->Executando a função
->Executando a função
->Retorno da função
->ERRO! "arg" não é uma função */
-console.log('------------------------------------------')
->
-console.log('-------------Quinto Teste---------------')
-const d = () => {
-  console.log('Executando a função')
-  return 'Retorno da função'
-}  
-a(d)
-a(d())
->/* [Funciton: d]
->Executando a função
->Retorno da Função
->Executando a função
->Executando a função
->Retorno função
->ERRO! "arg" não é um função */
-console.log('------------------------------------------')
->
-console.log('-------------Sexto Teste---------------');
-function z(arg) {
-  let x = ' Testando';
-  console.log('before');
-  console.log(arg(x));
-  console.log('after');
-}
->
-z(x => {
-  return 'Teste' + x;
-});
-// Teste testando
-console.log('------------------------------------------');
->```
 
 # *Function Constructor*
 *Function Constructor* ou do português função construtora tem como objetivo conter instruções para a instanciação de objetos, é quando utilizamos o **operador `new`** cria uma instancia de um tipo de objeto definido pelo usuário ou de um dos tipos nativos (_built-in_) que possuem uma função construtora, utilizando esse método temos acesso ao `this` que esta se referenciando a si mesmo
