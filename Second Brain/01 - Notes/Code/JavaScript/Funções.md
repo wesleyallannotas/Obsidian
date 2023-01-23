@@ -66,6 +66,11 @@ console.log(soma(soma(1, 2), 5));
 
 # Escopo da Função
 Escopo da função ou no mais conhecido em inglês **_Function Scope_** esta ligado com o código dentro de uma função e o funcionamento do escope das variáveis que ele interage
+>[!attention] Atenção
+>Não é recomendável declarar variável sem um operador.
+>```js
+>teste = 'Teste';
+>```
 ```js
 // Mesma identificador, esopo diferente
 let name = 'Wesley'

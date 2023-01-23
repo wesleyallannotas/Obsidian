@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "27335fa72264c956",
+            "id": "bfe5a8385e27bda7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Classes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ce944fb173c89da9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+                "file": "01 - Notes/Code/JavaScript/Strict Mode.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Classes.md",
+                "file": "01 - Notes/Code/JavaScript/Strict Mode.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -156,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Classes.md"
+                "file": "01 - Notes/Code/JavaScript/Strict Mode.md"
               }
             }
           },
@@ -166,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Classes.md",
+                "file": "01 - Notes/Code/JavaScript/Strict Mode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Classes.md",
+                "file": "01 - Notes/Code/JavaScript/Strict Mode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -227,17 +215,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "92582111376fdc52",
+  "active": "bfe5a8385e27bda7",
   "lastOpenFiles": [
     "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+    "01 - Notes/Code/JavaScript/Funções.md",
     "01 - Notes/Code/JavaScript/Classes.md",
+    "01 - Notes/Code/JavaScript/Strict Mode.md",
     "01 - Notes/Code/Programação Orientada a Objetos/Encapsulamento.md",
     "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
     "01 - Notes/Code/JavaScript/Requisições.md",
     "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
     "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
-    "01 - Notes/Code/Programação Orientada a Objetos/Herança.md",
-    "01 - Notes/Code/Programação Orientada a Objetos/Polimorfismo.md",
-    "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md"
+    "01 - Notes/Code/Programação Orientada a Objetos/Herança.md"
   ]
 }

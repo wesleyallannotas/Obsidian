@@ -214,6 +214,12 @@ Para chamar um item da nossa *Array* basta especificar qual o nome da *Array* e 
 # Variáveis e Constante
 Variáveis são ==espações alocados na memoria que são nomeados para guardar valor==, no caso de ==variáveis possibilitando a variação== do seu valor durante a execução, já ==constantes impossibilitando a alteração== após seu valor ser atribuído, podemos armazenar nas mesmas, algum valor, atalhos de código ou identificadores, possuímos a liberdade de apenas declarar uma variável ou realizar a declaração e atribuição juntos.
 
+>[!attention] Atenção
+>Não é recomendável declarar variável sem um operador.
+>```js
+>teste = 'Teste';
+>```
+
 ```js
 // Declaração
 let x;
@@ -227,7 +233,7 @@ let y = 10;
 
 - **Variável**
 	- `let` - Local no escopo do bloco atual, disponível apenas no bloco, diferente do `var` não possui *hoisting*, aceita reatribuição (reassinar), **não** aceita re-declaração 
-	- `var` - **Não é mais recomendado o uso**, Escopo global, possibilitando ser acessado em qualquer lugar mesmo sendo criado dentro de um bloco, a menos que seja dentro de um [[Funções#Escopo da Função|function-scoped]], aceita redeclaração e aceita reatribuição (reassinar), quando utilizamos `var` por baixos dos panos é como se o JavaScript coloca todas as declarações de `var` no inicio sem atribuir valor, ou seja, caso tente acessar antes da atribuição de valor retornara `undefined`, esse conceito e chamado de **_hoisting_**
+	- `var` - **Não é mais recomendado o uso**, Escopo global, possibilitando ser acessado em qualquer lugar mesmo sendo criado dentro de um bloco, por exemplo no navegador a variável se torna uma propriedade do objeto global _window_, a menos que seja dentro de um [[Funções#Escopo da Função|function-scoped]], aceita redeclaração e aceita reatribuição (reassinar), quando utilizamos `var` por baixos dos panos é como se o JavaScript coloca todas as declarações de `var` no inicio sem atribuir valor, ou seja, caso tente acessar antes da atribuição de valor retornara `undefined`, esse conceito e chamado de **_hoisting_**
 ```js
 console.log(x); // Resultado: Undefined
 
