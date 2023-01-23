@@ -41,7 +41,35 @@ Utilizamos o `this` para referenciar o objeto que esta sendo instanciado, ou sej
 >[!attention] Atenção
 >No contexto de classes não utilizamos `function` para declarar os métodos.
 
-# Funções Helpers
+# Métodos Privada
+Podemos criar métodos privados que só serão acessados internamente pela classe, através do operador `#`
+
+```js
+class Person {
+  constructor(nome, peso, altura) {
+    this.nome = nome;
+    this.peso = peso;
+    this.altura = altura;
+  };
+  
+  #calculaImc() {
+    return (this.peso / this.altura ** 2).toFixed(2);
+  };
+  
+  get imc() {
+    return `O Imc de ${this.nome} é ${this.#calculaImc()}`;
+  };
+};
+  
+const wesley = new Person('Wesley', 120, 1.90);
+  
+console.log(wesley.imc);  
+wesley.#calculaImc();  // Propriedade não acessivel, método privado
+```
+
+Foi criado uma método privada chamada `calculaImc` que retorna o calculo do imc com o tratamento de 2 casas decimais, em seguida criamos um [[Introdução ao JavaScript#Métodos Assessores|Método Assessor]] `get` com uma [[Introdução ao JavaScript#Propriedade Calculada|propriedade calculada]] `imc` que retorna uma _[[Introdução ao JavaScript#String|string]]_.
+
+# Métodos Helpers
 Através do operador `static` podemos criar métodos que serão uteis externo a classes, ou seja, estarão disponíveis sem a necessidade de instanciar em alguma variável importante se atentar que quando utilizamos o `static`, não possuímos acesso  ao `this`.
 
 ```js

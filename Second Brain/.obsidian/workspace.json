@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "26474baf958d85dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/Requisições.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "27335fa72264c956",
             "type": "leaf",
             "state": {
@@ -30,9 +18,20 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ce944fb173c89da9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -77,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "métodos asses",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -228,17 +227,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "27335fa72264c956",
+  "active": "92582111376fdc52",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/Requisições.md",
+    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
     "01 - Notes/Code/JavaScript/Classes.md",
+    "01 - Notes/Code/Programação Orientada a Objetos/Encapsulamento.md",
+    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
+    "01 - Notes/Code/JavaScript/Requisições.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
     "01 - Notes/Code/Programação Orientada a Objetos/Herança.md",
     "01 - Notes/Code/Programação Orientada a Objetos/Polimorfismo.md",
-    "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
-    "01 - Notes/Code/Programação Orientada a Objetos/Abstração.md",
-    "01 - Notes/Code/JavaScript/Nomeando Variáveis.md",
-    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
-    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
-    "01 - Notes/Code/JavaScript/Funções.md"
+    "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md"
   ]
 }
