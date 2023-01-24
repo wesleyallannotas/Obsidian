@@ -30,21 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5767dc732ba06ba4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/Modulos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -240,7 +228,7 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "5767dc732ba06ba4",
+  "active": "e598ff65d8d55230",
   "lastOpenFiles": [
     "01 - Notes/Code/JavaScript/Node/Introdução ao Node.md",
     "01 - Notes/Code/JavaScript/Modulos.md",

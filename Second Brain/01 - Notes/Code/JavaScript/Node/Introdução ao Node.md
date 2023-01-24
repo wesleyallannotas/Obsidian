@@ -158,6 +158,9 @@ import { Eventemitter } from 'events';
 ```
 
 # Criando Módulo
+Podemos exportar módulos da seguinte forma.
+
+## Antiga
 Através do objeto global  `module` podemos utilizar o método `exports` onde podemos atribuir o que desejarmos Array, Object, String, Number...
 
 ```js
@@ -168,4 +171,17 @@ module.exports = "Testando exportação";
 ```js
 const myModule = require('./path/arquivo.js');
 const myModule = require('./path/arquivo'); // Pode omitir o ".js"
+```
+
+## Moderna
+Através dos operadores `export` que podemos definir para diferentes itens assim os possibilitando de ser importando individualmente através da sintaxe entre chaves `{ }` e `export default` onde podemos definir uma exportação padrão que quando não especificado, será utilizada.
+
+```js
+function main() {}
+
+export default main;
+```
+
+```js
+export function main() {}
 ```
