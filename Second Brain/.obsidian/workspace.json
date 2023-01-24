@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Strict Mode.md",
+                "file": "01 - Notes/Code/JavaScript/Node/Introdução ao Node.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e598ff65d8d55230",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/JavaScript/Modulos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5767dc732ba06ba4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/JavaScript/Modulos.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -102,7 +127,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Strict Mode.md",
+                "file": "01 - Notes/Code/JavaScript/Modulos.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Strict Mode.md"
+                "file": "01 - Notes/Code/JavaScript/Modulos.md"
               }
             }
           },
@@ -154,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Strict Mode.md",
+                "file": "01 - Notes/Code/JavaScript/Modulos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Strict Mode.md",
+                "file": "01 - Notes/Code/JavaScript/Modulos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,17 +240,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "bfe5a8385e27bda7",
+  "active": "5767dc732ba06ba4",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
-    "01 - Notes/Code/JavaScript/Funções.md",
+    "01 - Notes/Code/JavaScript/Node/Introdução ao Node.md",
+    "01 - Notes/Code/JavaScript/Modulos.md",
+    "01 - Notes/Code/JavaScript/Node/Herdando de uma Classe.md",
+    "01 - Notes/Code/JavaScript/Node/Event Module.md",
+    "01 - Notes/Code/JavaScript/Node/Diferença entre NPM e NPX.md",
+    "01 - Notes/Code/JavaScript/Assíncronismo.md",
     "01 - Notes/Code/JavaScript/Classes.md",
-    "01 - Notes/Code/JavaScript/Strict Mode.md",
-    "01 - Notes/Code/Programação Orientada a Objetos/Encapsulamento.md",
     "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
-    "01 - Notes/Code/JavaScript/Requisições.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
-    "01 - Notes/Code/Programação Orientada a Objetos/Herança.md"
+    "01 - Notes/Code/JavaScript/Date.md",
+    "01 - Notes/Code/JavaScript/DOM.md"
   ]
 }

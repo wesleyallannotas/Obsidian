@@ -165,17 +165,6 @@ console.log("Após a função com erro")
 
 ![[throw_com_catch.png]]
 
-# For
-**Estrutura de repetição** `for` tem a função de controlar a iteração, normalmente sendo repetida ate um booleano com o valor `false` ser informado, no caso do for, será através da condição de parada, assim quebrando o fluxo de iteração, deve ser usadas com cuidado, pois, pode ocorrer por má programação a criação de *loops* infinitos. a sintaxe do `for` se baseia no comando `for` seguido da criação de uma variável de controle, uma condição de parada e pro ultimo a atualização da variável de controle.
-
-```js
-for (let i = 0; i <= 10; i++) {
-	console.log(`Contagem: ${i}`)
-}
-```
-
-Normalmente utilizamos `for` ==quando sabemos o fim==, assim podendo definir a parada do fluxo de repetição
-
 # While
 **Estrutura de repetição** `while` tem a função de controlar a iteração, normalmente sendo repetida ate um booleano com o valor `false` ser informado, assim quebrando o fluxo de iteração, deve ser usadas com cuidado, pois, pode ocorrer por má programação a criação de *loops* infinitos sendo ainda mais comuns em *loops* do tipo `while`. a sintaxe do `while` se baseia no comando `while` e entra parênteses, se espera um booleano que será verificado a cada iteração, sendo quebrado quando encontrar `false` como valor.
 ```js
@@ -191,6 +180,29 @@ Normalmente utilizamos a estrutura repetição `while` ==quando não sabemos o f
 
 >[!tip] Dica de incremento com exibição
 >A linha de código do incremento esta **comentada**, pois, pode se observar que estou realizando o incremento desta variável que estamos utilizando como controle dentro do próprio `console.log` que informa seu valor, e utilizando o [[Expressões e Operadores#*Unary*|operador unário]] de incremento após o valor, para que **seja exibido e depois incrementado**
+
+# Do...While
+**Estrutura de repetição** `do...while` tem a função de controlar a iteração, ele é executado pelo menos uma vez onde no fim da execução é executa a verificação se mantendo em _loop_ ate que um valor booleano `false` ser informado, assim quebrando o fluxo de iteração, deve ser usadas com cuidado, pois, pode ocorrer por má programação a criação de *loops* infinitos sendo ainda mais comuns em *loops* do tipo `do...while`. a sintaxe do `do...while` se baseia no comando `do`, abre o bloco de código e no fim do bloco o operador `while` com a condição a ser verificada a cada iteração
+```js
+let i = 0;
+
+do {
+	console.log(`Contagem: ${i++}`);
+} while (i <= 10);
+```
+
+Normalmente utilizamos a estrutura repetição `do...while` ==quando não sabemos o fim==
+
+# For
+**Estrutura de repetição** `for` tem a função de controlar a iteração, normalmente sendo repetida ate um booleano com o valor `false` ser informado, no caso do for, será através da condição de parada, assim quebrando o fluxo de iteração, deve ser usadas com cuidado, pois, pode ocorrer por má programação a criação de *loops* infinitos. a sintaxe do `for` se baseia no comando `for` seguido da criação de uma variável de controle, uma condição de parada e pro ultimo a atualização da variável de controle.
+
+```js
+for (let i = 0; i <= 10; i++) {
+	console.log(`Contagem: ${i}`)
+}
+```
+
+Normalmente utilizamos `for` ==quando sabemos o fim==, assim podendo definir a parada do fluxo de repetição
 
 # For...of
 
@@ -210,6 +222,8 @@ for (let name of names) {
 ```
 
 Normalmente utilizamos a estrutura de repetição `for...of` para ==percorrer *Strings* e *Arrays*==
+==Basicamente pega o valor direto.==
+
 # For...in
 **Estrutura de repetição** `for...in` tem a função de controlar a iteração, utilizando variáveis do tipo objeto previamente criadas onde podemos **percorre-las** pegando a propriedade/chave (*Property/key*). a sintaxe do `for...in` se baseia no comando `for` e entra parênteses, se espera uma variável que será preenchida com cada propriedade/chave (*property/key*) capturado de outra variável que contem o objeto, sendo quebrado quando percorre-la totalmente.
 
@@ -226,6 +240,7 @@ for (let property in person) {
 ```
 
 Utilizamos a estrutura de repetição `for...in` para ==percorrer *Object*==
+==Basicamente pega o index ou chave==.
 
 >[!tip] Dica de como acessar valores de um objeto
 >Como vimos sobre [[Introdução ao JavaScript#Object|objetos]] podemos acessar o valor de uma propriedade através da sintaxe `objeto.propriedade` ou também utilizando colchetes `objeto.["propriedade"]`
