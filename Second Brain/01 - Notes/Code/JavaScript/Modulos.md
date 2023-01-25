@@ -48,6 +48,9 @@ import { Eventemitter } from 'events';
 # Criando Módulo
 Podemos exportar módulos da seguinte forma.
 
+>[!attention] Atenção
+>Caso importarmos via HTML com elementos `<script>` não é necessário a importação por dentro do código JavaScript, tudo estará disponível globalmente.
+
 ## Antiga
 Através do objeto global  `module` podemos utilizar o método `exports` onde podemos atribuir o que desejarmos Array, Object, String, Number...
 

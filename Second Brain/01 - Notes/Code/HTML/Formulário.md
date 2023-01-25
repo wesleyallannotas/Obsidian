@@ -294,3 +294,10 @@ Através do elemento `<optgroup>` podemos criar grupos de opções, através do 
 	</optgroup>
 </select>
 ```
+
+# Saída de Dados
+Possuímos o elemento `<output>` que é utilizado normalmente para exibir uma saídas de referentes referente ao formulário.
+
+```html
+<output>Saída de Dados!</output>
+```

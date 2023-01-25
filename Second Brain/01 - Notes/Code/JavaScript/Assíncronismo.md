@@ -23,9 +23,58 @@ console.log('Conectando API')
 
 Por se tratar de uma [[Funções#*Callback Function*|Callback Function]] que será executado após um determinado tempo dentro do método `get()`, o `console.log` de fora será impresso primeiro no console.
 
+# Callback Function
+Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[Introdução ao JavaScript#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, assim sendo passado sua referencia na memoria, onde a função pode utiliza-la, criando a ideia de uma função chamar outra função de volta após o termino da execução
+
+```js
+function say(name) {
+	console.log('Antes de executar a função callback')
+	console.log(name())
+	console.log('Depois de executar a função callback')
+}
+
+function fn() {
+	return 'Estou em um callback'
+}
+
+say(fn)
+
+say(() => {
+	return 'Estou em um callback'
+})
+```
+
+## Boas Praticas
+Por convenção os _callbacks_ devem possuir 2 parâmetros, sendo um para erro e outro com o resultado consecutivamente, normalmente o erro é tratado primeira mente e em sequencia o que será feito com o resultado.
+
+```js
+const callback = function(error, result) {
+	if(error) return console.log(error);
+	return console.log(result);
+};
+
+fs.readFile("arquivo.txt", callback);
+```
+
+## Problema Teste
+Mesmo problema utilizando todos os métodos de resolução.
+
+```js
+// Callbacks
+terminal.question('Seu nome?\n', (res1) => {
+  terminal.question('Seu Idade?\n', (res2) => {
+    console.log(`Ola ${res1}, Parabens pelos seus ${res2} anos de idade!`)
+    terminal.close();
+  })
+})
+```
+
 # Promise
 Basicamente é uma promessa de que algo irá acontecer no futuro, é um objeto JavaScript usado para operações assíncronas, por exemplo, Carregar um arquivo, leitura de dados de uma API.
 Para criarmos uma _Promise_ é necessário instanciar `const promessa = new Promise()` passando como parêmetro/argumento uma referencia de função.
+
+>[!tip] Sobre then
+>Toda vez que um `.then()` é executado, ele devolve uma promise por padrão.
 
 ```js
 let aceitar = true;
@@ -47,8 +96,12 @@ promessa
 console.log('Aguardando');
 ```
 
-Instanciamos um objeto _promise_ passando como parâmetro um [[Funções#*Callback Function*|callback function]], onde passamos como parâmetro o _resolve_ caso de certo, e o _reject_ caso de errado, onde essa função deve retornar através de um destes métodos o resultado, onde criamos a partir do método ==`then()` uma resposta para caso de certo==, ou seja atinja o estagio _fulfilled_, a partir do método ==`catch()` uma resposta para caso de errado==, ou seja atinja o estagio _Reject_, e o método ==`finally()` executara quando atingir o estagio _settled_== que é quando chega ao fim do ciclo de vida da _promise_. 
-Utilizamos `console.log` para exemplificar, porem podemos executar o que desejarmos.
+Instanciamos um objeto _promise_ passando como parâmetro um [[Funções#*Callback Function*|callback function]], onde passamos como parâmetro o _resolve_ caso de certo, e o _reject_ caso de errado, onde essa função deve retornar através de um destes métodos o resultado.
+
+Onde criamos a partir do método ==`then()` uma resposta para caso de certo==, ou seja atinja o estagio _fulfilled_.
+A partir do método ==`catch()` uma resposta para caso de errado==, ou seja atinja o estagio _Reject_ ou execute um [[Controle de Fluxo#Throw|Throw]].
+
+E o método ==`finally()` executara quando atingir o estagio _settled_== que é quando chega ao fim do ciclo de vida da _promise_.
 
 ## Estagios
 Uma _promise_ possui estágios durante seu ciclo de vida sendo eles.
@@ -91,6 +144,31 @@ async function getUserPosts(userName) {
 }
 
 getUserPosts('wesleyallan');
+```
+
+## Problema Teste
+Mesmo problema utilizando todos os métodos de resolução.
+![[referenciaInteligente.png]]
+```js
+const questionAsync = question => new Promise((resolve, reject) => {
+  terminal.question(`${question}\n`, resolve);
+})
+  
+let name, age;
+
+questionAsync('Seu nome?')
+  .then(res => {
+    if(!res) throw new Error('Campo Vazio!');
+    name = res;
+  })
+  .then(() => questionAsync('Sua Idade?'))
+  .then(res => {
+    if(!res) throw Error('Campo Vazio!');
+    age = res;
+  })
+  .then(() => console.log(`Ola ${name}, Parabens pelos seus ${age} anos de idade!`))
+  .catch(err => console.log(err))
+  .finally(() => terminal.close())
 ```
 
 # Async/Await
@@ -170,4 +248,31 @@ async function showUserAndRepos(userName) {
 }
 
 showUserAndRepos('wesleyallan').finally('Execução encerrada!');
+```
+
+## Problema Teste
+Mesmo problema utilizando todos os métodos de resolução.
+
+```js
+function questionAsyncAwait(question) {
+  return new Promise((resolve, reject) => {
+    terminal.question(`${question}\n`, msg => {
+      !!msg ? resolve(msg) : reject(new Error('O campo não pode estar vazio!'))
+    })
+  })
+};
+
+async function main() {
+  try {
+    let name = await questionAsyncAwait('Seu nome?');
+    let age = await questionAsyncAwait('Sua idade?');
+    console.log(`Ola ${name}, Parabens pelos seus ${age} anos de idade!`);
+  } catch(err) {
+    console.log('Deu Ruim!', err.stack);
+  } finally {
+    terminal.close();
+  }
+};
+  
+main();
 ```

@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bfe5a8385e27bda7",
+            "id": "370e663bc4fa1405",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Node/Introdução ao Node.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e598ff65d8d55230",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/Modulos.md",
+                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Modulos.md",
+                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -157,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Modulos.md"
+                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md"
               }
             }
           },
@@ -167,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Modulos.md",
+                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Modulos.md",
+                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,17 +215,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "e598ff65d8d55230",
+  "active": "370e663bc4fa1405",
   "lastOpenFiles": [
+    "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
+    "01 - Notes/Code/JavaScript/Assíncronismo.md",
+    "fal.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
+    "01 - Notes/Code/JavaScript/Node/Manipulando FileSystem.md",
+    "01 - Notes/Code/JavaScript/Funções.md",
+    "01 - Notes/Code/JavaScript/Node/Node com EJS.md",
     "01 - Notes/Code/JavaScript/Node/Introdução ao Node.md",
     "01 - Notes/Code/JavaScript/Modulos.md",
-    "01 - Notes/Code/JavaScript/Node/Herdando de uma Classe.md",
-    "01 - Notes/Code/JavaScript/Node/Event Module.md",
-    "01 - Notes/Code/JavaScript/Node/Diferença entre NPM e NPX.md",
-    "01 - Notes/Code/JavaScript/Assíncronismo.md",
-    "01 - Notes/Code/JavaScript/Classes.md",
-    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
-    "01 - Notes/Code/JavaScript/Date.md",
-    "01 - Notes/Code/JavaScript/DOM.md"
+    "01 - Notes/Code/HTML/Formulário.md"
   ]
 }

@@ -13,6 +13,7 @@ description: Como criar e utilizar funções
 Funções são um tipo de ==dado estrutural== que armazena pedaços de código os nomeado, ou seja, possibilita que possamos agrupar e reutilizar código por consequência dando um significa ao pedaço de código através da nomeação
 - *Function statement* - Declaração da função
 - *run, call, execute, invoke* - Executar função
+
 ```js
 function soma(x, y) {  // Function statement
 	return x + y;  // Bloco de código
@@ -35,6 +36,7 @@ somaArrow(2, 5)
 
 # Parâmetros
 Nossa função pode conter parâmetros que podem ser atribuídos durante a chama da função, onde a função terá acesso a esses valores para utilizar no seu bloco de código.
+
 ```js
 var total;
 
@@ -48,6 +50,7 @@ console.log(total);
 
 # Retorno
 Funções retornam valor através do uso do comando `return` caso não possua retornara `undefined`, assim quando chamarmos uma função ela executara o seu bloco de código e "cospe" o retorno podendo ser capturado, por uma variável, ser usado como parâmetro para outra função, entre outros
+
 ```js
 function soma(x, y) {
 	return x + y;
@@ -66,11 +69,13 @@ console.log(soma(soma(1, 2), 5));
 
 # Escopo da Função
 Escopo da função ou no mais conhecido em inglês **_Function Scope_** esta ligado com o código dentro de uma função e o funcionamento do escope das variáveis que ele interage
+
 >[!attention] Atenção
 >Não é recomendável declarar variável sem um operador.
 >```js
 >teste = 'Teste';
 >```
+
 ```js
 // Mesma identificador, esopo diferente
 let name = 'Wesley'
@@ -106,10 +111,12 @@ function alter(seila) {
 console.log(reat(name))  // Resultado: 'AndressaWesley'
 console.log(name)  // Resultado: 'AndressaWesley'
 ```
+
 Basicamente ele ==prioriza o parâmetro==, se tiver um parâmetro com o mesmo nome de variável interno ele utiliza o parâmetro, ==caso não exista, busca no escopo anterior==, e em ==ultimo caso cria a variável==
 
-# *Function Hoisting*
+# Function Hoisting
 Assim como vimos o funcionamento do *hoisting* para a [[Introdução ao JavaScript#Variáveis e Constante|declaração de variável]] utilizando o comando `var`, existem o *function hoisting* para funções onde mesmo chamando a função antes de cria-la ele funcionara normalmente, pois, ocorre o *function hoisting* que é como se joga-se as declarações de funções para o inicio do código, independente de onde tenha escrito.
+
 ```js
 sayMyName();  // Resultado: 'Wesley'
 
@@ -128,8 +135,24 @@ function sayMyName() {
 >}
 >```
 
-# *Arrow Function*
-Forma mais moderna e compacta de escrever funções, onde omitimos o comando `function` e após a definição dos parâmetros criamos uma espécie de flecha utilizando os caracteres igual e maior, em seguida abrindo para o bloco de código da função
+# Função Anônima
+Leva esse nome por não possui um nome relacionado em sua criação, podemos criar função anônimas, quando é necessário uma referencia de função, ou apenas para assinar uma variável com determina função, muito usado para criação de _[[Assíncronismo#Callback Function|Callbacks]]_
+
+```js
+// Assinando
+const soma = function(x, y) {
+  return x + y;
+};
+
+// Callback
+fs.readFile('./arq1.txt', function(error, response) {
+  if (error) return console.log('Deu Ruim!' + error.stack);
+  console.log('Resposta = ', response);
+});
+```
+
+# Arrow Function
+Forma mais moderna e compacta de escrever funções, onde omitimos o comando `function` e após a definição dos parâmetros criamos uma espécie de flecha utilizando os caracteres igual e maior, em seguida abrindo para o bloco de código da função, é uma espécie de [[#Função Anônima]], não havendo nomeação em sua declaração.
 
 >[!attention] Atenção
 >_Arrow Function_ não tem seu próprio _[this](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/this)_, _[arguments](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/arguments)_, _[super](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/super)_ ou _[new.target](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/new.target)_, nem mesmo a propriedade [[Manipulando Dados#Prototype|prototype]], sendo assim, não é recomendado essa expressão para construção de métodos e _contructors_
@@ -139,39 +162,43 @@ const sayMyName = (name) => {
 	console.log(name)
 }
 ```
+
 Utilizando apenas um parâmetro, podemos omitir os parênteses, ficando da seguinte forma, mas caso não aja nenhum parâmetro é necessário adicionar os parênteses vazios.
+
 ```js
 const sayMyName = name => {
 	console.log(name)
 }
 ```
+
 Quando possui apenas uma linha retorna automaticamente, sem a necessidade do `return`.
+
 ```js
 const square = n => n * n;
 ```
 
-# *Callback Function*
-Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[Introdução ao JavaScript#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, assim sendo passado sua referencia na memoria, onde a função pode utiliza-la, criando a ideia de uma função chamar outra função de volta após um certo tempo.
+Muito usada em [[Assíncronismo#Callback Function|Callbacks]]
 
 ```js
-function say(name) {
-	console.log('Antes de executar a função callback')
-	console.log(name())
-	console.log('Depois de executar a função callback')
-}
-
-function fn() {
-	return 'Estou em um callback'
-}
-
-say(fn)
-
-say(() => {
-	return 'Estou em um callback'
-})
+fs.readFile('./arq1.txt', (error, response) => {
+  if (error) return console.log('Deu Ruim!' + error.stack);
+  console.log('Resposta = ', response);
+});
 ```
 
-# *Function Constructor*
+# Referencia de Função
+Podemos realizar a referencia a uma função basicamente passando seu nome invés de executa-la, tem o mesmo efeito de declara uma função anônima ou [[#Arrow Function]]
+
+```js
+function respostaLeituraArq(err, resp) {
+  if (err) return console.log('Erro!', err.stack);
+  console.log('Respota =', resp.message);
+}
+  
+fs.readFile('./arq1.txt', respostaLeituraArq);
+```
+
+# Function Constructor
 *Function Constructor* ou do português função construtora tem como objetivo conter instruções para a instanciação de objetos, é quando utilizamos o **operador `new`** cria uma instancia de um tipo de objeto definido pelo usuário ou de um dos tipos nativos (_built-in_) que possuem uma função construtora, utilizando esse método temos acesso ao `this` que esta se referenciando a si mesmo
 - Funções construtoras por convenção se inicia com um caractere maiúsculo
 - Lembre-se não é um objeto e sim uma função que instancia objetos, por isso o sinal de igual e a não separação por virgula

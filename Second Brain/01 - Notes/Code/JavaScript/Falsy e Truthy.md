@@ -10,7 +10,10 @@ tags: [javascript]
 description: Funcionando do Falsy e Truthy na necessidade de booleano
 ---
 # Introdução
-Tem-se a mesma ideia do [[Manipulando Dados#Type Conversion Coersion|type coersion]] realizado implicitamente pelo JavaScript, onde ==através de um interpretação do dado e a necessidade de um booleano== ele pode assumir verdadeiro (*true*) ou falso (*false*), normalmente acontece em condicionais e repetições (*loops*), podemos forçar essa necessidade de um booleado e a aplicação do _falsy_ e _truthy_ utilizando o operador de negação duas vezes `!!`.
+Tem-se a mesma ideia do [[Manipulando Dados#Type Conversion Coersion|type coersion]] realizado implicitamente pelo JavaScript, onde ==através de um interpretação do dado e a necessidade de um booleano== ele pode assumir verdadeiro (*true*) ou falso (*false*), normalmente acontece em condicionais e repetições (*loops*).
+
+>[!attention] Operador Importante!
+>podemos forçar essa necessidade de um booleado e a aplicação do _falsy_ e _truthy_ utilizando o operador de negação duas vezes `!!`.
 
 ```js
 let value = -1;
