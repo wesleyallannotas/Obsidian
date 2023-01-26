@@ -256,6 +256,11 @@ const car = {
 
 console.log(Object.assign(person, car));
 ```
+Através do método `assing` encontrado no objeto global `Object`, podemos passar como terceiro parâmetro um propriedade que queremos criar.
+```js
+Object.assign({}, objetoExmeplo, {id: Math.random() / 0.5})
+```
+Concatenando um objeto vazio com um objeto já existente e criando uma propriedade.
 
 ## Removendo Elemento
 Podemos remover um elemento dentro do nosso objeto através do operador `delete`.

@@ -30,7 +30,7 @@ console.log("Bem vindo ao Starter");
 ```
 
 >[!attention] Atenção
->Utilizar o ponto e virgula "**;**" no fim de cada comando não é obrigatório no JavaScript, é recomendado seguir um padrão dentro do projeto, se for utilizar sempre uso, se não for nunca uso
+>Utilizar o ponto e virgula "**;**" no fim de cada expressão não é obrigatório no JavaScript, é recomendado seguir um padrão dentro do projeto, se for utilizar sempre use, se não for nunca use
 
 # Comentários
 Assim como toda linguagem de programação, JavaScript também tem comentários, que pode ser usada para guardar informações para quem esta lendo o código, ou ate mesmo para desabilitar código antigos.
@@ -43,7 +43,7 @@ Comentário em bloco
 ```
 
 # Tipos de Dados
-Quanto mais vocabulário tivermos dentro da linguagem mais ferramentas teremos a nossa disposição para solucionar os problemas, tipos de dados são importantíssimos para que possamos manipular e utilizar nossos dados corretamente para gerar informação==, conforme o ECMAScript standard temos 9 tipos de dados==, separados nas categorias ou mais corretamente **Data Types**:
+ Tipos de dados são importantíssimos para que possamos manipular e utilizar nossos dados corretamente para gerar informação==, conforme o ECMAScript standard temos 9 tipos de dados==, separados nas categorias ou mais corretamente **Data Types**:
 - Primitive / Primitive value
 - Structural
 - Structural Primitive
@@ -128,7 +128,7 @@ console.log(null);
 ```
 
 ## Object
-Tipo de dado `object` é um ==tipo de dado estrutural==, pois, ele cria uma estrutura que possui  pode possuis ==propriedades (atributos) e funcionalidades (métodos)==, sua estrutura é baseada na chamado de relação chave (*key*) valor (*value*), possui a estrutura `{propriedade: "valor}`
+Tipo de dado `object` é um ==tipo de dado estrutural==, pois, ele cria uma estrutura que possui  ==propriedades (atributos) e funcionalidades (métodos)==, sua estrutura é baseada na chamado de relação chave/propriedade (*key*) valor (*value*), possui a estrutura `{propriedade: "valor}`
 ```js
 const object = new Object();
 const object2 = {};
@@ -168,7 +168,7 @@ console.log(pessoa.name)  // Resultado: WESLEY
 Quando utilizamos `pessoa.name` é executado o método assessor `get` que pega o valor de `_name`, quando realizamos uma atribuição através de `pessoa.name = 'Wesley'`, o valor atribuído é passado para o método assessor `set` que captura  o valor e utiliza o método de _string_ `toUpperCase` para deixar em caixa alta e o atribui a propriedade `_name`.
 
 #### Propriedade Calculada
-Propriedade calculada nada mais é do que propriedade que não existe em si em nosso objeto, onde na realidade ela é calculada baseada em outras propriedades, tendo seu dado construído a partir de operações dentro de um `get`
+Propriedade calculada nada mais é do que propriedade que não existe em si em nosso objeto, onde na realidade em sua maioria  é calculada baseada em outras propriedades, porem temos total liberdade para retornar o que desejarmos, tendo seu dado construído a partir de operações dentro de um `get`
 ```js
 const pessoa = {
   _idade: 17,

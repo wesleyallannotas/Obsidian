@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
+                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
+                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md"
+                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
+                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
+                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,15 +217,15 @@
   },
   "active": "370e663bc4fa1405",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
+    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+    "01 - Notes/Code/JavaScript/Node/Introdução ao Node.md",
     "01 - Notes/Code/JavaScript/Assíncronismo.md",
+    "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
     "fal.md",
     "01 - Notes/Code/JavaScript/TypeScript/Type.md",
     "01 - Notes/Code/JavaScript/Node/Manipulando FileSystem.md",
     "01 - Notes/Code/JavaScript/Funções.md",
     "01 - Notes/Code/JavaScript/Node/Node com EJS.md",
-    "01 - Notes/Code/JavaScript/Node/Introdução ao Node.md",
-    "01 - Notes/Code/JavaScript/Modulos.md",
-    "01 - Notes/Code/HTML/Formulário.md"
+    "01 - Notes/Code/JavaScript/Modulos.md"
   ]
 }
