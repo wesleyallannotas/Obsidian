@@ -205,6 +205,62 @@ let list = ["logica", "html", "css", "js", "react", 'nodejs'];
 console.log(list.join(` -> `));
 ```
 
+## map
+Através do método `map()` que é um método de [[Introdução ao JavaScript#Array|Arrays]] obtido através da [[#Prototype|prototype chain]], onde conseguirmos iterar a _array_ executando uma função callback para cada elemento da _array_, (referencia de função ou uma função anônima), e devolve uma nova _array_ com os resultados. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
+Como parâmetro da nossa [[Assíncronismo#Callback Function|Callback]]  podemos capturar, **valor atual**, **índice**, **array de origem**. 
+Como segundo parâmetro podemos passar um _thisArg_ (Valor a ser utilizado como o _`this`_ no momento da execução da função `callback`.
+>[!attention] Atenção
+>Método `map()` não manipula a _array_ base, porem a _callback_ consegui
+```js
+array.map((value, index, arrayOriginal) => `${index}: ${value} da array ${arrayOriginal}`)
+```
+
+```js
+let numbers = [1, 4, 9];
+let roots = numbers.map(Math.sqrt); // Referencia de Função 
+// Resultado: 1, 2, 3
+
+let double = numbers.map(n => n * 2);  // Arrow Function (Função Anonima)
+// Resultado: 2, 8, 18
+```
+
+## reduce
+Através do método `reduce()` que é um método de [[Introdução ao JavaScript#Array|Arrays]] obtido através da [[#Prototype|prototype chain]], onde conseguirmos iterar a _array_ executando uma função callback para cada elemento da _array_, (referencia de função ou uma função anônima), resultado em um único valor. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
+Como parâmetros da nossa _callback_ podemos capturar **acumulador**, **valor atual**, **índice**, **array de origem**
+```js
+array.map((acumulado, value, index, arrayOriginal) => {})
+```
+
+```js
+const array = [5, 1, 3, 5, 6];
+  
+const soma = array.reduce( (total, item, indice, array) => {
+  console.log(`${indice} na array ${array}`);
+  return total += item
+});
+
+console.log(`Soma da array ${array} é igual a ${soma}`);
+```
+
+## filter
+Através do método `filte()` que é um método de [[Introdução ao JavaScript#Array|Arrays]] obtido através da [[#Prototype|prototype chain]], onde conseguirmos iterar a _array_ executando uma função callback para cada elemento da _array_, (referencia de função ou uma função anônima), resultado em uma _array_ contendo os elementos que passaram na verificação. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
+Como parâmetro da nossa _callback_ podemos capturar **valor atual**, **índice**, **array de origim**.
+Como segundo parâmetro podemos passar um _thisArg_ (Valor a ser utilizado como o _`this`_ no momento da execução da função `callback`.
+```js
+array.map((valueAtual, index, arrayOriginal) => {})
+```
+
+```js
+const array = [5, 1, 3, 5, 6];
+  
+const filtrada = array.filter( (item, indice, array) => {
+  console.log(`${indice} na array ${array}`);
+  return item % 2 === 0
+});
+  
+console.log(`Original ${array} resultado ${filtrada}`);
+```
+
 # Object
 Agora que conhecemos o que é uma [[Introdução ao JavaScript#Object|Object]], podemos realizar operações com ela afim de extrair e manipular dados, utilizando funcionalidades provinda de [[#Prototype]] é as especificas do tipo de dado _Object_.
 

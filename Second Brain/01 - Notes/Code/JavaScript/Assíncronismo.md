@@ -144,6 +144,17 @@ async function getUserPosts(userName) {
 }
 
 getUserPosts('wesleyallan');
+
+
+// Omitindo then
+class Util {
+	static timeout(tempo) {
+		return new Promise(resolve => setTimeout(resolve, tempo));
+	}
+}
+// --- outro arquivo ---
+await this.util.timeout(1000)
+	this.esconderHerois(copias)
 ```
 
 ## Problema Teste
