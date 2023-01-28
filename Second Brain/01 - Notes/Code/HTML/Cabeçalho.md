@@ -52,6 +52,8 @@ Existem algumas tags meta que podemos adicionar que é usado por redes sociais, 
 Podemos  adicionar um favicon, ícone que fica junto com o titulo da página no cabeçalho, realizamos a inserção através da tag `<link>`
 ```html
 <link rel="icon" href="assets/icon/icone.png" />
+
+<link type="image/x-icon" rel="shortcut icon" href="nosso_icone.ico" />
 ```
 Atributo `rel` mostra o relacionamento, por exemplo para CSS seria `styleshet`, interessante selecionar que é ==possível especificar diferentes ícones para aparelhos diferentes== para melhor funcionamento, encontramos mais no site MDN famoso pela documentação.
 

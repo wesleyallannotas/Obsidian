@@ -38,11 +38,15 @@ h1 {
   /* Classe pode se repetir nos elementos */
 }
 
+section.left {
+  /* Todos os elementos section, com classe left */
+}
+
 [title] {
   /* Todos os elementos que contenham um atributo title, independente do valor */
 }
 
-input[type='number'] {
+input[type=number] {
   /* Elemento com atributo especifco, nesse caso elemento <input> com atributo type valor number */
 }
 

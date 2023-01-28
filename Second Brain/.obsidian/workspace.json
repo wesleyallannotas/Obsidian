@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a4bc27a69e91d739",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/Assíncronismo.md",
+                "file": "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+                "file": "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -156,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md"
+                "file": "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md"
               }
             }
           },
@@ -166,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+                "file": "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+                "file": "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -229,15 +217,15 @@
   },
   "active": "ed5ca2b33f1836b7",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/Assíncronismo.md",
-    "01 - Notes/Code/JavaScript/Node/Introdução ao Node.md",
-    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
-    "01 - Notes/Code/Estrutura de Dados/Array.md",
-    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
-    "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
-    "fal.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
-    "01 - Notes/Code/JavaScript/Node/Manipulando FileSystem.md",
-    "01 - Notes/Code/JavaScript/Funções.md"
+    "01 - Notes/Code/CSS/Flexbox.md",
+    "01 - Notes/Code/CSS/Grid.md",
+    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
+    "01 - Notes/Code/HTML/Semântica.md",
+    "01 - Notes/Code/HTML/Cabeçalho.md",
+    "01 - Notes/Code/CSS/Box Model.md",
+    "01 - Notes/Code/CSS/At-Rules.md",
+    "01 - Notes/Code/CSS/Animation.md",
+    "01 - Notes/Code/CSS/Transition.md",
+    "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md"
   ]
 }
