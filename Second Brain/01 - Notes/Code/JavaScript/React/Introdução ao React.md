@@ -19,7 +19,8 @@ React é uma **biblioteca** JavaScript para construção de interfaces, ou seja,
 	- Por exemplo acesso a câmera, microfone, localização, desenvolvimento um software completo.
 
 # Criando Projeto
-Normalmente utilizamos um _template_ base com React já configura que pode ser obtido através dos gerenciadores de pacotes JavaScript como [[NPM]],  Yarn, entre muitos outros disponíveis, entre os _templates_ mais famosos estão:
+React nada mais é do que um _script_ de JavaScript, podemos adicionar o react, ou seja, seu modulo com suas funcionalidades em um projeto puro por exemplo, através do _link_ encontrado no site do React basicamente um _raw_ que cotem todo o código, caso adicionarmos o _raw_ do Babel, podemos ate escrever [[JSX e TSX|JSX]]
+Porem normalmente utilizamos um _template_ base com React já configura que pode ser obtido através dos gerenciadores de pacotes JavaScript como [[NPM]],  Yarn, entre muitos outros disponíveis, entre os _templates_ mais famosos estão:
 - [Create React App](https://create-react-app.dev/)
 - [Vite](https://vitejs.dev/)
 Entre os diversas opções ocorrem diferenças como ferramentas inclusas e performance.
@@ -36,10 +37,11 @@ npm install
 
 # Estrutura do Projeto
 Por o React ser uma lib (biblioteca) não possui restrições como um framework como por exemplo o `Next` que é um _framework_ React que possui diversas regras para o bom funcionamento e a melhor extração de benefícios do framework, uma delas é a estrutura, de como deve ser dividido e ate mesmo o nome dos diretórios, já o React não possui.
-Uma ideia de organização de projetos e dentro de `src` onde possui os códigos, criar um diretório `pages` para as páginas, um `styles` para os `CSSs` padrões que normalmente contendo um _Reset CSS_ e um CSS global do projeto.
+Uma ideia de organização é deixar no `public`, os `assets`/conteúdos que vão ficar disponíveis no front-end, como por exemplo os ícones, entre outros. 
+O código do projetos e dentro de `src` onde possui os códigos, criar um diretório `pages` para as páginas, um `styles` para os `CSSs` padrões que normalmente contendo um _Reset CSS_ e um CSS global do projeto.
 Uma boa ideia é criar um pasta dentro de `pages` para cada pagina e dentro nomear o arquivo principal como  `index` com a extensão que estiver usando, seja puro `js`/`ts` ou com extensão de sintaxe `jsx`/`tsx` e criar um `style.css` e importar a nossa página.
 Para os componentes criamos um diretório chamada `components` e usamos a mesma ideia para cada componente, criando um diretório com `index` e `style`
-
+![[Estrutura-React.png|300]]
 
 # Estados 
 Quando queremos transportar valores entre componentes e queremos que cause impactando na nossa interface, variáveis comuns não tem esse poder, por exemplo.
@@ -80,7 +82,7 @@ export function Home() {
 ```
 
 O valor do `<h1>` contendo `title` não será alterado a cada acionar do evento `onChange`,  isso ocorre, pois, o valor da variável esta sim sendo altera, porem não esta acontecendo nenhum nova renderização, simplesmente a variável esta sendo atualizada, mas uma variável comum não impacta na interface, seu valor e jogada na primeira renderização e pronto.
-Para conseguirmos impactar na interface, teremos que utilizar estados que criaremos através do [[Hooks|Hook]] [[Hooks#useState|useState]].
+Para conseguirmos impactar na interface, teremos que utilizar estados que criaremos através do [[Hooks|Hook]] [[Hooks#useState|useState]], pois, ==componentes são renderizados quando o estado atualiza.==
 
 ## Imutabilidade
 Os estados do React respeitam o conceito de [[Introdução a Programação Funcional#Imutabilidade|imutabilidade]] do paradigma [[Introdução a Programação Funcional|programação funcional]], o conteúdo não deve ser alterado e sim substituído, o que traz mais performance por consequência.
@@ -131,8 +133,10 @@ Para resolver esse problema ==temos que recuperar os valores anteriores, e adici
 
 ```js
 // --- Conteudo anteior mantem ---
-    setStudents([...students, newStudent]); // Operador Spread
-    setStudents(prevStudent => [...prevStudent, newStudent]); // Arrow Function com Spread
+setStudents([...students, newStudent]); // Operador Spread
+
+// RECOMENDADO
+setStudents(prevStudent => [...prevStudent, newStudent]); // Arrow Function com Spread
 // --- Conteúdo posterior mantem
 ```
 

@@ -196,6 +196,13 @@ let list2 = ['b', 'z', 'q', 'y', 'a'];
 
 let newList = list.concat(list2);
 ```
+Podemos também utilizar o [[Expressões e Operadores#Operador Spread|operador spread]] porem temos que atentar a suas características para usar em momentos específicos.
+```js
+let list = [3, 5, 7, 8, 1];
+let list2 = ['b', 'z', 'q', 'y', 'a'];
+
+let newList = [...list, ...list2];
+```
 
 ## Array para String
 Podemos capturar uma transformação da nossa _array_ em uma _string_, através do método `join()` onde como parâmetros definimos um separador.
@@ -206,7 +213,7 @@ console.log(list.join(` -> `));
 ```
 
 ## map
-Através do método `map()` que é um método de [[Introdução ao JavaScript#Array|Arrays]] obtido através da [[#Prototype|prototype chain]], onde conseguirmos iterar a _array_ executando uma função callback para cada elemento da _array_, (referencia de função ou uma função anônima), e devolve uma nova _array_ com os resultados. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
+Através do método `map()` que é um método de [[Introdução ao JavaScript#Array|Arrays]] obtido através da [[#Prototype|prototype chain]], onde conseguimos iterar a _array_ executando uma função callback para cada elemento da _array_, (referencia de função ou uma função anônima), e devolve uma nova _array_ com os resultados. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
 Como parâmetro da nossa [[Assíncronismo#Callback Function|Callback]]  podemos capturar, **valor atual**, **índice**, **array de origem**. 
 Como segundo parâmetro podemos passar um _thisArg_ (Valor a ser utilizado como o _`this`_ no momento da execução da função `callback`.
 >[!attention] Atenção
@@ -224,8 +231,17 @@ let double = numbers.map(n => n * 2);  // Arrow Function (Função Anonima)
 // Resultado: 2, 8, 18
 ```
 
+## forEach
+Através do método `forEach()` que é um método de [[Introdução ao JavaScript#Array|Arrays]] obtido através do [[#Prototype|prototype chain]], onde conseguimos iterar a _array_ executando um função [[Assíncronismo#Callback Function|Callback]] para cada elemento da _array_, (referencia de função ou uma função anônima),  ==não devolve nada, não altera a _array_ original, simplesmente realizamos operações com os valores==. 
+Como parâmetro da nossa _Callback_  podemos capturar, **valor atual**, **índice**, **array de origem**. 
+Como segundo parâmetro podemos passar um _thisArg_ (Valor a ser utilizado como o _`this`_ no momento da execução da função `callback`.
+```js
+let numbers = [1, 4, 9];
+numbers.forEach(item => console.log(item));
+```
+
 ## reduce
-Através do método `reduce()` que é um método de [[Introdução ao JavaScript#Array|Arrays]] obtido através da [[#Prototype|prototype chain]], onde conseguirmos iterar a _array_ executando uma função callback para cada elemento da _array_, (referencia de função ou uma função anônima), resultado em um único valor. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
+Através do método `reduce()` que é um método de [[Introdução ao JavaScript#Array|Arrays]] obtido através da [[#Prototype|prototype chain]], onde conseguimos iterar a _array_ executando uma função callback para cada elemento da _array_, (referencia de função ou uma função anônima), resultado em um único valor. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
 Como parâmetros da nossa _callback_ podemos capturar **acumulador**, **valor atual**, **índice**, **array de origem**
 ```js
 array.map((acumulado, value, index, arrayOriginal) => {})
@@ -243,7 +259,7 @@ console.log(`Soma da array ${array} é igual a ${soma}`);
 ```
 
 ## filter
-Através do método `filte()` que é um método de [[Introdução ao JavaScript#Array|Arrays]] obtido através da [[#Prototype|prototype chain]], onde conseguirmos iterar a _array_ executando uma função callback para cada elemento da _array_, (referencia de função ou uma função anônima), resultado em uma _array_ contendo os elementos que passaram na verificação. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
+Através do método `filte()` que é um método de [[Introdução ao JavaScript#Array|Arrays]] obtido através da [[#Prototype|prototype chain]], onde conseguimos iterar a _array_ executando uma função _[[Assíncronismo#Callback Function|Callback]]_ para cada elemento da _array_, (referencia de função ou uma função anônima), resultado em uma _array_ contendo os elementos que passaram na verificação, ou seja, quando foi iterado o resultado de sua _callback_ foi `true`. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
 Como parâmetro da nossa _callback_ podemos capturar **valor atual**, **índice**, **array de origim**.
 Como segundo parâmetro podemos passar um _thisArg_ (Valor a ser utilizado como o _`this`_ no momento da execução da função `callback`.
 ```js
@@ -310,13 +326,33 @@ const car = {
 	ano: 2007
 }
 
-console.log(Object.assign(person, car));
+const newObject = Object.assign(person, car);
 ```
-Através do método `assing` encontrado no objeto global `Object`, podemos passar como terceiro parâmetro um propriedade que queremos criar.
+Podemos passar como terceiro parâmetro um propriedade que queremos criar.
 ```js
 Object.assign({}, objetoExmeplo, {id: Math.random() / 0.5})
 ```
 Concatenando um objeto vazio com um objeto já existente e criando uma propriedade.
+Podemos também utilizar o [[Expressões e Operadores#Operador Spread|operador spread]] porem temos que atentar a suas características para usar em momentos específicos.
+```js
+const person = {
+	name: 'Wesley',
+	age: 24
+}
+
+const car = {
+	model: 'Saveiro',
+	ano: 2007
+}
+
+const alterPerson = {
+	...person,
+	age: 28
+}
+
+const newObject = {...person, ...car};
+const newObject = { ...person, ...car }; // Mesmo resultado, so para ler melhor
+```
 
 ## Removendo Elemento
 Podemos remover um elemento dentro do nosso objeto através do operador `delete`.

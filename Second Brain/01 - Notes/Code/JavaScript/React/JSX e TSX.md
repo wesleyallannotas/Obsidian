@@ -24,8 +24,8 @@ const element = React.createElement(
 )
 ```
 
-# Incorporando Valor
-Podemos adicionar qualquer código JavaScript para obter valor através do uso de chaves `{ }`, por estar mais próximo do JavaScript usa camelCase, por exemplo para adicionar ao atributo `class` utilizamos `className`
+# Incorporando Valor (Dynamic Data)
+Também conhecido como _dynamic data_ Podemos adicionar qualquer código JavaScript para obter valor através do uso de chaves `{ }`, por estar mais próximo do JavaScript usa camelCase, por exemplo para adicionar ao atributo `class` utilizamos `className`
 
 ```jsx
 const element = <h1>Ola! {person.name}</h1>;

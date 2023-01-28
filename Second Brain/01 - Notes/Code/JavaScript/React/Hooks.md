@@ -45,6 +45,28 @@ export function Home() {
 
 Agora podemos perceber que quando digitamos no `<input />` o valor é alterado refletindo a interface.
 
+## Assincronismo
+A função para manipulação do estado é [[Assíncronismo|Assíncrona]], ou seja, dependendo de vários fatores, a atualização pode não ser instantânea, assim podendo ocorrer incongruências com o valor armazenado no estado atualmente, para resolver esse problema, podemos capturar o valor anterior real que é disponibilizado, através de um parâmetro e utiliza-lo para realizar a alteração através de [[Assíncronismo#Callback Function|Callback]].
+
+```tsx
+export const Counter = () => {
+  const [counter, setCounter] = useState<number>(0);
+  function add() {
+    setCounter(prevState => prevState + 1);
+  }
+  function subtract() {
+    setCounter(prevState => prevState - 1);
+  }
+  return (
+    <>
+      <h3>{counter}</h3>
+      <button onClick={add}>Add</button>
+      <button onClick={subtract}>Remove</button>
+    </>
+  );
+};
+```
+
 # useEffect
 Sintaxe base do `useEffect` consiste em um passar como parâmetro/argumento uma _[[Funções#*Arrow Function*|Arrow Function]]_ e uma _[[Introdução ao JavaScript#Array|Array]]_  de dependências. 
 

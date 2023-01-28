@@ -42,7 +42,11 @@ console.log(path.basename(__filename));
 ```
 
 ```js
-import { Eventemitter } from 'events';
+import { EventEmitter } from 'events';
+
+import { EventEmitter as ee } from 'events';
+
+import * as Event from 'events';
 ```
 
 # Criando Módulo

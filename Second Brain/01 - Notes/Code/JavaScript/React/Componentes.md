@@ -93,6 +93,27 @@ export function Cart({name, time}) {
 }
 ```
 
+# Adicionando Eventos
+Podemos adicionar eventos ano nosso componente de diferentes forma, seja internamente criando a função dentro do arquivo do componente, ou ate mesmo externamente, recebendo como [[#Propriedades]] e utilizando dentro do componente.
+
+```jsx
+export function ButtonInterno() {
+  function showMessage() {
+    window.alert('clicou!')
+  }
+  
+  return (
+    <button onClick={showMessage}>Clique!</button>
+ )
+}
+  
+export function ButtonProp(props: ButtonProps) {
+  return (
+    <button onClick={props.click}>Clique aqui!</button>
+  )
+}
+```
+
 # Key Prop
 Quando geramos [[Componentes]] através de estruturas de repetição, ou seja, dinamicamente como nesse exemplo.
 

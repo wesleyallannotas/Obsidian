@@ -16,7 +16,7 @@ Expressões são qualquer linha de código que resolve algo por exemplo `let num
 Operadores ou no inglês **_Operators_** são os responsáveis por realizar operações com valores, sendo assim ele possui classes de operadores sendo elas, *binary*, *unary* e *ternary*, o mais conhecido são os operadores binários que como o nome já induz necessita de dois valores por exemplo `2 + 2`.
 
 ## *Binary*
-Operadores binários ou do inglês *binary* necessitam de dois valores para realizar a operação, por exemplo operações aritméticas.
+Operadores binários ou do inglês *binary* necessitam de dois operandos (valores) para realizar a operação, por exemplo operações aritméticas.
 
 ```js
 let number = 1;
@@ -28,7 +28,7 @@ console.log(number / 2)
 ![[Desenho_JS_Operador_Binary|center]]
 
 ## *Unary*
-Operadores unários o  do inglês *unary* necessitam de um valor apenas para realizar a operação, por exemplo operações de incremento, outros operadores
+Operadores unários o  do inglês *unary* necessitam de um operando (valor) apenas para realizar a operação, por exemplo operações de incremento, outros operadores
 - `typeof` - Tipo do dado
 - `delete` - Deletar
 
@@ -52,7 +52,7 @@ delete person.age;
 >O incremento `++number` e diferente de `number++`, no caso ambos possui o mesmo fim adicionando mais 1 ao valor da variável, porem da primeira forma ele realizada o incremento primeiro depois mostra valor, segundo forma mostra valor e depois realiza o incremento, tomar cuidado, pois, esse comportamento pode causar bugs
 
 ## Ternary
-Operadores ternários ou do inglês *ternary* necessita de 3 valores, sendo eles uma expressão, e em seguida duas possíveis caminhos sendo um realizado caso seja verdadeiro e outro para o falso
+Operadores ternários ou do inglês *ternary* necessita de 3 operandos (valores), por exemplo para condicionais sendo eles uma expressão, e em seguida duas possíveis caminhos sendo um realizado caso seja verdadeiro e outro para o falso
 
 ```js
 let age = 18;
@@ -65,7 +65,7 @@ console.log(1 > 0 ? 'Maior' : 'Menor')
 ![[Desenho_JS_Operador_Ternary|center]]
 
 # Operadores Aritméticos
-Os operadores aritméticos tem como função realizar operação para manipulação de valor
+Os operadores aritméticos tem como função realizar operação para manipulação de valores.
 
 | Operador | Operação               |
 | -------- | ---------------------- |
@@ -117,6 +117,23 @@ console.log(x == y)   // Resultado: True
 console.log(x === y)  // Resultado: False
 console.log(x != y)   // Resultado: False
 console.log(x !== y)  // Resultado: True
+```
+
+## Short-Circuit Evaluation
+Se baseia na ideia de executar condições antes de seu uso e armazenando o valor deixando código mais limpo.
+
+```js
+const age = 18;
+const amount = 1000;
+const isAdmin = true;
+ 
+const authorized = age >= 18 && amount >= 1000 && !isAdmin;
+ 
+if (authorized) {
+	console.log('Autorizado!');
+} else {
+	console.log('Não autorizado!');
+}
 ```
 
 # Operadores Lógicos (Logical Operators)
@@ -220,7 +237,7 @@ console.log(wesley.getSaldo()) // retorna erro de referencia
 ```
 
 # Operador Spread
-_Spread_ ou espalhamento permite que um objeto iterável, como uma [[Array]], [[Introdução ao JavaScript#String|String]], sejam **expandidas** para serem usadas como argumentos de funções, elementos para uma _array_, ou no caso de [[Introdução ao JavaScript#Object|Objetos]], para elementos de um novo objeto, até mesmo possibilitando a troca de valores de propriedades. A _sintaxe de espalhamento (spread)_ **expande** um _array_ em vários elementos, enquanto a _sintaxe [[Funções#Parâmetro Rest|Rest]]_ coleta múltiplos elementos e **condensa** eles em um único elemento.
+_Spread_ ou espalhamento permite que um objeto iterável, como uma [[Array]], [[Introdução ao JavaScript#String|String]], sejam **expandidas** para serem usadas como argumentos de funções, elementos para uma _array_. Já no caso de [[Introdução ao JavaScript#Object|Objetos]], para elementos de um novo objeto, até mesmo possibilitando a troca de valores de propriedades. A _sintaxe de espalhamento (spread)_ **expande** um _array_ ou _object_ em vários elementos, enquanto a _sintaxe [[Funções#Parâmetro Rest|Rest]]_ coleta múltiplos elementos e **condensa** eles em um único elemento.
 
 ```js
 // Novas Arrays e Parâmetro

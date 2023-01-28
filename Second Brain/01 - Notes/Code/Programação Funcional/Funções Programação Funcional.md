@@ -82,31 +82,3 @@ const square = n => n * n;
 const squaredNumber = numbers.map(square);
 ```
 
-# Currying
-Em português aplicação parcial de funções.
-
-```js
-const pause = wait => fn => setTimeout(fn, wait);
-
-pause(600)(() => console.log('Waiting 600ms'))  // Executando tudo de uma vez
-
-const wait200 = pause(200);  // Currying
-const wait1000 = pause(100);  // Currying
-
-wait200(() => console.log('waiting 200ms'));
-wait1000(() => console.log('Waiting 1s'));
-```
-
-Vale lembrar que por ser uma [[Funções#*Arrow Function*|Arrow Function]] de uma linha, já esta retornando o valor, mesmo com o comando `return` omitido.
-# Composição de Funções
-Basicamente é um encadeamento de funções onde, uma função retorna um dado que vai para outra função, isso se repetindo quantas vezes for necessário.
-
-```js
-const people = ['Rafa', 'Diego', 'Dani', 'Rod'];
-const upperCasePeopleThatStartsWithD = people
-                                       .filter(person => person.startsWith('D'))
-                                       .map(dperson => dperson.ToUpperCase())
-```
-
-Método de _arrays_ `filter()`, pega a _array_ e monta outra através do que for retornar pela função passada como parâmetro (_Higher-Order Function_), onde, o método de _array_ `map()` percorre essa _array_ executando executando uma função que é passada como parâmetro (_Higher-Order Function_).
-Vale lembrar que por ser uma [[Funções#*Arrow Function*|Arrow Function]] de uma linha, já esta retornando o valor, mesmo com o comando `return` omitido.

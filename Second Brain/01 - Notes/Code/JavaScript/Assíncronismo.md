@@ -26,6 +26,9 @@ Por se tratar de uma [[Funções#*Callback Function*|Callback Function]] que ser
 # Callback Function
 Callback do inglês chamar de volta, Se recapitularmos o que vimos sobre [[Introdução ao JavaScript#Tipos de Dados|tipos de dados]], foi estabelecido que funções são um tipo de dado estrutural, sento um tipo de dado, podemos passar como argumento/parâmetro de uma função, assim sendo passado sua referencia na memoria, onde a função pode utiliza-la, criando a ideia de uma função chamar outra função de volta após o termino da execução
 
+>[!tip] Descobrindo Parâmetros
+>Podemos descobrir quais parâmetros estarão disponíveis para nossa _callback_, na função que chama ela, normalmente nos editores e IDEs basta repousar o mouse em cima da função.
+
 ```js
 function say(name) {
 	console.log('Antes de executar a função callback')
