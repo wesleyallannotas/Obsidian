@@ -10,7 +10,7 @@ tags: [react]
 description: Entenda os hooks no react. 
 ---
 # Introdução
-Normalmente os Hooks iniciam com `use`, ou seja, `useState` que vimos para [[Estados e useState|tratar estados]] é um Hook, em suma Hooks são funções que permitem ligar/conectar os recursos de estado e ciclo de vida do React a partir de componentes totalmente funcionais.
+Normalmente os Hooks iniciam com `use`, ou seja, `useState` que vimos para [[Introdução ao React#Estados|tratar estados]] é um Hook, em suma Hooks são funções que permitem ligar/conectar os recursos de estado e ciclo de vida do React a partir de componentes totalmente funcionais.
 Um tempo atras era comum desenvolver aplicações React utilizando classes, ou seja, forçando o [[Introdução a POO|Paradigma de Programação Orientado a Objeto]], porem a equipe do React resolveu intensificar o uso do [[Introdução a Programação Funcional|Paradigma de Programação Funcional]] que sempre foi a ideia base da biblioteca, assim orientado o uso e criando os Hooks.
 
 # useState

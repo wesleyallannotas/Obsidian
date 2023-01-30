@@ -456,6 +456,18 @@ const pessoa3 = {
 pessoa3.mostrarJogosAno();
 ```
 
+# Early Return
+Sabemos que em uma função quando usamos o operador `return` podemos retornar um valor, ou caso não especificado nada, retornara [[Introdução ao JavaScript#Undefined|Undefined]], é quando uma função chega no `return`, o valor será retornado e a função terá seu funcionamento encerrado, ignorando qualquer código subsequente, isso pode ser usado para melhorar a legibilidade do código, ideia base do funcionamento de funções recursivas.
+
+```js
+function Like(liked) {
+	if (liked) {
+		return "Você gostou!"
+	}
+	return "Você nào gostou!"
+}
+```
+
 # Closure
 Podemos com JavaScript retornar uma função através de uma função
 

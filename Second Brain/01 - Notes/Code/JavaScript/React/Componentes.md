@@ -139,3 +139,6 @@ Criamos a `key` por meio do atributo `key`, ficando da seguinte forma.
 ```
 
 Não é obrigatório essa formatação, a utilizei para uma melhor visualização, criei a propriedade `key` e como valor escolhi usar o `time` contido dentro do `student`, ou seja, caso demore pelo menos um segundo entre uma adição e outra não terá problema, pois, esse time for formatado para conter, `HH:MM:SS`.
+
+>[!tip] Ultima Alternativa
+>A função interna de [[Introdução ao JavaScript#Array|Arrays]] [[Manipulando Dados#map|map]] tem como uns dos possíveis parâmetros para o nossa [[Assíncronismo#Callback Function|callback]] o index do item, assim podendo ser utilizando para a `key`, porem é recomendado ter algo único de fato, pois em _arrays_ que podem ser dinâmicas pode haver troca de index a todo momento.

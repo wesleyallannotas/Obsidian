@@ -141,3 +141,6 @@ setStudents(prevStudent => [...prevStudent, newStudent]); // Arrow Function com 
 ```
 
 Assim por meio do [[Expressões e Operadores#Operador Spread|operador spread]], copiamos os antigos valores contidos no estado `students` e adicionamos o novo, ou se preferir podemos utilizar uma _[[Funções#*Arrow Function*|arrow funciton]]_, pegando como parâmetro o valor antigo e criando uma nova _array_ porem ainda será necessário o _spread_ para espalhar os valores.
+
+# Virtual DOM
+Diante do fato do navegador ser mais lento, custando mais a atualização do DOM, a equipe do React teve a ideia de criar o Virtual DOM, que nada mais é do uma copia do DOM em memoria, ou seja, possuindo alta velocidade no fluxo dos dados, assim quando ocorre a alteração ela é feita no virtual DOM que notifica a atualização, onde a partir do mesmo é executado o algoritmo de conciliação para alterar somente o necessário no DOM real.

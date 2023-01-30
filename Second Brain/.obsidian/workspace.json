@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9381ac09276c855b",
+        "id": "f330baafe52016fc",
         "type": "tabs",
         "children": [
           {
-            "id": "ed5ca2b33f1836b7",
+            "id": "8cc5bb542308d1cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Hooks.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Hooks.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Hooks.md"
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Hooks.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Hooks.md",
+                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,17 +215,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ed5ca2b33f1836b7",
+  "active": "8cc5bb542308d1cb",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/React/Componentes.md",
-    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
-    "01 - Notes/Code/JavaScript/React/Hooks.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
-    "01 - Notes/Code/JavaScript/TypeScript/TSConfig.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
     "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+    "01 - Notes/Code/JavaScript/Funções.md",
+    "01 - Notes/Code/JavaScript/React/Componentes.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Introdução ao TypeSript.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
+    "01 - Notes/Code/JavaScript/React/Hooks.md",
     "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
-    "01 - Notes/Code/JavaScript/Manipulando Dados.md"
+    "01 - Notes/Code/JavaScript/TypeScript/Type.md"
   ]
 }

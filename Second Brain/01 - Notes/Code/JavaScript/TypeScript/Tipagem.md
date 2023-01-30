@@ -104,3 +104,42 @@ function printUserId(id: number | string | boolean): void {
 }
 ```
 
+# Tipando Arrays
+Basicamente podemos adicionar tipagem a nossas [[Introdução ao JavaScript#Array|Arrays]] de duas formas, seja utilizando [[Generics]] com declaração
+
+```ts
+const posts: Array<Post>;
+```
+
+Ou de forma abreviada utilizando o tipo e o sinal de _array_.
+
+```js
+const posts: Post[];
+```
+
+Existem diferenças entre ambos quando utilizarmos.
+
+## readonly
+Para identificarmos nossa [[Introdução ao JavaScript#Array|Array]] como somente leitura, ou seja, _readonly_, possuirá diferenças a depender da declaração
+
+```ts
+let okay2: ReadonlyArray<boolean>; // success
+let err2: readonly Array<boolean>; // error!
+let okay: readonly boolean[]; // success
+```
+
+## Definindo Tuplas
+Utilizando a sintaxe abreviada podemos definir os tipos de dados e o comprimento da nossa [[Introdução ao JavaScript#Array|Array]].
+
+```ts
+const myFunc1 = (arg: [string, number, boolean]) => {
+  console.log(arg);
+};
+myFunc1(["hello world", 123, true]);
+  
+// error: TS2314: Generic type 'Array ' requires 1 type argument(s).
+const myFunc2 = (arg: Array<string, number, boolean>) => {
+  console.log(arg);
+};
+myFunc2(["hello world", 123, true])
+```
