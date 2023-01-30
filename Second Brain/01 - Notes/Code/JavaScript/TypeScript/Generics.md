@@ -39,6 +39,11 @@ const [students, setStudants] = useState<CardProps[]>([])
 ```
 
 No exemplo acima, como especificamos na declaração com _generics_ que o tipo é _string_, só será aceito _string_
+Podemos utilizar o tipo passado pelo Generics, tanto no corpo como na declaração.
+
+```ts
+function <T>teste(arg: T): T {}
+```
 
 ## Convenção
 São convenções, ou seja, praticas adotadas pela comunidade para fácil entendimento entre os programadores.

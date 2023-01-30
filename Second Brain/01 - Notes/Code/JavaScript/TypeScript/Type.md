@@ -135,6 +135,31 @@ Criamos o _type_ `PlayerInfo` que realiza a intersecção dos tipos `User` e `Ch
 >let player1: PlayerInfo;
 >```
 
+Caso utilizamos o operador de `|` teremos a possibilidade de satisfazer ==um dos tipos especificados ou todos.==
+
+```typescript
+type User = {
+	id: number;
+	name: string;
+}
+
+type Char = {
+	nickname: string;
+	level: number;
+}
+
+type PlayerInfo = User | Char;
+
+let user1: User;
+let char1: Char;
+let player1: PlayerInfo;
+
+const player1: PlayerInfo = {
+	id: 2,
+	name: 'Wesley'
+}
+```
+
 # Implementada por Classes
 Types também podem implementar um classe, basicamente utilizando a ideia de [[Abstração]].
 
@@ -164,6 +189,9 @@ class SomePartialPoint implements ParialPoint {
 Um uso muito comum é quando uma ou mais propriedades pudessem ser opcionais, temos como criar [[#Propriedades opcionais]] através do operador `?`, porem o mesmo cria uma espécie de furo na nossa tipagem, a deixando de ser _Type safety_, assim sendo recomendado o uso de `Mapped Types`, TypeScript já trans alguns _Mapped Types_ por padrão
 - `Partial<Generics>` -  O tipo informado pelo [[Generics]], pode ter suas propriedades informadas parcialmente.
 - `Readonly<Generics>` -  O tipo informado [[Generics]], após ter seus valores atribuídos não poderá ser alterado.
+- `Pick<tipo, propriedade>` - Através do tipo informando podemos selecionar uma propriedade dela, gerando um tipo com apenas as propriedades informadas.
+- `Omit<tipo, propriedade>` - Através do tipo informado podemos selecionar uma propriedade que será omitida, assim gerando um tipo sem determinada propriedade.
+- `Record<propriedades, tipo>` - Através das propriedades informadas podemos definir um tipo a todas elas de uma vez.
 
 ```typescript
 interface Person {
@@ -187,6 +215,25 @@ const personReadonly: Readonly<Person> = {
 }
 
 personReadonly.name = ''  // Erro!
+
+const PersonId: Pick<Person, 'id'> = {
+	id: 225
+}
+
+type PersonIdAndCpf = {
+	cpf: number
+} & Pick<Person, 'id'>
+
+const PersonCommon: Omit<Person, 'isAdmin'> = {
+    id: 23,
+    name: 'Wesley',
+    age: 24
+}
+
+const ButtonProps: Record<'name' | 'color', string> = {
+    name: 'Clique',
+    color: ' red'
+}
 ```
 
 Tipos mapeados são uma maneira de criar tipos baseados em outros tipos. É praticamente um tipo transformacional.

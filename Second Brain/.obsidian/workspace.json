@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md",
-                "mode": "source",
+                "file": "01 - Notes/Code/JavaScript/Funções.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md",
+                "file": "01 - Notes/Code/JavaScript/Funções.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md"
+                "file": "01 - Notes/Code/JavaScript/Funções.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md",
+                "file": "01 - Notes/Code/JavaScript/Funções.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/TypeScript/Type.md",
+                "file": "01 - Notes/Code/JavaScript/Funções.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,15 +217,15 @@
   },
   "active": "8cc5bb542308d1cb",
   "lastOpenFiles": [
+    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
+    "01 - Notes/Code/JavaScript/Funções.md",
+    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
     "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
     "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
-    "01 - Notes/Code/JavaScript/Funções.md",
     "01 - Notes/Code/JavaScript/React/Componentes.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
     "01 - Notes/Code/JavaScript/TypeScript/Introdução ao TypeSript.md",
     "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
-    "01 - Notes/Code/JavaScript/React/Hooks.md",
-    "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Type.md"
+    "01 - Notes/Code/JavaScript/React/Hooks.md"
   ]
 }

@@ -41,11 +41,30 @@ Nossa função pode conter parâmetros que podem ser atribuídos durante a chama
 var total;
 
 function soma(x, y) {
-	total = x + y;
+	return x + y;
 }
 
 soma(2, 5);
 console.log(total);
+```
+
+## Valor Padrão
+Podemos adicionar valor padrão aos nossos argumentos/parâmetro, assim não os tornando obrigatório, e caso não informado assumira tal valor.
+
+```js
+var total;
+
+function soma(x, y=0) {
+    total = x + y;
+}
+
+soma(2);
+console.log(total);
+```
+
+```ts
+// React TypeScript
+export function({title = 'Title', descripton}: CardProps) {};
 ```
 
 # Retorno
@@ -410,12 +429,12 @@ console.log(obj);
 ```
 
 ## Vinculação com Callbacks
-Normalmente as _callback_ utilizando [[#Função Anônima]] terá seu `this` vinculado ao objeto global, assim sendo necessário realizar ações para contornar esse possível problema em determinadas situações.
+Normalmente as _callback_ utilizando [[#Função Anônima]] ou uma função comum terá seu `this` vinculado ao contexto onde reside, ou seja, dentro da função, por exemplo no caso abaixo o `this` ira referenciar ao `mostraJogosArrow`, assim sendo necessário realizar ações para contornar esse possível problema em determinadas situações.
 - Armazenando a referencia do `this` em uma variável
 - Nessa caso com `forEach` temos como segundo parâmetro opcional passar uma referencia para `this`, onde podemos passar o nome do objeto, ou nesse caso como já estamos dentro de um contexto com o `this` correto, basta passar o `this`
 
 >[!note] Arrow Function
->Nesse caso o uso de [[#Arrow Function]] na [[Assíncronismo#Callback Function|Callback]] do `forEach` já trouxe o `this` correto!
+>Nesse caso o uso de [[#Arrow Function]] na [[Assíncronismo#Callback Function|Callback]] do `forEach` já trouxe o `this` correto, pois, o `this` em uma _arrow function_ é definido pelo **contexto de execução** onde ele está sendo chamado. Em outras palavras, o `this` da _arrow function_ irá se referir ao `this` do método `mostrarJogosArrow()` que  nada mais é do que o objeto.
 
 ```js
 const pessoa = {
