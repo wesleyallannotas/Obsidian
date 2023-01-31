@@ -10,7 +10,7 @@ tags: [react]
 description: Como utilizar componentes no React 
 ---
 # Estrutura do Componente
-Normalmente é uma função que retorna um _React Elements_, seja por meio da notação padrão ou com o uso de extensão de sintaxe com `jsx`/`tsx`, e essa função é exportada, possuindo duas formas de exportar.
+Normalmente é uma função (No passado se usava classes) que retorna um _React Elements_, seja por meio da notação padrão ou com o uso de extensão de sintaxe com `jsx`/`tsx`, e essa função é exportada, possuindo duas formas de exportar.
 
 ## Utilizando default
 Estamos especificando que por padrão quando importar esse "modulo" ou melhor no contexto React Componente, será exportado a `Home`, ou seja, quando acontecer a importação comum, é importado a `Home`
@@ -93,6 +93,23 @@ export function Cart({name, time}) {
 }
 ```
 
+# Componentes com Conteúdo
+Como pode ser percebido, a maioria dos nossos componentes até o momento são [[Introdução ao HTML#Anatomia das Tags|elementos vazios]], ou seja, não possuindo conteúdo, porem podemos criar componentes que aceitam conteúdo, ou seja, elementos comuns, através da propriedade (_props_) `children`
+
+```tsx
+type ButtonProps = {
+	type: string;
+	children: React.ReactNode;
+}
+
+export conts Botao = ({ type, children }: ButtonProps) => {
+	<button type={type}>{children}</button>
+}
+
+// ---- Utilizando Componente ---
+<Botao type="submit">Adicionar</Botao>
+```
+
 # Adicionando Eventos
 Podemos adicionar eventos ano nosso componente de diferentes forma, seja internamente criando a função dentro do arquivo do componente, ou ate mesmo externamente, recebendo como [[#Propriedades]] e utilizando dentro do componente.
 
@@ -142,3 +159,72 @@ Não é obrigatório essa formatação, a utilizei para uma melhor visualizaçã
 
 >[!tip] Ultima Alternativa
 >A função interna de [[Introdução ao JavaScript#Array|Arrays]] [[Manipulando Dados#map|map]] tem como uns dos possíveis parâmetros para o nossa [[Assíncronismo#Callback Function|callback]] o index do item, assim podendo ser utilizando para a `key`, porem é recomendado ter algo único de fato, pois em _arrays_ que podem ser dinâmicas pode haver troca de index a todo momento.
+
+# Renderização Condicional
+Podemos renderizar um componente através de uma condição, possuindo diversas formas te realizar a mesma.
+
+## Ternário
+Usando [[Expressões e Operadores#Operador Condicional (Ternário)|operador ternário]] para através de um [[Introdução ao JavaScript#Boolean|Boolean]] executar um ou outro, repare na utilização do [[Falsy e Truthy|operador para forçar]] a necessidade de um Booleano, passando pelo [[Falsy e Truthy]].
+
+>[!attention] Atenção com Ternário
+>Quando utilizamos ternários temos que se atentar ao fato de que quando ambos são o mesmo componente ele não ==desmonta e remonta o componente== e sim realiza as alterações, o que pode causar problemas em determinadas situações
+>==Nunca aninhe ternários, pois, resultara em uma leitura difícil e pode causar problemas==
+
+```tsx
+export function Card() {
+	let userName = '';
+
+	return (
+		{
+			!!userName ? (<p>Nome Informado</p>) : (<p>Nome não informado</p>)
+		}
+	)
+}
+```
+
+## Early Return
+Podemos utilizar a técnica de [[Funções#Early Return|early return]] para renderização do componente.
+
+```tsx
+export function Card() {
+	let userName = '';
+	
+	if (userName) {
+		return (<p>Nome Informado</p>);
+	}
+	return (<p>Nome não informado</p>);
+}
+```
+
+## Operadores Lógicos
+Podemos utilizar dos [[Expressões e Operadores#Operadores Lógicos (Logical Operators)|operadores lógicos]] para definir uma renderização, repare na utilização do [[Falsy e Truthy|operador para forçar]] a necessidade de um Booleano, passando pelo [[Falsy e Truthy]], tal pratica pode evitar erros futuros.
+
+```tsx
+export function Card() {
+    let userName = 'a';
+    let comment = 'a';
+    
+    return (
+        <>
+        {!!userName && <p>Nome Informado</p>}
+        {!(!userName) && <p>Nome não Informado</p>}
+        {!!comment && <p>Comentario Informado</p>}
+        {!(!!comment) && <p>Comentario não Informado</p>}
+        {(!!userName || !!comment) && <p>Parcial ou totalmente preenchido!!</p>}
+        </>
+    )
+}
+```
+
+```jsx
+{ Object.entries(obj) > 0 && <p>Tem conteúdo</p>}
+```
+
+# Classe Condicional
+Podemos adicionar classes ao nosso elemento de forma condicional, utilizando de estados, por exemplo
+
+```tsx
+<button className={`red ${selected === "red" ? "selected" : "" }`}></button>  
+```
+
+Se o estado `select` possuir o valor de `"red"`, adicionara a classe `selected`, se não não possuirá a classe.

@@ -74,7 +74,7 @@ terminal.question('Seu nome?\n', (res1) => {
 
 # Promise
 Basicamente é uma promessa de que algo irá acontecer no futuro, é um objeto JavaScript usado para operações assíncronas, por exemplo, Carregar um arquivo, leitura de dados de uma API.
-Para criarmos uma _Promise_ é necessário instanciar `const promessa = new Promise()` passando como parêmetro/argumento uma referencia de função.
+Para criarmos uma _Promise_ é necessário instanciar `const promessa = new Promise()` passando como parêmetro/argumento uma referencia de função, ou função anônima que possuirá dois parâmetros, que através deles retornaremos os valores para caso de certo `resolve` e caso de errado `reject`.
 
 >[!tip] Sobre then
 >Toda vez que um `.then()` é executado, ele devolve uma promise por padrão.

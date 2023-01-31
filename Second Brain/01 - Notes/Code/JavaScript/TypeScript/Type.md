@@ -23,6 +23,14 @@ let adminId: IdType;
 
 Assim economizando na escrita, e facilitando a manutenção, pois, todos compartilham o mesmo tipo, com uma alteração impactando em todos.
 
+## Criando Tuplas
+Através do operador `type` podemos criar tuplas, que são [[Introdução ao JavaScript#Array|Arrays]] com tamanho especifico e tipos de dados específicos, podemos nomear os dados, porem resultara em uma _array_ da mesma forma.
+
+```ts
+type Tupla = [col: number, row: number];
+const tabela: Tupla = [20, 20];
+```
+
 ## Criando Tipo para Objetos
 Também podemos utilizar o operador `type` para criar tipos para objetos.
 

@@ -17,6 +17,8 @@ interface User {
 	id: number;
 	name: string;
 	isAdmin?: boolean;
+	sleep(): void;
+	sleep: () => void; // Não recomendado
 }
 ```
 
@@ -42,7 +44,7 @@ let darkness: User = {
 ```
 
 # Declaration Merging
-Ao contrario de [[Type]] que não aceita "redeclarar", Utilizando `interface` podemos, e quando é feito na realidade é realidade uma mescla das interfaces com mesmo nome.
+Ao contrario de [[Type]] que não aceita "redeclarar", ou seja, não são **abertas**, Utilizando `interface` podemos, e quando é feito na realidade é realidade uma mescla das interfaces com mesmo nome.
 
 ```typescript
 interface Car {

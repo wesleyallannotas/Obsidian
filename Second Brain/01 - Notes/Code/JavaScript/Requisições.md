@@ -85,6 +85,22 @@ axios.post('/user', {
 .catch( err => console.log('Erro!\n', err));
 ```
 
+## Criando uma Conexão
+Através do método `create` que recebe como parâmetro um objeto, podemos criar uma espécie de instancia principal de conexão, onde podemos definir a `baseUrl`, assim não sendo necessário toda vez o URL completa, basta passar o URL Base e utilizar somente o relativo nas conexões.
+
+```ts
+// src/services/api.ts
+export const API = Axios.create({
+  baseURL: 'https://jsonplaceholder.typecode.com',
+});
+
+// --- Em outro arquivo com API importada ---
+async function getTodo() {
+	const request = await API.get('todos');
+	return request.data;
+}
+```
+
 # Fetch
 _Fetch_ em português seria buscar, pegar. Dentro das Web API temos acesso a função `fetch()` para realizar [[HTTP#Request|requests HTTP]], onde enviando apenas a [[HTTP#Locator (Localização)|URL]] realizamos o método [[HTTP#Methods|GET]], onde recebe como um primeiro argumento/parâmetro a URL para realizar a ação. Foi criado para consumir [[HTTP#Resource (Recurso)|recursos]] de modo [[Assíncronismo|assíncrona]]. Será retornado uma [[Assíncronismo#Promise|promise]], onde podemos utilizar os métodos comuns de um objeto do tipo _Promise_ para executar [[Funções#*Callback Function*|callback functions]] que possuíram como parâmetro um objeto `Response` que precisa ser convertido através do método `.json()`.
 `fetch()` não lança um erro quando recebe o [[HTTP#Status Code|status code]] 400 ou 500, ou seja, passara para a função `.then()`, só lança erro se a própria solicitação for interrompida por problemas de conexão, será necessário criar um lógica para tratar os _status code_, que pode ser obtido através de `reponse.status`
@@ -166,3 +182,31 @@ async function start() {
 
 start();
 ```
+
+# Fake API
+Quanto estamos desenvolvendo o Front-end, antes da Back-end, ou caso estejamos em um projeto onde nossa função é apenas o Front-end, porem precisamos do Back-end para uns teste, podemos utilizar de ferramentas que imitam um API Rest, onde poderemos testar nossas funcionalidades tranquilamente, uma dessas ferramentas que é muito conhecida e seria usada é a [json-server](https://jsonplaceholder.typicode.com/).
+
+1. Instalamos o pacote.
+```bash
+npm install json-server
+```
+
+2. Criando "banco de dados"
+```bash
+touch ./db.json
+```
+
+3. Adicionando Dados
+```json
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+```
+
+Cada propriedade desse [[Dicionario do Programador#JSON|JSON]], ou seja, `posts`, `comments` e `profile`, será um _endpoint_ que podemos acessar, `localhost:3000/posts`, onde em cada um podemos acessar determinado registro através do `id` com `localhost:3000/posts/1`.

@@ -46,13 +46,30 @@ function showMessaages(message: string): void{
 	console.log(message);
 }
 
-
 function sum(x: number, y:number): number {
   return x + y;
 }
 
 function sum(x: number, y:number) { // Inferi como retorno do tipo number.
 	return x + y;
+}
+
+// Tipando objeto de retorno direto
+function sum(x: number, y:number): { sum: number } {
+	return {
+		sum: x + y;
+	}
+}
+
+// Criando tipo
+type SumProps = {
+	sum: number;
+}
+
+function sum(x: number, y:number): SumProps {
+	return {
+		sum: x + y;
+	}
 }
 ```
 

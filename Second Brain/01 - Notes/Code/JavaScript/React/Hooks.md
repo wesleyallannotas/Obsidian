@@ -68,7 +68,16 @@ export const Counter = () => {
 ```
 
 # useEffect
-Sintaxe base do `useEffect` consiste em um passar como parâmetro/argumento uma _[[Funções#*Arrow Function*|Arrow Function]]_ e uma _[[Introdução ao JavaScript#Array|Array]]_  de dependências. 
+Sintaxe base do `useEffect` consiste em um passar como parâmetro/argumento uma _[[Funções#*Arrow Function*|Arrow Function]]_ e uma _[[Introdução ao JavaScript#Array|Array]]_  de dependências que defina quando a nossa função será executada, caso vazia só será executada na montagem e na desmontagem do componente.
+
+>[!attention] Atenção
+>Caso não informado a _array_ de dependências como vazia, ou seja, não seja passado o segundo parâmetro
+>```tsx
+>useEffect(() => {
+>	console.log('Executou');
+>})
+>```
+>Todo e qualquer estado que for atualizado executara esse `useEffect`
 
 ```jsx
 useEffect(() => {
@@ -99,6 +108,21 @@ Muito utilizado para consumir APIs
         })
       })
   }, [])
+```
+
+## Clean up Effect
+Quando informamos um `return` na nossa função do `useEffect` ela é executada quando o componente e desmontado, ==caso o _array_ de dependências esteja vazia==, essa técnica é muito utilizada quando temos que desconectar de uma [[Dicionario do Programador#API|API]], atualizar um texto em determinado local da página, entre diversas outas ideias.
+
+>[!attention] Atenção
+>Quando criamos um retorno, e nosso `useEffects` que possui uma dependência, toda vez que o estado atualizar a função é executada totalmente, assim executando o retorno toda hora, e no exemplo abaixa a cada atualização iria desconectar e conectar
+
+```tsx
+useEfect( () => {
+	ChatApi.coneect();
+	return () => {
+		ChatApi.disconnect();
+	}
+}, []);
 ```
 
 ## Utilizando sintaxe Async/Await

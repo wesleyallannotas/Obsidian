@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8cc5bb542308d1cb",
+            "id": "3c70ebc14db07425",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Funções.md",
-                "mode": "preview",
+                "file": "01 - Notes/Code/JavaScript/Requisições.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Funções.md",
+                "file": "01 - Notes/Code/JavaScript/Requisições.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Funções.md"
+                "file": "01 - Notes/Code/JavaScript/Requisições.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Funções.md",
+                "file": "01 - Notes/Code/JavaScript/Requisições.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Funções.md",
+                "file": "01 - Notes/Code/JavaScript/Requisições.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,17 +215,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8cc5bb542308d1cb",
+  "active": "3c70ebc14db07425",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
-    "01 - Notes/Code/JavaScript/Funções.md",
-    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
     "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+    "01 - Notes/Code/JavaScript/Requisições.md",
+    "01 - Notes/Code/JavaScript/Assíncronismo.md",
+    "01 - Notes/Code/JavaScript/React/Hooks.md",
     "01 - Notes/Code/JavaScript/React/Componentes.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Introdução ao TypeSript.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Interface.md",
-    "01 - Notes/Code/JavaScript/React/Hooks.md"
+    "01 - Notes/Code/Web/HTTP.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
+    "01 - Notes/Code/Plugins e Dicas.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Interface.md"
   ]
 }
