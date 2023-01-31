@@ -71,6 +71,13 @@ function sum(x: number, y:number): SumProps {
 		sum: x + y;
 	}
 }
+
+// Tudo na declaração
+function foo({ foo }: { foo: string; bar: number }): { foo: string; bar: number; dar: boolean; } {
+  return { foo, bar: 1, dar: true};
+}
+  
+console.log(foo({ foo: 'wesley', bar: 2 }));
 ```
 
 O valor `void` é vazio, ou seja, informamos que essa função não tem retorno, assim a "IDE" já consegui nos informar erro caso utilizarmos o `return` dentro da função.

@@ -43,6 +43,7 @@ Uma boa ideia é criar um pasta dentro de `pages` para cada pagina e dentro nome
 Também dentro do diretório `src` para os componentes criamos um diretório chamada `components` e usamos a mesma ideia para cada componente, criando um diretório com `index` e `style`
 Também dentro de `src` criamos um diretório com o nome `services` onde por exemplo, terá as conexões com as nossas APIs.
 ![[Estrutura-React.png|300]]
+A estrutura normalmente sofre alterações a depender das tecnologias que usaremos, por exemplo se formos utilizar _styled component_ é interessante dentro `src` um diretório `themes` para guardar os temas da nossa aplicação que serão criados.
 
 # Estados 
 Quando queremos transportar valores entre componentes e queremos que cause impactando na nossa interface, variáveis comuns não tem esse poder, por exemplo.

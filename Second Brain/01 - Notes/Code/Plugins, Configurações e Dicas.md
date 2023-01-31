@@ -48,6 +48,12 @@ Em seguida iniciaremos as configurações, onde será feita uma serie de questio
 npx eslint init
 ```
 
+Instalaremos algumas bibliotecas para auxiliar e melhorar nosso ESLint
+
+```bash
+yarn add -D eslint-plugin-import-helpers eslint-import-resolver-typescript
+```
+
 Em seguida basta configurar o `.eslintrc`, exemplo de _config_ com TypeScript.
 
 >[!tip] Dica Ignore
@@ -61,30 +67,41 @@ Em seguida basta configurar o `.eslintrc`, exemplo de _config_ com TypeScript.
   },
   "extends": [
     "plugin:react/recommended",
-    "airbnb-typescript",
+    // "airbnb-typescript",
+    "standard-with-typescript",
+    "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
-    "prettier"
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   "overrides": [
   ],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": "latest",
-    "sourceType": "module",
-    "project": ["./tsconfig.json"]
+  "ecmaFeatures": {
+    "jsx": true
   },
-  "plugins": [
+  "ecmaVersion": "latest",
+  "sourceType": "module",
+  "project": ["./tsconfig.json"]
+  },
+   "plugins": [
     "react",
-    "import"
-  ],
+    "@typescript-eslint",
+    // "import",
+    "eslint-plugin-import-helpers"
+   ],
   "rules": {
     "semi": ["error", "always"],
     "quotes": ["error", "single"],
     "indent": ["error", 2],
-    "comma-spacing": ["error", { "before": false, "after": true }],
-    "react/react-in-jsx-scope": "off"
+    "comma-spacing": ["error", { "before": false, "after": true }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }
 ```
