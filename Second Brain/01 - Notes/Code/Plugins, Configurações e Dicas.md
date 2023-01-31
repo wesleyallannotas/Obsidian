@@ -50,6 +50,9 @@ npx eslint init
 
 Em seguida basta configurar o `.eslintrc`, exemplo de _config_ com TypeScript.
 
+>[!tip] Dica Ignore
+>Assim como o `git` possui o `.gitignore` o ESLinte também possui seu `.eslintignore` onde podemos definir diretórios e arquivos que serão ignores pelo ESLinte
+
 ```json
 {
   "env": {
