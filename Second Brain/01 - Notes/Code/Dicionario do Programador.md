@@ -34,3 +34,9 @@ JSON é uma sigla para _JavaScript Object Notaion_ é um formato de arquivos lev
 	}
 }
 ```
+
+# Renderização
+Ato de obter um produto através de um processamento digital.
+
+## React
+No contexto de React nada mais é do que transformação do componente em um DOM node.

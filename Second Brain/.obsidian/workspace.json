@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3c70ebc14db07425",
+            "id": "7361b4c59ed9e1b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Temas.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "styled-component",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Temas.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Introdução ao React.md"
+                "file": "01 - Notes/Code/CSS/Styled-component/Temas.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Temas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Temas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,17 +215,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3c70ebc14db07425",
+  "active": "7361b4c59ed9e1b8",
   "lastOpenFiles": [
-    "01 - Notes/Code/Plugins, Configurações e Dicas.md",
-    "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md",
-    "01 - Notes/Code/JavaScript/Node/Introdução ao Node.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
-    "01 - Notes/Code/JavaScript/Requisições.md",
-    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
-    "01 - Notes/Code/JavaScript/Assíncronismo.md",
+    "01 - Notes/Code/CSS/Styled-component/Estilos Globais.md",
+    "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
+    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
+    "01 - Notes/Code/CSS/Styled-component/Introdução ao styled-component.md",
+    "01 - Notes/Code/CSS/Styled-component/Temas.md",
     "01 - Notes/Code/JavaScript/React/Hooks.md",
-    "01 - Notes/Code/JavaScript/React/Componentes.md",
-    "01 - Notes/Code/Web/HTTP.md"
+    "01 - Notes/Code/Dicionario do Programador.md",
+    "01 - Notes/Code/Plugins, Configurações e Dicas.md",
+    "01 - Notes/Code/JavaScript/Funções.md",
+    "01 - Notes/Code/Programação Funcional/Introdução a Programação Funcional.md"
   ]
 }

@@ -13,6 +13,53 @@ description: Entenda os hooks no react.
 Normalmente os Hooks iniciam com `use`, ou seja, `useState` que vimos para [[Introdução ao React#Estados|tratar estados]] é um Hook, em suma Hooks são funções que permitem ligar/conectar os recursos de estado e ciclo de vida do React a partir de componentes totalmente funcionais.
 Um tempo atras era comum desenvolver aplicações React utilizando classes, ou seja, forçando o [[Introdução a POO|Paradigma de Programação Orientado a Objeto]], porem a equipe do React resolveu intensificar o uso do [[Introdução a Programação Funcional|Paradigma de Programação Funcional]] que sempre foi a ideia base da biblioteca, assim orientado o uso e criando os Hooks.
 
+# Hook Flow
+Quando montamos (_mount_) um componente, inicializamos os estados (_run lazy intializers_), renderiza os componentes no Virtual DOM, renderiza os componentes no DOM real, executa o _layoutEffects_, desenha no Browser, Executa o `useEffects`.
+Quando atualizamos (_update_) um componentes, renderizamos no virtual DOM, renderizamos no DOM real, executamos o _cleanup_ do _layouteffects_, executamos o _layoutEffects_, desenhamos no browser, executamos o [[Hooks#Clean up Effect|cleanup do useEffects]] e executamos o [[#useEffect]].
+Quando desmontamos um componente é executado o _clenup_ do _layoutEffects_ e o do _useEffects_
+
+>[!attention] Atenção
+>Não confundir os _Hooks_ e seu _flow_ com o que era praticado quando se usava classes com a ideia de _Life Cycle_
+
+![[Desenho_React_Hook_Flow|600]]
+
+## Mount
+- Quando o componentes e Exibido em tela
+
+## Update
+- Componentes "pais" renderizam
+- Recebe novas props
+- Alteração de estados
+- Alteração nos contextos
+
+## Unmount
+- Componente sai de tela
+
+## Render Betching
+Quando ocorre alterações de um mesmo estado de uma mesma forma dentro de um ciclo ele agrupa as execuções executado apenas a ultima
+
+```js
+setState(state + 1)  // Ciclo 1
+setState(state + 2)  // Ciclo 1
+
+const data  = await fetchData();  // Ciclo 2
+
+setState(state + 3);  // Ciclo 3
+setState(state + 4);  // Ciclo 3
+```
+
+A forma contornar esse problema e ocorrer as operações corretamente é passar uma [[Assíncronismo#Callback Function|Callback]] pegando o [[#Assincronismo|valor antigo]].
+
+```js
+setState((currentState) => currentState + 1)  // Ciclo 1
+setState((currentState) => currentState + 2)  // Ciclo 1
+
+const data  = await fetchData();  // Ciclo 2
+
+setState((currentState) => currentState + 3)  // Ciclo 1
+setState((currentState) => currentState + 4)  // Ciclo 1
+```
+
 # useState
 O estado diferente da variável comum, influencia na renderização da página, quando seu valor é alterado, dispara uma nova renderização utilizando o algoritmo de reconciliação que percebe onde ouve mudança e altera apenas o local de forma performática.
 Primeiro é necessário importar um modulo da biblioteca React, que permita tratar o estado, utilizaremos `useState` que nada mais é do que um [[Hooks|Hook]].
