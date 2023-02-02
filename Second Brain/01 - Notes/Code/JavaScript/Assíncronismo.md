@@ -199,6 +199,12 @@ async function start() {
 };
 
 start();
+
+// Arrow Function
+const start = async () => {
+	const result = await projmese;
+	console.log(result);
+}
 ```
 
 ## Respondendo a Estados

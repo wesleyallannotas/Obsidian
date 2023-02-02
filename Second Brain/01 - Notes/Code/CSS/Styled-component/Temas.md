@@ -12,12 +12,16 @@ description: Criandos temas com styled-components
 # Introdução
 Podemos criar temas para o nosso _styled-compoonents_, ou seja, arquivos que conterá objetos com dados para o nosso CSS, existem abordagens diversas, desde objetos com cores numerados pelas forças, a objetos com diversos valores para diversas propriedades.
 O importante é que usando `ThemeProvider`, esse objeto contendo os temas ficara disponível para todos os seus filhos.
+Assim criando temas com as mesma propriedades mas com valores diferentes, basta mudar o referenciado no ` <ThemeProvider>` que todas as propriedades mudaram dinamicamente.
 
-# Cores
-Abordagem onde criamos um objeto com as chaves referenciando as cores e suas forças, e como valor o hexadecimal ou qualquer outra forma de atribuir valor a cores no CSS.
+# Criando Theme
+Técnica utilizada para criar temas _light_ e _dark_ por exemplo, porem podemos criar quantos temas quisermos, e muda-los facilmente.
+
+>[!attention] Diferença de Importanção
+>Como visto sobre [[Modulos|importação e exportação]] quando utilizamos `exports` antes de declarar, muda a importação, já quando usamos `default` e o que será importando quando não desconstruído.
 
 ```ts
-// Aruivo theme.ts
+// Exeemplo 1
 export const theme = {
   colorBlue200: '#0B4F6C',
   colorGray200: '#DCE0D9',
@@ -25,6 +29,22 @@ export const theme = {
   colorWhite: '#FBFBFF',
   colorYellow500: '#FFE548',
 };
+
+// Exemplo 2
+export default {
+	title: 'light',
+	colors: {
+		primary: '#C62E65',
+		secundary: '#D63AF9',
+		background: `#F5F5F5`,
+		text: '#333'
+	},
+	fonts: {
+		size: '16px';
+		//....
+	}
+}
+
 ```
 
 Depois basta importar no nosso `App.tsx` e envolver todo conteúdo nele.
@@ -55,43 +75,6 @@ export const Title = styled.h1`
   padding: 10px;
 `;
 ```
-
-# Diversas Propriedades
-Criamos basicamente um objeto separando diversos propriedades CSS e seus valor.
-
-```ts
-// Arquivo light.ts
-export default {
-	title: 'light',
-	colors: {
-		primary: '#C62E65',
-		secundary: '#D63AF9',
-		background: `#F5F5F5`,
-		text: '#333'
-	},
-	fonts: {
-		size: '16px';
-		//....
-	}
-}
-```
-
-Depois basta importar no nosso `App.tsx` e envolver todo conteúdo nele.
-
-```tsx
-import { ThemeProvider } from 'styled-components';
-import { light } from './themes/light'
-
-const App = () => {
-	return (
-		<ThemeProvider theme={light}>
-			// Conteúdo
-		</ThemeProvider>
-	)
-}
-```
-
-Assim da mesma forma do anterior ficando disponível para todo o nosso projeto.
 
 # Tipando Para AutoComplete
 Basicamente criamos uma arquivo declaração de tipos e sobrescreve uma definição de tipos presente dentre do `styled-components` através da seguinte sintaxe.

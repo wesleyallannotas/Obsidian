@@ -82,3 +82,16 @@ export const Title = styled.h1`
 	}
 `;
 ```
+
+# Estilizando Icones
+Vamos estilizar ícones provindos da biblioteca [React Icons](https://react-icons.github.io/react-icons/),  a sintaxe muda um pouco, foi escolhido o pack de ícones `fi`, um dos vários presentes na biblioteca, basta importar e utilizar o nome do ícone escolhido entre parênteses.
+
+```tsx
+import { FiSettings } from 'react-icons/fi';
+
+export const SettingsIcon = styled(FiSettings)`
+	color: ${(props => props.theme.colorGrey200)};
+	fonts-size: 32px;
+	cursor: pointer;
+`;
+```

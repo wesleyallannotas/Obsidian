@@ -146,3 +146,6 @@ Assim por meio do [[Expressões e Operadores#Operador Spread|operador spread]], 
 
 # Virtual DOM
 Diante do fato do navegador ser mais lento, custando mais a atualização do DOM, a equipe do React teve a ideia de criar o Virtual DOM, que nada mais é do uma copia do DOM em memoria, ou seja, possuindo alta velocidade no fluxo dos dados, assim quando ocorre a alteração ela é feita no virtual DOM que notifica a atualização, onde a partir do mesmo é executado o algoritmo de conciliação para alterar somente o necessário no DOM real.
+
+# Bibliotecas
+- [React Icons (react-icons.github.io)](https://react-icons.github.io/react-icons/)

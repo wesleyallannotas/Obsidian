@@ -10,7 +10,7 @@ tags: [css]
 description: Introdução ao maneira de escre CSS styled-component
 ---
 # Introdução
-style-component é uma maneira de escrever CSS dentro da stack do JavaScript, basicamente tem seu uso atrelado ao [[Introdução ao React|React]] e React Native, possibilita criar componentes com sua estilização, usando sintaxe do CSS, basicamente escreveremos os estilos dentro de _template strings_ através da ideia de [Tagged Templates)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates).
+style-component é uma maneira de escrever CSS dentro da stack do JavaScript, basicamente tem seu uso atrelado ao [[Introdução ao React|React]] e React Native, possibilita criar componentes com sua estilização, usando sintaxe do CSS, basicamente escreveremos os estilos dentro de _template strings_ através da ideia de [String Raw](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals#strings_raw)
 
 ```js
 const Title = styled.h1`
