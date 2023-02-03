@@ -85,6 +85,7 @@ export function Home() {
 
 O valor do `<h1>` contendo `title` não será alterado a cada acionar do evento `onChange`,  isso ocorre, pois, o valor da variável esta sim sendo altera, porem não esta acontecendo nenhum nova renderização, simplesmente a variável esta sendo atualizada, mas uma variável comum não impacta na interface, seu valor e jogada na primeira renderização e pronto.
 Para conseguirmos impactar na interface, teremos que utilizar estados que criaremos através do [[Hooks|Hook]] [[Hooks#useState|useState]], pois, ==componentes são renderizados quando o estado atualiza.==
+==Os estados do pai podem ser passados para os filhos  assim os alterando, porem nunca o contrario==, muito utilizado para ativar um edição por exemplo, o elemento pai ativando o modo de edição para um elemento filho.
 
 ## Imutabilidade
 Os estados do React respeitam o conceito de [[Introdução a Programação Funcional#Imutabilidade|imutabilidade]] do paradigma [[Introdução a Programação Funcional|programação funcional]], o conteúdo não deve ser alterado e sim substituído, o que traz mais performance por consequência.
@@ -145,7 +146,7 @@ setStudents(prevStudent => [...prevStudent, newStudent]); // Arrow Function com 
 Assim por meio do [[Expressões e Operadores#Operador Spread|operador spread]], copiamos os antigos valores contidos no estado `students` e adicionamos o novo, ou se preferir podemos utilizar uma _[[Funções#*Arrow Function*|arrow funciton]]_, pegando como parâmetro o valor antigo e criando uma nova _array_ porem ainda será necessário o _spread_ para espalhar os valores.
 
 # Virtual DOM
-Diante do fato do navegador ser mais lento, custando mais a atualização do DOM, a equipe do React teve a ideia de criar o Virtual DOM, que nada mais é do uma copia do DOM em memoria, ou seja, possuindo alta velocidade no fluxo dos dados, assim quando ocorre a alteração ela é feita no virtual DOM que notifica a atualização, onde a partir do mesmo é executado o algoritmo de conciliação para alterar somente o necessário no DOM real.
+Diante do fato do navegador ser mais lento, custando mais a atualização do DOM, a equipe do React teve a ideia de criar o Virtual DOM, que nada mais é do uma copia do DOM em memoria, ou seja, possuindo alta velocidade no fluxo dos dados, assim quando ocorre a alteração ela é feita no virtual DOM que notifica a atualização, onde a partir do mesmo é executado o algoritmo de conciliação para alterar somente o necessário no DOM real e tudo de uma vez para maior performance dos browsers.
 
 # Bibliotecas
 - [React Icons (react-icons.github.io)](https://react-icons.github.io/react-icons/)

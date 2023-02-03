@@ -22,6 +22,9 @@ const Title = styled.h1`
 		&:hover {
 			color: #666;
 		}
+		& > span {
+			margin-left: 5px;
+		}
 	}
 `;
 ```

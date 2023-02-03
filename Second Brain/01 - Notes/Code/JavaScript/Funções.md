@@ -190,7 +190,10 @@ const sayMyName = name => {
 }
 ```
 
-Quando possui apenas uma linha retorna automaticamente, sem a necessidade do `return`.
+Quando possui apenas uma linha e omitimos as chaves,  retorna automaticamente, sem a necessidade do `return`.
+
+>[!attention] Atenção
+>Para funcionar é necessário omitir as chaves, caso as adicione o retorno será `undefined`
 
 ```js
 const square = n => n * n;

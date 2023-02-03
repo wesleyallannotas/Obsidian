@@ -64,6 +64,9 @@ setState((currentState) => currentState + 4)  // Ciclo 1
 O estado diferente da variável comum, influencia na renderização da página, quando seu valor é alterado, dispara uma nova renderização utilizando o algoritmo de reconciliação que percebe onde ouve mudança e altera apenas o local de forma performática.
 Primeiro é necessário importar um modulo da biblioteca React, que permita tratar o estado, utilizaremos `useState` que nada mais é do que um [[Hooks|Hook]].
 
+>[!attention] Sobre Estados
+>Os estados do pai podem ser passados para os filhos, porem nunca o contrairo.
+
 ```js
 import React, { useState } from 'react';
 ```
