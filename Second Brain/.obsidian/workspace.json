@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
+                "file": "01 - Notes/Code/JavaScript/React/Hooks.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "e9a2b704420ba9fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/JavaScript/React/Atualizando Dados.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,8 +94,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -103,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
+                "file": "01 - Notes/Code/JavaScript/React/Atualizando Dados.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -145,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Falsy e Truthy.md"
+                "file": "01 - Notes/Code/JavaScript/React/Atualizando Dados.md"
               }
             }
           },
@@ -155,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
+                "file": "01 - Notes/Code/JavaScript/React/Atualizando Dados.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
+                "file": "01 - Notes/Code/JavaScript/React/Atualizando Dados.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,17 +228,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1917eb372364be0f",
+  "active": "e9a2b704420ba9fc",
   "lastOpenFiles": [
+    "01 - Notes/Code/JavaScript/React/Hooks.md",
+    "01 - Notes/Code/JavaScript/React/Componentes.md",
+    "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
     "01 - Notes/Code/JavaScript/Funções.md",
     "01 - Notes/Code/JavaScript/Assíncronismo.md",
     "01 - Notes/Code/CSS/Styled-component/Introdução ao styled-component.md",
     "01 - Notes/Code/CSS/Styled-component/Estilos Globais.md",
     "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
     "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
-    "01 - Notes/Code/JavaScript/React/Consumindo API.md",
-    "01 - Notes/Code/JavaScript/React/Componentes.md",
-    "01 - Notes/Code/JavaScript/React/Hooks.md",
-    "01 - Notes/Code/JavaScript/Expressões e Operadores.md"
+    "01 - Notes/Code/JavaScript/React/Consumindo API.md"
   ]
 }
