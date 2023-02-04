@@ -93,6 +93,32 @@ export function Cart({name, time}) {
 }
 ```
 
+## Estendendo Propriedades Padrão
+Quando queremos que o nosso componente mantenhas as propriedades de um elemento HTML, podemos estender nossas _props_ do componente recebendo as do elemento
+
+```tsx
+import React, { InputHMTMLAttributes } from 'react';
+
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+	name: string;
+	label: string;
+}
+```
+
+E para tratar todas as propriedades possíveis e poder adicionar ao elemento interno do nosso componente, podemos utilizar o [[Expressões e Operadores#Operador Spread|operados spread]] e o [[Funções#Parâmetro Rest|parâmetro rest]].
+
+```tsx
+const Input: React.FC<InputProps> = ({ name, label, ...rest}) => {
+	return (
+		<div className="input-block">
+			<label htmlFor={name}</label>
+			<input
+				{...rest}
+		</div>
+	)
+}
+```
+
 # Componentes com Conteúdo
 Como pode ser percebido, a maioria dos nossos componentes até o momento são [[Introdução ao HTML#Anatomia das Tags|elementos vazios]], ou seja, não possuindo conteúdo, porem podemos criar componentes que aceitam conteúdo, ou seja, elementos comuns, através da propriedade (_props_) `children`
 

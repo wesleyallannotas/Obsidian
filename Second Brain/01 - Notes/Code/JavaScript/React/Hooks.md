@@ -197,3 +197,114 @@ Caso a sintaxe do _[[Assíncronismo#Async/Await|Async/Await]]_ for a desejado pe
 ```
 
 Possuímos total liberdade para ==declarar a função assíncrona dentro ou fora do corpo da _arrow function_ do useEffets==, normalmente mantemos dentro quando é algo que desrespeito a apenas o `useEffect`, caso é algo reutilizável é interessante manter fora.
+
+# useRef
+Utilizamos quando queremos armazenar valores importantes para nossa lógica e também instancias de elementos HTML, ele ==não dispara o algoritmo de conciliação, ou seja, não ocorre o re-render==.
+Diferente de estado podemos manipular o seu valor livremente, ou seja, é mutável, temos acesso ao mesmo através da propriedade `current`.
+==Basta adicionar um atributo `ref={nomeDoRef}` para conectarmos um elemento com um _ref_.==
+
+```ts
+const ref = useRef(0);
+```
+
+Muito usado para manipular o Dom Real, por exemplo, vamos utilizado para dar foco a um input.
+
+```tsx
+function App() {
+  const inputRef = useRef<HTMLInputElement | null>(null);
+  
+  return (
+    <div className="container">
+      <input ref={inputRef} />
+      <button onClick={() => inputRef.current?.focus()}>
+        Click para Focar
+      </button>
+    </div>
+  );
+}
+```
+
+Primeiro inicializamos o _hook_ com valor nulo, e amarramos a sua referencia com o input desejado, e criamos um botão que acessa essa input referenciado dando foco a ele.
+Muito utilizado para pegar valor também através do `inputRef.current.value` onde estamos indo ate o elemento e pegando seu valor através do DOM (imperativa), para esta função sendo mais performático que o `useState` que escutaria um evento e alteraria seu valor (declarativa) resultando em manipulação na [[Introdução ao React#Virtual DOM|Virtual Dom]] que por consequência executaria o algoritmo de reconciliação.
+
+```tsx
+const StopWatch = () => {
+  const [time, setTime] = useState<number>(0);
+  const intervalId = useRef<number>();
+  return (
+    <div className="container">
+      <h1>{time}</h1>
+      <br />
+      <button
+        onClick={() => {
+          intervalId.current = setInterval(
+            () => setTime(prev => prev + 1), 1000);}}>
+        Iniciar
+      </button>
+      <button onClick={() => {clearInterval(intervalId.current);}}>Limpar</button>
+    </div>
+  );
+};
+```
+
+Armazenamos o valor retornado do `setInterval` no _hook_ `useRef`, pois é um valor que faz sentido para nossa lógica, porem não é necessário que atualize o DOM toda vez que ele for alterado.
+Como as alterações de estado via a função `set` é realizada de forma assíncrona podemos capturar o valor anterior do nosso estado via `useEffect` e armazena-lo em um `userRef`, ==muito utilizado para armazenar valores antigos que estamos alterando em um formulário por exemplo, para caso for cancelado, recuperar os valores==
+
+```tsx
+const StopWatch = () => {
+  const [time, setTime] = useState<number>(0);
+  const intervalId = useRef<number>();
+  const refTime = useRef<number>();
+  
+  useEffect(() => {
+    refTime.current = time;
+  }, [time]);
+  
+  return (
+    <div className="container">
+      <h1>{time}</h1>
+      <h2>{refTime.current}</h2>
+      <br />
+      <button
+        onClick={() => {
+          intervalId.current = setInterval(
+            () => setTime(prev => prev + 1), 1000);}}>
+        Iniciar
+      </button>
+      <button onClick={() => {clearInterval(intervalId.current);}}>Limpar</button>
+    </div>
+  );
+};
+```
+
+>[!tip] Compreendendo
+>Basicamente se queremos causar alteração na interface, usamos `useState`, se não queremos `useRef`, por exemplo um botão que quando clicado o usuário aceitou os termos e quando não clicado não aceitou, se quiser mudar a cor do botão, seu formato, usaremos `useState`, se não tem necessidade usaremos `useRef`
+
+## [Utilizando as refs no React de forma avançada | Code/Drops #52 - YouTube](https://www.youtube.com/watch?v=lA8o3kUl1TA) (19min)
+
+# Hooks Customizados
+Conhecimento extremamente importante para desenvolvimento de aplicações Web com [[Introdução ao React|React]] é saber construir _custom hooks_, utilizando de nossa logica.
+Normalmente armazenamos os _hooks_ desenvolvidos dentro de `src/hooks`
+Seguiremos o padrão nomeando todo _hook_ inicialmente com `use`
+
+## usePersistentDarkMode
+Criando um Hook que trata do estado de DarkMode, onde persistiremos os dados no local store do browser, a fim de recuperado quando acessar o nosso Web App novamente, e utiliza-lo como valor inicial.
+
+```ts
+import { useState, useEffect } from 'react';
+  
+const IS_DARK_MODE_KEY = 'IS_DARK_MODE';
+  
+export function usePersistentDarkMode() {
+  const [isDarkMode, setIsDarkMode] = useState<Boolean>((): boolean => {
+    const isDarkMode = localStorage.getItem(IS_DARK_MODE_KEY);
+    return isDarkMode === 'true';
+  });
+  
+  useEffect(() => {
+    localStorage.setItem(IS_DARK_MODE_KEY, JSON.stringify(isDarkMode));
+  }, [isDarkMode]);
+  
+  return { isDarkMode, setIsDarkMode };
+}
+```
