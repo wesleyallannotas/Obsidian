@@ -119,6 +119,24 @@ const Input: React.FC<InputProps> = ({ name, label, ...rest}) => {
 }
 ```
 
+## children
+Através da propriedade `children` que é uma propriedade reservada, podemos capturar o conteúdo de um componente, assim podendo utiliza-lo internamente, por exemplo, passando outro componente, um conteúdo de texto, entre outros.
+Tudo que é passando como conteúdo para um elemento será enviado para o mesmo dentro da propriedade `children`
+
+```tsx
+<Title>Conteúdo, children</Title>
+```
+
+### Tipando
+Normalmente o tipamos como um `ReactNode`, ou seja, como visto sobre a [[DOM]] e o [[DOM#Diferença entre `Node` e `Element`|Node]], aqui possui a mesma ideia, ou seja, tipando dessa forma aceitara qualquer tipo de conteúdo, podemos limitar a um especifico se desejar.
+
+```tsx
+interface ComponentProps {
+	children: React.ReactNode;
+}
+```
+
+
 # Componentes com Conteúdo
 Como pode ser percebido, a maioria dos nossos componentes até o momento são [[Introdução ao HTML#Anatomia das Tags|elementos vazios]], ou seja, não possuindo conteúdo, porem podemos criar componentes que aceitam conteúdo, ou seja, elementos comuns, através da propriedade (_props_) `children`
 
