@@ -20,6 +20,7 @@ Em sua declaração temos a disposição vários atributos interessantes, sendo 
 - `title` - Titulo para acessibilidade
 - `allowfullscreen` - *Allow* significa permitir, ou seja, estamos permitindo o *fullscreen* no nosso português tela cheia
 - `frameborder` - Definimos a borda do elementos
+- `sandbox` - conteúdo incorporado _apenas a permissão para fazer o seu trabalho._
 - Também aceita [[Introdução ao HTML#Atributos Globais|atributos globais]]
 
 # Exemplo

@@ -12,6 +12,9 @@ description: Introdução ao CSS para desenvolvimento Web
 # CSS
 CSS vem do inglês *Cascading Style Sheet*,  ou seja, folha de estilo em cascata, sua ==função e estilizar o HTML==, não é considerada uma linguagem de programação e sim como o próprio nome diz *Style Sheet*
 
+>[!note] DOM
+>Compreender o DOM ajuda você organizar, debugar e manter seu CSS porque o DOM é onde seu CSS e o conteúdo do documento são combinados. Quando você começa a trabalhar com as DevTools do browser você estará navegando os elementos do DOM como itens ordenados selecionáveis para assim decidir quais regras de estilização aplicar.
+
 # Comentários
 Assim como em todo linguagem de programação ou ate mesmo no HTML, CSS tem comentários, que tem a função de auxiliar quem esta lendo o código, ele é totalmente ignorado, apenas quem tem acesso ao código pode ler.
 ```css

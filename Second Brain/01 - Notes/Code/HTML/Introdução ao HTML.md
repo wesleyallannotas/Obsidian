@@ -14,6 +14,7 @@ HTML é uma acrônimo para *HyperText Markup Language* (Linguagem de Marcação 
 - Linguagem - Tem suas regras no jeito de escrever, Semântica, Sintaxe.
 - HyperText - Textos que tem links que leva a outros textos.
 
+
 # Comentários
 Comentos no HTML são delimitados pelos símbolos `<!--comentario-->`, comentários só aparecem para quem esta desenvolvendo ou acessando o código fonte, independente do que for escrito dentro **não resultara impacto no funcionamento do código.** 
 ```html
@@ -113,3 +114,38 @@ Dar significado as coisas, importante para o SEO da página web e o HTML 5 troux
 
 # Títulos e Subtítulos
 Para criação de títulos e subtítulos temos as tags `h`, seguindo de ordem decrescente de importância, ou seja, a tag mais forte é a `h1`, é recomendado apenas uma tag `h1` por página web.
+
+# Renderização
+Cada navegador possuis suas peculiaridades porem em suma de forma simplificada a maioria ocorre assim.
+1. O navegador carrega o HTML
+2. Converte o HTML para DOM
+3. O navegador realização [[HTTP#Request|requisição]] para cada item linkado ao HTML
+4. O navegador analisa o [[Introdução ao CSS|CSS]] encontrado e interpreta as diferentes regras, para os diferentes seletores e buckets.
+5. A árvore de renderização é organizada na estrutura e deve aparecer depois das regras de estilo serem aplicadas ao documento.
+6. O visual de visualização da página é por fim mostrado na tela (este estágio é chamado de _painting_ ou pintura).
+
+![[Desenho_HTML_Renderização|600]]
+
+Por exemplo, Pegue o seguinte código HTML:
+
+```html
+<p>
+	Let's use:
+	<span>Cascading</span>
+	<span>Style</span>
+	<span>Sheets</span>
+</p>
+```
+
+No DOM, o node (nó) especifica nosso elementro `<p>` como um elemento pai. Seus filhos são um text node e a árvore de nós que corresponde ao nossos elementos `<span>`. Os nós `SPAN` são também elementos pais, tendo os text nodes (textos dentro de si) como seus filhos:
+
+```
+P
+├─ "Let's use:"
+├─ SPAN
+|  └─ "Cascading"
+├─ SPAN
+|  └─ "Style"
+└─ SPAN
+   └─ "Sheets"
+```

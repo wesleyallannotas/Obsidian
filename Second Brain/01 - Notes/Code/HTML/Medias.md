@@ -35,3 +35,40 @@ Onde seguira a ordem de cima para baixa, parando no que funcionar.
 
 # Áudio
 Tag muito semelhante a tag  [[Medias#Vídeo|vídeo]], com a mesma ideia de ou adicionar o audio diretamente na tag `<audio>` através do atributo `src` ou utilizar tag `<source>` que abre a possibilidade de criar uma lista de prioridade, também possui a possibilidade da utilização de um `fallback content` que será exibido caso os `<source>` não funcionem, possui atributos para a tag `<audio>` semelhante a tag `<video>` como por exemplo o atributo booleano `controls` ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Audio))
+
+# Adicionando Legendas
+O WebVTT é um formato para gravar arquivos de texto contendo várias seqüências de texto, juntamente com metadados, como a que horas do vídeo você deseja que cada sequência de texto seja exibida e até informações limitadas sobre estilo / posicionamento. Essas cadeias de texto são chamadas de **pistas** e existem vários tipos de pistas que são usadas para propósitos diferentes. As dicas mais comuns são:
+`subtitles` - Traduções de material estrangeiro, para pessoas que não entendem as palavras ditas no áudio.
+
+`captions` - Transcrições sincronizadas de diálogos ou descrições de sons significativos, para permitir que as pessoas que não conseguem ouvir o áudio entendam o que está acontecendo.
+
+`timed descriptions` - Texto que deve ser falado pelo media player para descrever elementos visuais importantes para usuários cegos ou deficientes visuais.
+
+Um arquivo WebVTT típico terá a seguinte aparência:
+
+```vtt
+1
+00:00:22.230 --> 00:00:24.606
+This is the first subtitle.
+
+2
+00:00:30.739 --> 00:00:34.074
+This is the second.
+
+  ...
+```
+
+Para que isso seja exibido juntamente com a reprodução de mídia HTML, você precisa:
+
+1.  Salve-o como um arquivo `.vtt` em um local adequado.
+2.  Vincule ao arquivo `.vtt` com o elemento [`<track>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/track). `<track>` deve ser colocado dentro de `<audio>` ou `<video>`, mas depois de todos os elementos `<source>`. Use o atributo [`kind`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/track#attr-kind) para especificar se as pistas são `subtitles`, `captions,`ou `descriptions`. Além disso, use [`srclang`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/track#attr-srclang) para informar ao navegador em que idioma você escreveu as legendas.
+
+Aqui está um exemplo:
+
+```html
+<video controls>
+    <source src="example.mp4" type="video/mp4">
+    <source src="example.webm" type="video/webm">
+    <track kind="subtitles" src="subtitles_en.vtt" srclang="en">
+</video>
+```

@@ -40,3 +40,7 @@ Ato de obter um produto através de um processamento digital.
 
 ## React
 No contexto de React nada mais é do que transformação do componente em um DOM node.
+
+# Minify ou Minificar
+É realizado normalmente quando subimos o código para produção, basicamente trata de tirar caracteres entre outros possíveis formas de facilitadores do facilitadores do código, assim gerando um bloco de código mais comprimido e que a maquina consegui entender perfeitamente.
+Normalmente um arquivo que passou por esse processo tem o `.min` adicionado antes da extensão, por exemplo, `script.min.js`

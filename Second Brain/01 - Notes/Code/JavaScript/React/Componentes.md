@@ -272,3 +272,6 @@ Podemos adicionar classes ao nosso elemento de forma condicional, utilizando de 
 ```
 
 Se o estado `select` possuir o valor de `"red"`, adicionara a classe `selected`, se não não possuirá a classe.
+
+
+# Error Boundaries

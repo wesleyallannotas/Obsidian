@@ -61,3 +61,35 @@ O elemento `<footer>` traduzido para o português é rodapé, assim trazendo a f
 
 # Section
 O elemento `<section>` traduzido para o português é seção, normalmente traz um titulo e um conteúdo, uma ideia seria uma seção dentro dos `<article>` de receitas exemplificado acima mostrando o modo de preparo, não possui atributos específicos.
+
+# Ênfase e Importância
+Estou _feliz_ que você não chegou _atrasado_.
+
+```html
+<p>Estou <em>felix</em> que você nào chegou <em>atrasado</em>.<p>
+```
+
+Estou **feliz** que você não chegou **atrasado**.
+
+```html
+<p>Estou <strong>felix</strong> que você nào chegou <strong>atrasado</strong>.<p>
+```
+
+A primeira frase parece genuinamente aliviada de que a pessoa não estava atrasada. Em contraste, a segunda parece ser sarcástica ou passiva-agressiva, expressando aborrecimento que a pessoa chegou um pouco atrasada, exemplos de bom uso de importância
+
+Este líquido é **altamente tóxico**.
+
+```html
+<p>Este líquido é <strong>altamente tóxico</strong>.</p>
+```
+
+Eu estou contando com você. **Não** se atrase!
+
+```html
+<p>Eu estou contrando com você. <strong>Não</strong> se atrase!</o>
+```
+
+## Mesmo resultado, significo diferente
+-   [`<i>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/i) é usado para transmitir um significado tradicionalmente transmitido por itálico: palavras estrangeiras, designação taxonômica, termos técnicos, um pensamento...
+-   [`<b>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/b) é usado para transmitir um significado tradicionalmente transmitido por negrito: palavras-chave, nomes de produtos, sentença principal...
+-   [`<u>` (en-US)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u "Currently only available in English (US)") é usado para transmitir um significado tradicionalmente transmitido pelo sublinhado: nome próprio, erro de ortografia...
