@@ -153,7 +153,8 @@ let okay: readonly boolean[]; // success
 ```
 
 ## Definindo Tuplas
-Utilizando a sintaxe abreviada podemos definir os tipos de dados e o comprimento da nossa [[Introdução ao JavaScript#Array|Array]].
+Utilizando a sintaxe abreviada podemos definir os tipos de dados e o comprimento da nossa [[Introdução ao JavaScript#Array|Array]] gerando assim uma _tuple_ ou tupla.
+Podemos criar tuplas utilizamos o [[Type#Criando Tuplas|Type]]
 
 ```ts
 const myFunc1 = (arg: [string, number, boolean]) => {

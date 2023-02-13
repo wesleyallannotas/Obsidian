@@ -175,6 +175,20 @@ Forma mais moderna e compacta de escrever funções, onde omitimos o comando `fu
 
 >[!attention] Atenção
 >_Arrow Function_ não tem seu próprio _[this](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/this)_, _[arguments](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/arguments)_, _[super](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/super)_ ou _[new.target](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/new.target)_, nem mesmo a propriedade [[Manipulando Dados#Prototype|prototype]], sendo assim, não é recomendado essa expressão para construção de métodos e _contructors_
+>```js
+>const text = document.getElementById('text');
+let count = 0;
+// Funciona
+text.addEventListener('click', function () {
+  count++;
+  this.innerHTML = String(count);
+});
+// NÃO funciona
+text.addEventListener('click', () => {
+  count++;
+  this.innerHTML = String(count);
+});
+>```
 
 ```js
 const sayMyName = (name) => {

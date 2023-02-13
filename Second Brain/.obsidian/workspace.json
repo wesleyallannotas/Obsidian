@@ -13,50 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/HTML/Introdução ao HTML.md",
+                "file": "01 - Notes/Code/JavaScript/React/Tratamento de Erros.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "83104ef33d713ba5",
+            "id": "3fed01f0d2cf45d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/Bootstrap/Introdução ao Bootstrap.md",
+                "file": "01 - Notes/Code/JavaScript/Manipulando Dados.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "bddc907d7740d538",
+            "id": "e02d433a58e2fdca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/Bootstrap/Elementos e Configurações.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "673fd75db3322b01",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/CSS/Bootstrap/Responsividade.md",
+                "file": "01 - Notes/Code/Git e Github/Conveções.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -139,7 +127,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Bootstrap/Responsividade.md",
+                "file": "01 - Notes/Code/Git e Github/Conveções.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -181,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Bootstrap/Responsividade.md"
+                "file": "01 - Notes/Code/Git e Github/Conveções.md"
               }
             }
           },
@@ -191,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Bootstrap/Responsividade.md",
+                "file": "01 - Notes/Code/Git e Github/Conveções.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Bootstrap/Responsividade.md",
+                "file": "01 - Notes/Code/Git e Github/Conveções.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -252,17 +240,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "673fd75db3322b01",
+  "active": "e02d433a58e2fdca",
   "lastOpenFiles": [
-    "01 - Notes/Code/CSS/Bootstrap/Elementos e Configurações.md",
+    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+    "01 - Notes/Code/JavaScript/React/Tratamento de Erros.md",
     "01 - Notes/Code/CSS/Bootstrap/Responsividade.md",
+    "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
     "01 - Notes/Code/CSS/Bootstrap/Introdução ao Bootstrap.md",
-    "01 - Notes/Code/Dicionario do Programador.md",
-    "01 - Notes/Code/CSS/Styled-component/Estilos Globais.md",
-    "Modelos/Note.md",
-    "Modelos/Book.md",
-    "Modelos/Article.md",
-    "01 - Notes/Code/CSS/At-Rules.md",
-    "01 - Notes/Code/HTML/Introdução ao HTML.md"
+    "01 - Notes/Code/JavaScript/TypeScript/Type.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Tipagem.md",
+    "01 - Notes/Code/HTML/Cabeçalho.md",
+    "01 - Notes/Code/HTML/Introdução ao HTML.md",
+    "01 - Notes/Code/HTML/HyperLinks.md"
   ]
 }

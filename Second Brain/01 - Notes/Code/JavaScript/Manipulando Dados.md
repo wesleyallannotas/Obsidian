@@ -59,6 +59,7 @@ Utilizamos o método do tipo `Number` para manipular as casas decimais e realiza
 let x = 103.22234234234
 console.log(String(x.toFixed(2)).replace('.', ','))  // Resultado: 103,22
 ```
+Porem não a necessidade do uso do TypeCasting para _string_, pois, `toFixed()` retorna uma _string_
 
 # Testando Tipos
 Podemos testar um dado a fim de receber um [[Introdução ao JavaScript#Boolean|boolean]] o identificando, se sé encontra ou não.
@@ -80,8 +81,33 @@ console.log(isNaN(Number(b)));  // true
 console.log(Array.isArray(array)); // true
 ```
 
+# Number
+Agora que conhecemos o que é uma [[Introdução ao JavaScript#Number|Number]], podemos realizar operações com ela afim de extrair e manipular dados, utilizando funcionalidades provinda de [[#Prototype]] é as especificas do tipo de dado _Array_.
+
+## Formatando Casas Decimais
+Pode se mostrar necessário a formatação de tipos _number_ para determinado número de casas decimais, tendo o uso amplo para o mesmo o método `toFixed()`, onde informamos como parâmetro um _number_ contendo  o numero de casas decimais desejado, assim retornando uma _string_ com o resultado.
+```js
+let value = 214.5446
+
+console.log(`Valor total de ${value.toFixed(2)}`)
+```
+Outra forma amplamente utilizada é através de uma biblioteca `Int1.NumberFormat` é uma biblioteca do JavaScript que permite formatar números com base nas preferências regionais do usuário. Isso significa que você pode usá-lo para exibir números com os formatos apropriados para a localidade do usuário, como separadores de milhares, casas decimais e símbolos de moeda.
+```js
+const formatter = new Intl.NumberFormat('default', {
+  style: 'currency',
+  currency: 'USD',
+  minimumFractionDigits: 2,
+});
+
+const formattedNumber = formatter.format(123456.789);
+console.log(formattedNumber);
+// Output: "$123,456.79" (assuming US locale)
+```
+No exemplo acima, passamos a string `'default'` como primeiro argumento para o construtor `Intl.NumberFormat`, indicando que queremos usar as preferências regionais do usuário, podemos por exemplo especificar um local diretamente como `fr-FR` especificando a França como localidade. Em seguida, passamos um objeto de opções que especifica que queremos usar o estilo `currency`, que a moeda é o dólar americano (`USD`) e que queremos duas casas decimais.
+Ao chamar o método `format()` passando o número que desejamos formatar, o `Intl.NumberFormat` retornará uma string formatada de acordo com as preferências regionais do usuário. No exemplo acima, se o usuário estiver usando uma localidade dos Estados Unidos, o resultado seria "$123,456.79".
+
 # String
-Agora que conhecemos o que é uma [[Introdução ao JavaScript#String|Array]], podemos realizar operações com ela afim de extrair e manipular dados, utilizando funcionalidades provinda de [[#Prototype]] é as especificas do tipo de dado _String_.
+Agora que conhecemos o que é uma [[Introdução ao JavaScript#String|String]], podemos realizar operações com ela afim de extrair e manipular dados, utilizando funcionalidades provinda de [[#Prototype]] é as especificas do tipo de dado _String_.
 
 >[!tip]- Alterando Separador de uma `String`
 Quebramos a `String` utilizando o `split` informando qual o separador utilizado, depois concatenamos as `Strings` informando um separador para utilização
