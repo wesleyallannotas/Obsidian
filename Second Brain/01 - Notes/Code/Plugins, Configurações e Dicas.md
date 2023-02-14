@@ -45,7 +45,7 @@ npm install -D eslint
 Em seguida iniciaremos as configurações, onde será feita uma serie de questionamentos e por fim um recomendação de um _pack_ de dependências, recomendado o uso de JSON para o arquivo de configuração.
 
 ```bash
-npx eslint init
+npx eslint --init
 ```
 
 Instalaremos algumas bibliotecas para auxiliar e melhorar nosso ESLint

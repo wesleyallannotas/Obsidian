@@ -17,6 +17,10 @@ Utilizaremos da biblioteca [React Router](https://reactrouter.com/en/main) para 
 
 Utilizando as rotas podemos acessar os [[Dados via URL#Parâmetro|parâmetros]] e as [[Dados via URL#Query|pesquisas]], assim podendo carregar dentro do nosso componente, modificando o resultado que pode ser acessado via URL.
 
+## Match de Rotas
+Por padrão React Rounter realiza o _match_ de rotas, por exemplo um rota `/` e uma rota `/post`, quando acessarmos `/post`, obteremos como resultado o que contem dentro de `/` e de `/post`, comportamento interessantíssimo para sub-rotas, porem para a raiz não é nem um pouco interessante.
+Podemos evitar esse comportamento utilizando a propriedade booleana `exact`
+
 # Instalando Biblioteca
 Basta instalar a biblioteca `react-rounter-dom` para utilizar o _React Rounter_ para Web.
 
@@ -38,4 +42,8 @@ yarn add -D @types/react-rounter-dom
 Uma estrutura básica utilizando React Rounter necessita dos seguintes componentes
 - `BrowserRouter` - Container que deve abraçar toda aplicação para o funcionamento do React Rounter
 - `Route` - A rota em si, 
-	- `parh` - a primordial é a `path`, onde especificamos o caminho da nossa rota.
+	- `path` - O primordial é o `path`, onde especificamos o caminho da nossa rota.
+	- `exact` - Devolve o conteúdo apenas quando acessada exatamente, evitando [[#Match de Rotas]]
+- `Switch` - Garante que somente uma rota seja renderizada por vez, ou seja, quando der _match_, renderiza a primeira e para por exemplo com `/post`, seria renderizado o `/` e pararia, para conseguir o efeito desejado seria necessário adicionar o `exact` no `/` assim não ocorrendo o `match` e chegando ate o `/post`
+- `Link` - Basicamente é uma ancora que se conecta ao _Raact Router_, realiza a mudança de conteúdo sem a necessidade de outras _requests_, ou seja, não recarrega a página e todo seu HTML e conteúdo.
+	- `to` - Propriedade para especificar para qual rota será enviado.
