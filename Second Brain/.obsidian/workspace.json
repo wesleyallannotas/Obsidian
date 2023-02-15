@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "42558ae4a90dbf66",
+        "id": "f0059dacf6417e2e",
         "type": "tabs",
         "children": [
           {
-            "id": "da458f03841b7d03",
+            "id": "b187356a83569950",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Rounter.md",
+                "file": "01 - Notes/Code/JavaScript/DOM.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Rounter.md",
+                "file": "01 - Notes/Code/JavaScript/DOM.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Rounter.md"
+                "file": "01 - Notes/Code/JavaScript/DOM.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Rounter.md",
+                "file": "01 - Notes/Code/JavaScript/DOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Rounter.md",
+                "file": "01 - Notes/Code/JavaScript/DOM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,17 +215,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "da458f03841b7d03",
+  "active": "b187356a83569950",
   "lastOpenFiles": [
-    "01 - Notes/Code/HTML/Cabeçalho.md",
-    "01 - Notes/Code/HTML/Imagens.md",
-    "01 - Notes/Code/Git e Github/Conveções.md",
-    "01 - Notes/Code/Git e Github/Github.md",
-    "01 - Notes/Code/CSS/Styled-component/Temas.md",
-    "01 - Notes/Code/Plugins, Configurações e Dicas.md",
+    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+    "01 - Notes/Code/JavaScript/Funções.md",
+    "01 - Notes/Línguas/Inglês/To be.md",
+    "01 - Notes/Línguas/Inglês/Negação.md",
+    "01 - Notes/Code/CSS/Cores e Background.md",
+    "01 - Notes/Línguas/Inglês/Perguntas.md",
+    "Images/efeito_borda.png",
     "01 - Notes/Code/JavaScript/React/React Rounter.md",
-    "01 - Notes/Code/CSS/Flexbox.md",
-    "01 - Notes/Code/CSS/Grid.md",
-    "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md"
+    "01 - Notes/Code/HTML/Cabeçalho.md",
+    "01 - Notes/Code/HTML/Imagens.md"
   ]
 }

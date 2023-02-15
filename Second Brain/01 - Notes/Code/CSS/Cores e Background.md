@@ -197,7 +197,7 @@ body {
 Assim podem criar background incríveis com as misturar possíveis, podendo misturar ate o funcionamento do scroll e outras propriedades.
 
 ## Gradiente
-Para aplicarmos um efeito gradiente no nosso fundo do elemento, ou seja, no background, podemos utilizar as seguintes funções
+Para aplicarmos um efeito gradiente no nosso fundo do elemento, ou seja, no background, podemos utilizar as seguintes funções que no fim resultaram na criação de imagens.
 - `linear-gradient()` - Gradiente comum criando uma variação de cores de uma lada para o outro
 - `radial-gradient()` - Gradiente em forma de circulo se iniciando do meio
 ```css
@@ -220,3 +220,25 @@ body {
 }
 ```
 Para as cores é aceito o *data-type* `<color>`, ou seja, todas os tipos de [[#Valores|declaração de cores]] são aceitas.
+
+## Técnica de bordas invertida
+Para atingirmos o seguinte efeito de bordar. 
+
+![[efeito_borda.png|600]]
+
+Será necessário criar 4 background com cor transparente utilizando `linear-gradient()` e aplicar o efeito de `radial-gradient`, fazendo uma transição duro, e especificando a cor interna como `transparent`, para dividir em quatro espaços é necessário adicionar o tamanho de `50%` nas duas direção e desabilitar a repetição.
+
+```css
+background: 
+	linear-gradient(0, transparent, transparent) top left,
+	linear-gradient(0, transparent, transparent) top right,
+	linear-gradient(0, transparent, transparent) bottom left,
+	linear-gradient(0, transparent, transparent) bottom right;
+background-image: 
+	radial-gradient(circle at 0 0, transparent 0.7rem, white 0.7rem),
+	radial-gradient(circle at 100% 0, transparent 0.7rem, white 0.7rem),
+	radial-gradient(circle at 0 100%, transparent 0.7rem, white 0.7rem),
+	radial-gradient(circle at 100% 100%, transparent 0.7rem, white 0.7rem);
+background-size: 50% 50%;
+background-repeat: no-repeat;
+```
