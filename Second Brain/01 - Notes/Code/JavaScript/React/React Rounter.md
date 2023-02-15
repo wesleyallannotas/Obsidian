@@ -47,3 +47,24 @@ Uma estrutura básica utilizando React Rounter necessita dos seguintes component
 - `Switch` - Garante que somente uma rota seja renderizada por vez, ou seja, quando der _match_, renderiza a primeira e para por exemplo com `/post`, seria renderizado o `/` e pararia, para conseguir o efeito desejado seria necessário adicionar o `exact` no `/` assim não ocorrendo o `match` e chegando ate o `/post`
 - `Link` - Basicamente é uma ancora que se conecta ao _Raact Router_, realiza a mudança de conteúdo sem a necessidade de outras _requests_, ou seja, não recarrega a página e todo seu HTML e conteúdo.
 	- `to` - Propriedade para especificar para qual rota será enviado.
+
+# Redirecionamento
+Através do componente `Redirection` podemos criar redirecionamentos para determinadas rotas.
+
+```tsx
+<Route exact path="/">
+	<Redirecton to="/production" />
+</Route>
+```
+
+Muito útil quando queremos definir caminhos diferentes para o usuário dependendo do seu estado.
+# Atualização 6.0
+Na versão6.0 do ReactRouterDOM houveram algumas modificações em suas definições:
+- `Switch` - Passou a ser chamado de Routes
+- `Route` - A propriedade para renderizar elementos agora se chama `element`
+Para exemplificar a utilização do “AS” renomeie o BrowserRouter para Router.
+- `Redirection` - E feito através da renderização do elemento `Navigation`
+	- `replace` - Para manter o histórico limpo, você deve definir replace prop. Isso evitará redirecionamentos extras depois que o usuário clicar novamente.
+```tsx
+<Route path="/" element={<Navigation to="/produciton" replace />} />
+```

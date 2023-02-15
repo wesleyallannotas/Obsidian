@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Conveções.md",
-                "mode": "preview",
+                "file": "01 - Notes/Code/JavaScript/React/React Rounter.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Conveções.md",
+                "file": "01 - Notes/Code/JavaScript/React/React Rounter.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Conveções.md"
+                "file": "01 - Notes/Code/JavaScript/React/React Rounter.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Conveções.md",
+                "file": "01 - Notes/Code/JavaScript/React/React Rounter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/Git e Github/Conveções.md",
+                "file": "01 - Notes/Code/JavaScript/React/React Rounter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,15 +217,15 @@
   },
   "active": "da458f03841b7d03",
   "lastOpenFiles": [
+    "01 - Notes/Code/HTML/Cabeçalho.md",
+    "01 - Notes/Code/HTML/Imagens.md",
+    "01 - Notes/Code/Git e Github/Conveções.md",
     "01 - Notes/Code/Git e Github/Github.md",
     "01 - Notes/Code/CSS/Styled-component/Temas.md",
     "01 - Notes/Code/Plugins, Configurações e Dicas.md",
     "01 - Notes/Code/JavaScript/React/React Rounter.md",
     "01 - Notes/Code/CSS/Flexbox.md",
     "01 - Notes/Code/CSS/Grid.md",
-    "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md",
-    "01 - Notes/Code/JavaScript/React/Consumindo API.md",
-    "01 - Notes/Code/JavaScript/React/Componentes.md",
-    "01 - Notes/Code/JavaScript/React/Atualizando Dados.md"
+    "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md"
   ]
 }
