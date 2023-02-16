@@ -185,3 +185,46 @@ Rodando esse comando na máquina, ele vai te fazer algumas perguntas e conforme 
 ![[exemplo_readme_generator.gif]]
 
 O gerador de README é bem legal, mas talvez você precise fazer alguns ajustes para melhorar.  **Seja objetivo** ao descrever os caminhos e as decisões tomadas. Evite verbosidade no texto e seja conciso ao apresentar o projeto, como se estivesse apresentando um [pitch](https://www.sbcoaching.com.br/blog/pitch/) dentro de um [Hackathon](https://shawee.io/pt/tag/rocketseat/) ou numa reunião.
+
+# Criando Snippets
+Basicamente _snipperts_ são atalhos para código para dinamizar a digitação trazendo maior produtividade e tempo para resolver os reis problemas.
+Para criarmos _snippets_ no VSCode, basta acessar o ataho `ctrl + shift + p`, digitar `snippets` acessar a opção de configurar _snippets_ escolher se será global ou local ao _workspace_, escolhemos um nome para o nosso arquivo com o _snippet_ (pode conter mais de um), em seguida descometamos a parte do JSON e alteramos ao nosso gosto.
+Basicamente dentro de um JSON, nomearemos e criaremos objetos contendo dados do snipet.
+
+```json
+{
+  "Nome do Snippet": {
+    "scope": "linguagem",
+    "prefix": "alias para acessar",
+    "body": [
+      "codigo;",
+      "$2"
+    ],
+    "description": "descrição do nosso snippet"
+  }
+}
+```
+
+Exemplo de _Snippet_ de _reset_ CSS simples, `\t` para dar um _tab_
+
+```json
+  "Reset CSS": {
+    "scope": "css",
+    "prefix": "resetcss",
+    "body": [
+      "* {",
+      "\tmargin: 0;",
+      "\tpadding: 0;",
+      "\tborder: 0;",
+      "\tbox-sizing: border-box;",
+      "\tfont-synthesis: none;",
+      "\tfont-size: 100%;",
+      "\ttext-rendering: optimizeLegibility;",
+      "\t-webkit-font-smoothing: antialiased;",
+      "\t-moz-osx-font-smoothing: grayscale;",
+      "\t-webkit-text-size-adjust: 100%;",
+      "}"
+    ],
+    "description": "simple reset for css"
+  }
+```
