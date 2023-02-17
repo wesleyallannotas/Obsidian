@@ -149,3 +149,10 @@ P
 └─ SPAN
    └─ "Sheets"
 ```
+
+# Basicamente
+
+| Elemento | Função                                           |
+| -------- | ------------------------------------------------ |
+| time     | Tempo em horas                                   |
+| sup      | Numero pequeno conectado ao top, tipo um elevado |

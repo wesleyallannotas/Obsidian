@@ -113,3 +113,12 @@ p {
 }
 ```
 Segue a mesma sintaxe das linguagens de programação, o nome da função e entre parênteses os parâmetros, `calc(100% - 10px)`
+
+# Classes Utilitarias
+Basicamente é a ideia base para framework _tailwind_ onde são classes que adicionam normalmente uma propriedade CSS ao elemento, havendo algumas exceções que adiciona mais que uma porem sempre são poucas.
+
+```css
+.grid {
+	display: grid;
+}
+```
