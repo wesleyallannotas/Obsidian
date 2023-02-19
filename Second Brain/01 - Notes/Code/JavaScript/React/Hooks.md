@@ -280,7 +280,7 @@ const StopWatch = () => {
 >[!tip] Compreendendo
 >Basicamente se queremos causar alteração na interface, usamos `useState`, se não queremos `useRef`, por exemplo um botão que quando clicado o usuário aceitou os termos e quando não clicado não aceitou, se quiser mudar a cor do botão, seu formato, usaremos `useState`, se não tem necessidade usaremos `useRef`
 
-## [Utilizando as refs no React de forma avançada | Code/Drops #52 - YouTube](https://www.youtube.com/watch?v=lA8o3kUl1TA) (19min)
+[Utilizando as refs no React de forma avançada | Code/Drops #52 - YouTube](https://www.youtube.com/watch?v=lA8o3kUl1TA) (19min)
 
 # Hooks Customizados
 Conhecimento extremamente importante para desenvolvimento de aplicações Web com [[Introdução ao React|React]] é saber construir _custom hooks_, utilizando de nossa logica.
