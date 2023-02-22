@@ -150,7 +150,7 @@ P
    └─ "Sheets"
 ```
 
-# Basicamente
+# Outras Tags 
 
 | Elemento | Função                                           |
 | -------- | ------------------------------------------------ |

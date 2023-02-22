@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Rounter V5.md",
+                "file": "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Rounter V5.md",
+                "file": "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Rounter V5.md"
+                "file": "01 - Notes/Code/JavaScript/Controle de Fluxo.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Rounter V5.md",
+                "file": "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Rounter V5.md",
+                "file": "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,15 +217,15 @@
   },
   "active": "a464abe5106d1cde",
   "lastOpenFiles": [
-    "01 - Notes/Code/Algoritmos/Bubble Sort.md",
-    "01 - Notes/Code/Algoritmos/Quick Sort.md",
-    "01 - Notes/Code/Algoritmos/Recursão.md",
-    "01 - Notes/Code/JavaScript/React/React Rounter V5.md",
-    "01 - Notes/Code/JavaScript/React/Hooks.md",
-    "01 - Notes/Code/CSS/Introdução ao CSS.md",
-    "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
-    "01 - Notes/Code/CSS/Styled-component/Animações.md",
-    "01 - Notes/Code/CSS/Styled-component/Introdução ao styled-component.md",
-    "01 - Notes/Code/JavaScript/React/React Rounter V6.md"
+    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+    "01 - Notes/Code/HTML/Introdução ao HTML.md",
+    "01 - Notes/Code/HTML/Sumário.md",
+    "01 - Notes/Code/HTML/Tabelas.md",
+    "01 - Notes/Code/HTML/Semântica.md",
+    "01 - Notes/Code/HTML/Representando Código.md",
+    "01 - Notes/Code/HTML/Medias.md",
+    "01 - Notes/Code/HTML/Listas Simples.md",
+    "01 - Notes/Code/HTML/Lista de Descrição.md",
+    "01 - Notes/Code/HTML/Imagens.md"
   ]
 }
