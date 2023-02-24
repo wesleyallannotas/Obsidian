@@ -229,7 +229,7 @@ const { selectedProduct } = useParams<ParamsType>();
 ```
 
 ## useLocation
-Através do `useLocation` que é um [[Hooks|hook]] da própria biblioteca _React Rounter_, podemos basicamente os valores do objeto `location`, por exemplo, recebendo os valores de _hash_, _pathname_, _search_, _state_, onde podemos  capturar os query params através do _search_
+Através do `useLocation` que é um [[Hooks|hook]] da própria biblioteca _React Rounter_, podemos basicamente os valores do objeto `location` encontrado dentro do objeto global do navegador, ou seja, do `window`, por exemplo, recebendo os valores de _hash_, _pathname_, _search_, _state_, onde podemos  capturar os query params através do _search_
 
 ```ts
 const location = useLocation();
