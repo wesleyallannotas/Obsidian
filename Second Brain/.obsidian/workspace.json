@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f0059dacf6417e2e",
+        "id": "c9cc09f0c3aedfe3",
         "type": "tabs",
         "children": [
           {
-            "id": "a464abe5106d1cde",
+            "id": "737c308d4becc74f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
+                "file": "01 - Notes/Code/JavaScript/React/React Router V6.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
+                "file": "01 - Notes/Code/JavaScript/React/React Router V6.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Controle de Fluxo.md"
+                "file": "01 - Notes/Code/JavaScript/React/React Router V6.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
+                "file": "01 - Notes/Code/JavaScript/React/React Router V6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
+                "file": "01 - Notes/Code/JavaScript/React/React Router V6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,8 +215,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a464abe5106d1cde",
+  "active": "737c308d4becc74f",
   "lastOpenFiles": [
+    "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
+    "01 - Notes/Code/CSS/Styled-component/Introdução ao styled-component.md",
+    "01 - Notes/Code/JavaScript/React/React Router V5.md",
+    "01 - Notes/Code/JavaScript/React/React Router V6.md",
+    "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md",
+    "01 - Notes/Code/JavaScript/React/Hooks.md",
+    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+    "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf",
+    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
     "01 - Notes/Code/JavaScript/Manipulando Dados.md",
     "01 - Notes/Code/HTML/Introdução ao HTML.md",
     "01 - Notes/Code/HTML/Sumário.md",
@@ -225,7 +234,6 @@
     "01 - Notes/Code/HTML/Representando Código.md",
     "01 - Notes/Code/HTML/Medias.md",
     "01 - Notes/Code/HTML/Listas Simples.md",
-    "01 - Notes/Code/HTML/Lista de Descrição.md",
-    "01 - Notes/Code/HTML/Imagens.md"
+    "01 - Notes/Code/HTML/Lista de Descrição.md"
   ]
 }

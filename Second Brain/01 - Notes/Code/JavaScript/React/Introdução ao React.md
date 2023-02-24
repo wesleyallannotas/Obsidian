@@ -35,7 +35,7 @@ Assim criamos um projeto React que foi informado após a _flag_ `--template` (Po
 npm install
 ```
 
-# Estrutura do Projeto
+# Estrutura do Projeto (Refazer)
 Por o React ser uma lib (biblioteca) não possui restrições como um framework como por exemplo o `Next` que é um _framework_ React que possui diversas regras para o bom funcionamento e a melhor extração de benefícios do framework, uma delas é a estrutura, de como deve ser dividido e ate mesmo o nome dos diretórios, já o React não possui.
 Uma ideia de organização é deixar no `public`, os `assets`/conteúdos que vão ficar disponíveis no front-end, como por exemplo os ícones, entre outros. 
 O código do projetos e dentro de `src` onde é  criar um diretório `pages` para as páginas, um `styles` para os `CSSs` padrões que normalmente contendo um _Reset CSS_ e um CSS global do projeto.
@@ -128,7 +128,7 @@ export function Home() {
 ```
 
 >[!note] Porque dos Parênteses
->Como foi visto, quando queremos utilizar uma variável dentro da sintaxe do `JSX`, ou seja, [[JSX e TSX#Incorporando Valor|incorporar valor]] no retorno da função, temos que utilizar parênteses, neste caso utilizamos o método interno `map()` da variável.
+>Como foi visto, quando queremos utilizar uma variável dentro da sintaxe do `JSX`, ou seja, [[JSX e TSX#Incorporando Valor (Dynamic Data)|incorporar valor]] no retorno da função, temos que utilizar parênteses, neste caso utilizamos o método interno `map()` da variável.
 
 No código acima criamos 2 estados, um guardando uma [[Introdução ao JavaScript#Array|array]] de _students_ e outro estado guardando uma [[Introdução ao JavaScript#String|string]] contendo o nome do estudando _student name_, também criamos uma função com o nome `handleAddStudent()` para adicionar o _student_ dentro da _array_ de _students_, onde a mesma grava um objeto na _array_ de _students_ contendo o valor dentro do estado `studentName` e o horário atual, realizando uma formatação.
 Porem quando adicionamos vamos adicionar mais um `student`, percebemos que o anterior some, ai esta o conceito de **imutabilidade**, a _array_ anterior foi destruída e foi criado uma nova.

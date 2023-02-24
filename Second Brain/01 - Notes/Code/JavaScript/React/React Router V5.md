@@ -109,12 +109,14 @@ Através do componente `Redirection` podemos criar redirecionamentos para determ
 
 Muito útil quando queremos definir caminhos diferentes para o usuário dependendo do seu estado.
 
-# Parâmetros
-Assim como vimos [[Dados via URL|sobre dados via URL]], utilizando _Reaact Router_ possuira a mesma sintaxe para capitação de dados via parâmetros, assim conseguindo capturar e programar em cima disso, por exemplo com determinada URL recebendo determinados dados pelo parâmetro, abri em determinada tela com tais itens selecionados, entre outras diversas ideias.
-Onde podemos ler esse parâmetro através de um [[#Hooks|hook]] que vem junto com a biblioteca _React Router_
+# Params e Query Params
+Assim como vimos sobre [[HTTP#Locator (Localização)|URL]] e [[Dados via URL|sobre dados via URL e como consumi-los]], utilizando _Reaact Router_ possuirá a mesma sintaxe para capitação de dados via parâmetros ou query, assim conseguindo capturar e programar em cima disso, por exemplo com determinada URL recebendo determinados dados pelo parâmetro, abri em determinada tela com tais itens selecionados, entre outras diversas ideias.
+
+## Params 
+Onde podemos ler esse parâmetro através de um [[#Hooks|hook]] que vem junto com a biblioteca _React Router_, ou s eja, interno ao _React Rounter_.
 
 >[!attention] Opcional
->Podemos definir parâmetros opcionais adicionando `?` no final.
+>Podemos definir params opcionais adicionando `?` no final.
 
 ```tsx
 <Route path="/production/:selectedProduct?">
@@ -122,7 +124,7 @@ Onde podemos ler esse parâmetro através de um [[#Hooks|hook]] que vem junto co
 </Route>
 ```
 
-# Redirecionamento Pragmático
+### Redirecionamento Pragmático
 Basicamente é um redirecionamento sem o uso de components como `Link`, `Redirect`, utilizaremos do [[#Hooks|hook]] [[#useHistory]]
 
 ```ts
@@ -141,6 +143,80 @@ function goToProduct(id: number) {
 }
 ```
 
+## Query Params
+Podemos obter os query params através de um [[#Hooks|hook]] interno do _React Rounter_, sendo ele o [[#useLocation]], onde dentro do objeto _location_ temos acesso ao query params através da propriedade _search_.
+Onde podemos realizar o _parse_ para um objeto JavaScript através de uma interface disponibilizada através da Web API, sendo ela `URLSearchParams`, onde passamos como parâmetro o próprio _search_.
+
+```ts
+const location =  useLocation();
+
+const queryParams = URLQueryParams(location.search);
+```
+
+Em seguida podemos utilizar o método `get()` para pegar o _query param_ desejado, por exemplo.
+
+```ts
+const showStock = queryParams.get('showStock');
+```
+
+# Not Found Pages
+São páginas que são exibidas quando o usuário acessou uma rota inacessível ou que não existe dentro da nossa aplicação web.
+Seguindo a ideia do [[#Switch]] onde não existe o _match_ de rotas, ou seja, renderizando apenas a primeira, basicamente no final da criação das rotas, criamos uma rota com o caminho (_path_) `*`, assim cobrindo todos as outras possíveis rotas, e renderizamos a página que exibira o _Not found_
+
+```tsx
+<Switch>
+	<Route exct path="/">
+		<Redirect to="/production" />
+	</Route>
+	<Route path="/production" >
+		<Production />
+	</Route>
+	<Route path="*">
+		<NotFound />
+	</Route>
+</Switch>
+```
+
+# Protegendo Rotas
+Normalmente para tratar de validações de login e permissões entro outros, é **criado um componentes** com o nome `ProtectedRoute`, onde no mesmo é desenvolvido a logica das validações, onde passado, retorna a rota normalmente,  caso negado, retorna para o login ou qualquer outra página.
+Para conseguir simplesmente alterar o componentes `Route` padrão para o nosso componente, será necessário pegar os parâmetros e espalhar novamente para o componente que carrega a rota corretamente caso de certo.
+
+>[!tip] Tipagem para o TypeScript
+>Para termos a tipagem correta dos parâmetros de um componente `Route`, basta importar `RouteProps`.
+
+```tsx
+export const ProtectedRoute = (props: RouteProps) => {
+	const token = localStorege.getItem('token');
+	
+	if (token) {
+		return <Route {..props} />;
+	}
+	return <Route to="/login" />
+}
+```
+
+Basta utilizar o nosso `ProtectedRoute`
+
+```tsx
+<Switch>
+	<Route exct path="/">
+		<Redirect to="/production" />
+	</Route>
+	<Route path="/production" >
+		<Production />
+	</Route>
+	<ProtectedRoute to="stock">
+		<Stock />
+	</ProtectedRoute>
+	<Route path="login">
+		<Login />
+	</Route>
+	<Route path="*">
+		<NotFound />
+	</Route>
+</Switch>
+```
+
 # Hooks 
 São os [[Hooks]] que estão disponíveis dentro da biblioteca _React Router_
 
@@ -152,11 +228,18 @@ Será retornado um objeto contendo os parâmetros, porem uma técnica muito util
 const { selectedProduct } = useParams<ParamsType>();
 ```
 
+## useLocation
+Através do `useLocation` que é um [[Hooks|hook]] da própria biblioteca _React Rounter_, podemos basicamente os valores do objeto `location`, por exemplo, recebendo os valores de _hash_, _pathname_, _search_, _state_, onde podemos  capturar os query params através do _search_
+
+```ts
+const location = useLocation();
+```
+
 ## useHistory
-Através do `useHistory` que é um [[Hooks|hook]] da própria biblioteca _React Router_, podemos basicamente cuida do histórico da página é uma pilha onde através de tal _hook_ podemos manipular o mesmo.
-- `push` - Redireciona para tal caminho da página.
-- `replace` - Altera, impossibilita voltar para página anterior.
-- `goBack` - Volta para página anterior.
+Através do `useHistory` que é um [[Hooks|hook]] da própria biblioteca _React Router_, podemos basicamente cuida do histórico da página é uma [[Queue|Pilha]] onde através de tal _hook_ podemos manipular o mesmo.
+- `push` - Redireciona para tal caminho da página, adicionando a pilha.
+- `replace` - Altera, impossibilita voltar para página anterior, muito utilizado por exemplo para alterar a visibilidade de determinado conteúdo através de _query params_, onde través de adicionar a pila e caso o usuário volte apenas mude a visibilidade, faz mas sentido alterar. 
+- `goBack` - Volta para página anterior, voltando na pilha.
 
 ```ts
 const history = useHistory();
