@@ -16,6 +16,15 @@ O conceito de caixas se baseia na ideia que todo elementos HTML que não é *inl
 - `padding` - Espaçamento interno
 - `border` - Bordas
 - `margin` - Margens
+
+>[!tip] Abraçando conteúdo
+>Podemos definir que nosso `content-box` abrace o conteúdo, ou seja, o seu tamanho seja relacionado com o tamanho do seu conteúdo através do valor `fit-content`
+>```css
+>.container {
+>	width: fit-content;
+>}
+>```
+
 ![[Desenho_HTMLCSS_BoxModel|center]]
 >[!note] Especifico Dimensões
 >Vale lembrar que em `padding`, `margin` e `border`, possuímos a liberdade para escolher o lado que queremos adicionar o estilo, seja em notação especifica, ou simplificada utilizando [[Introdução ao CSS#Shorthand|shorthand]] (No simplificado e atribuído no sentido horário, e caso possua uma omissão ele pega o valor do seu lado contrario), por exemplo
@@ -97,5 +106,9 @@ Para melhor entendimento recomendo a [documentação do MDN]([border - CSS: Casc
 >[!warning] Atenção
 >Por padrão o `border` impacta no tamanho da caixa (*box*), podemos mudar esse comportamento através do [[Box Model#Box-Sizing|Box Sizing]]
 
-# `outline`
+# Outline
 Apesar do `ouline` ser muito semelhante as bordas, diferente das propriedades anteriores, `outline` não interferi no tamanho da caixa (*box*), ele pode ser diferente de retangular, não possui a possiblidade de manipular individualmente as propriedades dos lados da caixa, possui seu uso em larga escala pelo *user agent*, principalmente para adicionar acessibilidade, podemos dizer que é um tipo de borda com comportamento de margem.
+
+# Overflow
+Através da propriedade CSS _overflow_ controlamos a aceitação de "transbordar", por exemplo por padrão é liberado, ou seja, se um elemento filho for maior que o pai, ele sai dos elemento pai, porem podemos controlar e impedir isso através do _overflow_.
+- `hidden` - Não aceita "transbordar", o que passar do tamanho da caixa é ocultado.

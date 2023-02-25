@@ -17,9 +17,8 @@ Buscando uma melhor estruturação do projeto e trazer melhorias de performance,
 
 Basicamente na versão 6.0 do _React Router_ houveram algumas modificações em suas definições:
 - `Switch` - Passou a ser chamado de `Routes`
-	- Necessita de 
 - `Route` - Agora utilizamos uma propriedade chama `element` para renderizar os componentes, invés de passar como _children_
-	- `exact` - Com o retrabalho da biblioteca foi abolido a propriedade `exact`
+	- `exact` - Com o retrabalho da biblioteca foi **abolido** a propriedade `exact`
 - `Redirection` - E feito através da renderização do elemento `Navigation`
 	- `replace` - Para manter o histórico limpo, você deve adicionar a propriedade booleana `replace` . Isso evitará redirecionamentos extras depois que o usuário clicar novamente.
 
@@ -119,8 +118,10 @@ export const Production = () => {
 
 # Hooks
 Houve mudança nos [[Hooks]] também, tanto no nome como no funcionamento.
-- `useHistory` -> `useNavigate`
-- ❌ `useRouteMatch` 
+- ❌ `useHistory` -> `useNavigate`
+- ❌ `useRouteMatch` -> `useMatch`
+- ✅ [[React Router V5#useParams|useParams]]
+- ✅ [[React Router V5#useLocation|useLocation]]
 
 ## useNavigate
 Através do _hook_ `useNavigate` podemos navegar pelas rotas, porem agora sem a necessidade de utilizar um método como `push()`

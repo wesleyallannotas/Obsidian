@@ -18,16 +18,16 @@ Utilizaremos da biblioteca [React Router](https://reactrouter.com/en/main) para 
 Utilizando as rotas podemos acessar os [[Dados via URL#Parâmetro|parâmetros]] e as [[Dados via URL#Query|pesquisas]], assim podendo carregar dentro do nosso componente, modificando o resultado que pode ser acessado via URL.
 
 ## Match de Rotas
-Por padrão React Rounter realiza o _match_ de rotas, por exemplo um rota `/` e uma rota `/post`, quando acessarmos `/post`, obteremos como resultado o que contem dentro de `/` e de `/post`, comportamento interessantíssimo para sub-rotas, porem para a raiz não é nem um pouco interessante.
+Por padrão _React Rounter_ 5 realiza o _match_ de rotas, por exemplo um rota `/` e uma rota `/post`, quando acessarmos `/post`, obteremos como resultado o que contem dentro de `/` e de `/post`, comportamento interessantíssimo para sub-rotas, porem para a raiz não é nem um pouco interessante.
 Podemos evitar esse comportamento utilizando a propriedade booleana `exact`
 
 # Instalando Biblioteca
-Basta instalar a biblioteca `react-rounter-dom` para utilizar o _React Rounter_ para Web.
+Basta instalar a biblioteca `react-rounter-dom` V5 para utilizar o _React Rounter_ para Web.
 
 ```bash
-npm install react-rounter-dom
+npm install react-rounter-dom@5
 
-yarn add react-rounter-dom
+yarn add react-rounter-dom@5
 ```
 
 Caso esteja utilizando TypeScript é importante adicionar os tipos.
@@ -113,10 +113,10 @@ Muito útil quando queremos definir caminhos diferentes para o usuário dependen
 Assim como vimos sobre [[HTTP#Locator (Localização)|URL]] e [[Dados via URL|sobre dados via URL e como consumi-los]], utilizando _Reaact Router_ possuirá a mesma sintaxe para capitação de dados via parâmetros ou query, assim conseguindo capturar e programar em cima disso, por exemplo com determinada URL recebendo determinados dados pelo parâmetro, abri em determinada tela com tais itens selecionados, entre outras diversas ideias.
 
 ## Params 
-Onde podemos ler esse parâmetro através de um [[#Hooks|hook]] que vem junto com a biblioteca _React Router_, ou s eja, interno ao _React Rounter_.
+Onde podemos ler esse parâmetro através de um [[#Hooks|hook]] que vem junto com a biblioteca _React Router_, ou seja, interno ao _React Rounter_.
 
 >[!attention] Opcional
->Podemos definir params opcionais adicionando `?` no final.
+>Podemos definir params **opcionais** adicionando `?` no final.
 
 ```tsx
 <Route path="/production/:selectedProduct?">

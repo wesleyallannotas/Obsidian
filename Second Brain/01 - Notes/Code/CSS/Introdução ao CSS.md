@@ -122,3 +122,31 @@ Basicamente é a ideia base para framework _tailwind_ onde são classes que adic
 	display: grid;
 }
 ```
+
+# Acessibilidade
+Deve se tomar muito cuidado com acessibilidade, pois, quando criamos elementos semânticos, porem não queremos que apareçam visualmente, vem logo a mente o uso do `display: hidden;`, porem o uso do mesmo também desabilita o elemento para a acessibilidade, a forma mais inteligente de resolver tal problema, é a mesma usada pelo _framwork_ CSS _tailwind_ na sua [[#Classes Utilitarias]] `sr-only`, ou seja, apenas para o _screen reader_, traduzindo, leitor de tela, código.
+
+```css
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+```
+
+# Eliminando todo CSS do Browser
+Podemos eliminar todo o CSS do browser utilizando uma propriedade muito simples chamada de `all`.
+
+```css
+input,
+select,
+button {
+	all: unset;
+}
+```

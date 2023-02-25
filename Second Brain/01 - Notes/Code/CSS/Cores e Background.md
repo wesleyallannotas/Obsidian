@@ -75,7 +75,7 @@ div {
 Podemos adicionar imagem ao fundo do nosso elemento utilizando `background-image`, onde atrelado a função `url()` podemos passar o endereço da imagem, adicionar imagem via CSS é recomendado apenas para fins de estilização, segue um exemplo de uso:
 ```css
 body {
-	background-color: url(https://www.google.com/logos/doodles/2022/celebrating-claudio-kano-6753651837109785-l.webp);
+	background-image: url(https://www.google.com/logos/doodles/2022/celebrating-claudio-kano-6753651837109785-l.webp);
 }
 ```
 >[!warning] Atenção
@@ -197,7 +197,7 @@ body {
 Assim podem criar background incríveis com as misturar possíveis, podendo misturar ate o funcionamento do scroll e outras propriedades.
 
 ## Gradiente
-Para aplicarmos um efeito gradiente no nosso fundo do elemento, ou seja, no background, podemos utilizar as seguintes funções que no fim resultaram na criação de imagens.
+Para aplicarmos um efeito gradiente no nosso fundo do elemento, ou seja, no background, podemos utilizar as seguintes funções que no fim ==resultaram na criação de imagens.==
 - `linear-gradient()` - Gradiente comum criando uma variação de cores de uma lada para o outro
 - `radial-gradient()` - Gradiente em forma de circulo se iniciando do meio
 ```css

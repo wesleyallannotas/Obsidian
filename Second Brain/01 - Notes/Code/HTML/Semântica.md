@@ -51,7 +51,7 @@ O elemento `<main>` é utilizado para abrigar o conteúdo principal da página, 
 ```
 
 # Article
-*Article* em tradução livre para o português artigo, é utilizado quando contem bloco de conteúdo relacionado como no exemplo acima onde todo são receitas, normalmente se repete varias vezes na página e **seu conteúdo deve ser dependendo o documento HTML**, ou seja, se retirarmos o conteúdo do elemento `<article>` e colar em outro lugar, deve ser entendido por completo, também não possui atributos específicos.
+*Article* em tradução livre para o português artigo, é utilizado quando contem bloco de conteúdo relacionado como no exemplo acima onde todo são receitas, normalmente se repete varias vezes na página e **seu conteúdo deve ser independendo o documento HTML**, ou seja, se retirarmos o conteúdo do elemento `<article>` e colar em outro lugar, deve ser entendido por completo, também não possui atributos específicos.
 
 # Aside
 O elemento `<aside>` tem como função descrever o conteúdo principal da página, por exemplo **explicações, glossários, links extras, biografia do autor, informações de perfil**, também não possui atributos específicos, normalmente é posicionado em uma barra lateral, porem não é uma regra.

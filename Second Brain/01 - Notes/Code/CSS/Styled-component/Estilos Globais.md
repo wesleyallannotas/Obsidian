@@ -42,8 +42,8 @@ Para aplicarmos basta importar o nosso estilo global no arquivo `app.tsx` e adic
 >```tsx
 >return (
 ><ThemeProvider theme={theme}>	
->	<GlobalStyle />>	
-></ThemeProvider>
+<GlobalStyle />>	
+</ThemeProvider>
 >```
 
 ```tsx

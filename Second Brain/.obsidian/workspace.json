@@ -8,18 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "737c308d4becc74f",
+            "id": "5e0f1739f3b3cbf4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Router V5.md",
+                "file": "01 - Notes/Code/CSS/Vendor Prefixes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c134feda96c18dcb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/CSS/Elementos Especificos.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Router V5.md",
+                "file": "01 - Notes/Code/CSS/Elementos Especificos.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Router V5.md"
+                "file": "01 - Notes/Code/CSS/Elementos Especificos.md"
               }
             }
           },
@@ -154,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Router V5.md",
+                "file": "01 - Notes/Code/CSS/Elementos Especificos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/React Router V5.md",
+                "file": "01 - Notes/Code/CSS/Elementos Especificos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,25 +228,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "737c308d4becc74f",
+  "active": "c134feda96c18dcb",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/React/React Router V6.md",
-    "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
+    "01 - Notes/Code/CSS/Vendor Prefixes.md",
+    "01 - Notes/Code/CSS/Elementos Especificos.md",
+    "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md",
+    "01 - Notes/Code/CSS/Transition.md",
+    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
+    "01 - Notes/Code/CSS/Posicionamento.md",
+    "01 - Notes/Code/CSS/Page Layouts.md",
+    "01 - Notes/Code/CSS/Mascaras.md",
+    "01 - Notes/Code/CSS/Introdução ao CSS.md",
+    "01 - Notes/Code/CSS/Grid.md",
+    "01 - Notes/Code/CSS/Fonte.md",
+    "01 - Notes/Code/CSS/Flexbox.md",
+    "01 - Notes/Code/CSS/Cores e Background.md",
+    "01 - Notes/Code/CSS/Box Model.md",
+    "01 - Notes/Code/CSS/At-Rules.md",
+    "01 - Notes/Code/CSS/Animation.md",
+    "01 - Notes/Code/CSS/Position.md",
+    "01 - Notes/Code/CSS/Styled-component/Temas.md",
     "01 - Notes/Code/CSS/Styled-component/Introdução ao styled-component.md",
-    "01 - Notes/Code/JavaScript/React/React Router V5.md",
-    "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md",
-    "01 - Notes/Code/JavaScript/React/Hooks.md",
-    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
-    "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf",
-    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
-    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
-    "01 - Notes/Code/HTML/Introdução ao HTML.md",
-    "01 - Notes/Code/HTML/Sumário.md",
-    "01 - Notes/Code/HTML/Tabelas.md",
-    "01 - Notes/Code/HTML/Semântica.md",
-    "01 - Notes/Code/HTML/Representando Código.md",
+    "01 - Notes/Code/CSS/Styled-component/Estilos Globais.md",
+    "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
+    "01 - Notes/Code/CSS/Styled-component/Animações.md",
+    "01 - Notes/Code/CSS/Bootstrap/Responsividade.md",
+    "01 - Notes/Code/CSS/Bootstrap/Introdução ao Bootstrap.md",
+    "01 - Notes/Code/CSS/Bootstrap/Elementos e Configurações.md",
     "01 - Notes/Code/HTML/Medias.md",
-    "01 - Notes/Code/HTML/Listas Simples.md",
-    "01 - Notes/Code/HTML/Lista de Descrição.md"
+    "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
   ]
 }
