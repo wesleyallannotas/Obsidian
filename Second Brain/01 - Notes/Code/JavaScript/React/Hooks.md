@@ -282,6 +282,13 @@ const StopWatch = () => {
 
 [Utilizando as refs no React de forma avançada | Code/Drops #52 - YouTube](https://www.youtube.com/watch?v=lA8o3kUl1TA) (19min)
 
+# useContext
+Através do _hook_ `useContext`, conseguimos acessar um contexto basicamente passando o mesmo como parâmetro.
+
+```tsx
+const context = useContext(UserContext);
+```
+
 # Hooks Customizados
 Conhecimento extremamente importante para desenvolvimento de aplicações Web com [[Introdução ao React|React]] é saber construir _custom hooks_, utilizando de nossa logica.
 Normalmente armazenamos os _hooks_ desenvolvidos dentro de `src/hooks`

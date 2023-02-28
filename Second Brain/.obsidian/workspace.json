@@ -4,35 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "c9cc09f0c3aedfe3",
+        "id": "393cff2aed9a612f",
         "type": "tabs",
         "children": [
           {
-            "id": "5e0f1739f3b3cbf4",
+            "id": "d61611548acf76d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/Vendor Prefixes.md",
+                "file": "01 - Notes/Code/JavaScript/React/Context API.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c134feda96c18dcb",
+            "id": "1981c7c87f9eb774",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/Elementos Especificos.md",
+                "file": "01 - Notes/Code/JavaScript/React/Hooks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,7 +114,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Elementos Especificos.md",
+                "file": "01 - Notes/Code/JavaScript/React/Context API.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -157,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Elementos Especificos.md"
+                "file": "01 - Notes/Code/JavaScript/React/Context API.md"
               }
             }
           },
@@ -167,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Elementos Especificos.md",
+                "file": "01 - Notes/Code/JavaScript/React/Context API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Elementos Especificos.md",
+                "file": "01 - Notes/Code/JavaScript/React/Context API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,8 +227,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c134feda96c18dcb",
+  "active": "d61611548acf76d5",
   "lastOpenFiles": [
+    "01 - Notes/Code/JavaScript/React/Hooks.md",
+    "01 - Notes/Code/JavaScript/React/Componentes.md",
+    "01 - Notes/Code/JavaScript/React/Context API.md",
+    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
+    "01 - Notes/Code/JavaScript/Node/Express/Middleware.md",
+    "01 - Notes/Code/JavaScript/Node/Express/Introdução ao Express.md",
+    "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md",
+    "01 - Notes/Code/JavaScript/React/Consumindo API.md",
+    "Images/Desenho_React_ContextAPI_ComponentesEspecificos.md",
+    "Images/Desenho_React_ContextAPI.md",
+    "01 - Notes/Code/JavaScript/React/Atualizando Dados.md",
+    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
+    "01 - Notes/Code/JavaScript/React/React Router V6.md",
+    "01 - Notes/Code/JavaScript/React/Tratamento de Erros.md",
+    "Sem título.md",
+    "01 - Notes/Code/CSS/Cores e Background.md",
+    "01 - Notes/Code/CSS/Box Model.md",
+    "01 - Notes/Code/CSS/At-Rules.md",
+    "01 - Notes/Code/CSS/Animation.md",
     "01 - Notes/Code/CSS/Vendor Prefixes.md",
     "01 - Notes/Code/CSS/Elementos Especificos.md",
     "01 - Notes/Code/CSS/Valores e Unidades de Medidas.md",
@@ -237,25 +255,6 @@
     "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
     "01 - Notes/Code/CSS/Posicionamento.md",
     "01 - Notes/Code/CSS/Page Layouts.md",
-    "01 - Notes/Code/CSS/Mascaras.md",
-    "01 - Notes/Code/CSS/Introdução ao CSS.md",
-    "01 - Notes/Code/CSS/Grid.md",
-    "01 - Notes/Code/CSS/Fonte.md",
-    "01 - Notes/Code/CSS/Flexbox.md",
-    "01 - Notes/Code/CSS/Cores e Background.md",
-    "01 - Notes/Code/CSS/Box Model.md",
-    "01 - Notes/Code/CSS/At-Rules.md",
-    "01 - Notes/Code/CSS/Animation.md",
-    "01 - Notes/Code/CSS/Position.md",
-    "01 - Notes/Code/CSS/Styled-component/Temas.md",
-    "01 - Notes/Code/CSS/Styled-component/Introdução ao styled-component.md",
-    "01 - Notes/Code/CSS/Styled-component/Estilos Globais.md",
-    "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
-    "01 - Notes/Code/CSS/Styled-component/Animações.md",
-    "01 - Notes/Code/CSS/Bootstrap/Responsividade.md",
-    "01 - Notes/Code/CSS/Bootstrap/Introdução ao Bootstrap.md",
-    "01 - Notes/Code/CSS/Bootstrap/Elementos e Configurações.md",
-    "01 - Notes/Code/HTML/Medias.md",
     "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
   ]
 }
