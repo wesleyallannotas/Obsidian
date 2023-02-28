@@ -139,7 +139,7 @@ sayMyName()
 console.log("Após a função com erro")
 ```
 
-![[throw_sem_catch.png|]]
+![[throw_sem_catch.png]]
 
 Utilizando corretamente e aproveitando da boa pratica o erro será capturado pelo `try...catch` podendo ser tratado ou utilizado como desejarmos.
 
