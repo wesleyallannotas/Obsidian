@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "393cff2aed9a612f",
+        "id": "5ad1d2a48e536740",
         "type": "tabs",
         "children": [
           {
-            "id": "ad4f1976d1bb636a",
+            "id": "7242949290fb5b32",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/CSS Modules.md",
+                "file": "01 - Notes/Code/JavaScript/React/Context API.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d8fd850fc2708228",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/JavaScript/React/Hooks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/CSS Modules.md",
+                "file": "01 - Notes/Code/JavaScript/React/Hooks.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/CSS Modules.md"
+                "file": "01 - Notes/Code/JavaScript/React/Hooks.md"
               }
             }
           },
@@ -154,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/CSS Modules.md",
+                "file": "01 - Notes/Code/JavaScript/React/Hooks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/CSS Modules.md",
+                "file": "01 - Notes/Code/JavaScript/React/Hooks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,25 +228,26 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ad4f1976d1bb636a",
+  "active": "d8fd850fc2708228",
   "lastOpenFiles": [
-    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
+    "01 - Notes/Code/JavaScript/React/Context API.md",
+    "Images/Desenho_React_ContextAPI.md",
+    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
     "01 - Notes/Code/CSS/CSS Modules.md",
+    "01 - Notes/Code/Banco de Dados/Introdução Banco de Dados.md",
+    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
     "01 - Notes/Code/JavaScript/React/JSX e TSX.md",
     "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
     "01 - Notes/Code/JavaScript/React/Hooks.md",
-    "01 - Notes/Code/JavaScript/React/Context API.md",
     "01 - Notes/Code/JavaScript/React/Consumindo API.md",
     "01 - Notes/Code/JavaScript/React/Componentes.md",
     "01 - Notes/Code/JavaScript/React/Atualizando Dados.md",
     "01 - Notes/Code/CSS/Styled-component/Estilos Globais.md",
-    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
     "04 - Kindle HighLights/O poder do hábito.md",
     "01 - Notes/Code/JavaScript/Node/Express/Middleware.md",
     "01 - Notes/Code/JavaScript/Node/Express/Introdução ao Express.md",
     "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md",
     "Images/Desenho_React_ContextAPI_ComponentesEspecificos.md",
-    "Images/Desenho_React_ContextAPI.md",
     "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
     "01 - Notes/Code/JavaScript/React/React Router V6.md",
     "01 - Notes/Code/JavaScript/React/Tratamento de Erros.md",
@@ -242,7 +256,6 @@
     "01 - Notes/Code/CSS/Box Model.md",
     "01 - Notes/Code/CSS/At-Rules.md",
     "01 - Notes/Code/CSS/Animation.md",
-    "01 - Notes/Code/CSS/Vendor Prefixes.md",
     "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
   ]
 }

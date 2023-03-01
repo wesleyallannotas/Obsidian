@@ -64,6 +64,54 @@ const UserProvider = ({ childre }: UserProviderProps) => {
 
 Basicamente podemos concluir que um ==contexto nada mais é do que tornar publico para todos os seus filhos o que desejarmos==, seja estados, funções, entre outros.
 
+## Adicionando Funções
+É muito comum disponibilizarmos através de contexto funções que possam executar tarefas especificas, como por exemplo alterar um valor de um estado. Uma pratica muito interessante é criar uma função que recebe como parâmetro o valor e jogo o mesmo para o estado, assim podendo implementar no corpo da função, regras de negócio.
+
+```tsx
+interface IUserContext {
+	name: string;
+	updateUsername(name: string): void;
+}
+
+const UserContext = createContext<IUserContext | undefined>(undefined);
+
+export const App = () => {
+	const [ user, setUser ] = useState();
+	
+	function updateUserName(name: string) {
+		if (name === `João`) {
+			setUser('Proibido!');
+			return;
+		}
+		setUser({
+			name: name;
+		});
+	}
+	
+	return (
+		<UserContext.Provider value={ {...user, updateUsername} }>
+			 <App />
+		</UserContext.Provider>	
+	)
+}
+```
+
+Assim nosso contexto contem todas as propriedades de `user` que é um estado **(e que possui a estrutura igual uma parte da estrutura da interface do contexto)**, e possui a função que utilizamos para atualizar o valor do `user` que passa por uma "Validação".
+
+>[!attention] Porque apenas o nome da função
+>Podemos perceber que foi passado um objeto na propriedade `value` contendo a desestruturação no estado `user` que cobre metade da estrutura da interface do contexto, e a [[Funções#Referencia de Função|referencia de uma função]], podemos notar **que não foi necessário** passar o nome da propriedade que conterá a função, pois, ambas possuem o mesmo nome, assim possibilitando a omissão do mesmo.
+>```tsx
+>{ ... }
+><UserContext.Provider value={ { ...user, updateUsername: updateUsername } }>
+>{ ... }
+>```
+>Caso possuisem nomes diferentes séria necessário informar
+>```tsx
+>{ ... }
+><UserContext.Provider value={ { ..user, updateUsername : teste } }>
+>{ ... }
+>```
+
 # 🪝Consumindo
 Podemos consumir nosso contexto através de um [[Hooks|hook]] do _React_, sendo ele o [[Hooks#useContext|useContext]], onde de forma inteligente podemos eliminar a necessidade de importação do contexto onde o mesmo será consumdo, criando um [[Hooks#Hooks Customizados|hook customizado]] dentro do nosso contexto e o exportando. (Pois dentro do nosso contexto já tem o contexto, ou seja, elimina a necessidade de importação do contexto e do `useContext`, onde será usado, basta importar apenas o _hook_)
 

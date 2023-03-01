@@ -15,6 +15,9 @@ Podemos adicionar CSS nativo na nossa aplicação _[[Introdução ao React|React
 # 🏗️Criando
 Por conversão são nomeados da seguinte forma, `Componente.module.css`, e são criados dentro da pasta do componentes, basicamente escreveremos CSS comum dentro do arquivo.
 
+>[!fail] Não pode
+>Não pode criar classes com traço `-`, utilizar camalCase ou underline.
+
 ```css
 /* Login.module.css */
 .container {
@@ -26,7 +29,7 @@ Por conversão são nomeados da seguinte forma, `Componente.module.css`, e são 
 { ... }
 ```
 
-# Utilizando
+# ✨Utilizando
 
 Para utilizarmos nosso _CSS Module_ basta importar o arquivo dentro do nosso componentes _[[Introdução ao React|React]]_ e utiliza-lo como um objeto, com suas propriedades sendo as classes CSS.
 
