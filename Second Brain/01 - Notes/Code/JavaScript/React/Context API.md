@@ -112,8 +112,8 @@ Assim nosso contexto contem todas as propriedades de `user` que é um estado **(
 >{ ... }
 >```
 
-# 🪝Consumindo
-Podemos consumir nosso contexto através de um [[Hooks|hook]] do _React_, sendo ele o [[Hooks#useContext|useContext]], onde de forma inteligente podemos eliminar a necessidade de importação do contexto onde o mesmo será consumdo, criando um [[Hooks#Hooks Customizados|hook customizado]] dentro do nosso contexto e o exportando. (Pois dentro do nosso contexto já tem o contexto, ou seja, elimina a necessidade de importação do contexto e do `useContext`, onde será usado, basta importar apenas o _hook_)
+# 📨 Consumindo
+Podemos consumir nosso contexto através de um [[Hooks|hook]] do _React_, sendo ele o [[Hooks#useContext|useContext]], onde de forma inteligente podemos eliminar a necessidade de importação do contexto em todo componente onde o mesmo será consumido, criando um [[Hooks#Hooks Customizados|hook customizado]] dentro do nosso contexto e o exportando. (Pois dentro do nosso contexto já tem o contexto, ou seja, elimina a necessidade de importação do contexto e do `useContext`, onde será usado, basta importar apenas o _hook_)
 
 ```tsx
 export const useUser = () => {
@@ -128,3 +128,41 @@ export const useUser = () => {
 ```
 
 Assim abstraindo através de um _hook_, onde basicamente onde iremos consumir nosso contexto, basta chamar o _hook_ que desenvolvemos, tudo isso sendo possível através do isolamento do nosso contexto.
+
+# 🪝Adicionando Reducer
+O [[Hooks|hook]] [[Hooks#🪝useReducer|useReducer]] e amplamente utilizado em conjunto com contexto, pois, prove um fluxo de atualização de estados muito mais dinâmico facilitando a implementação de estados mais complexos, eliminando a necessidade de criar diversas funções para o mesmo, trazendo mais performance por consequência. Basicamente desenvolveremos um [[Hooks#Reducer|reducer]] que possuirá toda logica para atualização dinâmica, onde nosso contexto possuirá o estado do contexto e um _dispatch_ para atualização do mesmo.
+Basicamente nosso contexto possuirá um estado e uma função _dispatch_, onde os mesmo serão preenchidos no `value` do _Provider_, através do resultado do uso do _hook_ _useReducer_.
+
+```tsx
+import { userReducer, initialState, ReducerState, ReducerAction } from './context';
+
+interface IUserContext {
+  state: ReducerState;
+  dispatch(action: ReducerAction): void;
+}
+
+type UserContextProps = {
+  children: React.ReactNode;
+};
+  
+const UserContext = createContext<IUserContext | undefined>(undefined);
+  
+export const UserProvider = ({ children }: UserContextProps) => {
+  const [state, dispatch] = useReducer(userReducer, initialState);
+  return (
+    <UserContext.Provider value={ { state, dispatch } }>
+      {children}
+    </UserContext.Provider>
+  );
+};
+```
+
+>[!tip] Estado Inicial
+>Uma  ideia muito utilizada é criar dentro do próprio arquivo que contendo o código do _[[Hooks#Reducer|reducer]]_ um  _initialState_, ou seja, um estado inicial, para passarmos quando utilizarmos o _[[Hooks|hook]]_ _[[Hooks#🪝useReducer|userReducer]]_.
+>```ts
+>export const initialState: ReducerState = {
+>	name: '',
+>	id: '',
+>	counter: 0,
+>}
+>```
