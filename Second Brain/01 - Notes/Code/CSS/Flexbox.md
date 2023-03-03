@@ -39,20 +39,14 @@ Ao adicionar o valor `flex` ao `display` de um elemento, o tornamos um *Flex con
 - [[#Espaço Entre os Elementos]]
 
 ## Direção dos Itens
-O *Flex* possui uma direção sendo ela horizontal ou vertical, que temos a liberdade de trocar a nossa vontade através da propriedade [[#`flex-direction`|flex-direction]].
-
-## flex-direction
-Através da propriedade `flex-direction` podemos alterar a direção dos elementos, por padrão é em linha, ou seja, a propriedade tem o valor `row` atribuido ([Doc)](https://developer.mozilla.org/pt-BR/docs/Web/CSS/flex-direction)), podemos utilizar os seguintes valores:
+Através da propriedade `flex-direction` podemos alterar a direção dos elementos, por padrão é em linha, ou seja, a propriedade tem o valor `row` atribuído ([Doc)](https://developer.mozilla.org/pt-BR/docs/Web/CSS/flex-direction)), podemos utilizar os seguintes valores:
 - `row` - Em linha, se posicionando um ao lado do outro
 - `column` - Em coluna, se posicionando um abaixo do outro
 - `row-reverse` - Em linha e inverte a ordem dos itens e direção do eixo trocando o `start` pelo `end`, ou seja o final da linha se torna  `start`, se posicionando um ao lado do outro
 - `column-reverse` - Em coluna e inverte a ordem dos itens e a direção do eixo trocando o `start` pelo `end`, ou seja o final da coluna se torna , se posicionando um abaixo do outro
 
 ## Multilinhas
-O *Flex* possui a possibilidade de usar multilinha ==criando praticamente outros eixos respeitando a direção do eixo principal==, como se fosse um novo *Flex container* através do `flex-wrap`
-
-### flex-warp
-Através da propriedade `flex-warp` podemos possibilitar que "Quebre a linha" quando for necessário. Por padrão as dimensões dos *Flex itens* é totalmente flexível não ocorrendo nunca essa "Quebra", quando atribuímos o valor `warp` para a propriedade `flex-warp`, ele "Quebra" quando não for possível manter todos no mesmo eixo
+O *Flex* possui a possibilidade de usar multilinha ==criando praticamente outros eixos respeitando a direção do eixo principal==, como se fosse um novo *Flex container* através do `flex-wrap` podemos possibilitar que "Quebre a linha" quando for necessário. Por padrão as dimensões dos *Flex itens* é totalmente flexível não ocorrendo nunca essa "Quebra", quando atribuímos o valor `warp` para a propriedade `flex-warp`, ele "Quebra" quando não for possível manter todos no mesmo eixo
 - `wrap-reverse` - Inverso, "Quebrando" para cima caso em linha, para esquerda caso em coluna
 - `wrap` - Normal, "Quebrando" para baixo caso em linha, para direita caso em coluna
 
@@ -71,8 +65,8 @@ No exemplo acima os elementos *flex item* desse HTML imaginário são todos `<di
 >[!tip] Dica mantendo responsivo
 Podemos utilizar uma melhor forma para atribuir dimensões para manter flexível até certo ponto e quando atingir um mínimo quebrar.
 
-## flex-flow
-A propriedade `flex-flow` é um [[Introdução ao CSS#Shorthand|shorthand]] que possibilita atribuir valor para as propriedades [[#`flex-direction`|flex-direction]] e [[#`flex-warp`|flex-wrap]], podemos utilizar para atribuir apenas em uma ou em ambas, quando enviado apenas um valor ele consegui identificar para qual propriedade é o valor
+## Flex Flow
+A propriedade `flex-flow` é um [[Introdução ao CSS#Shorthand|shorthand]] que possibilita atribuir valor para as propriedades [[#`flex-direction`|flex-direction]] e [[#`flex-warp`|flex-wrap]], podemos utilizar para atribuir apenas em uma ou em ambas, quando enviado apenas um valor ele consegui identificar para qual propriedade é o valor.
 
 ```css
 .container {
@@ -104,7 +98,7 @@ Através
 
 parece que move todo o bloco de conteúdo.
 
-### align-items
+### Align Items
 Desrespeito a como ira alinhar os elementos internos do *Flex container* em relação ao eixo cruzado (cross). A propriedade CSS **`align-items`** ==estabelece o valor [[#`align-self`|align-self]] em todos filhos diretos como um grupo==. A propriedade `align-self` estabelece o alinhamento de um certo item dentro do bloco que o contém. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-items))
 Alguns valores aceitos;
 - `stretch` - Valor padrão, esticar, ou seja, se estica no eixo cruzado
@@ -112,6 +106,7 @@ Alguns valores aceitos;
 - `flex-start` - Inicio do eixo cruzado
 - `flex-end` - Final do eixo cruzado
 - Entre outros...
+
 ### Gap
 Assim como no [[Grid#Gap|grid]] podemos definir espaçamento entre os elementos através da propriedade `gap`, sendo a mesma um [[Introdução ao CSS#Shorthand|shorthand]] das seguintes propriedades.
 - `row-gap` - Distancia dos elementos em linha.
@@ -125,15 +120,15 @@ Assim como no [[Grid#Gap|grid]] podemos definir espaçamento entre os elementos 
 ```
 
 # Propriedades do Flex Item
-Ao adicionar o valor `flex` ao `display` de um elemento, o tornamos um *Flex container*, por consequência seus filhos se tornam *Flex item* onde temos acessos a  algumas propriedades para eles
+Ao adicionar o valor `flex` ao `display` de um elemento, o tornamos um *Flex container*, por consequência seus filhos se tornam *Flex item* onde temos acessos a algumas propriedades para eles
 - [[#`flex-basis`|Flex-basis]] - Mudar o tamanho do item
 - [[#`flex-grow`|Flex-grow]] - Se adapta crescendo automaticamente
 - [[#`flex-shrink`|Flex-shrink]] - Encurtar, comprimir, dependendo do tamanho da caixa
 - [[#`flex`|Flex]] - [[Introdução ao CSS#Shorthand|Shorthand]] para [[#`flex-basis`|flex-basis]], [[#`flex-grow`|flex-grow]] e [[#`flex-shrink`|flex-shrink]] 
 - [[#`order`|Order]] - Controla a ordem do *flex item* dentro do *flex container*
-- [[#`align-self`|Align-Self]]
+- [[#`align-self`|Align-Self]] - Alinha
 
-## flex-basis
+## Flex Basis
 Controla a largura (`width`) quando o eixo principal for em linha ou controla a altura (`height`) quando o eixo principal for em coluna dos *flex itens*.
 - `auto` - Valor padrão.
 - `0` - Tamanho do conteúdo, sendo diferente de `auto` não se altera com `width`
@@ -154,11 +149,11 @@ Controla a largura (`width`) quando o eixo principal for em linha ou controla a 
 
 Quando o `flex-basis` possui um valor diferente de `auto`, ==perdemos a possibilidade de alterar a largura== pela propriedade `width`, tornando ele o responsável por controlar essa dimensões.
 
-## flex-grow
+## Flex Grow
 A propriedade `flex-grow` que esta disponível para os *flex itens*, possibilita ==controlar o crescimento do item dentro do container em relação aos espaços vazios==, o valor padrão é `0` assim não "Crescendo", o valor que passamos e como se fosse "Pega N frações do espaço disponível"
 
 >[!attention] Atenção ao eixo principal
->O eixo principal definido por [[#`flex-direction`|flex-direction]] determina qual dimensão [[#`flex-grow`|flex-grow]] ira controlar
+>O eixo principal definido por [[#Alinhamento|flex-direction]] determina qual dimensão [[#Flex Grow|flex-grow]] ira controlar
 
 ```css
 .container {
@@ -175,13 +170,13 @@ A propriedade `flex-grow` que esta disponível para os *flex itens*, possibilita
 
 No caso acima o *flex item* `.item:nth-child(1)` ocupara duas frações, ou seja, duas vezes maior que o filho 2 e 3.
 
-## flex-shrink
+## Flex Shrink
 A propriedade `flex-shrink` que esta disponível para os *flex itens*, possibilita ==controlar o encolhimento do item dentro do container==, por padrão todos os *flex item* possui a propriedade `flex-shrik` com valor `1`, assim encolhendo para caber na caixa. ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink))
 - `0` - Atribuindo o valor `0`, ele não encolhe mais, podendo ate empurrar os outros para fora caso não caiba
 - Valores acima vai encolhendo mais dando mais espaço para os valores mais baixos, no caso se adicionar valor 2 a um *flex item* e 1 em todos os outros, dependendo do `flex-basis` se existir ou da dimensão do eixo ele fica com o tamanho apenas do conteúdo
 
 >[!attention] Atenção ao eixo principal
->O eixo principal definido por [[#`flex-direction`|flex-direction]] determina qual dimensão [[#`flex-grow`|flex-grow]] ira controlar
+>O eixo principal definido por [[#Flex Direction|flex-direction]] determina qual dimensão [[#Flex Grow`|flex-grow]] ira controlar
 
 ```css
 .container {

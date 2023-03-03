@@ -191,3 +191,5 @@ Basicamente o `content` controla em relação ao lado de fora do elemento, ou se
 ## Align Content
 
 parece que controla o espaçamento entre os elementos  no eixo vertical, por padrão tem a maior distancia possivel.
+
+## Align Items

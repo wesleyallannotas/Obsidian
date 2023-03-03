@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Grid.md",
+                "file": "01 - Notes/Code/CSS/Flexbox.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -156,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Grid.md"
+                "file": "01 - Notes/Code/CSS/Flexbox.md"
               }
             }
           },
@@ -166,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Grid.md",
+                "file": "01 - Notes/Code/CSS/Flexbox.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Grid.md",
+                "file": "01 - Notes/Code/CSS/Flexbox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -227,10 +228,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "bb5d9f1a3299ea63",
+  "active": "94374e4e848021a5",
   "lastOpenFiles": [
-    "01 - Notes/Code/CSS/Flexbox.md",
     "01 - Notes/Code/CSS/Grid.md",
+    "01 - Notes/Code/CSS/Flexbox.md",
     "Images/Desenho_CSS_GridXFlexbox_ContentItems.md",
     "Images/Desenho_CSS_GridXFlexbox_JustifyContent.md",
     "01 - Notes/Code/JavaScript/React/React Router V6.md",
