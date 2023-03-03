@@ -296,7 +296,7 @@ Através do `useReducer` conseguimos construir um fluxo de atualização de esta
 const [state, dispatch] = useReducer(userReducer, { name: '', id: '' } );
 ```
 
-Como  retorno temos o estado e uma função _dispatch_ para alterar o estado, de forma simplificada _action_ do _Reducer_ fira parâmetro para _dispatch_ que vai implementar a lógica do Reducar, utilizando o estado atual.
+Como  retorno temos o estado e uma função _dispatch_ para alterar o estado, de forma simplificada _action_ do _Reducer_ se torna parâmetro para _dispatch_ que vai implementar a lógica do Reducar, utilizando o estado atual.
 
 ## Reducer
 Basicamente _reducer_ é uma função, que recebe um estado e uma _action_, onde baseado na _action_ passado, recebera um estado diferente, facilitando a expansão é aumentando a dinamicidade.

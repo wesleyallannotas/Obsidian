@@ -22,16 +22,17 @@ Podemos possuir contexto para componentes específicos, por exemplo.
 Assim quando o contexto atualizar, com componentes ligados a ele serão re-renderizados automaticamente.
 
 # 🏗️ Criando Contexto
-Para desenvolver o nosso contexto iniciamos criando um diretório com o nome `context` onde no mesmo armazenaremos os contextos da nossa aplicação, onde por conversão deve ser nomeado da seguinte forma `NomeContext`, por exemplo um contexto de usuário `UserContext`.
+Para desenvolver o nosso contexto iniciamos criando um diretório com o nome `context` onde no mesmo armazenaremos os contextos da nossa aplicação, onde por convenção deve ser nomeado da seguinte forma `NomeContext`, por exemplo um contexto de usuário `UserContext`.
+Também é possível criar um diretório com o `index` que será exportado, ideia muito utilizado quando queremos separar em mais arquivos, por exemplo criar um arquivo para o _Reducer_
 Para iniciar o desenvolvimento do contexto é necessário importar `craeteContext` do _react_.
 
 >[!info] DefaultValue
->Na maioria das vezes contextos tem seu valor populado na medida da execução da aplicação, onde por consequência, normalmente possui deu `DefaultValue` sendo `undefined`.
+>Na maioria das vezes contextos tem seu valor populado na medida da execução da aplicação, onde por consequência, normalmente possui seu `DefaultValue` sendo `undefined`.
 >```ts
 >const UserContext = createContext(undefined);
 >```
 
-Basicamente dentro do contexto criado teremos acesso a propriedade `Provider`, onde tudo que estiver dentro deste componente terá acesso ao contexto.
+Basicamente dentro do contexto criado teremos acesso a "propriedade" `Provider` que é um componente, onde tudo que estiver dentro deste componente terá acesso ao contexto.
 Dentro da propriedade `value` passamos os dados do contexto.
 
 ```tsx

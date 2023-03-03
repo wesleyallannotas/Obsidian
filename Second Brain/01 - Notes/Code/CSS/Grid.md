@@ -12,17 +12,16 @@ description: Criando layout para página utilizando grid
 # Introdução
 Através da propriedade CSS `display` podemos atribuir o valor `grid` assim podendo utilizar todos as propriedades do Grid para poder construir nosso layout, parte da ideia de criar um Grid onde podemos posicionar e definir tamanho a partir do mesmo **(Posicionamento dentro da caixa)**, pode ser flexível ou não. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/grid))
 
-# Centralizando uma div
+>[!tip] Centralizando uma div
 Utilziando `grid` conseguimos tal feito facilmente através da propriedade `place-items`
+>```css
+>body {
+>	display: grid;
+>	place-items: center;
+>}
+>```
 
-```css
-body {
-	display: grid;
-	place-items: center;
-}
-```
-
-# `grid-template-areas`
+# Definindo Áreas
 Através da propriedade `grid-template-areas` podemos definir o funcionamento do nosso grid de forma extremamente simples atribuindo nomes de nossa escolha ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas)), por exemplo
 
 ```css
@@ -52,8 +51,23 @@ footer {
 }
 ```
 
-# `grid-template-rows`
-Podemos definir o tamanho das linhas, ou seja, alterar a altura ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/grid-template-rows)), por exemplo:
+# Definindo Inicio e Fim
+Outro forma de posicionar os blocos no grid é definir manualmente posição de inicio e fim dentro das colunas (_column_) e linhas (_row_), se iniciando de 1 (Ao contrario de _arrays_ que inicia do 0).
+
+```css
+.container {
+	display: grid;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-row: 1/2; /* start/end */
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-column: 1/3; /* start/end */
+}
+```
+
+# Tamanho das Linhas
+Através da propriedade `grid-template-rows` podemos definir o tamanho das linhas, ou seja, alterar a altura ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/grid-template-rows)), por exemplo:
 
 ```css
 body {
@@ -66,8 +80,8 @@ body {
 }
 ```
 
-# `grid-template-columns`
-Podemos definir o tamanho das colunas, ou seja, alterar a largura ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)), por exemplo:
+# Tamanho das Colunas
+Através da propriedade `grid-template-columns` podemos definir o tamanho das colunas, ou seja, alterar a largura ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)), por exemplo:
 
 ```css
 body {
@@ -81,8 +95,33 @@ body {
 }
 ```
 
-# repeat
-Função CSS que podemos utilizar para encurtar nossas declarações, podendo haver mais de uma em apenas uma declaração.
+# Fração
+Através do `fr` podemos definir a quantidade de frações do espaço disponível que tal elemento ira ocupar, por exemplo.
+
+```css
+.container {
+	display: grid;
+	grid-template-rows: 1fr 2fr 1fr;
+}
+```
+
+O primeiro elemento ira ocupar uma fração, o segundo elemento duas frações e o terceiro uma.
+
+# Tamanho Máximo do Conteúdo
+Através do valor `max-content` podemos definir que os elementos terão o tamanho máximo do conteúdo.
+
+>[!example] Diferença com fração
+>Fração é em relação ao tamanho total disponível, `max-content` é relacionado ao tamanho do conteúdo.
+
+```css
+.container {
+	display: grid;
+	grid-template-rows: max-content max-content max-content;
+}
+```
+
+# Eliminando Repetições
+Através do `repeat`. função  CSS que podemos utilizar para encurtar nossas declarações, evitando reescrita e facilitando por consequência a manutenção, podendo haver mais de uma em apenas uma declaração.
 
 ```css
 #calculator {
@@ -94,12 +133,47 @@ Função CSS que podemos utilizar para encurtar nossas declarações, podendo ha
 Ou seja repetira `1fr` quatro vezes.
 
 # Gap
-Assim como no [[Flexbox#`gap`|flexbox]] podemos definir espaçamento entre os componentes, apenas entre, no elemento inicial e no final não tem espaçamento.
+Assim como no [[Flexbox#gap|flexbox]] podemos definir espaçamento entre os elementos através da propriedade `gap`, sendo a mesma um [[Introdução ao CSS#Shorthand|shorthand]] das seguintes propriedades.
+- `row-gap` - Distancia dos elementos em linha.
+- `column-gap` - Distantes dos elementos em colunas.
 
 ```css
 #calculator {
 	display: grid;
 	grid-template-columns: repeat(4, 1f);
-	g
+	gap: 2rem;
+	column-gap: 2rem;
+	row-gap: 2rem;
 }
 ```
+
+# Alinhando Conteúdo
+Existem diversas propriedades que podemos utilizar para poder acomodar da melhor forma o conteúdo do nosso elemento com _display_ grid e  o conteúdo dos filhos do seu conteúdo.
+
+## Eixos
+Podemos definir que em relação ao _display_ grid
+- `justify` - Horizontal
+- `align` - Vertical
+## Justify Content
+Através da propriedade `justify-content` que tem seu uso no [[Grid]] e no [[Flexbox]] (Porem com impactos diferentes), tem como objetivo ==alinhar e distribuir os elementos internos do grid== em relação ao eixo principal, alguns valores aceitos são:
+- `start` - Valor Padrão , inicio do eixo principal
+- `end` - Final do eixo principal
+- `center` - Centraliza no eixo principal
+- `space-between` - Espaço entre os elementos, mantendo a proporção responsiva.
+- `space-around` - Espaço ao redor igual
+- `space-evenly` - Espaço por igual
+- Entre outros...
+
+>[!attention] Diferença
+>Pode trazer um resultado diferente com o grid, pois ,o grid respeita as colunas e linhas definidas, por exemplo.
+>![[Desenho_CSS_GridXFlexbox_JustifyContent]]
+
+## Justify Items
+Através da propriedade `justify-items` podemos controlar todos os [[#Justify Self]] dos nossos elementos filhos de uma só vez.
+
+## Justify Self
+Através da propriedade `justify-self` podemos controlar o comportamento do conteúdo dos elementos filhos, essa propriedade é exclusiva de elementos filhos de elementos dom display [[Flexbox]] ou [[Grid]] ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self))
+- `scretch` - (**Padrão**) Se expande, preenche o espaço em todas direções
+- `center` - Conteúdo no centro, ocupando e espaço do conteúdo exatamente.
+- `start` - Conteúdo colado no inicio (padrão esquerda), ocupando e espaço do conteúdo exatamente.
+- `start` - Conteúdo colado no final (padrão direita), ocupando e espaço do conteúdo exatamente.

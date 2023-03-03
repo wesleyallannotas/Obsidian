@@ -8,30 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7242949290fb5b32",
+            "id": "bb5d9f1a3299ea63",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Context API.md",
+                "file": "01 - Notes/Code/CSS/Grid.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d8fd850fc2708228",
+            "id": "94374e4e848021a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Hooks.md",
+                "file": "01 - Notes/Code/CSS/Flexbox.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Context API.md",
+                "file": "01 - Notes/Code/CSS/Flexbox.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -156,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Context API.md"
+                "file": "01 - Notes/Code/CSS/Flexbox.md"
               }
             }
           },
@@ -166,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Context API.md",
+                "file": "01 - Notes/Code/CSS/Flexbox.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Context API.md",
+                "file": "01 - Notes/Code/CSS/Flexbox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,10 +217,10 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:Criar novo canvas": false,
       "obsidian-kindle-plugin:Sync your Kindle highlights": false,
       "switcher:Abrir a troca rápida": false,
       "graph:Abrir visualização em gráfico": false,
-      "canvas:Create new canvas": false,
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
@@ -227,10 +228,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7242949290fb5b32",
+  "active": "94374e4e848021a5",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/React/Hooks.md",
+    "01 - Notes/Code/CSS/Grid.md",
+    "01 - Notes/Code/CSS/Flexbox.md",
+    "Images/Desenho_CSS_GridXFlexbox_JustifyContent.md",
+    "01 - Notes/Code/JavaScript/React/React Router V6.md",
+    "01 - Notes/Code/JavaScript/React/React Router V5.md",
     "01 - Notes/Code/JavaScript/React/Context API.md",
+    "01 - Notes/Code/JavaScript/React/Hooks.md",
     "Images/Desenho_React_ContextAPI.md",
     "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
     "01 - Notes/Code/CSS/CSS Modules.md",
@@ -248,13 +254,8 @@
     "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md",
     "Images/Desenho_React_ContextAPI_ComponentesEspecificos.md",
     "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
-    "01 - Notes/Code/JavaScript/React/React Router V6.md",
     "01 - Notes/Code/JavaScript/React/Tratamento de Erros.md",
     "Sem título.md",
-    "01 - Notes/Code/CSS/Cores e Background.md",
-    "01 - Notes/Code/CSS/Box Model.md",
-    "01 - Notes/Code/CSS/At-Rules.md",
-    "01 - Notes/Code/CSS/Animation.md",
     "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
   ]
 }
