@@ -171,9 +171,23 @@ Através da propriedade `justify-content` que tem seu uso no [[Grid]] e no [[Fle
 ## Justify Items
 Através da propriedade `justify-items` podemos controlar todos os [[#Justify Self]] dos nossos elementos filhos de uma só vez.
 
+>[!fail] Sobre Flexbox
+>Essa propriedade é ignorado quando usado com Flexbox.
+
 ## Justify Self
 Através da propriedade `justify-self` podemos controlar o comportamento do conteúdo dos elementos filhos, essa propriedade é exclusiva de elementos filhos de elementos dom display [[Flexbox]] ou [[Grid]] ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self))
-- `scretch` - (**Padrão**) Se expande, preenche o espaço em todas direções
+- `scretch` - Se expande, preenche o espaço em todas direções
 - `center` - Conteúdo no centro, ocupando e espaço do conteúdo exatamente.
 - `start` - Conteúdo colado no inicio (padrão esquerda), ocupando e espaço do conteúdo exatamente.
-- `start` - Conteúdo colado no final (padrão direita), ocupando e espaço do conteúdo exatamente.
+- `end` - Conteúdo colado no final (padrão direita), ocupando e espaço do conteúdo exatamente.
+
+>[!fail] Sobre Flexbox
+>Essa propriedade é ignorado quando usado com Flexbox.
+
+## Diferença Content e Items
+Basicamente o `content` controla em relação ao lado de fora do elemento, ou seja, ao _container_ do Grid, já o `items` controle em relação ao espaço interno, definido pelo `grid-template-columns`
+![[Desenho_CSS_GridXFlexbox_ContentItems]]
+
+## Align Content
+
+parece que controla o espaçamento entre os elementos  no eixo vertical, por padrão tem a maior distancia possivel.

@@ -99,8 +99,11 @@ Através da propriedade `justify-content` que tem seu uso no [[Grid]] e no [[Fle
 >Pode trazer um resultado diferente com o grid, pois ,o grid respeita as colunas e linhas definidas, por exemplo.
 >![[Desenho_CSS_GridXFlexbox_JustifyContent]]
 
-### Justify Items
-Através da propriedade `justify-items` podemos controlar todos os [[#Justify Self]] dos nossos elementos filhos de uma só vez.
+### Align Content
+Através
+
+parece que move todo o bloco de conteúdo.
+
 ### align-items
 Desrespeito a como ira alinhar os elementos internos do *Flex container* em relação ao eixo cruzado (cross). A propriedade CSS **`align-items`** ==estabelece o valor [[#`align-self`|align-self]] em todos filhos diretos como um grupo==. A propriedade `align-self` estabelece o alinhamento de um certo item dentro do bloco que o contém. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-items))
 Alguns valores aceitos;
@@ -235,14 +238,8 @@ Através da propriedade `order` podemos alterar a ordem dos *flex itens*, por pa
 }
 ```
 
-## Justify Self
-Através da propriedade `justify-self` podemos controlar o comportamento do conteúdo dos elementos filhos, essa propriedade é exclusiva de elementos filhos de elementos dom display [[Flexbox]] ou [[Grid]] ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self))
-- `scretch` - (**Padrão**) Se expande, preenche o espaço em todas direções
-- `center` - Conteúdo no centro, ocupando e espaço do conteúdo exatamente.
-- `start` - Conteúdo colado no inicio (padrão esquerda), ocupando e espaço do conteúdo exatamente.
-- `start` - Conteúdo colado no final (padrão direita), ocupando e espaço do conteúdo exatamente.
+## Align Self
 
-## align-self
 A propriedade CSS `align-self` alinha `itens-flex` da linha flex alvo ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-self))
 - `stretch`
 - `center`

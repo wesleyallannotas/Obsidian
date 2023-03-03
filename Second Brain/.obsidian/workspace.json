@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,7 +114,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md",
+                "file": "01 - Notes/Code/CSS/Grid.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -157,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md"
+                "file": "01 - Notes/Code/CSS/Grid.md"
               }
             }
           },
@@ -167,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md",
+                "file": "01 - Notes/Code/CSS/Grid.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md",
+                "file": "01 - Notes/Code/CSS/Grid.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,10 +227,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "94374e4e848021a5",
+  "active": "bb5d9f1a3299ea63",
   "lastOpenFiles": [
-    "01 - Notes/Code/CSS/Grid.md",
     "01 - Notes/Code/CSS/Flexbox.md",
+    "01 - Notes/Code/CSS/Grid.md",
+    "Images/Desenho_CSS_GridXFlexbox_ContentItems.md",
     "Images/Desenho_CSS_GridXFlexbox_JustifyContent.md",
     "01 - Notes/Code/JavaScript/React/React Router V6.md",
     "01 - Notes/Code/JavaScript/React/React Router V5.md",
@@ -255,7 +255,6 @@
     "Images/Desenho_React_ContextAPI_ComponentesEspecificos.md",
     "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
     "01 - Notes/Code/JavaScript/React/Tratamento de Erros.md",
-    "Sem título.md",
     "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
   ]
 }
