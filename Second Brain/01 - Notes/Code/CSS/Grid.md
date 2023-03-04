@@ -152,10 +152,10 @@ Existem diversas propriedades que podemos utilizar para poder acomodar da melhor
 
 ## Eixos
 Podemos definir que em relação ao _display_ grid
-- `justify` - Horizontal
-- `align` - Vertical
+- `justify` - Eixo por padrão principal no [[Flexbox]], no grid controla o Horizontal
+- `align` - Eixo cruzado por padrão no [[Flexbox]], no grid controla o Vertical
 ## Justify Content
-Através da propriedade `justify-content` que tem seu uso no [[Grid]] e no [[Flexbox]] (Porem com impactos diferentes), tem como objetivo ==alinhar e distribuir os elementos internos do grid== em relação ao eixo principal, alguns valores aceitos são:
+Através da propriedade `justify-content` que tem seu uso no [[Grid]] e no [[Flexbox]] (Porem com impactos diferentes), tem como objetivo ==alinhar e distribuir os elementos internos do grid== em relação ao [[#Eixos|eixo]] principal, alguns valores aceitos são:
 - `start` - Valor Padrão , inicio do eixo principal
 - `end` - Final do eixo principal
 - `center` - Centraliza no eixo principal
@@ -175,7 +175,7 @@ Através da propriedade `justify-items` podemos controlar todos os [[#Justify Se
 >Essa propriedade é ignorado quando usado com Flexbox.
 
 ## Justify Self
-Através da propriedade `justify-self` podemos controlar o comportamento do conteúdo dos elementos filhos, essa propriedade é exclusiva de elementos filhos de elementos dom display [[Flexbox]] ou [[Grid]] ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self))
+Através da propriedade `justify-self` podemos controlar o alinhamento no [[#Eixos|eixo]] principal do conteúdo dos elementos filhos, essa propriedade é exclusiva de elementos filhos de elementos do display  [[Grid]] ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self))
 - `scretch` - Se expande, preenche o espaço em todas direções
 - `center` - Conteúdo no centro, ocupando e espaço do conteúdo exatamente.
 - `start` - Conteúdo colado no inicio (padrão esquerda), ocupando e espaço do conteúdo exatamente.
@@ -189,7 +189,45 @@ Basicamente o `content` controla em relação ao lado de fora do elemento, ou se
 ![[Desenho_CSS_GridXFlexbox_ContentItems]]
 
 ## Align Content
-
-parece que controla o espaçamento entre os elementos  no eixo vertical, por padrão tem a maior distancia possivel.
+Através da propriedade `align-content` podemos controlar o alinhamento de todo de todo o _grid_ do nosso elemento em relação ao [[#Eixos|eixo]] cruzado, aceita valores como.
+- `start`
+- `end`
+- `center`
+- Entre outros..
 
 ## Align Items
+Através da propriedade `align-items` podemos definir um [[#Align Self]] para todos os elementos filhos do grid de uma só vez.
+
+```css
+.container {
+	display: grid;
+	align-items: center;
+}
+```
+
+## Align Self
+Através da propriedade `align-self` que é uma propriedade disponível para os filhos dos elementos com _display_ [[Grid]] ou [[Flexbox]], podemos alinhar o conteúdo em relação ao espaço disponível dentro do _grid_ (no caso de _display_ grid) que ele se encontra, caso o espaço do _grid_ for maior que o elemento, na direção do [[#Eixos|eixo]] contrario (cross).
+- `start`
+- `end`
+- `center`
+- Entre outros.
+
+## Place Content
+Através da propriedade `place-content` que é um [[Introdução ao CSS#Shorthand|shorthand]] para `justify-content` e `align-content` podemos definir valores para os mesmo com apenas uma declaração
+
+```css
+body {
+	place-content: center end; /* align-content justify-cotent */
+	place-content: center;
+}
+```
+
+## Place Items
+Através da propriedade `place-items` que é um [[Introdução ao CSS#Shorthand|shorthand]] para `justify-items` e `align-items` podemos definir valores para os mesmo com apenas uma declaração
+
+```css
+body {
+	place-items: center end; /* align-items justify-items */
+	place-items: center;
+}
+```

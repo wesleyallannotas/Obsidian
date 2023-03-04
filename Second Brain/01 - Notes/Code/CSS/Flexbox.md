@@ -20,14 +20,12 @@ Quando definimos a propriedade `display` de um elemento como `flex` temos aceso 
 
 # Terminologia
 - **Flex container** - Elemento pai, o que possui a propriedade `display` com o valor `flex`
-	- **Flex item** - Elementos filhos
+- **Flex item** - Elementos filhos
 - **Nesting** - Elemento que contem outros elementos
 - **Axis** - Em português eixo
 	- **Main** - Principal, em coluna seria o Y em linha seria o X
-		- **Start**, **End** - Inicio e final
 	- **Cross** - Cruzado, o eixo que cruza o principal
-		- **Start**, **End** - Inicio e final
-- **Flex sizing** - Flexível, Altera width/height dos itens para preenchimento dos espaços do flex container
+- **Flex sizing** - Flexível, Altera _width_/_height_ dos itens para preenchimento dos espaços do _flex container_
 
 # Propriedades do Flex Container
 Ao adicionar o valor `flex` ao `display` de um elemento, o tornamos um *Flex container*, e com isso temos acesso as propriedades do *flex container*, tendo acesso a manipulação da
@@ -81,31 +79,59 @@ O *Flex* traz propriedades para o *Flex container* que facilita  o alinhamento d
 
 ### Justify Content
 Através da propriedade `justify-content` que tem seu uso no [[Grid]] e no [[Flexbox]] (Porem com impactos diferentes), Desrespeito a como ira ==alinhar e distribuir os elementos internos== do *Flex container* em relação ao eixo principal (main) ([Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)), Alguns valores aceitos são:
-- `flex-start` - Valor Padrão , inicio do eixo principal
-- `flex-end` - Final do eixo principal
+- `start` - Valor Padrão , inicio do eixo principal
+- `end` - Final do eixo principal
 - `center` - Centraliza no eixo principal
 - `space-between` - Espaço entre os elementos, mantendo a proporção responsiva.
 - `space-around` - Espaço ao redor igual
 - `space-evenly` - Espaço por igual
 - Entre outros...
 
+>[!fail] Ignorado
+>_Flexbox_ não possui aplicação para a propriedade `justify-items` assim não causando nenhum efeito quando utilizada com o mesmo.
+
 >[!attention] Diferença
 >Pode trazer um resultado diferente com o grid, pois ,o grid respeita as colunas e linhas definidas, por exemplo.
 >![[Desenho_CSS_GridXFlexbox_JustifyContent]]
 
 ### Align Content
-Através
-
-parece que move todo o bloco de conteúdo.
+Através da propriedade `align-content` podemos controlar o alinhamento de todo o espaço para o conteúdo do _flex container_ em relação ao eixo cruzado (cross), importante salientar que ele move todo o bloco de uma vez como um todo, Por padrão o _flex_ tenta ocupar todo o espaço muitas vezes sobrando espaço para alinhar cada item individualmente ou coletivamente com [[#Align Items]], quando alinhas com _content_ ele deixa de possuir o comportamento padrão de ocupar todo o espaço, assim não sobrando espaço para alinhar os _items_, alguns valores aceitos:
+- `start` - Valor Padrão , inicio do eixo principal
+- `end` - Final do eixo principal
+- `center` - Centraliza no eixo principal
+- `space-between` - Espaço entre os elementos, mantendo a proporção responsiva.
+- `space-around` - Espaço ao redor igual 
+- `space-evenly` - Espaço por igual
+- Entre outros...
 
 ### Align Items
-Desrespeito a como ira alinhar os elementos internos do *Flex container* em relação ao eixo cruzado (cross). A propriedade CSS **`align-items`** ==estabelece o valor [[#`align-self`|align-self]] em todos filhos diretos como um grupo==. A propriedade `align-self` estabelece o alinhamento de um certo item dentro do bloco que o contém. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-items))
-Alguns valores aceitos;
+Desrespeito a como ira alinhar os elementos internos do _Flex container_, ou seja, o conteúdo do mesmo, em relação ao espaço disponível para tal _Flex item_, em relação ao eixo cruzado (cross). A propriedade `align-items` ==estabelece o valor [[#Align Self|align-self]] em todos filhos diretos como um grupo==([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-items))
+Alguns valores aceitos:
 - `stretch` - Valor padrão, esticar, ou seja, se estica no eixo cruzado
 - `center` - Centraliza no eixo cruzado
 - `flex-start` - Inicio do eixo cruzado
 - `flex-end` - Final do eixo cruzado
 - Entre outros...
+
+### Place Content
+Através da propriedade `place-content` que é um [[Introdução ao CSS#Shorthand|shorthand]] para `justify-content` e `align-content` podemos definir valores para os mesmo com apenas uma declaração
+
+```css
+body {
+	place-content: center end; /* align-content justify-cotent */
+	place-content: center;
+}
+```
+
+### Place Items
+Através da propriedade `place-items` que é um [[Introdução ao CSS#Shorthand|shorthand]] para `justify-items` e `align-items` podemos definir valores para os mesmo com apenas uma declaração
+
+```css
+body {
+	place-items: center end; /* align-items justify-items */
+	place-items: center;
+}
+```
 
 ### Gap
 Assim como no [[Grid#Gap|grid]] podemos definir espaçamento entre os elementos através da propriedade `gap`, sendo a mesma um [[Introdução ao CSS#Shorthand|shorthand]] das seguintes propriedades.
@@ -196,7 +222,7 @@ A propriedade `flex-shrink` que esta disponível para os *flex itens*, possibili
 
 Esse é o mais confuso que necessita de mais testes e leitura da documentação para entender
 
-## flex
+## Flex
 A propriedade `flex` é um [[Introdução ao CSS#Shorthand|shorthand]] para as propriedades [[#`flex-grow`|flex-grow]], [[#`flex-shrink`|flex-shrink]] e [[#`flex-basis`|flex-basis]] dos *flex item*, pode possuir 1, 2 ou 3 valores, normalmente seguinte a ordem *grow*, *shrink* e *basis*
 - 1 Valor - Quantos passamos para a propriedade [[Introdução ao CSS#Shorthand|shorthand]] `flex` apenas o valor 1 ele preenche da seguinte forma
 ```css
@@ -224,7 +250,7 @@ main section:nth-child(3) {
 }
 ```
 
-## order
+## Order
 Através da propriedade `order` podemos alterar a ordem dos *flex itens*, por padrão todos possuem valor `0`, causa alterações visuais apenas.
 
 ```css
@@ -235,7 +261,7 @@ Através da propriedade `order` podemos alterar a ordem dos *flex itens*, por pa
 
 ## Align Self
 
-A propriedade CSS `align-self` alinha `itens-flex` da linha flex alvo ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-self))
+ A propriedade `align-self` estabelece o alinhamento de um certo item dentro do bloco que o contém. ([Doc](https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-self))
 - `stretch`
 - `center`
 - `start`

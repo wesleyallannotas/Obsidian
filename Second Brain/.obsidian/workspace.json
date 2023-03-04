@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "5ad1d2a48e536740",
+        "id": "3a97af65baafcb23",
         "type": "tabs",
         "children": [
           {
-            "id": "bb5d9f1a3299ea63",
+            "id": "2b0f985f52095c85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/Grid.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "94374e4e848021a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md",
+                "file": "01 - Notes/Code/SVG/Introdução SVG.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md",
+                "file": "01 - Notes/Code/SVG/Introdução SVG.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -157,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md"
+                "file": "01 - Notes/Code/SVG/Introdução SVG.md"
               }
             }
           },
@@ -167,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md",
+                "file": "01 - Notes/Code/SVG/Introdução SVG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Flexbox.md",
+                "file": "01 - Notes/Code/SVG/Introdução SVG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,10 +215,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "94374e4e848021a5",
+  "active": "2b0f985f52095c85",
   "lastOpenFiles": [
-    "01 - Notes/Code/CSS/Grid.md",
+    "01 - Notes/Code/SVG/Introdução SVG.md",
+    "01 - Notes/Code/SVG",
     "01 - Notes/Code/CSS/Flexbox.md",
+    "01 - Notes/Code/CSS/Grid.md",
+    "01 - Notes/Code/Sem título.md",
     "Images/Desenho_CSS_GridXFlexbox_ContentItems.md",
     "Images/Desenho_CSS_GridXFlexbox_JustifyContent.md",
     "01 - Notes/Code/JavaScript/React/React Router V6.md",
@@ -254,8 +244,6 @@
     "01 - Notes/Code/JavaScript/Node/Express/Introdução ao Express.md",
     "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md",
     "Images/Desenho_React_ContextAPI_ComponentesEspecificos.md",
-    "01 - Notes/Code/JavaScript/TypeScript/Generics.md",
-    "01 - Notes/Code/JavaScript/React/Tratamento de Erros.md",
     "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
   ]
 }
