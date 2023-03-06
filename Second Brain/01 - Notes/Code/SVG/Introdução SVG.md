@@ -33,10 +33,21 @@ Podemos criar círculos facilmente através do elemento vazio `<circle />` onde 
 - `r` - Raio da circunferência.
 - `fill` - Cor de preenchimento, basta informar `none` caso queira vazio.
 - `opacity` - Opacidade.
-- `stroke` - Bordas
+- `stroke` - Bordas.
+- `stroke-width` - Largura da boda.
+- `stroke-linecap` - Formado do final das boras, por exemplo `round` para arredondar.
+
+>[!tip] Utilizando CSS
+>Muito comum utilizar CSS para alterar e manipular alguns atributos do SVG.
+
+>[!attention] Preenchendo Borda (Estudar mais para entender)
+>Através o atributo que pode ser via CSS ou atributo no elemento `stroke-dasharray` informamos o tamanho da circunferência, e através de `stroke-dashoffset` o quanto não será preenchido. 
+>```css
+>stroke-dashoffset: calc(618 - (618 * var(--porcentagem)) / 100)
+>```
 
 # 📋 Definições
-Podemos definir informações que utilizaremos no nosso SVG, como por exemplo um gradiente, conseguimos por meio do elemento `<defs></defs>`.
+Podemos definir informações que utilizaremos no nosso SVG, como por exemplo um gradiente, sombras entre outros, conseguimos por meio do elemento `<defs></defs>`.
 
 ## Gradiente Linear
 Podemos definir um gradiente linear através do elemento `<linearGradient>`, muito importante informar um Id, pois é através do mesmo que o conectaremos aos elementos SVG.

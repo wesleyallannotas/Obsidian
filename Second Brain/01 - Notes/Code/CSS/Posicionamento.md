@@ -45,3 +45,16 @@ Quando utilizamos um ==valor diferente de `static`== para nossa propriedade `pos
 	z-index: 1;
 }
 ```
+
+# Alinhando ao Centro
+Podemos alinhar ao centro facilmente um elemento, porem é necessário entender o **ponto de referência** do elemento, por exemplo [[Introdução SVG#⭕ Círculos|círculos]] SVG tem seu ponto de referência no centro, sendo facilmente centralizado, porem elementos HTML normalmente possui seu ponto de referência sendo o canto superior esquerdo, assim sendo necessário voltar 50% para esquerda e para cima.
+
+```css
+.infoDonuctGraph {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* EixoX EixoY */
+	text-align: center;
+}
+```

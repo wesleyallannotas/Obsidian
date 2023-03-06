@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/SVG/Introdução SVG.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Temas.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/SVG/Introdução SVG.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Temas.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/SVG/Introdução SVG.md"
+                "file": "01 - Notes/Code/CSS/Styled-component/Temas.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/SVG/Introdução SVG.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Temas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/SVG/Introdução SVG.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Temas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,7 +217,9 @@
   },
   "active": "2b0f985f52095c85",
   "lastOpenFiles": [
+    "01 - Notes/Code/CSS/Posicionamento.md",
     "01 - Notes/Code/SVG/Introdução SVG.md",
+    "01 - Notes/Code/CSS/Animation.md",
     "01 - Notes/Code/SVG",
     "01 - Notes/Code/CSS/Flexbox.md",
     "01 - Notes/Code/CSS/Grid.md",
@@ -242,8 +244,6 @@
     "04 - Kindle HighLights/O poder do hábito.md",
     "01 - Notes/Code/JavaScript/Node/Express/Middleware.md",
     "01 - Notes/Code/JavaScript/Node/Express/Introdução ao Express.md",
-    "01 - Notes/Code/JavaScript/Node/Express/Dados via URL.md",
-    "Images/Desenho_React_ContextAPI_ComponentesEspecificos.md",
     "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
   ]
 }
