@@ -52,3 +52,12 @@ Relacionado a comportamento do CSS iniciando com um símbolo de `@` seguindo do 
 }
 ```
 
+
+# Media Queries (Melhorar)
+_Media_ é um [[At-Rules]] que possibilita definir propriedades CSS através de condições, utilizando operadores  como `and`, `or`, aplicar regras para tela (_screen_) para impressão (_print_)
+Também é possui definir a média no _link_ do CSS
+
+```html
+<link rel"stylesheet" href="respobnsive.css" media="screen and (max-width: 768px)" />
+<link rel="stylesheet" href="print.css" media="print" />
+```

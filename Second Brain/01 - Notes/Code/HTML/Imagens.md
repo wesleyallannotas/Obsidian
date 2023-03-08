@@ -47,6 +47,18 @@ Uma ideia para adicionar *caption* para imagens era envolver em elementos genér
 ```
 Dessa forma juntamos de forma semântica um titulo para imagem e o titulo utilizando o elemento pai `<figura>` e o elemento responsável pelo titulo o `<figcaption>`
 
+# Várias Possibilidades
+Muito utilizado para [[01 - Notes/Code/CSS/Responsividade|responsividade]] e ou para _fallback_, garantir outras possiblidades caso não consiga acessar tal recurso.
+
+```html
+<picture>
+	<source srcset="img1.jpg" />
+	<source srcset="img2.jpg" />
+	<source srcset="img3.jpg" />
+	<p>Impossivel carregar conteúdo</p>
+</picture>
+```
+
 # SVG
 A utilização de SVG já é amplamente adota e podemos criar dentro do nosso HTML utilizando o elemento `<svg>`, em sua base usa a ideia de imagem **vetorizada** ao invés de imagens **rasterizada**.
 

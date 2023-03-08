@@ -210,3 +210,14 @@ export const Title = styled.span`
 	opacity: ${ props => props.isFull ? 0 : 1 };
 `;
 ```
+
+# Adicionando Imagens do Background
+Partindo do ponto que nada mais é do que um [[Introdução ao JavaScript#Template Strings|template strings]] se queremos adicionar código  JavaScript dentro, basta utilizar a sintaxe da mesma. `${...}`, assim sendo feito da seguinte forma.
+
+```ts
+import folhagem from '../../assets/folhagem.svg';
+
+const export Header = styled.header`
+	background: url(${folhagem}) top left no-repeat;
+`;
+```

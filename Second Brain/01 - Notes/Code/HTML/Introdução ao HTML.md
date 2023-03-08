@@ -151,3 +151,8 @@ P
 ```
 
 # Outras Tags 
+
+| Elemento | Função                                           |
+| -------- | ------------------------------------------------ |
+| `time`     | Tempo em horas                                   |
+| `sup`      | Numero pequeno conectado ao top, tipo um elevado |

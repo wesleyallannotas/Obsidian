@@ -132,6 +132,35 @@ Através do `repeat`. função  CSS que podemos utilizar para encurtar nossas de
 
 Ou seja repetira `1fr` quatro vezes.
 
+# Regras para Dimensões
+Podemos definir uma tamanho mínima e máxima para as colunas ou linhas do nosso grid, assim possuindo uma maior harmonia com o _layout_.
+
+>[!tip] Máximo Flexível
+>Muito utilizado a ideia de um tamanho minimo para melhorar a harmonia de responsividade e no maximo ser relativo expandindo sempre.
+>```css
+>#container {
+>	display: grid;
+>	grid-template-columns: repeat(3, minmax(250px, 1fr));
+>}
+>```
+
+```css
+#container {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(250px, 500px));
+}
+```
+
+# Responsividade
+Através do uso do `auto-fit` podemos definir dinamicamente a quantidade de colunas ou linhas do nosso grid, acomodando a quantidade que couber, muito utilizado em conjunto com [[#Regras para Dimensões]]
+
+```css
+#container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+```
+
 # Gap
 Assim como no [[Flexbox#gap|flexbox]] podemos definir espaçamento entre os elementos através da propriedade `gap`, sendo a mesma um [[Introdução ao CSS#Shorthand|shorthand]] das seguintes propriedades.
 - `row-gap` - Distancia dos elementos em linha.

@@ -12,6 +12,16 @@ description: Como utilizar componentes no React
 # Estrutura do Componente
 Normalmente é uma função (No passado se usava classes) que retorna um _React Elements_, seja por meio da notação padrão ou com o uso de extensão de sintaxe com `jsx`/`tsx`, e essa função é exportada, possuindo duas formas de exportar.
 
+>[!tip] Retorno Direto
+>Alguns projetos optam por não usar chaves quando o componente possui apenas um [[Funções#Retorno|return]] e esta utilizando sintaxe de [[Funções#Arrow Function|arrow function]]
+>```tsx
+>export const App = () => (
+>	<div className={styles.container}>
+>		<Component />
+>	</div>
+>);
+>```
+
 ## Utilizando default
 Estamos especificando que por padrão quando importar esse "modulo" ou melhor no contexto React Componente, será exportado a `Home`, ou seja, quando acontecer a importação comum, é importado a `Home`
 
@@ -272,6 +282,3 @@ Podemos adicionar classes ao nosso elemento de forma condicional, utilizando de 
 ```
 
 Se o estado `select` possuir o valor de `"red"`, adicionara a classe `selected`, se não não possuirá a classe.
-
-
-# Error Boundaries
