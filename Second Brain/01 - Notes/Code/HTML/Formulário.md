@@ -255,7 +255,7 @@ O elemento `<textarea>` é muito útil para entrada de dados com textos grandes,
 - **Atributos** `rows` e `cols` - Definem o tamanho deste `<textarea>`
 - **Atributos** `maxlength` e `minlength` - Controla os tamanhos de conteúdo aceito
 - **Atributo** `wrap` - Controla quebra de linha, caso desabilitando passando o valor `off` ele cria um *scroll* horizontal em vez de quebrara a linha
-- Entre outros diversos atributos encontrados para o [[Formulário#Entrada de Dados com `<input />`|input]]
+- Entre outros diversos atributos encontrados para o [[01 - Notes/Code/HTML/Formulário#Entrada de Dados com `<input />`|input]]
 
 >[!attention] Atenção
 >Caso deixe espaço em branco entre a abertura e fechamento do elemento `<textarea>` o cursos pode mudar o posicionamento de inicio.

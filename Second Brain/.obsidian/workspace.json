@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f04539592994b949",
+            "id": "74b3bafa3551df92",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/Responsividade.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d97a3086caa87399",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Componentes.md",
+                "file": "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -77,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "children",
+                "query": "métodos",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,8 +81,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -116,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Componentes.md",
+                "file": "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -139,7 +125,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.26413971166792877,
+                  "scale": 5.079634490605256,
                   "close": true
                 }
               }
@@ -158,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Componentes.md"
+                "file": "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md"
               }
             }
           },
@@ -168,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Componentes.md",
+                "file": "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Componentes.md",
+                "file": "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -229,35 +215,39 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d97a3086caa87399",
+  "active": "74b3bafa3551df92",
   "lastOpenFiles": [
-    "01 - Notes/Code/HTML/Formulário.md",
-    "01 - Notes/Code/CSS/Styled-component/Responsividade.md",
-    "01 - Notes/Code/CSS/Responsividade.md",
-    "01 - Notes/Code/HTML/Imagens.md",
+    "Images/Pasted image 20230311182312.png",
+    "Images/Pasted image 20230311182154.png",
+    "Images/Pasted image 20230311182121.png",
+    "Images/Pasted image 20230311182031.png",
+    "Images/Pasted image 20230311173100.png",
     "01 - Notes/Code/CSS/Grid.md",
-    "01 - Notes/Code/CSS/At-Rules.md",
-    "01 - Notes/Code/JavaScript/React/Introdução ao React.md",
-    "01 - Notes/Code/CSS/Styled-component/Introdução ao styled-component.md",
-    "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
-    "01 - Notes/Code/JavaScript/React/React Router V5.md",
-    "01 - Notes/Code/CSS/Styled-component/Estilos Globais.md",
-    "01 - Notes/Code/CSS/Styled-component/Temas.md",
-    "01 - Notes/Code/CSS/Styled-component/Animações.md",
-    "01 - Notes/Code/JavaScript/React/React Router V6.md",
-    "01 - Notes/Code/Plugins, Configurações e Dicas.md",
-    "01 - Notes/Code/JavaScript/React/Componentes.md",
-    "01 - Notes/Code/JavaScript/React/Tratamento de Erros.md",
-    "01 - Notes/Code/HTML/Introdução ao HTML.md",
-    "01 - Notes/Code/CSS/Posicionamento.md",
+    "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
+    "01 - Notes/Code/Git e Github/Repositório Git.md",
+    "01 - Notes/Code/Git e Github/Introdução ao Git.md",
+    "01 - Notes/Code/Git e Github/Conveções.md",
+    "01 - Notes/Code/Git e Github/Github.md",
+    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
+    "01 - Notes/Code/JavaScript/Classes.md",
+    "01 - Notes/Code/JavaScript/Date.md",
+    "01 - Notes/Code/JavaScript/DOM.md",
+    "01 - Notes/Code/Programação Orientada a Objetos/Encapsulamento.md",
+    "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
+    "01 - Notes/Code/JavaScript/Funções.md",
+    "01 - Notes/Code/JavaScript/Assíncronismo.md",
+    "01 - Notes/Code/JavaScript/React/Hooks.md",
     "01 - Notes/Code/SVG/Introdução SVG.md",
-    "01 - Notes/Code/CSS/Animation.md",
+    "01 - Notes/Code/JavaScript/React/Formulário.md",
+    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
+    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
+    "01 - Notes/Code/Plugins, Configurações e Dicas.md",
+    "01 - Notes/Code/JavaScript/Web APis.md",
+    "01 - Notes/Code/Web/Sem título.md",
+    "01 - Notes/Code/JavaScript/React/Componentes.md",
+    "01 - Notes/Code/JavaScript/React/React Router V6.md",
+    "01 - Notes/Code/CSS/Responsividade.md",
     "01 - Notes/Code/SVG",
-    "01 - Notes/Code/CSS/Flexbox.md",
-    "01 - Notes/Code/Sem título.md",
-    "Images/Desenho_CSS_GridXFlexbox_ContentItems.md",
-    "Images/Desenho_CSS_GridXFlexbox_JustifyContent.md",
-    "01 - Notes/Code/JavaScript/React/Context API.md",
     "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
   ]
 }

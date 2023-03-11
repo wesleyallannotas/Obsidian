@@ -112,6 +112,7 @@ Através do valor `max-content` podemos definir que os elementos terão o tamanh
 
 >[!example] Diferença com fração
 >Fração é em relação ao tamanho total disponível, `max-content` é relacionado ao tamanho do conteúdo.
+>Também temos o `fit-content` interessante para alguns momentos
 
 ```css
 .container {

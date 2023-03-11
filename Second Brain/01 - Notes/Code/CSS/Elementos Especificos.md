@@ -10,7 +10,7 @@ tags: [css]
 description: Como estilizar elementos especificos do HTML
 ---
 # Select
-Como sabemos o elemento [[Formulário#Entrada de Dados com `<select>`|<select>]] possui um ícone para colapsar as opções que são definidas com `<option>`, normalmente para seguir o designer definida para a página, é necessário alterar esse ícone, podendo ser feito de diferentes formas.
+Como sabemos o elemento [[01 - Notes/Code/HTML/Formulário#Entrada de Dados com `<select>`|<select>]] possui um ícone para colapsar as opções que são definidas com `<option>`, normalmente para seguir o designer definida para a página, é necessário alterar esse ícone, podendo ser feito de diferentes formas.
 
 ## Removendo CSS
 Podemos remover o CSS padrão injetado pelo _browser_ através da propriedade [[Introdução ao CSS#Eliminando todo CSS do Browser|all]] e adicionar uma imagem ao lado no HTML.
