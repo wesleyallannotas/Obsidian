@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3a97af65baafcb23",
+        "id": "eeec0e91bc177b2b",
         "type": "tabs",
         "children": [
           {
-            "id": "74b3bafa3551df92",
+            "id": "96cb7ef2fc562753",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
+                "file": "01 - Notes/Code/CSS/Box Model.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "métodos",
+                "query": "overflow",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -102,7 +103,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
+                "file": "01 - Notes/Code/CSS/Box Model.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -144,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md"
+                "file": "01 - Notes/Code/CSS/Box Model.md"
               }
             }
           },
@@ -154,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
+                "file": "01 - Notes/Code/CSS/Box Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
+                "file": "01 - Notes/Code/CSS/Box Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,15 +216,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "74b3bafa3551df92",
+  "active": "96cb7ef2fc562753",
   "lastOpenFiles": [
+    "01 - Notes/Code/CSS/Responsividade.md",
+    "01 - Notes/Code/CSS/Transition.md",
+    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
+    "01 - Notes/Code/CSS/Box Model.md",
+    "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
     "Images/Pasted image 20230311182312.png",
     "Images/Pasted image 20230311182154.png",
     "Images/Pasted image 20230311182121.png",
     "Images/Pasted image 20230311182031.png",
     "Images/Pasted image 20230311173100.png",
     "01 - Notes/Code/CSS/Grid.md",
-    "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
     "01 - Notes/Code/Git e Github/Repositório Git.md",
     "01 - Notes/Code/Git e Github/Introdução ao Git.md",
     "01 - Notes/Code/Git e Github/Conveções.md",
@@ -244,9 +249,6 @@
     "01 - Notes/Code/Plugins, Configurações e Dicas.md",
     "01 - Notes/Code/JavaScript/Web APis.md",
     "01 - Notes/Code/Web/Sem título.md",
-    "01 - Notes/Code/JavaScript/React/Componentes.md",
-    "01 - Notes/Code/JavaScript/React/React Router V6.md",
-    "01 - Notes/Code/CSS/Responsividade.md",
     "01 - Notes/Code/SVG",
     "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
   ]

@@ -112,3 +112,12 @@ Apesar do `ouline` ser muito semelhante as bordas, diferente das propriedades an
 # Overflow
 Através da propriedade CSS _overflow_ controlamos a aceitação de "transbordar", por exemplo por padrão é liberado, ou seja, se um elemento filho for maior que o pai, ele sai dos elemento pai, porem podemos controlar e impedir isso através do _overflow_.
 - `hidden` - Não aceita "transbordar", o que passar do tamanho da caixa é ocultado.
+
+## Ativando Scroll
+Podemos adicionar scroll dentro de um elemento que estra transbordando adicionando o `overflow` como `Scroll`, podemos ser mais especifico e adicionar somente no eixo Y
+
+```css
+.container {
+	overflow-Y: scroll;
+}
+```

@@ -229,6 +229,17 @@ ul li:nth-child(odd) {
 ```
 Assim nos filhos de um `<ul>` será aplicado esse estilo nos `<li>` nas posições de filhos impares.
 
+### Has
+Através do seletor `has` podemos manipular propriedades CSS a partir de condições.
+
+```css
+.menu-wrapper:has(:focus) {
+	color: red;
+}
+```
+
+No exemplo acima se um elemento dentro de `menu-wrapper` tiver com _focus_ o `menu-wrapper` terá a propriedade `color` alterada pare _red_.
+
 ## Ações do Usuário
 Desrespeito a *pseudo-class* que são utilizadas com ações direta do usuário, por exemplo `:hover` que necessita que repouso o mouse sobre o elemento, existem diversos sendo os mais conhecidos.
 - `:hover` - Ponteiro do mouse sobre o elemento.
