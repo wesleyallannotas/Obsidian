@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/Box Model.md",
+                "file": "01 - Notes/Code/JavaScript/React/Formulário.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "overflow",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,8 +81,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -103,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Box Model.md",
+                "file": "01 - Notes/Code/JavaScript/React/Formulário.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -145,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Box Model.md"
+                "file": "01 - Notes/Code/JavaScript/React/Formulário.md"
               }
             }
           },
@@ -155,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Box Model.md",
+                "file": "01 - Notes/Code/JavaScript/React/Formulário.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Box Model.md",
+                "file": "01 - Notes/Code/JavaScript/React/Formulário.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,10 +217,13 @@
   },
   "active": "96cb7ef2fc562753",
   "lastOpenFiles": [
+    "01 - Notes/Code/HTML/Formulário.md",
+    "01 - Notes/Code/JavaScript/React/Formulário.md",
+    "Images/Desenho_ReactForm_Introdução.md",
+    "01 - Notes/Code/CSS/Box Model.md",
     "01 - Notes/Code/CSS/Responsividade.md",
     "01 - Notes/Code/CSS/Transition.md",
     "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
-    "01 - Notes/Code/CSS/Box Model.md",
     "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
     "Images/Pasted image 20230311182312.png",
     "Images/Pasted image 20230311182154.png",
@@ -243,12 +245,9 @@
     "01 - Notes/Code/JavaScript/Assíncronismo.md",
     "01 - Notes/Code/JavaScript/React/Hooks.md",
     "01 - Notes/Code/SVG/Introdução SVG.md",
-    "01 - Notes/Code/JavaScript/React/Formulário.md",
     "01 - Notes/Code/JavaScript/Manipulando Dados.md",
     "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
     "01 - Notes/Code/Plugins, Configurações e Dicas.md",
-    "01 - Notes/Code/JavaScript/Web APis.md",
-    "01 - Notes/Code/Web/Sem título.md",
     "01 - Notes/Code/SVG",
     "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
   ]

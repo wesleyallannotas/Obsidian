@@ -18,6 +18,15 @@ Através do elemento `<form>` podemos criar formulários que tem com objetivo ca
 ## Envio
 Através do atributo `action` podemos definir para onde o formulário será submetido, caso deixe vazio será enviado para a mesma página
 
+>[!tip] Remover Comportamento Padrão
+>Muito comum ao utilizarmos `libs` ou até mesmo quando queremos validar nossos campos com JavaScript removermos o comportamento padrão do _submit_, seja momentaneamente ou permanente mente.
+>````js
+>const form = document.getElementById('form');
+>form.addEventListener('onsubmit',  e => {
+>	e.preventDefault();
+>});
+>```
+
 ## Método
 Através do atributo `method` podemos definir o método do envio do formulário sendo os mais conhecidos e utilizados `post` e `get`
 - `get` é enviado pela URL
