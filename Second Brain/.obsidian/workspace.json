@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "96cb7ef2fc562753",
+            "id": "f18553eab4e63497",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Formulário.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 315.5124969482422
   },
   "right": {
     "id": "c853b67629a4ee84",
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Formulário.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -125,7 +125,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 5.079634490605256,
+                  "scale": 0.47712640543070006,
                   "close": true
                 }
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Formulário.md"
+                "file": "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Formulário.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/JavaScript/React/Formulário.md",
+                "file": "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.5
+    "width": 343.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,15 +215,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "96cb7ef2fc562753",
+  "active": "f18553eab4e63497",
   "lastOpenFiles": [
-    "01 - Notes/Code/HTML/Formulário.md",
+    "01 - Notes/Code/CSS/Posicionamento.md",
+    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
     "01 - Notes/Code/JavaScript/React/Formulário.md",
+    "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
+    "01 - Notes/Code/HTML/Formulário.md",
     "Images/Desenho_ReactForm_Introdução.md",
     "01 - Notes/Code/CSS/Box Model.md",
     "01 - Notes/Code/CSS/Responsividade.md",
     "01 - Notes/Code/CSS/Transition.md",
-    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
     "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
     "Images/Pasted image 20230311182312.png",
     "Images/Pasted image 20230311182154.png",
@@ -246,8 +248,6 @@
     "01 - Notes/Code/JavaScript/React/Hooks.md",
     "01 - Notes/Code/SVG/Introdução SVG.md",
     "01 - Notes/Code/JavaScript/Manipulando Dados.md",
-    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
-    "01 - Notes/Code/Plugins, Configurações e Dicas.md",
     "01 - Notes/Code/SVG",
     "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
   ]

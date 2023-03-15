@@ -58,3 +58,6 @@ Podemos alinhar ao centro facilmente um elemento, porem é necessário entender 
 	text-align: center;
 }
 ```
+
+# Desenvolvendo Dropdow
+Podemos deixar um elemento com position _absolute_ colar em um canto ou onde quiser posicionar, passar um tamanho para o mesmo, pode ser flexivel ou não, e como filho dele ter outro absoluto fora da area e deixar o overflow como hidden, ai quando estiver hover mudar para overflow initial e o height para fit-content.
