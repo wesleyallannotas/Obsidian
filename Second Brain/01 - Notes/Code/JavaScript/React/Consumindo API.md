@@ -56,3 +56,56 @@ Ou podemos criar uma função com a sintaxe [[Assíncronismo#Async/Await|Async/A
     FetchAndUpdateData();
   }, []);
 ```
+
+# ⚛️ React Query
+React Query ou seu novo nome TanStack Query é uma biblioteca React que permitir gerenciar os dados provindos de requisições, a ideia e gerenciar os dados o estado em si e não tratar da obtenção, podendo utilizar websock, graphQL.
+
+## Iniciando
+É necessário adicionar um Wrapper chamado `QueryClientProvider` onde dentro dele podemos utilizar o `react-query`, normalmente ele é adicionado em volta de toda aplicação dentro do próprio `main` ou `app`.
+Dentro do _provider_ podemos definir configurações globais, podemos utilizar as padrões que já são boas também, porem um atributo não é opcional que é o `cliente`, para resolver basta instanciar com `QueryCliente` que também deve ser importado.
+
+```tsx
+const client = new QueryClient();
+
+ReactDOM.render(
+	<React.StrictMode>
+		<QueryClientProvider client={client}>
+			{...}
+		</QueryClientProvider>
+	</React.StrictMode>
+);
+```
+
+## Requisição
+É importante lembrar que o `react-query` não realiza requisição HTTP, justamente por sua proposta, então normalmente criamos uma função que realiza o mesmo, e para usar tal requisição utilizamos `useQuery()` hook interno da biblioteca.
+
+>[!attention] Importante sobre _key_
+>Sempre definir uma `key` para a _query_, o mesmo serve para identificar o recurso dentro da _store_ global, esse `key` pode ser composta adicionando os valores dentro de uma _[[Introdução ao JavaScript#Array|array]]_, resultando em algo que não se repete.
+
+Assim passando como parâmetro uma `key` e a função que realiza a requisição, sendo uma [[Funções#Arrow Function|arrow funciton]] geralmente.
+
+```ts
+async function fetchProducts(id: string) {
+  const request = await axios.get(`http://localhost:3333/products/${id}`);
+  return request.data;
+}
+
+// {...Dentro do componente...}
+const query = useQuery(['products', id], () => fetchProducts(id));
+```
+
+Invés de jogar tudo dentro de uma única constante ou variável, podemos [[Expressões e Operadores#Operadores de Desestruturação|desestruturar]].
+
+```ts
+const { data, isLoading } = useQuery(['products', id], () => fetchProducts(id));
+```
+
+### Cache
+React Query, revalida a requisição e caso não aja alteração não faz outra requisição, levando a mais performance e economia de recursos. porem podemos forcar um tempo sem realizar outra requisição passando como ==terceiro parâmetro== um objeto de configuração, onde no atributo `staleTime` podemos setar o tempo em milissegundos.
+
+
+```ts
+const { data, isLoading } = useQuery(['products', id], () => fetchProducts(id), {
+	staleTime: 10000,
+});
+```

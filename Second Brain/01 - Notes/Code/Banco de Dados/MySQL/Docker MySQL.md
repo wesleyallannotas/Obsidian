@@ -22,10 +22,19 @@ docker exec -it my-mysql /bin/bash
 # Logando no MySQL
 ```bash
 mysql -u root -p -A
+mysql -u user -p
 ```
 # Liberando ROOT
 Só é necessária para a imagem `mysql/mysql-server`, para a ==imagem padrão já vem configurado.==
 ```sql
 UPDATE mysql.user SET host='%' WHERE user='root';
 flush privileges;
+```
+
+# Outra ideia
+```sh
+docker run --name nome-do-container  \
+-p 3306:3306 -p 33060:33060  \
+-e MYSQL_ROOT_HOST='%' -e MYSQL_ROOT_PASSWORD='sua-senha'   \
+-d mysql/mysql-server:latest
 ```

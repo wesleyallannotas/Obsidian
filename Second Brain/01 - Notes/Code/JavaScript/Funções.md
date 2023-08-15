@@ -174,7 +174,7 @@ fs.readFile('./arq1.txt', function(error, response) {
 Forma mais moderna e compacta de escrever funções, onde omitimos o comando `function` e após a definição dos parâmetros criamos uma espécie de flecha utilizando os caracteres igual e maior, em seguida abrindo para o bloco de código da função, é uma espécie de [[#Função Anônima]], não havendo nomeação em sua declaração.
 
 >[!attention] Atenção
->_Arrow Function_ não tem seu próprio _[this](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/this)_, _[arguments](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/arguments)_, _[super](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/super)_ ou _[new.target](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/new.target)_, nem mesmo a propriedade [[Manipulando Dados#Prototype|prototype]], sendo assim, não é recomendado essa expressão para construção de métodos e _contructors_
+>_Arrow Function_ não tem seu próprio _[this](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/this)_, _[arguments](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/arguments)_, _[super](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/super)_ ou _[new.target](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/new.target)_, nem mesmo a propriedade [[01 - Notes/Code/JavaScript/Manipulando Dados#Prototype|prototype]], sendo assim, não é recomendado essa expressão para construção de métodos e _contructors_
 >```js
 >const text = document.getElementById('text');
 let count = 0;

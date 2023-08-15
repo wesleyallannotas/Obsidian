@@ -70,7 +70,7 @@ export const Box = styled.div`
 `;
 ```
 
-Basicamente desestruturamos as propriedades pegando a que nos interessa,  em seguida verificamos se a mesma foi utilizada na declaração do componente, se sim retornamos um [[Manipulando Dados#map|map]] que verifica em cada item da [[Introdução ao JavaScript#Array|array]] de  [[Introdução ao JavaScript#Object|objetos]] se a propriedade possui uma correspondência declara (assim não obrigando declarar todas), caso houver retorna um `css` com os valores.
+Basicamente desestruturamos as propriedades pegando a que nos interessa,  em seguida verificamos se a mesma foi utilizada na declaração do componente, se sim retornamos um [[01 - Notes/Code/JavaScript/Manipulando Dados#map|map]] que verifica em cada item da [[Introdução ao JavaScript#Array|array]] de  [[Introdução ao JavaScript#Object|objetos]] se a propriedade possui uma correspondência declara (assim não obrigando declarar todas), caso houver retorna um `css` com os valores.
 
 Utilizando o componentes
 

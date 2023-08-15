@@ -7,6 +7,8 @@ completed: false
 aliases:
 tags: [estruturaDados, algoritmo]
 description: Livro que aborda estrutura de dados e algoritmos utilizando javascript
+totalPages: 0
+pagesRead: 408
 ---
 # Estruturas de Dados e Algoritmos com JavaScript 8ª Edição
 ![Capa|120](https://m.media-amazon.com/images/I/71KGa1y8eaL.jpg)

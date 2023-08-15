@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "eeec0e91bc177b2b",
+        "id": "7bff387dd552ca21",
         "type": "tabs",
         "children": [
           {
-            "id": "f18553eab4e63497",
+            "id": "f564480db09057ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
+                "file": "01 - Notes/Code/Delphi/Programação Orientada a Objeto.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a0a144a2f6682c27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -38,6 +51,14 @@
             "type": "leaf",
             "state": {
               "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "e5688831e588ddbf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -85,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315.5124969482422
+    "width": 315.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "c853b67629a4ee84",
@@ -102,7 +124,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
+                "file": "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -125,7 +147,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.47712640543070006,
+                  "scale": 0.24274372968657681,
                   "close": true
                 }
               }
@@ -144,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md"
+                "file": "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md"
               }
             }
           },
@@ -154,7 +176,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
+                "file": "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +193,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
+                "file": "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,55 +222,71 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5
+    "width": 343.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "canvas:Criar novo canvas": false,
-      "obsidian-kindle-plugin:Sync your Kindle highlights": false,
       "switcher:Abrir a troca rápida": false,
       "graph:Abrir visualização em gráfico": false,
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-kindle-plugin:Sync your Kindle highlights": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f18553eab4e63497",
+  "active": "a0a144a2f6682c27",
   "lastOpenFiles": [
-    "01 - Notes/Code/CSS/Posicionamento.md",
-    "01 - Notes/Code/CSS/Seletores, Combinadores, Pseudo-classes e  Pseudo-Elements.md",
-    "01 - Notes/Code/JavaScript/React/Formulário.md",
-    "01 - Notes/Code/CSS/Styled-component/Componente Estilizados.md",
-    "01 - Notes/Code/HTML/Formulário.md",
-    "Images/Desenho_ReactForm_Introdução.md",
-    "01 - Notes/Code/CSS/Box Model.md",
-    "01 - Notes/Code/CSS/Responsividade.md",
-    "01 - Notes/Code/CSS/Transition.md",
-    "01 - Notes/Técnicas e Autoconhecimento/Gerenciamento Agil de Projetos.md",
-    "Images/Pasted image 20230311182312.png",
-    "Images/Pasted image 20230311182154.png",
-    "Images/Pasted image 20230311182121.png",
-    "Images/Pasted image 20230311182031.png",
-    "Images/Pasted image 20230311173100.png",
-    "01 - Notes/Code/CSS/Grid.md",
-    "01 - Notes/Code/Git e Github/Repositório Git.md",
-    "01 - Notes/Code/Git e Github/Introdução ao Git.md",
-    "01 - Notes/Code/Git e Github/Conveções.md",
-    "01 - Notes/Code/Git e Github/Github.md",
-    "01 - Notes/Code/JavaScript/Introdução ao JavaScript.md",
-    "01 - Notes/Code/JavaScript/Classes.md",
-    "01 - Notes/Code/JavaScript/Date.md",
-    "01 - Notes/Code/JavaScript/DOM.md",
-    "01 - Notes/Code/Programação Orientada a Objetos/Encapsulamento.md",
+    "01 - Notes/Code/Delphi/Programação Orientada a Objeto.md",
+    "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
+    "01 - Notes/Planejamento de Estudo.md",
+    "01 - Notes/Code/Script KMS.md",
+    "01 - Notes/Code/Plugins, Configurações e Dicas.md",
+    "01 - Notes/Code/Dicionario do Programador.md",
+    "01 - Notes/Code/NLWCopa.md",
+    "01 - Notes/Code/Planejamento.md",
+    "Sem título.canvas",
+    "Sem título 1.canvas",
+    "01 - Notes/Code/Delphi/Atalhos.md",
+    "01 - Notes/Code/JavaScript/React/Performance.md",
+    "Excalidraw/MapaMental_POO.md",
+    "01 - Notes/Anotações Faculdade/Frameworks Para Desenvolvimento de Software.md",
+    "ES2022 Features!.md",
+    "Especificações TV Samsung 32 Polegadas.md",
+    "Ideias.md",
+    "01 - Notes/Code/Programação Orientada a Objetos/Abstração.md",
+    "01 - Notes/Code/Delphi/Introdução ao Delphi.md",
+    "01 - Notes/Code/Banco de Dados/MySQL/Usuários e Permissões.md",
+    "01 - Notes/Code/Banco de Dados/MySQL/Docker MySQL.md",
+    "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
+    "01 - Notes/Code/Banco de Dados/MySQL/Modelo Logico.md",
+    "01 - Notes/Code/Banco de Dados/Introdução Banco de Dados.md",
+    "01 - Notes/Code/Banco de Dados/Projeto de Banco de Dados.md",
+    "Images/Pasted image 20230810151850.png",
+    "01 - Notes/Code/JavaScript/Node/Express/Introdução ao Express.md",
     "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
-    "01 - Notes/Code/JavaScript/Funções.md",
-    "01 - Notes/Code/JavaScript/Assíncronismo.md",
-    "01 - Notes/Code/JavaScript/React/Hooks.md",
-    "01 - Notes/Code/SVG/Introdução SVG.md",
-    "01 - Notes/Code/JavaScript/Manipulando Dados.md",
-    "01 - Notes/Code/SVG",
-    "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf"
+    "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
+    "Images/Frameworks Para Desenvolvimento de Software 2023-08-09 21.29.46.excalidraw.png",
+    "Images/Pasted image 20230506161935.png",
+    "Images/Pasted image 20230804172132.png",
+    "Images/projeto_ecommerce.svg",
+    "Images/diagrama-ecommerce0-darkdrawio 1.png",
+    "Images/diagrama-ecommerce0-darkdrawio.png",
+    "01 - Notes/Anotações Faculdade/Frameworks Para Desenvolvimento de Software.md.2023-08-08_11.42.42.foldersync.old",
+    "EBooks/Aprendendo-a-desenvolver-aplicações-web.pdf",
+    "EBooks/Aprendendo-Python.pdf",
+    "EBooks/Arquitetura_Limpa_O_Guia_do_Artesão_para_Estrutura_e_Design_de_Software.pdf",
+    "EBooks/Como-ser-um-programador-melhor.pdf",
+    "EBooks/Curso-Intensivo-de-Python.pdf",
+    "EBooks/Eloquente JavaScript 2.pdf",
+    "EBooks/Entendendo_Algoritmos_Um_guia_ilustrado_para_programadores_e_outros.pdf",
+    "EBooks/Introdução-ao-GraphQL.pdf",
+    "EBooks/Introdução-ao-JSON.pdf",
+    "Images/Pasted image 20230807185900.png",
+    "Images/Pasted image 20230805203932.png",
+    "Images/Pasted image 20230805150302.png"
   ]
 }

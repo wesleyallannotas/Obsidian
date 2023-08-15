@@ -19,3 +19,24 @@ ssh-keygen -o -a 100 -t ed25519 ~/.ssh/id_nomechave -C "email@email.com"  # Akit
 ssh-keygen -t rsa -b 4096 -C "email@mail.com" # Dicover
 ```
 Será peido uma frase para ser utilizado como senha, e como foi especificado no comando será armazenado na chave `.ssh`
+
+# Configurando várias chaves
+Podemos ter varias chaves e delegar especificas para hosts, por exemplo:
+
+```
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519
+
+Host github-m3code
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_m3code****
+```
+
+Assim basta adicionar a origin no github com a Host correto
+
+```sh
+git remote add git@github-m3code:M3Code/LumineBackend
+```

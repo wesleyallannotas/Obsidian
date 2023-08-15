@@ -17,7 +17,7 @@ HTTP é um acrônimo para _HyperText Transfer Protocol_, ou seja, Protocolo de t
 
 Quando acessamos algo pela Web, ocorre a transferência de dados através deste protocolo, pois, é ele que permite essa troca de informações através das **HTTP Messages**, requisições e respostas, onde é aberto uma chamada para cada recurso, sejam eles, HTML, CSS, JavaScript, Imagens, Vídeos, entre outros
 
-![[Desenho_Web_HTTP|600center]]
+![[Desenho_Web_HTTP 1|600center]]
 
 # Request
 _Request_ é o pedido que realizamos ao Servidor, é esse mensagem tem um estrutura que deve ser respeitada para uma boa comunicação com o Servidor.

@@ -7,6 +7,8 @@ completed: false
 aliases:
 tags: [engSoftware]
 description: Livro completo sobre engenharia de software
+totalPages: 0
+pagesRead: 968
 ---
 #  Engenharia de Software Uma Abordagem Profissional 8ª Edição
 ![Capa|150](https://m.media-amazon.com/images/I/51aSAx1OXML._SX382_BO1,204,203,200_.jpg)

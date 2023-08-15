@@ -27,7 +27,7 @@ console.log(sum(1, '2')); // 12
 console.log(4 / []) // Infinity
 ```
 
-No primeiro caso ocorre o [[Manipulando Dados#Type Coersion|type coersion]] alterando o tipo de `1` que é um _[[Introdução ao JavaScript#Number|Number]]_ para _[[Introdução ao JavaScript#String|String]]_, e realizando a concatenação, exibindo no _console_ o valor `12`, esses entre outros diversos erros ocorrem por falta de tipagem, utilizando TypeScript seria informado os tipos de dados aceitos, assim evitando o erro.
+No primeiro caso ocorre o [[01 - Notes/Code/JavaScript/Manipulando Dados#Type Coersion|type coersion]] alterando o tipo de `1` que é um _[[Introdução ao JavaScript#Number|Number]]_ para _[[Introdução ao JavaScript#String|String]]_, e realizando a concatenação, exibindo no _console_ o valor `12`, esses entre outros diversos erros ocorrem por falta de tipagem, utilizando TypeScript seria informado os tipos de dados aceitos, assim evitando o erro.
 
 ```typescript
 function sum(n1: number, n2: number): number {

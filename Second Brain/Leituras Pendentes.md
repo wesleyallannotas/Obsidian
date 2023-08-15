@@ -1,1 +1,0 @@
-- [ ] [Node - Evento Loop](https://tipscode.com.br/event-loop-em-node-guia-completo#:~:text=O%20event%20loop%20%C3%A9%20um,selecionar%20outras%20tarefas%20na%20fila)

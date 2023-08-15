@@ -7,5 +7,7 @@ completed: false
 aliases:
 tags:
 description: 
+totalPages: 
+pagesRead: 
 ---
 # Titulo

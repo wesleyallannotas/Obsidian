@@ -6,7 +6,7 @@ book:
 type: note
 completed: false
 aliases:
-tags:
+tags: [typescript]
 description: 
 ---
 # Criando Tipo

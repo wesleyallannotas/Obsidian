@@ -198,7 +198,7 @@ console.log(element.style.backgorundColor);
 ```
 
 ## Manipulando Classes
-Através do método `classList` podemos **visualizar, adicionar, alterar, entre outras diversas funções presente no seu [[Manipulando Dados#Prototype|prototype]]** para manipulação de classes, assim por consequência conseguimos manipular seu estilo, retorna um objeto do tipo  `DOMTokenList`
+Através do método `classList` podemos **visualizar, adicionar, alterar, entre outras diversas funções presente no seu [[01 - Notes/Code/JavaScript/Manipulando Dados#Prototype|prototype]]** para manipulação de classes, assim por consequência conseguimos manipular seu estilo, retorna um objeto do tipo  `DOMTokenList`
 
 ### Adicionando
 Através do método `add()` podemos adicionar classes ao nosso elemento, caso necessita adicionar mais de uma basta separar por virgula.

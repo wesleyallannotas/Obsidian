@@ -16,7 +16,7 @@ Se baseia na ideia de herança da vida real, ou seja, filhos podem herdar do pai
 Em JavaScript criamos a relação de herança utilizando o comando `extends` na declaração da classe, ou seja, tal classe estende tal classe, e no seu construtor utilizamos a função `super()` para puxar os métodos e atributos do pai.
 
 >[!note] Sobre JavaScript
->Herança sempre esta ocorrendo no JavaScript, por se tratar de uma linguagem baseada em [[Manipulando Dados#Prototype|protótipos]], sempre estamos herdando, por exemplo quando criamos uma _String_, ela herda da cadeia de protótipos (_prototype chain_) que possui o método `trim()`  
+>Herança sempre esta ocorrendo no JavaScript, por se tratar de uma linguagem baseada em [[01 - Notes/Code/JavaScript/Manipulando Dados#Prototype|protótipos]], sempre estamos herdando, por exemplo quando criamos uma _String_, ela herda da cadeia de protótipos (_prototype chain_) que possui o método `trim()`  
 
 ```js
 class Veiculo {

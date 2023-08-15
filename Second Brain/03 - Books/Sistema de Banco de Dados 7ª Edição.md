@@ -7,6 +7,8 @@ completed: false
 aliases:
 tags: [bancoDados]
 description: Tudo sobre sistema de banco de dados dos fundamentos aos novos conceitos
+totalPages: 754
+pagesRead: 0
 ---
 # Sistema de Banco de Dados 7ª Edição
 ![Capa|120](https://m.media-amazon.com/images/P/B08H3GFFJP.01._SCLZZZZZZZ_SX500_.jpg)
@@ -39,7 +41,7 @@ Buscando o desempenho os cientistas ta computação sofisticaram as estruturas d
 - **Nível logico:** O próximo de nível mais alto de *abstração*, descreve quais dados estão armazenados e suas relações, os administradores de banco de dados que precisam decidir os dados a serem armazenados utilizam o nível logico.
 - **Nível de visão:** Nível de abstração mais alta, descreve apenas parte do banco de dados, ocultando os dados que não são necessários neste momento, podendo haver mais de um tipo de visão
 Os sistemas de banco de dados permitem que utilizando a *abstração* do modelo de dados, e converter as operações abstratas para operações no baixo nível.
-![[Desenho;BD;AbstraçãoDeDados]]
+![[Desenho_BD_AbstraçãoDeDados|center]]
 A visão (No nível de visão) da secretaria de uma universidade por exemplo oculta o salario dos professores, esta e a idia das diversas visões.
 ## Instancias e esquemas
 O banco de dados muda com o passar do tempo e as interações com o mesmo, instancia esta ligado com como se encontra o banco de dados em determinado momento.

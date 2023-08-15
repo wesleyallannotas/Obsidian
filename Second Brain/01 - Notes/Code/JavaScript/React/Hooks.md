@@ -277,10 +277,10 @@ const StopWatch = () => {
 };
 ```
 
+Utilizamos muito para guardar o retorno de intervalos para limpar depois, importante se atender que quando utilizamos variáveis comuns elas podem sofrer interferência do [[#🪝Hook Flow]], assim ocorrendo perda de valor.
+
 >[!tip] Compreendendo
 >Basicamente se queremos causar alteração na interface, usamos `useState`, se não queremos `useRef`, por exemplo um botão que quando clicado o usuário aceitou os termos e quando não clicado não aceitou, se quiser mudar a cor do botão, seu formato, usaremos `useState`, se não tem necessidade usaremos `useRef`
-
-[Utilizando as refs no React de forma avançada | Code/Drops #52 - YouTube](https://www.youtube.com/watch?v=lA8o3kUl1TA) (19min)
 
 # 🪝useContext
 Através do _hook_ `useContext`, conseguimos acessar um contexto basicamente passando o mesmo como parâmetro.
@@ -387,4 +387,92 @@ export function usePersistentDarkMode() {
   
   return { isDarkMode, setIsDarkMode };
 }
+```
+
+
+## useMessage
+Uma forma muito interessante de exibir _modals_ é através de _hooks customizados_ afim de diminuir a quantidade de código e facilitar leitura e manutenção.
+Basicamente desenvolvemos um _hook_ que possui um elemento modal que só é retornado quando estado esta `true`, e também retornamos uma função que altera o mesmo para `true` e recebe uma mensagem como parâmetro que será usada dentro do modal que por sua vez será armazenada dentro de um estado também.
+
+>[!tip] Utilizar Variant
+>No framework CSS Stitches e muito famoso o uso de Varients, caso utilize `styled-components` tem como criar um resultado parecido.
+
+### Hook
+Neste exemplo de  _hook_ de mensagem, utilizei o `styled-components` para estilizar.
+
+```tsx
+import styled from 'styled-components';
+import { useState } from 'react';
+  
+const ContainerModal = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+`;
+  
+const ModalContent = styled.div`
+  width: 60rem;
+  padding: 2rem;
+  height: fit-content;
+  position: relative;
+  background-color: ${({ theme }) => theme.foreground};
+  color: ${({ theme }) => theme.text};
+  border-radius: 0.4rem;
+`;
+  
+const Close = styled.span`
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  transform: translate(50%, -50%);
+  font-size: 3rem;
+  font-weight: 700;
+  color: ${({ theme }) => theme.text};
+  cursor: pointer;
+`;
+  
+export const useMessage = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [message, setMessage] = useState<string>('');
+  
+  const Modal = () => {
+    return (
+      <ContainerModal>
+        <ModalContent>
+          <Close onClick={() => setIsOpen(false)}>&times;</Close>
+          {message}
+        </ModalContent>
+      </ContainerModal>
+    );
+  };
+  
+  return {
+    Modal: isOpen ? Modal : null,
+    showModal: (message: string) => {
+      setMessage(message);
+      setIsOpen(true);
+    },
+  };
+};
+```
+
+### Utilizando
+Onde iremos utilizar nosso _hook_ basta importa-lo, adiciona-lo dentro do nosso JSX condicionalmente, e exibir passando uma mensagem, onde desejar.
+
+```tsx
+const Teste = () => {
+	const  {Modal, show} = useModal();
+	return (
+		{Modal && <Modal />}
+		<div>
+			// Conteúdo
+			<button onClick={() => show('teste')}>Click me</button>
+		</div>
+	)
+};
 ```
