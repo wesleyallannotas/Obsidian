@@ -7,6 +7,7 @@ kanban-plugin: basic
 ## 🤚 Em Espera
 
 - [ ] 💻 CRUD com Qualidade, DevSoutinho
+- [ ] 💻 TailwindCSS - B7Web
 - [ ] 💻 Entendendo TypeScript, Udemy
 - [ ] 📖 Estrutura de Dados e Algoritmos com JavaScript, Loiane Groner
 - [ ] 📖 Orientação a Objetos e SOLID para Ninjas: Projetando Classes Flexíveis, Mauricio Aniche

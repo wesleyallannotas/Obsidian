@@ -74,7 +74,7 @@ end;
 >[!attention] Atenção com a memória
 >Delphi NÃO possui _garbage collection_, assim não limpando a memória, ou seja, necessita do cuidado do desenvolvedor para não sobrecarregar de variáveis em memórias, sem um uso
 
-Atribuir valor `nil` para uma variável antes de utiliza-la, para aplicações com _desktop_ não possui nenhum problema, porem para _mobile_ onde é utilizado _ACR_ como _garbage collector_, ele ira limpar na memória, pois, é uma variável apontando para o nulo, assim não tendo necessidade de existir.
+Atribuir valor `nil` para uma variável antes de utiliza-la, para aplicações com _desktop_ não possui nenhum problema, porem para _mobile_ onde é utilizado _ARC_ como _garbage collector_, ele ira limpar na memória, pois, é uma variável apontando para o nulo, assim não tendo necessidade de existir.
 
 Quando utilizamos o `free` em um objeto, estamos apagando o mesmo da memória, porem a variável se mantem, só que sem o objeto, assim quando utilizamos o `FreeAndNil()` ele é limpado da memória e apontado para o nulo, assim o removendo do escopo que se encontra.
 
@@ -325,7 +325,8 @@ Um bom sistema tem muita coesão é baixo acoplamento, um exemplo de acoplamento
 Por convenção no _Delphi_ iniciamos nossas interfaces com a letra "I", mesmo não sendo umas das recomendações do _Clean Code_, normalmente geramos uma assinatura na nossa interface, basicamente com interface criamos uma espécie de contrato onde delimita o que tem existir, definimos campos que devem ser preenchidos, em seguida implementamos nossa interface em uma classe.
 
 >[!tip] Importante
->É importante sempre utilizar o `TInterfaceObject` quando formos implementar um interface, basicamente é um facilitador do _Delphi_ que evita que temos que implementar algumas funcionalidades.
+>1. É importante sempre utilizar o `TInterfaceObject` quando formos implementar um interface, basicamente é um facilitador do _Delphi_ que evita que temos que implementar algumas funcionalidades.
+>2. _Object Pascal_ não permite herança multipla, diferentes de C++ por exemplo, assim podemos "burlar" quando necessário através do uso de interfaces.
 
 ```pascal
 // ... Dentro do Arquivo de Interfaces ...
@@ -615,3 +616,94 @@ implementation
 ```
 
 Assim criamos uma `procedure` simples que validada se foi "assinado" algum valor na variável, onde ai sim chamamos a mesmo passando o próprio objeto, caso não, não fara nada evitando erros, tratamento importante, pois, ==uma classe tem que tratar todos seus atributos e métodos e não delegar isso a terceiros==.
+
+# Criando um Componente
+No _Delphi_ todo componentes descende da classe `TComponent` que podemos obtê-la a partida a `unit` `System.Classes`, sem seguida podemos construir nosso componente/classe.
+- `Publish` - Propriedades adicionadas nessa seção ficaram disponíveis para o usuário no _Object Inspection_
+
+```pascal
+type
+	TEventos = class(Tcomponente);
+		private
+		public
+		published
+	end;
+```
+
+Em seguida precisamos registar nosso componentes, onde como parâmetros passaremos um nome para o pacote de componentes e uma _array_ com os componentes.
+
+```pascal
+procedure register;
+
+type
+// ...
+
+procedure register;
+begin
+	RegisterComponents('Meus Componentes', [TEventos]);
+end;
+```
+
+# Método Construtor
+Utilizando o nossa `create` esta sendo criado uma instancia completa da nossa classe, dando a acesso a diversas coisas até mesmo herdadas do nosso objeto, utilizando um método construtor, conseguiremos instancias apenas `interface`, assim dando acesso apenas ao que tem na `interface`
+
+```pascal
+public
+	constructor Create;
+	destructor Destroy; override;
+	class function New : IOperacao;
+
+// ...
+implementation
+	procedure TForm.New: IOperacao ;
+	begin
+		Result := Self.Create;
+	end;
+```
+
+# Composição de Objetos com Interface
+Utilizando a ideia de classes com responsabilidade única, onde por exemplo no desenvolvimento de uma calculadora podemos criar uma classe para cada operação e as compor em uma `interface` de calculadora.
+
+```pascal
+ICalculadora = interface
+	// CTRL + G
+	function Somar : IOperacão;
+	function Subtrair : IOperacão;
+	function Dividir : IOperacão;
+	function Multiplicar : IOperacão;
+end;
+```
+
+Após desenvolver a `interface` que conecta todas as classes que implementa a `interface IOperacao`, implementaremos a mesma em uma classe que ira implementar esta interface
+
+```pascal
+TCalculadora = class(TInterfaceObject, ICalculadora)
+	public
+		constructor Create;
+		destructor Destroy; override;
+		class function New: ICalculadora;
+		function Somar : IOperacão;
+		function Subtrair : IOperacão;
+		function Dividir : IOperacão;
+		function Multiplicar : IOperacão;
+end;
+```
+
+Onde cada função retorna a execução da [[#Método Construtora|método construtor]] da classe da operação que o representa.
+
+```pascal
+function Multiplicar : IOperacao;
+begin
+	Result := TMultiplicar.New;
+end;
+```
+
+# Helpers
+Classes Helpers são classes de ajuda como o próprio nome diz é uma classe de ajuda, que podemos agregar a nossa classe atribuindo novas funcionalidades.
+## PAREI  AQUI
+
+# Exemplo
+
+1. Criamos um `interface` que executa uma ação com duas variáveis do tipo `double` e retorna um `doube`, em seguida criamos uma classe para cada operação implementando essa `interface`, já no formulários criamos uma `property` do tipo da nossa `interface` e uma função no `private` que executa a função que estará dentro dessa nossa `propety`, no acionar de cada botão instanciamos umas das classes correspondentes a operação que o botão realiza e em seguida executas a função que criamos no `private`
+2. Por boa pratica devemos definir sempre os `constructor` e o `destructor` com sobrecarga (`override`), também é interessante criar uma método construtor para cada classe que desenvolvemos, e mudar criação das instancias de `create` para `new` assim o utilizando.
+3. Utilizamos o método de [[#Composição de Objetos com Interface]] criamos a classe `TCalculadora` agora basta instanciar a classe no formulário e para cada clique do botão chamar a função correspondente, por exemplo soma `Claculadora.Soma.Operacao(StrToCurr(Edit1.Text), StrToCurr(Edit2.Text))`

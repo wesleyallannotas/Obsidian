@@ -109,3 +109,90 @@ const { data, isLoading } = useQuery(['products', id], () => fetchProducts(id), 
 	staleTime: 10000,
 });
 ```
+
+## Atualizando
+Quando enviamos uma requisição que atualiza os dados que são advindos do `react-query` utilizamos os `mutation` para garantis a atualização dos dados e a persistência do mesmo em tela caso for alterado de fato, onde caso não ocorra volte para o dado anterior que é o valido.
+Basicamente criamos uma função de _update_  com o `axios`
+
+```typescript
+async function updateProduct(product: IProduct) {
+	const request = await axios.put(`url/${product.id}`, product);
+	return request.data;
+}
+```
+
+Em seguida utilizamos o _hook_ do `useMutation`, passando a função que faz a _request_ atualizando os dados, e basicamente um objeto com 3 funções sendo elas `onMutate`, `onError` e `onSettled`
+
+```typescript
+const mutation = useMutation(updateProduct, {
+	onMutate : async (updateProduct) => {
+		// Cancelar qualquer query que esteja acontecendo
+		// atualizar o cache com o novo produto
+		// retornar daqui de dentro o estado antigo
+	},
+	onError : async (err, variables, context) => {
+		// Se der erro, eu volto o cache para o estado antigo
+		// context vem o que foi retornado de onMutate
+	},
+	onSettled : async () => {
+		// Vai cair aqui, se der sucesso ou erro
+		// forçar uma revalidação do request
+	}
+});
+```
+
+É interessante obtermos a _query key_, que nada mais é do que a _array_ que passamos quando criamos a _query_, basicamente a guardamos em uma variável, para posteriormente utiliza-la, podendo haver a necessidade de passa-la como propriedade para um componente.
+
+```typescript
+const queryKey = ['products', id];
+const query = useQuery(queryKey, () => fetchProducts(id));
+```
+
+Com a _query key_ em mãos podemos utiliza-la passando dentro de um `useQueryClient`
+
+```typescript
+const queryClient = useQueryClient();
+
+const mutation = useMutation(updateProduct, {
+	onMutate : async (updateProduct) => {
+		// Cancelar qualquer query que esteja acontecendo
+		await queryClient.cancelQueries(queryKey);
+		const previousState = queryClient.getQueryData(queryKey);
+		
+		// atualizar o cache com o novo produto
+		queryClient.setQueryData(queryKey, (oldState) => {
+			const newItems = oldState?.items.map((product) => 
+				product.id === updateProduct.id ? updateProduct : product
+			);
+			
+			 return { total: oldState?.total, items: newItems ?? [] }
+		})
+		
+		// retornar daqui de dentro o estado antigo
+		return { previousState }
+	},
+	onError : async (err, variables, context) => {
+		// Se der erro, eu volto o cache para o estado antigo
+		// context vem o que foi retornado de onMutate
+			queryClient.setQueryData(querykey, context.previousState);
+	},
+	onSettled : async () => {
+		// Vai cair aqui, se der sucesso ou erro
+		// forçar uma revalidação do request
+		queryClient.invalidateQueries(queryKey);
+	}
+});
+```
+
+Agora basta utilizar nossa _mutation_ para atualizar os dados.
+
+```typescript
+function increment() {
+	mutation.mutate({
+		...product,
+		stock: product.stock + 1
+	});
+};
+```
+
+A _mutation_ também nos disponibiliza um `inLoading` para podermos utilizar nos nossos componentes para _feedback_ visual de carregamento.

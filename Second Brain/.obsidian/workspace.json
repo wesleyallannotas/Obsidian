@@ -25,14 +25,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
+                "file": "01 - Notes/Code/Delphi/Atalhos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "965b50b654f0d27e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Notes/Code/Windows/Windows Subsistem Linux.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -124,7 +135,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
+                "file": "01 - Notes/Code/Delphi/Programação Orientada a Objeto.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -166,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md"
+                "file": "01 - Notes/Code/Delphi/Programação Orientada a Objeto.md"
               }
             }
           },
@@ -176,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
+                "file": "01 - Notes/Code/Delphi/Programação Orientada a Objeto.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
+                "file": "01 - Notes/Code/Delphi/Programação Orientada a Objeto.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -238,19 +249,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a0a144a2f6682c27",
+  "active": "f564480db09057ce",
   "lastOpenFiles": [
+    "01 - Notes/Code/Delphi/Atalhos.md",
     "01 - Notes/Code/Delphi/Programação Orientada a Objeto.md",
-    "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
+    "01 - Notes/Code/Windows/Windows Subsistem Linux.md",
     "01 - Notes/Planejamento de Estudo.md",
-    "01 - Notes/Code/Script KMS.md",
+    "01 - Notes/Code/Programação Orientada a Objetos/Introdução a POO.md",
+    "01 - Notes/Code/JavaScript/React/Consumindo API.md",
     "01 - Notes/Code/Plugins, Configurações e Dicas.md",
+    "01 - Notes/Code/JavaScript/React/Context API.md",
+    "01 - Notes/Code/JavaScript/React/Formulário.md",
+    "01 - Notes/Code/JavaScript/React/Hooks.md",
+    "01 - Notes/Code/JavaScript/React/Atualizando Dados.md",
+    "01 - Notes/Code/Script KMS.md",
     "01 - Notes/Code/Dicionario do Programador.md",
     "01 - Notes/Code/NLWCopa.md",
     "01 - Notes/Code/Planejamento.md",
     "Sem título.canvas",
     "Sem título 1.canvas",
-    "01 - Notes/Code/Delphi/Atalhos.md",
     "01 - Notes/Code/JavaScript/React/Performance.md",
     "Excalidraw/MapaMental_POO.md",
     "01 - Notes/Anotações Faculdade/Frameworks Para Desenvolvimento de Software.md",
@@ -262,13 +279,7 @@
     "01 - Notes/Code/Banco de Dados/MySQL/Usuários e Permissões.md",
     "01 - Notes/Code/Banco de Dados/MySQL/Docker MySQL.md",
     "01 - Notes/Code/JavaScript/Controle de Fluxo.md",
-    "01 - Notes/Code/Banco de Dados/MySQL/Modelo Logico.md",
-    "01 - Notes/Code/Banco de Dados/Introdução Banco de Dados.md",
-    "01 - Notes/Code/Banco de Dados/Projeto de Banco de Dados.md",
     "Images/Pasted image 20230810151850.png",
-    "01 - Notes/Code/JavaScript/Node/Express/Introdução ao Express.md",
-    "01 - Notes/Code/JavaScript/Expressões e Operadores.md",
-    "01 - Notes/Code/JavaScript/Falsy e Truthy.md",
     "Images/Frameworks Para Desenvolvimento de Software 2023-08-09 21.29.46.excalidraw.png",
     "Images/Pasted image 20230506161935.png",
     "Images/Pasted image 20230804172132.png",

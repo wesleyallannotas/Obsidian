@@ -15,3 +15,4 @@ description: Atalhos importantes do Delphi
 - `CTRL + SHIFT + C` - Cria as funções quando declaradas.
 - `CTRL + SHIFT + G` - Gera uma assinatura, que será usada pelo compilador e o sistema operacional
 - `ALT + F11` - Importar `units`
+- `CTRL + D` - Indenta o código
