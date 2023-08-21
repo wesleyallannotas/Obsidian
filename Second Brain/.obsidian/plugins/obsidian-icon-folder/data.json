@@ -5,7 +5,12 @@
     "fontSize": 16,
     "emojiStyle": "none",
     "iconColor": null,
-    "recentlyUsedIcons": [],
+    "recentlyUsedIcons": [
+      "FarBookmark",
+      "FarAddressBook",
+      "FarFileLines",
+      "FarPenToSquare"
+    ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {
@@ -15,5 +20,9 @@
       "left": 0
     },
     "iconInTabsEnabled": false
-  }
+  },
+  "01 - Notes": "FarPenToSquare",
+  "02 - Articles": "FarFileLines",
+  "03 - Books": "FarAddressBook",
+  "04 - Kindle HighLights": "FarBookmark"
 }

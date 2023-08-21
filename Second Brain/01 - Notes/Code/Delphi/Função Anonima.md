@@ -9,7 +9,7 @@ aliases:
 tags: [delphi]
 description: Criando e Utilizando Função anonima.
 ---
-# Introdução
+# 🚀 Introdução
 Função Anônima no Delphi, parecido com o [[Funções#*Arrow Function*|JavaScript]], utilizada no lugar de atalho de funções,
 exemplo abaixo traz um projeto em Delphi com um botão e um *edit*
 ```pascal

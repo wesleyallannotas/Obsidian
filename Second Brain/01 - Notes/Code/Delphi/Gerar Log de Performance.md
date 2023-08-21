@@ -9,7 +9,7 @@ aliases:
 tags: [delphi]
 description: Gerando log de performance no Delphi
 ---
-# Código
+# 👨‍💻 Código
 Código fonte da Classe em Delphi para gerar logs em `.txt`
 
 ```pascal

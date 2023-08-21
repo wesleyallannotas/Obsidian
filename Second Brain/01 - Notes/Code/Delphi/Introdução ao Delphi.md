@@ -9,20 +9,20 @@ aliases:
 tags: [delphi]
 description: Conhecendo o Delphi e sua estrutura base
 ---
-# Introdução
+# 🚀 Introdução
 Delphi é basicamente uma IDE/Framework desenvolvido em cima da linguagem pascal, afim de proporcionar um desenvolvimento rápido de aplicações desktop inicialmente, hoje abrangendo todo tipo de softwares.
 
-# Estrutura 
+# 🏗️ Estrutura 
 Um documento Delphi possui varias seções, cada uma com um propósito específico
 
-## Cabeçalho
+## 🔝 Cabeçalho
 Uma unidade Delphi, inicia com a palavra reservada `unit`, seguida com o nome da unidade, este será o nome usado para referenciar essa unidade em outras unidades dentro do `uses`
 
 ```pascal
 unit MinhaUnidade;
 ```
 
-## Seção Interface
+## 👤 Seção Interface
 Seção interface contem a clausula `uses`, onde podemos listar outras unidades sejam elas de código ou de formulários (por padrão um novo formulário vem com algumas, sendo elas as bases do Windows),
 Já `interface` é onde declaramos constantes globais, tipos de dados, variáveis, procedimentos e funções que serão acessíveis por outras unidades.
 
@@ -45,7 +45,7 @@ var
 	function MinhaFuncao(value : integer): string;
 ```
 
-## Seção de Implementação
+## 👨‍💻 Seção de Implementação
 Contem o código em si da unidade, sendo o responsável por implementar procedimentos e funções declarados na interface, também é  possível declarar variáveis, constantes e tipos nesta seção que não precisam ser visíveis para outras unidades.
 
 ```pascal
@@ -66,7 +66,7 @@ begin
 end;
 ```
 
-## Seção de Inicialização e Finalização
+## 🪧 Seção de Inicialização e Finalização
 Ambas seções são **opcionais**. A seção de inicialização é usada para inicializar dados que a unidade utiliza. A seção de finalização é usada para executar ações de limpeza quando o programa é encerrado. A seção de inicialização de cada unidade é executada na ordem em que as unidades são referenciadas. Da mesma forma, a seção de finalização é executada na ordem inversa.
 
 Os principais pontos a serem observados sobre a seção de inicialização são:

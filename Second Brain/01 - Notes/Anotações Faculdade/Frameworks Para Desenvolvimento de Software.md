@@ -187,3 +187,33 @@ class Usuario(db.Model):
         self.cidade = cidade
         self.estado = estado
 ```
+
+### Listagem
+
+Podemos construir listagem através de código dentro do HTML utilizando os `{% %}` para implantar código `Python`, por exemplo.
+
+```HTML
+<tbody>
+	{% for usuario in usuarios %}
+	<tr>
+		<td>{{usuario.nome}}</td>
+		<td>{{usuario.email}}</td>
+		<td>{{usuario.senha}}</td>
+	</tf>
+	{% endfor %}
+</tdoby>
+```
+
+Lembrando que é necessários os dados disponíveis, por exemplo, passando por uma variável e utilizando uma _query_.
+
+```python
+@app.route('/login')
+def login():
+	return render_template('login.html', usuarios=Usuario.query.all(), title='Login')
+```
+
+# Aula 5 - Definição de rotas
+## Mapa Mental
+![[Pasted image 20230819193603.png|center]]
+
+## Vídeo

@@ -9,10 +9,10 @@ aliases:
 tags: [delphi]
 description: Aprendendo POO com delphi
 ---
-# Introdução
+# 🚀 Introdução
 Basicamente como vimos sobre [[Introdução a POO]], basicamente é a forma de pensar mais em contato com a realidade, abstraindo coisas do mundo real para a programação, facilitando a reutilização e compreensão do código.
 
-# Criando Classes
+# 🏗️ Criando Classes
 Todas as classes ficam dentro do `type`, é onde as representamos 
 Dentro do tempo por convenção toda classe começa com T por exemplo `TGarrafa`, em seguida a tipos como `class`, em seguida dentro deste bloco listamos os atributos.
 
@@ -28,7 +28,7 @@ type
 
 Quando criamos uma classe dessa forma, estamos descendendo da classe `TObject` do Delphi
 
-# Instanciando Objeto
+# 📥 Instanciando Objeto
 Não basta declarar uma variável do tipo do nosso objeto desenvolvido e sair utilizando, é necessário criar uma instancia deste nosso objeto, ou seja, o criando na memória, onde conseguimos o mesmo através do método `create` herdado de `TObject`
 
 ```pascal
@@ -95,7 +95,7 @@ end;
 
 Podemos concluir que quando vamos reutilizar a variável dentro do escopo é interessante utilizar o método `free` herdado de `TObject`, porem quando não vamos, podemos utilizar o `FreeAndNil()`
 
-# Verificando Objeto
+# 🔎 Verificando Objeto
 Podemos verificar se o objeto foi criado com `Assigned()`
 
 ```pascal
@@ -120,7 +120,7 @@ begin
 end;
 ```
 
-# Records
+# 🔥 Records
 Diferente de classes `record` trabalha na memória local, assim tendo seu valor copiado toda vez que é requisitado, ao contrario de `class` que utiliza referencia na memória, por isso não utilizamos o método `create` e podemos passar valores diretamente, porem o `record` tem perda de desempenho comparado com `class`, também não é necessário limpar da memória.
 
 ```pascal
@@ -149,7 +149,7 @@ end;
 
 Dessa forma quando passamos um `record` como um parâmetro, para uma _procedure_ ou _function_, os valores são copiados, ao contrario do objeto que utiliza uma referencia na memória, o que pode ser ruim para memória se for usado erroneamente.
 
-# Construtores e Destrutores
+# 🧱 Construtores e Destrutores
 Quando desenvolvemos nossa classe podemos construir os métodos de `constructor` e `desctructor`, responsáveis por construir nossa instancia da classe, e o `destructor` e destruir, limpar a mesma da memória.
 
 ```pascal
@@ -164,7 +164,7 @@ type
 	end;
 ```
 
-# Classes Compostas
+# 👥 Classes Compostas
 Durante o desenvolvimento das nossas classes, pode ser necessário aninhar classes, assim sendo necessário adições nos nossos construtores e destrutores.
 
 ```pascal
@@ -206,7 +206,7 @@ begin
 end;
 ```
 
-# Classes Aninhadas
+# 📩 Classes Aninhadas
 São basicamente classes declaradas dentro de classes, seu uso não é tão abrangente, porem é interessante em casos de encapsulamento.
 
 ```pascal
@@ -238,7 +238,7 @@ begin
 end;
 ```
 
-# Property
+# ✍️ Property
 Basicamente é uma facilidade do Delphi para o uso e criação dos _getters_ e  _setters_, o interessante é que os utilizando podemos executar como se fosse com a próprio atributo do objeto.
 
 ```pascal
@@ -263,10 +263,10 @@ end;
 cliente.nome = 'Wesley';
 ```
 
-# Classes Amigas
+# 🧑‍🤝‍🧑 Classes Amigas
 Uma classe tem atributos privado de fato apenas quando esta sozinha em uma `unit`, quando existem mais de uma classe em uma `unit`, são interpretadas como classes amigas, assim possuindo a liberdade de acessar tais atributos privados.
 
-# Strict Private
+# ⛓️ Strict Private
 Basicamente corrige o problema das [[#Classes Amigas]] de quebrar o encapsulamento das nossas classes, assim removendo o acesso a tais propriedades e métodos, basta adicionar o `strict` antes do `private`
 
 ```pascal
@@ -282,7 +282,7 @@ type
 	end;
 ```
 
-# Protected
+# 👀 Protected
 Quando adicionamos um atributo ou método no `private`, só tem acesso a mesma a classe que a declarou ([[#Classes Aninhadas|aninhamento]]) e as [[#Classes Amigas|classes amigas]], ou seja, os descendentes não tem acesso, para dar  acesso aos descendentes, invés de declarar dentro do `private`, utilizamos o `protected`
 
 ```pascal
@@ -295,7 +295,7 @@ type
 
 Porem devemos devemos tomar cuidado, pois, `protected` dando acesso direto, fere o encapsulamento, sendo mais interessante e preservando o encapsulamento a utilização de _getters_ e _setters_
 
-# Coesão
+# ☝️ Coesão
 Cada método de nossa classe tem apenas uma responsabilidade, ou seja, ==o principio da responsabilidade única==, ferindo essa "regra", podemos encontrar problemas futuros, por exemplo, toda vez que cadastramos um cliente geramos financeiro, e se um dia não queremos mais isso?
 Vale ressaltar que estamos falando sobre o método em si.
 
@@ -318,10 +318,10 @@ end;
 
 O exemplo a cima segui a reponsabilidade única, pois, cada método chamado, é responsável por fazer uma única responsabilidade.
 
-# Acoplamento
+# 🔗 Acoplamento
 Um bom sistema tem muita coesão é baixo acoplamento, um exemplo de acoplamento e quando criamos uma classe de conexão com o banco de dados e as usamos em todas as outras classes do sistema, assim gerando uma dependência um acoplamento, e se no futuro mudarmos de banco será um problema mudar em tudo, para eliminar o acoplamento existem diversos meios sendo um deles a utilização de `interface`
 
-# Interface
+# 👤 Interface
 Por convenção no _Delphi_ iniciamos nossas interfaces com a letra "I", mesmo não sendo umas das recomendações do _Clean Code_, normalmente geramos uma assinatura na nossa interface, basicamente com interface criamos uma espécie de contrato onde delimita o que tem existir, definimos campos que devem ser preenchidos, em seguida implementamos nossa interface em uma classe.
 
 >[!tip] Importante
@@ -361,7 +361,7 @@ end;
 Cliente := TCliente.Create(TConexaoMySQL.Create);
 ```
 
-# Virtual
+# 🌐 Virtual
 Através da declaração do `virtual`, liberamos para que as classes que herdam esta classe possam alterar/sobrescrever/sobrecarregar tal método, assim aplicando o conceito de polimorfismo, onde nas classes filhas que vão alterar tal método, deve usar o `override`
 
 ```pascal
@@ -378,10 +378,10 @@ type
 	end
 ```
 
-##  Dinamyc
+## ✍️ Dinamyc
 Quando utilizamos o virtual utilizamos a VMT é registrado em uma matriz de métodos virtuais toda vez que ele é chamado, assim impactando em uma maior performance, já no `dinamyc`, não tem isso, só é registrado e apenas uma vez quando o método é sobrescrito, assim sendo mais lento porem consumindo uma menor quantidade de memoria.
 
-# Métodos Abstratos
+# 🎨 Métodos Abstratos
 Basicamente é quando criamos um método que existira na classe pai, porem será implementado dentro das classes que as herdam, ou seja, as classes filhas.
 Basta adicionar o `abstract` na frente da declaração do método.
 
@@ -393,7 +393,7 @@ type
 	end;
 ```
 
-## Exemplo
+## ✍️ Exemplo
 Utilizando herança com métodos abstrato, Voz existe dentro de animal, pois, foi criado como método abstrato dentro da classe pai, se não fosse declarado a gente não conseguiria "enxerga-lo".
 TGato ou TCachorro são instancias atribuídas ao animal, pois, são descendentes de TAnimal.
 
@@ -439,7 +439,7 @@ begin
 end;
 ```
 
-# Classe Selada
+# 💌 Classe Selada
 São classes que não permitem serem herdadas, ou seja, não podemos a partir dela gerar outra classe, assim evitando uso indevido, tanto é que é uma praticam muito usada no desenvolvimento de componentes, também limita que criamos empilhamentos de heranças muito complexas, travando em determinado ponto, basta adicionar a palavra `sealed`
 
 ```pascal
@@ -449,7 +449,7 @@ type
 	end;
 ```
 
-# Método Final
+# 🚧 Método Final
 Parecido com a [[#Classe Selada|classe selada]] o método final, impede que a partir daquele ponto sobrecarregue/sobrescreva tal método, podemos atingir tal comportamento através do `final`
 
 ```pascal
@@ -463,7 +463,7 @@ type
 	end;
 ```
 
-# Sobrecarga
+# 🔋 Sobrecarga
 Basicamente é quando possuímos o mesmo método sobrecarregado, ou seja, o mesmo método com parâmetros diferentes, é necessários adicionar o `overload` na frente da declaração, muito utilizado para reduzir o uso de `if`
 
 ```pascal
@@ -473,7 +473,7 @@ type
 	procedure CriarFinanceiro(Value : Currency); overload;
 ```
 
-# Orientação a Eventos
+# 🎪 Orientação a Eventos
 Definimos a estrutura do evento e o utilizamos dentro da classe, sem saber de fato onde esse evento será utilizado, seja para adicionar valor a um `memo`, `label`, não importa a classe não sabe e não precisa saber, apenas sabe que precisa ser passado uma `string`
 
 ```pascal
@@ -531,7 +531,7 @@ implementation
 
 Assim podemos concluir que a classe não tem conhecimento do que será feito, apenas sabe que tem um evento que precisa de um parâmetro que precisa de uma `string`, onde podemos basicamente trocar por exemplo agora começar exibir em um _label_, não importa para a classe, o que abre uma gama de possibilidades incrível, com herdeiros de uma classe que implementa um evento, tento impacto em lugares diferentes no nosso formulário.
 
-## Melhorando esse Código
+## 🤔 Melhorando esse Código
 Podemos melhorar a forma que foi feita, protegendo contra erros e liberando toda responsabilidade do evento da classe e deixando para o formulário.
 
 ```pascal
@@ -617,7 +617,7 @@ implementation
 
 Assim criamos uma `procedure` simples que validada se foi "assinado" algum valor na variável, onde ai sim chamamos a mesmo passando o próprio objeto, caso não, não fara nada evitando erros, tratamento importante, pois, ==uma classe tem que tratar todos seus atributos e métodos e não delegar isso a terceiros==.
 
-# Criando um Componente
+# 🧩 Criando um Componente
 No _Delphi_ todo componentes descende da classe `TComponent` que podemos obtê-la a partida a `unit` `System.Classes`, sem seguida podemos construir nosso componente/classe.
 - `Publish` - Propriedades adicionadas nessa seção ficaram disponíveis para o usuário no _Object Inspection_
 
@@ -644,7 +644,7 @@ begin
 end;
 ```
 
-# Método Construtor
+# 🏗️ Método Construtor
 Utilizando o nossa `create` esta sendo criado uma instancia completa da nossa classe, dando a acesso a diversas coisas até mesmo herdadas do nosso objeto, utilizando um método construtor, conseguiremos instancias apenas `interface`, assim dando acesso apenas ao que tem na `interface`
 
 ```pascal
@@ -661,7 +661,7 @@ implementation
 	end;
 ```
 
-# Composição de Objetos com Interface
+# 🔗 Composição de Objetos com Interface
 Utilizando a ideia de classes com responsabilidade única, onde por exemplo no desenvolvimento de uma calculadora podemos criar uma classe para cada operação e as compor em uma `interface` de calculadora.
 
 ```pascal
@@ -692,18 +692,54 @@ end;
 Onde cada função retorna a execução da [[#Método Construtora|método construtor]] da classe da operação que o representa.
 
 ```pascal
-function Multiplicar : IOperacao;
-begin
-	Result := TMultiplicar.New;
-end;
+interface
+	function Multiplicar : IOperacao;
+	begin
+		Result := TMultiplicar.New;
+	end;
 ```
 
-# Helpers
-Classes Helpers são classes de ajuda como o próprio nome diz é uma classe de ajuda, que podemos agregar a nossa classe atribuindo novas funcionalidades.
-## PAREI  AQUI
+# 🆘 Helpers
+Classes _Helpers_ são classes de ajuda como o próprio nome diz é uma classe de ajuda, que podemos agregar a nossa classe atribuindo novas funcionalidades, em _Helpers_ podemos desenvolver novos métodos, porem não podemos criar novos atributos.
 
-# Exemplo
+```pascal
+interface
+	TCaptionHelper = record helper for TCaption
+		function ToCurrency : Currency;
+	end;
 
-1. Criamos um `interface` que executa uma ação com duas variáveis do tipo `double` e retorna um `doube`, em seguida criamos uma classe para cada operação implementando essa `interface`, já no formulários criamos uma `property` do tipo da nossa `interface` e uma função no `private` que executa a função que estará dentro dessa nossa `propety`, no acionar de cada botão instanciamos umas das classes correspondentes a operação que o botão realiza e em seguida executas a função que criamos no `private`
+
+implementation
+	function TCaptionHelper.ToCurrency : Currency;
+	begin
+		Result := StrToCurr(Self);
+	end;
+```
+
+No exemplo acima desenvolvemos um _helper_ para a classe `TCaption`, onde desenvolvemos uma função de nome `ToCurrency` que devolve um valor do tipo `Currency`.
+
+Também podemos criar _Helpers_ para tipos primitivos.
+
+```pascal
+interface
+	TStrHelper = record helper to string
+		function ToCurrency : Currency;
+	end;
+
+implementation
+	function TStrHelper.ToCurrency : Currency;
+	begin
+		 Result := StrToCurr(Self);
+	end;
+```
+
+# 🤔 Exemplo
+
+1. Criamos um `interface` que executa uma ação com duas variáveis do tipo `double` e retorna um `doube`, em seguida criamos uma classe para cada operação implementando essa `interface`, já no formulários criamos uma `property` do tipo da nossa `interface` e uma função no `private` que executa a função que estará dentro dessa nossa `propety`, no acionar de cada botão instanciamos umas das classes correspondentes a operação que o botão realiza e em seguida executas a função que criamos no `private`.
 2. Por boa pratica devemos definir sempre os `constructor` e o `destructor` com sobrecarga (`override`), também é interessante criar uma método construtor para cada classe que desenvolvemos, e mudar criação das instancias de `create` para `new` assim o utilizando.
-3. Utilizamos o método de [[#Composição de Objetos com Interface]] criamos a classe `TCalculadora` agora basta instanciar a classe no formulário e para cada clique do botão chamar a função correspondente, por exemplo soma `Claculadora.Soma.Operacao(StrToCurr(Edit1.Text), StrToCurr(Edit2.Text))`
+3. Utilizamos o método de [[#Composição de Objetos com Interface]] criamos a classe `TCalculadora` agora basta instanciar a classe no formulário e para cada clique do botão chamar a função correspondente, por exemplo soma `Claculadora.Soma.Operacao(StrToCurr(Edit1.Text), StrToCurr(Edit2.Text))`.
+4. Criamos uma [[#Helpers|classe helper]] para o `TCaption` com um método que transforma o valor de uma `string` para `currency`, e o utilizamos no lugar do _casting_.
+5. Criamos uma [[#Helpers|classe helper]] para o tipo primitivo `string` que transforma o mesmo em um `currency`, em seguida implementamos uma [[#Sobrecarga]] do método `Operacao`, onde recebe duas `Strings` e devolve um `string`, onde dentro utiliza nosso método advindo do `helper` para realizar o _castings_ para realizar a operação.
+6. Refatoramos o código separando cada classe em uma `unit`, construímos uma `unit` com todas as `interfaces` e uma `unit` com todas os _Helpers_, em seguida pela necessidade de importar a `unit` `System.Util`, fomos obrigados a abandonar nosso _Helper_ de `string` e utilizar o que ele nos disponibiliza, o `toDouble`, sendo necessário realizar algumas alterações no código.
+7. Criamos uma `TList` genérica com o tipo `Double`, adicionamos sua instanciação no `create` e a limpamos no `destructor` com o método `free`, adicionamos o método para inserir dados na lista com [[#Sobrecarga]] de diferentes tipos, para não ser necessário realizar o _casting_, em seguida desenvolvemos uma classe que será utilizada para ser a ancestral das operações, assim a chamando de `TOperacoes`, onde ela implementara a interface `IOperacoes`, e agora as classes de cada operação herda dela, onde construímos um método executar `virtual` onde limpamos a lista, e nas classes de operações executaremos a conta e em seguida utilizaremos o `inherited` para executar o que tem na herança, nossa lista foi criada dentro do `protected` justamente para os filhos conseguirem enxergar, usamos o `var` para utilizar a referencia e não copiar o objeto. 
+8. Criamos a tipagem de um evento, em seguida criamos interfaces que entram na atribuição desse evento e que sai, tanto para a calculadora quanto para operação, onde ambas também implemento essas novas interfaces, criamos uma função de exibição que é o evento em si, e o passamos no `formCreate` para a classe da calculadora que se encarregara de na função de soma passar para a classe de soma.
