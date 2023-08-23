@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Notes/Code/Delphi/SOLID.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eb99529521960b42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/Delphi/Clean Code.md",
+                "file": "01 - Notes/Code/Delphi/MVC.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,18 +26,6 @@
               "type": "markdown",
               "state": {
                 "file": "01 - Notes/Code/Delphi/Programação Orientada a Objeto.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4406bd3e2126bd7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Notes/Code/JavaScript/Funções.md",
                 "mode": "source",
                 "source": false
               }
@@ -147,7 +123,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01 - Notes/Code/Delphi/SOLID.md",
+                "file": "01 - Notes/Code/Delphi/MVC.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -189,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Notes/Code/Delphi/SOLID.md"
+                "file": "01 - Notes/Code/Delphi/MVC.md"
               }
             }
           },
@@ -199,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Notes/Code/Delphi/SOLID.md",
+                "file": "01 - Notes/Code/Delphi/MVC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -216,7 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 - Notes/Code/Delphi/SOLID.md",
+                "file": "01 - Notes/Code/Delphi/MVC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -263,10 +239,12 @@
   },
   "active": "965b50b654f0d27e",
   "lastOpenFiles": [
-    "01 - Notes/Code/JavaScript/Funções.md",
-    "01 - Notes/Code/Delphi/SOLID.md",
+    "01 - Notes/Code/Delphi/Code Templates.md",
+    "01 - Notes/Code/Delphi/MVC.md",
     "01 - Notes/Code/Delphi/Programação Orientada a Objeto.md",
+    "01 - Notes/Code/Delphi/SOLID.md",
     "01 - Notes/Code/Delphi/Clean Code.md",
+    "01 - Notes/Code/JavaScript/Funções.md",
     "01 - Notes/Code/HTML/Formulário.md",
     "01 - Notes/Anotações Faculdade/Frameworks Para Desenvolvimento de Software.md",
     "Images/Pasted image 20230819193603.png",
@@ -292,8 +270,6 @@
     "01 - Notes/Code/Planejamento.md",
     "Sem título.canvas",
     "Sem título 1.canvas",
-    "01 - Notes/Code/JavaScript/React/Performance.md",
-    "Excalidraw/MapaMental_POO.md",
     "Images/Pasted image 20230810151850.png",
     "Images/Frameworks Para Desenvolvimento de Software 2023-08-09 21.29.46.excalidraw.png",
     "Images/Pasted image 20230506161935.png",

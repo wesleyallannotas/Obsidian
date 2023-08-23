@@ -327,6 +327,7 @@ Por convenção no _Delphi_ iniciamos nossas interfaces com a letra "I", mesmo n
 >[!tip] Importante
 >1. É importante sempre utilizar o `TInterfaceObject` quando formos implementar um interface, basicamente é um facilitador do _Delphi_ que evita que temos que implementar algumas funcionalidades.
 >2. _Object Pascal_ não permite herança multipla, diferentes de C++ por exemplo, assim podemos "burlar" quando necessário através do uso de interfaces.
+>3. Quando trabalhamos com _interface_ o ARC já limpa a mesma da memoria sem a necessidade de que a limpamos.
 
 ```pascal
 // ... Dentro do Arquivo de Interfaces ...
@@ -732,6 +733,17 @@ implementation
 		 Result := StrToCurr(Self);
 	end;
 ```
+
+# Construindo Formulários em Tempo de Execução
+## FireMonkey
+Diferente da VLC, o FireMonkey não conseguimos criar a partir da classe o nosso formulário, sendo necessário utilizar o `initialization`
+
+```pascal
+initialization
+	RegisterFMXClasses([TfrmProduct]);
+```
+
+Precisamos registrar a mesma a partir da função `RegisterFMXClasses`, onde como parâmetro passamos uma _array_ com os nomes das classes dos formulários.
 
 # 🤔 Exemplo
 

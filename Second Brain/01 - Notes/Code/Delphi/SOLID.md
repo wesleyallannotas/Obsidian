@@ -191,4 +191,63 @@ type
 	end;
 ```
 
-# 🧩 DIP Princípio da Inversão de Dependência
+# 🧩 DIP - Princípio da Inversão de Dependências
+Define que ==classes maiores não devem depender de classes menores,== ambas devem depender de _interfaces_,  as ==abstrações não devem depender dos detalhes que estão implícitos ali dentro, e sim os detalhes depender da abstração.==
+
+```pascal
+interface
+	type
+		TLampada = class
+			procedure Ligas;
+			procedure Desligar;
+		end;
+		
+		TBotao = class
+			Lampada : TLambada;
+			constructor Create;
+			procedure Acionar;
+		end;
+
+implementation
+	constructor TBotao.Create;
+	begin
+		Lampada := TLampada.Create;
+	end;
+```
+
+Por exemplo esse botão precisa conhecer a lâmpada, e ele só servi para ligar a lâmpada, e se precisássemos de um botão para ligar um ventilador? não conseguiríamos utilizar o mesmo, pois, ele esta atrelado, acoplado a lâmpada.
+Em vez disso vamos programa-lo para ligar um dispositivo, que tenha os métodos ligar e desligar.
+
+```pascal
+interface
+	type
+		IDispositivo = interface
+			// CTRL + G
+			procedure Ligar;
+			procedure Desligar;
+		end;
+	
+		TLampada = class(TInterfaceObejct, IDispositivo)
+				procedure Ligas;
+				procedure Desligar;
+			end;
+		
+		TBotao = class
+			FDispositivo : IDispositivo;
+			constructor Create(Dispositivo : IDispositivo);
+			procedure Acionar;
+		end;
+
+implementation
+constructor TBotao.Create(Dispositivo : IDispositivo);
+begin
+	FDispositivo := Dispositivo;
+end;
+
+procedure TBotao.Acionar;
+begin
+	FDispositivo.Ligar;
+end;
+```
+
+Perceba como invertemos a dependência, e agora nossa classe `TBotao`, recebe uma classe que implemente a interface `IDispositivo`, assim invertendo sua dependência, o seja, ==abstrações não podem depender de detalhes, mas o detalhes dependem das abstrações==, não imputamos a dependência dentro da nossa classe, criamos uma _interface_ para abstrair.
