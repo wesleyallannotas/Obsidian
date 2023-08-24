@@ -17,6 +17,12 @@ MVC basicamente é a divisão do nosso software entre 3 camadas, sendo elas _Mod
 
 Em uma analogia com um restaurante, o menu seria nossa _view_, onde temos acesso as requisições que podemos realizar,  quando escolhemos enviamos a solicitação para o garçom que é o _controller_, que entrega nosso pedido para o cozinheiro que é o _Model_, e depois volta do cozinheiro para o garçom e cliente.
 
+_Model_ - Entidades, Conexão com o Banco de Dados, Datasets.
+_Controller_ - Através da requisição da _View_ defini as configurações da conexão, nível de acesso, tabelas a serem consultadas.
+_View_ - Requisições do usuário sobre o que deseja acessar.
+
+_View_ chama fabrica do _Controller_ que se necessário chama fabrica do _Model_
+
 # Nomenclatura
 Uma convecção usada para nomeação de `units` em projetos que utiliza a arquitetura MVC é `nome do projeto + camada + e o nome em si`
 Pro exemplo, `Calculadora.View.Main.pas`, e dividiremos as camadas em pastas separadas.
@@ -210,12 +216,14 @@ begin
   try
     newForm := (objFMX.Create(nil) as TCustomForm);
     try
+      newForm.Position := TFormPosition.ScreenCenter;
       newForm.ShowModal;
     finally
       newForm.Free;
     end;
   except
-    raise Exception.Create('Objeto não existe');
+    on E : Exception do
+      raise Exception.Create(E.ClassName + E.Message);
   end;
 end;
 end.
@@ -428,7 +436,7 @@ end;
 end.
 ```
 
-Assim sendo caso lance um novo componente de conexão basta mudar ConnectFiredac e TableFiredac para utilizar os novos compoentnes e adequando o nome dos atributos para os mesmo.
+ssim sendo caso lance um novo componente de conexão basta mudar ConnectFiredac e TableFiredac para utilizar os novos compoentnes e adequando o nome dos atributos para os mesmo.
 Também temos a opção de desenvolver novas `units`.
 
 ## Factorys sem Default
@@ -438,6 +446,14 @@ Pode ocorrer casos de _factorys_ sem uma classe Default, normalmente quando cada
 Entendendo entidades como tabelas do banco de dados, é interessante criar uma _interface_ genérica com o básico que toda entidade deve ter e a partir dela criar as especificas.
 
 >[!attention] Atenção
->Precisamos de um DataSet no Entity para conectar com o banco, ai vem a duvida criamos o mesmo com a _factory_ dentro da Entity, NÃO, importante frisar quem CONTROLA é o _Controller_, ele que defini essas coisas.
+>Precisamos de um DataSet no Entity para conectar com o banco, ai vem a duvida criamos o mesmo com a _factory_ dentro da Entity, NÃO, importante frisar quem CONTROLA é o _Controller_, ele que defini essas coisas, por isso criaremos _factorys_ no _controller_ para criar conexões e _datasets_.
 
+No _Controller_ utilizaremos o _DataSource_ na tipagem, pois, é o mais genérico e utilizado como base para receber o _DataSets_ e outros, assim sendo compatível com todos.
+O uso de classes genéricas é a base para o bom funcionamento com todos os tipos de componentes de conexão diferentes.
 
+## Criando Novas Conexões
+Utilizando outros componentes como por exemplo o Zeus, precisaríamos apenas criar novas classes para a Conexão e para o _DataSet_, modificando os mesmo para serem compotiveis com Zeus ou qualquer outro, posterior mente adicionar nas _Factorys_ e utiliza-los.
+
+# View
+Na nossa _view_ precisamos apenas de um _DataSorce_, e um atributo privado que contenha nossa entidade utilizando a _interface_ `IControllerEntity`.
+Por exemplo utilizamos um _StringGrid_ então fizemos a conexão via `Live Bind`.
